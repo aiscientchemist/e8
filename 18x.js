@@ -1,201 +1,206 @@
 const questions = [
     {
-        "type": "closed",
-        "question": "At no point ______ aware that his every move was being monitored.",
-        "answers": [
-            { "text": "he was", "correct": false },
-            { "text": "he became", "correct": false },
-            { "text": "was he", "correct": true },
-            { "text": "did he", "correct": false }
+        type: 'closed',
+        question: "Różnica kwadratów dwóch kolejnych dodatnich liczb parzystych wynosi 100. Ile wynosi iloczyn tych liczb?",
+        answers: [
+            { text: "624", correct: true },
+            { text: "528", correct: false },
+            { text: "440", correct: false },
+            { text: "360", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The ______ of his speech was lost amidst a flurry of unnecessary jargon and technical terms.",
-        "answers": [
-            { "text": "gist", "correct": true },
-            { "text": "ghost", "correct": false },
-            { "text": "jest", "correct": false },
-            { "text": "gusto", "correct": false }
+        type: 'open',
+        question: "Pole rombu wynosi 120. Jedna z przekątnych jest o 14 dłuższa od drugiej. Oblicz obwód tego rombu.",
+        answer: ["52"]
+    },
+    {
+        type: 'closed',
+        question: "Liczba 2²⁰ * 5¹⁵ jest równa:",
+        answers: [
+            { text: "10³⁵", correct: false },
+            { text: "32 * 10¹⁵", correct: true },
+            { text: "10 * 10²⁰", correct: false },
+            { text: "7¹⁵ * 10¹⁵", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'I don't appreciate you questioning my decisions in public.'",
-        "answer": ["I don't appreciate my decisions being questioned in public."]
+        type: 'open',
+        question: "W trójkącie prostokątnym o obwodzie 70, promień okręgu wpisanego wynosi 5. Oblicz długość przeciwprostokątnej.",
+        answer: ["30"]
     },
     {
-        "type": "closed",
-        "question": "The manager's ______ praise for the new employee seemed insincere and was seen as an attempt to motivate him through flattery.",
-        "answers": [
-            { "text": "effusive", "correct": true },
-            { "text": "effective", "correct": false },
-            { "text": "evasive", "correct": false },
-            { "text": "elusive", "correct": false }
+        type: 'closed',
+        question: "W ostrosłupie prawidłowym czworokątnym wysokość ściany bocznej ma długość 13, a wysokość ostrosłupa 12. Pole powierzchni całkowitej tej bryły wynosi:",
+        answers: [
+            { text: "260", correct: false },
+            { text: "340", correct: false },
+            { text: "360", correct: true },
+            { text: "520", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "You strongly disagree with a decision made by a group you are part of. What's a diplomatic way to voice your dissent?",
-        "answers": [
-            { "text": "This is the wrong decision and I won't be a part of it.", "correct": false },
-            { "text": "I understand the reasoning behind this decision, but I have some serious reservations and would like to propose an alternative perspective.", "correct": true },
-            { "text": "You're all making a huge mistake.", "correct": false },
-            { "text": "Fine, do whatever you want.", "correct": false }
+        type: 'closed',
+        question: "Wartość wyrażenia (log₂3) * (log₃4) * (log₄5) * ... * (log₁₅16) jest równa:",
+        answers: [
+            { text: "1", correct: false },
+            { text: "2", correct: false },
+            { text: "3", correct: false },
+            { text: "4", correct: true }
         ]
     },
     {
-        "type": "open",
-        "question": "Use the word in brackets to form a word that fits the gap: 'The politician was accused of ____ (FEAR) to incite unrest.'",
-        "answer": ["fearmongering"]
+        type: 'open',
+        question: "Ile jest liczb trzycyfrowych podzielnych przez 4, w których wszystkie cyfry są nieparzyste?",
+        answer: ["20"]
     },
     {
-        "type": "closed",
-        "question": "His ______ arguments, though complex, were so well-structured that they convinced everyone.",
-        "answers": [
-            { "text": "torturous", "correct": false },
-            { "text": "tortuous", "correct": true },
-            { "text": "torpid", "correct": false },
-            { "text": "turbid", "correct": false }
+        type: 'closed',
+        question: "Cenę towaru podniesiono o 20%, a następnie o 25%. O ile procent łącznie podniesiono cenę towaru?",
+        answers: [
+            { text: "o 45%", correct: false },
+            { text: "o 50%", correct: true },
+            { text: "o 55%", correct: false },
+            { text: "o 60%", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "What is the meaning of the idiom 'to send someone to Coventry'?",
-        "answers": [
-            { "text": "To give someone a great honor.", "correct": false },
-            { "text": "To deliberately ostracize someone by not speaking to them.", "correct": true },
-            { "text": "To send someone on a pointless errand.", "correct": false },
-            { "text": "To promote someone to a position of less power.", "correct": false }
+        type: 'open',
+        question: "W trójkąt równoramienny o podstawie 24 i ramionach 13 wpisano koło. Oblicz promień tego koła.",
+        answer: ["10/3", "3.33", "3 i 1/3"]
+    },
+    {
+        type: 'closed',
+        question: "Z cyfr 1, 2, 3, 4, 5 losujemy kolejno bez zwracania dwie cyfry i tworzymy liczbę dwucyfrową. Jakie jest prawdopodobieństwo, że otrzymana liczba jest podzielna przez 3?",
+        answers: [
+            { text: "1/5", correct: false },
+            { text: "1/4", correct: false },
+            { text: "2/5", correct: true },
+            { text: "1/2", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence using a perfect passive participle. Original sentence: 'After the documents had been stolen, the company had to change all its security codes.'",
-        "answer": ["Having had the documents stolen, the company had to change all its security codes."]
+        type: 'open',
+        question: "W pewnej firmie średnia pensja wynosi 4000 zł. Średnia pensja mężczyzn to 4400 zł, a kobiet 3800 zł. Jaki procent pracowników stanowią kobiety?",
+        answer: ["66.67", "66 i 2/3"]
     },
     {
-        "type": "closed",
-        "question": "The general's speech was a ______ call to arms, inspiring the troops before the great battle.",
-        "answers": [
-            { "text": "clarion", "correct": true },
-            { "text": "clear", "correct": false },
-            { "text": "calm", "correct": false },
-            { "text": "clandestine", "correct": false }
+        type: 'closed',
+        question: "Dwa wierzchołki kwadratu leżą na osi OX, a dwa pozostałe na paraboli o równaniu y = 16 - x². Pole tego kwadratu wynosi:",
+        answers: [
+            { text: "16", correct: false },
+            { text: "32", correct: true },
+            { text: "36", correct: false },
+            { text: "48", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The car is old and unreliable, but it's better than nothing. As the old saying goes, '______'.",
-        "answers": [
-            { "text": "A bird in the hand is worth two in the bush", "correct": false },
-            { "text": "Any port in a storm", "correct": true },
-            { "text": "A stitch in time saves nine", "correct": false },
-            { "text": "All that glitters is not gold", "correct": false }
+        type: 'closed',
+        question: "Na spotkaniu 10 osób, każda wita się z każdą. Ile nastąpi powitań, jeśli 3 osoby się spóźniły i nie przywitały się ze sobą nawzajem?",
+        answers: [
+            { text: "45", correct: false },
+            { text: "42", correct: true },
+            { text: "39", correct: false },
+            { text: "36", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'They need to be told the truth.'",
-        "answer": ["The truth needs to be told to them."]
+        type: 'open',
+        question: "Suma n początkowych wyrazów ciągu arytmetycznego wyraża się wzorem Sn = 2n² + 3n. Podaj wartość piątego wyrazu tego ciągu.",
+        answer: ["21"]
     },
     {
-        "type": "closed",
-        "question": "She tried to ______ a feeling of calm, but her nervous twitch gave her away.",
-        "answers": [
-            { "text": "project", "correct": true },
-            { "text": "reject", "correct": false },
-            { "text": "inject", "correct": false },
-            { "text": "subject", "correct": false }
+        type: 'closed',
+        question: "Prosta przechodząca przez punkty A=(√2, 3) i B=(2√2, 5) ma równanie:",
+        answers: [
+            { text: "y = 2x + 1", correct: false },
+            { text: "y = √2 x + 1", correct: true },
+            { text: "y = x + 3-√2", correct: false },
+            { text: "y = 2√2 x - 5", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "His attempts to apologize were clumsy and ______, making the situation even worse.",
-        "answers": [
-            { "text": "inane", "correct": true },
-            { "text": "insane", "correct": false },
-            { "text": "ingenious", "correct": false },
-            { "text": "ingrained", "correct": false }
+        type: 'closed',
+        question: "Ostatnią cyfrą liczby 1! + 2! + 3! + ... + 2024! jest:",
+        answers: [
+            { text: "0", correct: false },
+            { text: "1", correct: false },
+            { text: "3", correct: true },
+            { text: "9", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Complete the sentence with the correct preposition: 'The company is not immune ____ the effects of the global recession.'",
-        "answer": ["to"]
+        type: 'open',
+        question: "W trójkącie prostokątnym o przyprostokątnych 6 i 8, na przeciwprostokątnej obrano punkt P. Jaka jest najmniejsza możliwa suma kwadratów odległości punktu P od przyprostokątnych?",
+        answer: ["14.4"]
     },
     {
-        "type": "closed",
-        "question": "The new evidence helped to ______ the witness's original testimony.",
-        "answers": [
-            { "text": "corroborate", "correct": true },
-            { "text": "collaborate", "correct": false },
-            { "text": "corrode", "correct": false },
-            { "text": "cooperate", "correct": false }
+        type: 'closed',
+        question: "Ile jest liczb naturalnych dwucyfrowych, które nie są podzielne ani przez 5, ani przez 7?",
+        answers: [
+            { text: "90 - 18 - 13 + 2 = 61", correct: true }, // (90 - (18+13-2))
+            { text: "61", correct: true },
+            { text: "59", correct: false },
+            { text: "68", correct: false },
+            { text: "72", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "His ______ lifestyle, filled with parties and extravagant spending, eventually led to his bankruptcy.",
-        "answers": [
-            { "text": "hedonistic", "correct": true },
-            { "text": "hermetic", "correct": false },
-            { "text": "holistic", "correct": false },
-            { "text": "historic", "correct": false }
-        ]
-    },
-    { "type": "open", "question": "Use the word in brackets to form a word that fits the gap: 'The general's orders were ____ (EQUIVOCAL) and left no room for interpretation.'", "answer": ["unequivocal"] },
-    {
-        "type": "closed",
-        "question": "The old law has become a ______, irrelevant in modern society but never officially repealed.",
-        "answers": [
-            { "text": "dead letter", "correct": true },
-            { "text": "red herring", "correct": false },
-            { "text": "white elephant", "correct": false },
-            { "text": "lame duck", "correct": false }
+        type: 'closed',
+        question: "W trójkącie równoramiennym podstawa jest 2 razy krótsza od ramienia. Stosunek wysokości opuszczonej na podstawę do długości podstawy wynosi:",
+        answers: [
+            { text: "√15:2", correct: true },
+            { text: "√15:1", correct: false },
+            { text: "√3:1", correct: false },
+            { text: "√3:2", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "He was a difficult person to work with, known for his ______ and unpredictable moods.",
-        "answers": [
-            { "text": "mercurial", "correct": true },
-            { "text": "methodical", "correct": false },
-            { "text": "mirthful", "correct": false },
-            { "text": "maternal", "correct": false }
+        type: 'open',
+        question: "W pudełku jest 12 kul, w tym 'b' białych. Losujemy dwie kule bez zwracania. Prawdopodobieństwo wylosowania dwóch kul białych wynosi 5/33. Ile jest kul białych?",
+        answer: ["5"]
+    },
+    {
+        type: 'closed',
+        question: "Dwa okręgi o promieniach 6 cm są tak położone, że każdy przechodzi przez środek drugiego. Pole części wspólnej tych okręgów wynosi:",
+        answers: [
+            { text: "12π - 9√3", correct: false },
+            { text: "24π - 18√3", correct: false },
+            { text: "24π - 36√3", correct: true },
+            { text: "18π - 12√3", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in reported speech. Original sentence: 'You must complete this form,' the official insisted.",
-        "answer": ["The official insisted that I (had to) complete that form."]
+        type: 'closed',
+        question: "Wartość wyrażenia 2/(√3-1) - 2/(√3+1) jest równa:",
+        answers: [
+            { text: "2", correct: true },
+            { text: "2√3", correct: false },
+            { text: "4", correct: false },
+            { text: "0", correct: false }
+        ]
+
     },
     {
-        "type": "closed",
-        "question": "It's a common ______ that all sharks are dangerous to humans; in fact, most species are harmless.",
-        "answers": [
-            { "text": "fallacy", "correct": true },
-            { "text": "fantasy", "correct": false },
-            { "text": "faculty", "correct": false },
-            { "text": "facility", "correct": false }
+        type: 'open',
+        question: "Samochód przejechał połowę trasy z prędkością 40 km/h, a drugą połowę z prędkością 60 km/h. Jaka była średnia prędkość samochodu na całej trasie w km/h?",
+        answer: ["48"]
+    },
+    {
+        type: 'closed',
+        question: "Ile jest przekątnych w dziesięciokącie wypukłym?",
+        answers: [
+            { text: "27", correct: false },
+            { text: "35", correct: true },
+            { text: "45", correct: false },
+            { text: "90", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The company decided to ______ its old, inefficient machinery with state-of-the-art equipment.",
-        "answers": [
-            { "text": "supersede", "correct": true },
-            { "text": "supervise", "correct": false },
-            { "text": "suppress", "correct": false },
-            { "text": "surpass", "correct": false }
-        ]
-    },
-    {
-        "type": "open",
-        "question": "Rewrite the sentence using a causative verb. Original sentence: 'I'll have to persuade my landlord to repair the roof.'",
-        "answer": ["I'll have to get my landlord to repair the roof."]
-    },
-    { "type": "closed", "question": "The politician's speech was a ______ against the media, accusing them of bias and unfair reporting.", "answers": [{ "text": "diatribe", "correct": true }, { "text": "dialogue", "correct": false }, { "text": "dichotomy", "correct": false }, { "text": "digression", "correct": false }] }
+        type: 'open',
+        question: "Wartość wyrażenia (1 - 1/2) * (1 - 1/3) * (1 - 1/4) * ... * (1 - 1/100) jest równa:",
+        answer: ["0.01", "1/100"]
+    }
 ];
 
 // --- Pobranie elementów z HTML ---

@@ -1,206 +1,205 @@
 const questions = [
     {
-        "type": "closed",
-        "question": "Little ______ that the quiet librarian was leading a double life as an international spy.",
-        "answers": [
-            { "text": "they suspected", "correct": false },
-            { "text": "did they suspect", "correct": true },
-            { "text": "they did suspect", "correct": false },
-            { "text": "they were suspecting", "correct": false }
+        type: 'closed',
+        question: "Różnica kwadratów dwóch kolejnych dodatnich liczb całkowitych wynosi 41. Ile wynosi suma tych liczb?",
+        answers: [
+            { text: "39", correct: false },
+            { text: "41", correct: true },
+            { text: "43", correct: false },
+            { text: "81", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "His speech was a ______ of empty promises, designed to placate the crowd but offering no real solutions.",
-        "answers": [
-            { "text": "tissue", "correct": false },
-            { "text": "tissue of lies", "correct": false },
-            { "text": "string", "correct": false },
-            { "text": "tissue of platitudes", "correct": true }
+        type: 'open',
+        question: "W trapezie prostokątnym podstawy mają długość 4 i 7, a dłuższe ramię ma długość 5. Oblicz pole tego trapezu.",
+        answer: ["22"]
+    },
+    {
+        type: 'closed',
+        question: "Liczba a = 4⁴⁴, b = 3⁵⁵, c = 2⁷⁷. Prawdą jest, że:",
+        answers: [
+            { text: "c < b < a", correct: false },
+            { text: "a < c < b", correct: false },
+            { text: "a < b < c", correct: true },
+            { text: "b < a < c", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'They must have been repairing the road when the accident happened.'",
-        "answer": ["The road must have been being repaired when the accident happened."]
+        type: 'open',
+        question: "W trójkąt równoboczny o boku 6 wpisano koło. Oblicz pole tego koła (odpowiedź zapisz w postaci aπ).",
+        answer: ["3π"]
     },
     {
-        "type": "closed",
-        "question": "The sudden new regulations, introduced without warning, completely ______ and ruined our carefully laid plans.",
-        "answers": [
-            { "text": "upset the apple cart", "correct": true },
-            { "text": "put the cart before the horse", "correct": false },
-            { "text": "hitched our wagon to a star", "correct": false },
-            { "text": "went off the rails", "correct": false }
+        type: 'closed',
+        question: "Pole powierzchni bocznej stożka jest 3 razy większe od pola jego podstawy. Cosinus kąta nachylenia tworzącej do podstawy wynosi:",
+        answers: [
+            { text: "1/2", correct: false },
+            { text: "1/3", correct: true },
+            { text: "1/4", correct: false },
+            { text: "√3/3", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "A junior colleague has presented a good idea, but it's not fully developed. How do you encourage them constructively?",
-        "answers": [
-            { "text": "That's not going to work.", "correct": false },
-            { "text": "That's a really promising starting point. Have you thought about how we might tackle the potential issue of X? Let's brainstorm some solutions.", "correct": true },
-            { "text": "It's a good idea, but...", "correct": false },
-            { "text": "Come back when you have a complete plan.", "correct": false }
+        type: 'closed',
+        question: "Wartość wyrażenia (3³ * 27⁻²) / (9⁻³ * 81) jest równa:",
+        answers: [
+            { text: "1/3", correct: false },
+            { text: "1", correct: false },
+            { text: "3", correct: true },
+            { text: "9", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Use the word in brackets to form a word that fits the gap: 'His ____ (ART) behavior and insincere compliments made everyone wary of him.'",
-        "answer": ["artful"]
+        type: 'open',
+        question: "Samochód przejechał pewną trasę w 5 godzin. Gdyby jego prędkość była o 10 km/h większa, przejechałby tę trasę w 4 godziny. Jaka była długość tej trasy w km?",
+        answer: ["200"]
     },
     {
-        "type": "closed",
-        "question": "A good manager should know when to ______ and when to ______ a compliment.",
-        "answers": [
-            { "text": "pay / make", "correct": false },
-            { "text": "make / pay", "correct": true },
-            { "text": "do / make", "correct": false },
-            { "text": "give / do", "correct": false }
+        type: 'closed',
+        question: "Liczba rozwiązań równania x² + 9 = 6x to:",
+        answers: [
+            { text: "0", correct: false },
+            { text: "1", correct: true },
+            { text: "2", correct: false },
+            { text: "nieskończenie wiele", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "What is the meaning of the idiom 'to sow one's wild oats'?",
-        "answers": [
-            { "text": "To work hard in agriculture.", "correct": false },
-            { "text": "To go through a period of irresponsible or wild behavior in one's youth.", "correct": true },
-            { "text": "To invest in a risky but potentially profitable venture.", "correct": false },
-            { "text": "To start a family.", "correct": false }
-        ]
-
+        type: 'open',
+        question: "Cena towaru wzrosła z 40 zł do 50 zł. O ile procent należy obniżyć nową cenę, aby wróciła do poziomu 40 zł?",
+        answer: ["20"]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in reported speech. Original sentence: ''Oh, what a shame we missed the start!' she said.'",
-        "answer": ["She exclaimed that it was a shame they had missed the start."]
-    },
-    {
-        "type": "closed",
-        "question": "His ______ nature meant he would argue about the smallest, most insignificant details for hours.",
-        "answers": [
-            { "text": "petulant", "correct": false },
-            { "text": "pedantic", "correct": true },
-            { "text": "placid", "correct": false },
-            { "text": "pious", "correct": false }
+        type: 'closed',
+        question: "Z talii 52 kart losujemy jedną. Jakie jest prawdopodobieństwo, że będzie to figura (walet, dama, król) lub kier?",
+        answers: [
+            { text: "25/52", correct: false },
+            { text: "22/52", correct: true },
+            { text: "12/52", correct: false },
+            { text: "13/52", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "It's no good ______ with him; once he's made up his mind, he never changes it.",
-        "answers": [
-            { "text": "to reason", "correct": false },
-            { "text": "reasoning", "correct": true },
-            { "text": "reasoned", "correct": false },
-            { "text": "to have reasoned", "correct": false }
-        ]
-
+        type: 'open',
+        question: "Wartość wyrażenia log₄(log₁₆256) jest równa:",
+        answer: ["0.5", "1/2"]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'Someone seems to have made a mistake in the calculations.'",
-        "answer": ["A mistake seems to have been made in the calculations."]
-    },
-    {
-        "type": "closed",
-        "question": "The old general was a ______ of the old school, believing in discipline and tradition above all.",
-        "answers": [
-            { "text": "bastion", "correct": true },
-            { "text": "baron", "correct": false },
-            { "text": "beacon", "correct": false },
-            { "text": "baton", "correct": false }
+        type: 'closed',
+        question: "Suma n początkowych wyrazów ciągu arytmetycznego wyraża się wzorem Sn = n(n+2). Czwarty wyraz tego ciągu jest równy:",
+        answers: [
+            { text: "7", correct: false },
+            { text: "9", correct: true },
+            { text: "11", correct: false },
+            { text: "24", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "His claims were based on ______ evidence and could not be verified by independent sources.",
-        "answers": [
-            { "text": "anecdotal", "correct": true },
-            { "text": "antidotal", "correct": false },
-            { "text": "analytical", "correct": false },
-            { "text": "astronomical", "correct": false }
+        type: 'closed',
+        question: "Wysokość graniastosłupa prawidłowego czworokątnego i przekątna jego podstawy mają równe długości. Kąt nachylenia przekątnej graniastosłupa do podstawy ma miarę:",
+        answers: [
+            { text: "30°", correct: false },
+            { text: "45°", correct: true },
+            { text: "60°", correct: false },
+            { text: "Nie da się tego określić", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Complete the sentence with the correct preposition: 'The company is not answerable ____ its customers for the supplier's mistake.'",
-        "answer": ["to"]
+        type: 'open',
+        question: "W trójkącie prostokątnym o przyprostokątnych 10 i 24, oblicz długość wysokości opuszczonej na przeciwprostokątną.",
+        answer: ["120/13", "9 i 3/13"]
     },
     {
-        "type": "closed",
-        "question": "The president's speech was intended to ______ the nation after the terrible tragedy.",
-        "answers": [
-            { "text": "unify", "correct": true },
-            { "text": "undo", "correct": false },
-            { "text": "unleash", "correct": false },
-            { "text": "unfurl", "correct": false }
+        type: 'closed',
+        question: "Wartość wyrażenia 5/(√6-1) - 5/(√6+1) jest równa:",
+        answers: [
+            { text: "1", correct: false },
+            { text: "2", correct: true },
+            { text: "√6", correct: false },
+            { text: "2√6", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The artist was a true ______; he refused to follow any established rules or trends.",
-        "answers": [
-            { "text": "iconoclast", "correct": true },
-            { "text": "idealist", "correct": false },
-            { "text": "impostor", "correct": false },
-            { "text": "innovator", "correct": false }
-        ]
-    },
-    { "type": "open", "question": "Use the word in brackets to form a word that fits the gap: 'The system is ____ (FAULT) simple, yet incredibly effective.'", "answer": ["faultlessly"] },
-    {
-        "type": "closed",
-        "question": "Her ______ comments, though meant to be funny, often hurt people's feelings.",
-        "answers": [
-            { "text": "fabulous", "correct": false },
-            { "text": "facetious", "correct": true },
-            { "text": "fastidious", "correct": false },
-            { "text": "facile", "correct": false }
+        type: 'closed',
+        question: "Środek okręgu o równaniu (x-3)² + (y+5)² = 16 leży na prostej:",
+        answers: [
+            { text: "y = x - 8", correct: true },
+            { text: "y = x + 8", correct: false },
+            { text: "y = -x - 2", correct: false },
+            { text: "y = -x + 2", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The sudden economic boom turned out to be a ______; it was followed by a deep recession.",
-        "answers": [
-            { "text": "false start", "correct": false },
-            { "text": "false dawn", "correct": true },
-            { "text": "false alarm", "correct": false },
-            { "text": "false step", "correct": false }
+        type: 'open',
+        question: "Jaka jest najmniejsza liczba naturalna, która przy dzieleniu przez 15, 20 i 24 daje tę samą resztę 9?",
+        answer: ["129"]
+    },
+    {
+        type: 'closed',
+        question: "W trójkącie równoramiennym podstawa ma długość 12, a ramię 10. Sinus kąta przy podstawie wynosi:",
+        answers: [
+            { text: "0.6", correct: false },
+            { text: "0.8", correct: true },
+            { text: "0.75", correct: false },
+            { text: "0.5", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'They need not have done that.'",
-        "answer": ["That need not have been done."]
-    },
-    {
-        "type": "closed",
-        "question": "The lawyer's ______ questioning gradually revealed the inconsistencies in the witness's story.",
-        "answers": [
-            { "text": "incisive", "correct": true },
-            { "text": "indecisive", "correct": false },
-            { "text": "inclusive", "correct": false },
-            { "text": "inconclusive", "correct": false }
+        type: 'closed',
+        question: "Na ile sposobów można wybrać kapitana i jego zastępcę z drużyny liczącej 10 osób?",
+        answers: [
+            { text: "20", correct: false },
+            { text: "45", correct: false },
+            { text: "90", correct: true },
+            { text: "100", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "We need to ______ a new marketing strategy to appeal to a younger demographic.",
-        "answers": [
-            { "text": "devise", "correct": true },
-            { "text": "divide", "correct": false },
-            { "text": "derive", "correct": false },
-            { "text": "deprive", "correct": false }
-        ]
-
+        type: 'open',
+        question: "Reszta z dzielenia liczby n przez 6 wynosi 4. Jaka jest reszta z dzielenia liczby 5n przez 6?",
+        answer: ["2"]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence using the causative 'have'. Original sentence: 'I am paying a web designer to create a portfolio for me.'",
-        "answer": ["I am having a portfolio created for me."]
+        type: 'closed',
+        question: "Pole koła opisanego na kwadracie jest równe 18π. Pole tego kwadratu wynosi:",
+        answers: [
+            { text: "18", correct: false },
+            { text: "36", correct: true },
+            { text: "72", correct: false },
+            { text: "9π", correct: false }
+        ]
     },
-    { "type": "closed", "question": "The details of the peace treaty are still ______ and subject to change.", "answers": [{ "text": "in flux", "correct": true }, { "text": "at odds", "correct": false }, { "text": "in earnest", "correct": false }, { "text": "at a loss", "correct": false }] }
+    {
+        type: 'closed',
+        question: "Jeśli (x+y)²=20 i (x-y)²=12, to iloczyn xy jest równy:",
+        answers: [
+            { text: "1", correct: false },
+            { text: "2", correct: true },
+            { text: "4", correct: false },
+            { text: "8", correct: false }
+        ]
+    },
+    {
+        type: 'open',
+        question: "Pociąg o długości 150m jadący z prędkością 54 km/h mija słup. Ile sekund trwa to mijanie?",
+        answer: ["10"]
+    },
+    {
+        type: 'closed',
+        question: "Ile jest liczb trzycyfrowych mniejszych od 500, w których każda cyfra jest inna i należy do zbioru {1, 2, 3, 6, 8}?",
+        answers: [
+            { text: "24", correct: false },
+            { text: "36", correct: true },
+            { text: "48", correct: false },
+            { text: "60", correct: false }
+        ]
+    },
+    {
+        type: 'open',
+        question: "Suma cyfr liczby dwucyfrowej wynosi 13. Po dodaniu do tej liczby 27, otrzymamy liczbę o przestawionych cyfrach. Jaka to liczba?",
+        answer: ["58"]
+    }
 ];
-
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");
 const answerButtonsElement = document.getElementById("answer-buttons");

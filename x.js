@@ -1,3 +1,4 @@
+// --- Definicja pytań (z nowym polem "type") ---
 const questions = [
 
 

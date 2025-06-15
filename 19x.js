@@ -1,201 +1,206 @@
 const questions = [
     {
-        "type": "closed",
-        "question": "To such an extent ______ that the company was forced into bankruptcy.",
-        "answers": [
-            { "text": "the losses grew", "correct": false },
-            { "text": "grew the losses", "correct": false },
-            { "text": "did the losses grow", "correct": true },
-            { "text": "the losses did grow", "correct": false }
+        type: 'closed',
+        question: "Różnica sześcianów dwóch kolejnych liczb naturalnych wynosi 91. Ile wynosi suma tych liczb?",
+        answers: [
+            { text: "9", correct: false },
+            { text: "11", correct: true },
+            { text: "13", correct: false },
+            { text: "15", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "His ______ display of piety, constantly talking about his own morality, was seen by many as hypocritical.",
-        "answers": [
-            { "text": "sincere", "correct": false },
-            { "text": "sanctimonious", "correct": true },
-            { "text": "sacred", "correct": false },
-            { "text": "secular", "correct": false }
+        type: 'open',
+        question: "W trójkącie równoramiennym o obwodzie 36, wysokość opuszczona na podstawę ma długość 12. Oblicz pole tego trójkąta.",
+        answer: ["60"]
+    },
+    {
+        type: 'closed',
+        question: "Liczba a = 3³³ , b = 5²² , c = 7¹¹. Która z poniższych nierówności jest prawdziwa?",
+        answers: [
+            { text: "c < b < a", correct: true },
+            { text: "b < c < a", correct: false },
+            { text: "a < b < c", correct: false },
+            { text: "c < a < b", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'They should have given the employees more time to adapt.'",
-        "answer": ["The employees should have been given more time to adapt."]
+        type: 'open',
+        question: "Suma dwóch liczb jest równa 2√6, a ich różnica to 2√2. Oblicz iloczyn tych liczb.",
+        answer: ["4"]
     },
     {
-        "type": "closed",
-        "question": "He's not really an impartial observer; everyone knows he has ______ because the new policy directly affects his department.",
-        "answers": [
-            { "text": "a bee in his bonnet", "correct": false },
-            { "text": "an axe to grind", "correct": true },
-            { "text": "a chip on his shoulder", "correct": false },
-            { "text": "a trick up his sleeve", "correct": false }
+        type: 'closed',
+        question: "Prosta k jest prostopadła do prostej l: y = -x/2 + 4 i jest styczna w punkcie (0, 5) do okręgu. Jaki jest środek tego okręgu?",
+        answers: [
+            { text: "(-2, 4)", correct: false },
+            { text: "(2, 1)", correct: false },
+            { text: "(-2, 1)", correct: false },
+            { text: "(-1, 3)", correct: true }
         ]
     },
     {
-        "type": "closed",
-        "question": "A colleague is very sensitive and takes any feedback personally. How do you suggest a change to their work?",
-        "answers": [
-            { "text": "You need to change this, it's wrong.", "correct": false },
-            { "text": "This is a great start. I was thinking, what if we tried exploring this alternative approach for the next section? It might make the final result even stronger.", "correct": true },
-            { "text": "The way you've done this isn't good enough.", "correct": false },
-            { "text": "I'm just going to do it myself.", "correct": false }
+        type: 'closed',
+        question: "Do 3 kg solanki o stężeniu 10% dolano 2 kg solanki o stężeniu 25%. Jakie jest stężenie procentowe otrzymanej mieszaniny?",
+        answers: [
+            { text: "15%", correct: false },
+            { text: "16%", correct: true },
+            { text: "17.5%", correct: false },
+            { text: "20%", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Use the word in brackets to form a word that fits the gap: 'The problems seemed ____ (SOLVE), but she refused to give up.'",
-        "answer": ["insoluble"]
+        type: 'open',
+        question: "W ostrosłupie prawidłowym sześciokątnym krawędź podstawy ma długość 4, a wysokość ostrosłupa 6. Oblicz długość krawędzi bocznej.",
+        answer: ["2√13"]
     },
     {
-        "type": "closed",
-        "question": "The lecture was so ______ that several students in the back row fell asleep.",
-        "answers": [
-            { "text": "sophisticated", "correct": false },
-            { "text": "soporific", "correct": true },
-            { "text": "sporadic", "correct": false },
-            { "text": "specific", "correct": false }
+        type: 'closed',
+        question: "Wartość wyrażenia (1 - 2 + 3 - 4 + ... + 99 - 100) jest równa:",
+        answers: [
+            { text: "50", correct: false },
+            { text: "-50", correct: true },
+            { text: "100", correct: false },
+            { text: "-100", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "It is vital that all personnel ______ with the new safety protocols without exception.",
-        "answers": [
-            { "text": "complies", "correct": false },
-            { "text": "comply", "correct": true },
-            { "text": "are complying", "correct": false },
-            { "text": "to comply", "correct": false }
+        type: 'open',
+        question: "Na tarczy zegara o godzinie 8:20, jaki jest mniejszy kąt między wskazówkami? (Podaj wynik w stopniach)",
+        answer: ["130"]
+    },
+    {
+        type: 'closed',
+        question: "Ile jest liczb czterocyfrowych, w których cyfra tysięcy jest nieparzysta, a pozostałe cyfry są parzyste i różne od siebie?",
+        answers: [
+            { text: "120", correct: false },
+            { text: "180", correct: false },
+            { text: "240", correct: true },
+            { text: "300", correct: false }
+        ]
+
+    },
+    {
+        type: 'open',
+        question: "Suma n początkowych wyrazów ciągu geometrycznego wyraża się wzorem Sn = 3(2ⁿ - 1). Oblicz czwarty wyraz tego ciągu.",
+        answer: ["24"]
+    },
+    {
+        type: 'closed',
+        question: "Liczba log₂√2(16) jest równa:",
+        answers: [
+            { text: "2", correct: false },
+            { text: "4", correct: false },
+            { text: "8", correct: true },
+            { text: "16", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in reported speech. Original sentence: 'You had better see a doctor about that cough,' she warned.",
-        "answer": ["She warned me that I had better see a doctor about that cough.", "She advised me to see a doctor about that cough."]
-    },
-    {
-        "type": "closed",
-        "question": "The general was a true ______, demanding absolute obedience and ruling his troops with an iron fist.",
-        "answers": [
-            { "text": "maverick", "correct": false },
-            { "text": "martinet", "correct": true },
-            { "text": "mentor", "correct": false },
-            { "text": "mediator", "correct": false }
+        type: 'closed',
+        question: "Dwa trójkąty równoboczne o boku 6 są tak nałożone na siebie, że tworzą gwiazdę sześcioramienną (heksagram). Pole tej gwiazdy jest równe:",
+        answers: [
+            { text: "9√3", correct: false },
+            { text: "12√3", correct: true },
+            { text: "15√3", correct: false },
+            { text: "18√3", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The two sides have agreed to ______ their differences and work towards a common goal.",
-        "answers": [
-            { "text": "set up", "correct": false },
-            { "text": "set aside", "correct": true },
-            { "text": "set off", "correct": false },
-            { "text": "set back", "correct": false }
+        type: 'open',
+        question: "Rzucamy dwiema kostkami do gry. Jakie jest prawdopodobieństwo, że suma oczek będzie większa od ich iloczynu? (Podaj wynik w postaci ułamka nieskracalnego)",
+        answer: ["11/36"]
+    },
+    {
+        type: 'closed',
+        question: "Jeżeli a/b = 2/3 i b/c = 4/5, to a/c jest równe:",
+        answers: [
+            { text: "2/5", correct: false },
+            { text: "8/15", correct: true },
+            { text: "6/15", correct: false },
+            { text: "10/12", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'I want someone to check these figures very carefully.'",
-        "answer": ["I want these figures to be checked very carefully."]
-    },
-    {
-        "type": "closed",
-        "question": "The politician tried to ______ when asked a direct question about his involvement, talking instead about the economy.",
-        "answers": [
-            { "text": "provoke", "correct": false },
-            { "text": "prevaricate", "correct": true },
-            { "text": "precipitate", "correct": false },
-            { "text": "prescribe", "correct": false }
+        type: 'closed',
+        question: "Odległość punktu P=(4, -2) od prostej 3x - 4y - 5 = 0 jest równa:",
+        answers: [
+            { text: "2", correct: false },
+            { text: "3", correct: true },
+            { text: "4", correct: false },
+            { text: "5", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "What is the meaning of the idiom 'to take umbrage'?",
-        "answers": [
-            { "text": "To take shelter from the rain.", "correct": false },
-            { "text": "To take offence or become annoyed by something said or done.", "correct": true },
-            { "text": "To accept a difficult task.", "correct": false },
-            { "text": "To take a guess at something.", "correct": false }
+        type: 'open',
+        question: "W trójkąt o bokach 13, 14, 15 wpisano koło. Oblicz promień tego koła.",
+        answer: ["4"]
+    },
+    {
+        type: 'closed',
+        question: "Po obniżce ceny o 30% sweter kosztuje 84 zł. Ile kosztowałby ten sweter, gdyby jego cenę obniżono o 15%?",
+        answers: [
+            { text: "120 zł", correct: false },
+            { text: "102 zł", correct: true },
+            { text: "96 zł", correct: false },
+            { text: "105 zł", correct: false }
+        ]
+    },
+
+    { // Poprawka zad. 19
+        type: 'closed',
+        question: "W trapezie równoramiennym przekątna jest dwusieczną kąta ostrego. Krótsza podstawa jest równa ramieniu i ma długość 10. Dłuższa podstawa ma długość:",
+        answers: [
+            { text: "12.5", correct: false },
+            { text: "15", correct: true },
+            { text: "17.5", correct: false },
+            { text: "20", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Complete the sentence with the correct preposition: 'He is not amenable ____ any form of compromise.'",
-        "answer": ["to"]
+        type: 'open',
+        question: "Wartość wyrażenia ∛(10²⁰²⁴ + 10²⁰²⁴ + ... + 10²⁰²⁴) (dziesięć składników) jest potęgą liczby 10. Jaki jest wykładnik tej potęgi?",
+        answer: ["675"]
     },
     {
-        "type": "closed",
-        "question": "The new evidence completely ______ the defendant, proving he was not at the scene of the crime.",
-        "answers": [
-            { "text": "exacerbated", "correct": false },
-            { "text": "exonerated", "correct": true },
-            { "text": "exaggerated", "correct": false },
-            { "text": "exiled", "correct": false }
+        type: 'closed',
+        question: "Wartość wyrażenia √(11 - 6√2) jest równa:",
+        answers: [
+            { text: "√11 - √6√2", correct: false },
+            { text: "3 - √2", correct: true },
+            { text: "√2 - 3", correct: false },
+            { text: "1 - √10", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "His theory about the moon being made of cheese simply does not ______. There is no evidence for it.",
-        "answers": [
-            { "text": "hold water", "correct": true },
-            { "text": "make waves", "correct": false },
-            { "text": "break new ground", "correct": false },
-            { "text": "cut corners", "correct": false }
-        ]
-    },
-    { "type": "open", "question": "Use the word in brackets to form a word that fits the gap: 'The company's _____ (REPUTE) practices led to a major investigation.'", "answer": ["disreputable"] },
-    {
-        "type": "closed",
-        "question": "His public display of grief was seen by some as an ______ rather than a genuine expression of sadness.",
-        "answers": [
-            { "text": "affection", "correct": false },
-            { "text": "affectation", "correct": true },
-            { "text": "affliction", "correct": false },
-            { "text": "affirmation", "correct": false }
+        type: 'closed',
+        question: "Pociąg o długości 100 m mija stojącego obserwatora w ciągu 5 sekund. Z jaką prędkością (w km/h) jedzie ten pociąg?",
+        answers: [
+            { text: "20 km/h", correct: false },
+            { text: "36 km/h", correct: false },
+            { text: "72 km/h", correct: true },
+            { text: "90 km/h", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "For him, the very idea of censorship was ______ to the principles of a free society.",
-        "answers": [
-            { "text": "anathema", "correct": true },
-            { "text": "a panacea", "correct": false },
-            { "text": "an anomaly", "correct": false },
-            { "text": "an acronym", "correct": false }
+        type: 'open',
+        question: "Ile jest różnych trójkątów prostokątnych o bokach całkowitych, których jeden z boków ma długość 12?",
+        answer: ["8"]
+    },
+    {
+        type: 'closed',
+        question: "Wszystkie ściany graniastosłupa prostego są kwadratami. Stosunek pola powierzchni całkowitej do pola podstawy wynosi:",
+        answers: [
+            { text: "4:1", correct: false },
+            { text: "5:1", correct: false },
+            { text: "6:1", correct: true },
+            { text: "Zależy od długości boku", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'I remember someone taking my coat.'",
-        "answer": ["I remember my coat being taken."]
-    },
-    {
-        "type": "closed",
-        "question": "______ he might, he could not lift the heavy stone.",
-        "answers": [
-            { "text": "As try", "correct": false },
-            { "text": "Try as", "correct": true },
-            { "text": "Trying as", "correct": false },
-            { "text": "For trying", "correct": false }
-        ]
-    },
-    {
-        "type": "closed",
-        "question": "It's time to ______ your responsibilities instead of blaming others for your problems.",
-        "answers": [
-            { "text": "face up to", "correct": true },
-            { "text": "come up with", "correct": false },
-            { "text": "get round to", "correct": false },
-            { "text": "look down on", "correct": false }
-        ]
-    },
-    {
-        "type": "open",
-        "question": "Rewrite the sentence using the causative 'have'. Original sentence: 'A professional landscaper is designing our garden next month.'",
-        "answer": ["We are having our garden designed by a professional landscaper next month."]
-    },
-    { "type": "closed", "question": "The ______ of the new policy were felt almost immediately, with small businesses struggling to comply.", "answers": [{ "text": "reverberations", "correct": true }, { "text": "revelations", "correct": false }, { "text": "reversions", "correct": false }, { "text": "recollections", "correct": false }] }
+        type: 'open',
+        question: "W biegu na 100m startuje 6 zawodników. Na ile sposobów mogą oni ukończyć bieg (zakładając, że nie ma miejsc ex aequo)?",
+        answer: ["720"]
+    }
 ];
 
 // --- Pobranie elementów z HTML ---

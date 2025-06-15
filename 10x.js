@@ -1,209 +1,203 @@
 const questions = [
     {
-        "type": "closed",
-        "question": "Such ______ that he refused to speak to anyone for the rest of the day.",
-        "answers": [
-            { "text": "was his disappointment", "correct": true },
-            { "text": "his disappointment was", "correct": false },
-            { "text": "disappointed he was", "correct": false },
-            { "text": "he was disappointed", "correct": false }
+        type: 'closed',
+        question: "W portfelu jest 30 monet, wyłącznie dwuzłotówki i pięciozłotówki. Łączna wartość monet wynosi 99 zł. Ile jest monet pięciozłotowych?",
+        answers: [
+            { text: "11", correct: false },
+            { text: "13", correct: true },
+            { text: "17", correct: false },
+            { text: "19", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The rules clearly ______ smoking in this area, so the doctor will ______ that you stop immediately.",
-        "answers": [
-            { "text": "prescribe / proscribe", "correct": false },
-            { "text": "proscribe / prescribe", "correct": true },
-            { "text": "prohibit / advice", "correct": false },
-            { "text": "permit / suggest", "correct": false }
+        type: 'open',
+        question: "Pole pierścienia kołowego wynosi 21π cm². Promień większego koła ma 5 cm. Jaka jest długość promienia mniejszego koła?",
+        answer: ["2"]
+    },
+    {
+        type: 'closed',
+        question: "Czterocyfrowa liczba 13x0y jest podzielna przez 90. Ile wynosi wartość wyrażenia x - y?",
+        answers: [
+            { text: "5", correct: true },
+            { text: "4", correct: false },
+            { text: "0", correct: false },
+            { text: "-4", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'They should have taken his warnings more seriously.'",
-        "answer": ["His warnings should have been taken more seriously."]
+        type: 'open',
+        question: "Podstawą graniastosłupa prostego jest romb o przekątnych 6 cm i 8 cm. Wysokość graniastosłupa wynosi 10 cm. Oblicz objętość tego graniastosłupa w cm³.",
+        answer: ["240"]
     },
     {
-        "type": "closed",
-        "question": "The two political parties were at ______ over the new budget.",
-        "answers": [
-            { "text": "daggers drawn", "correct": false },
-            { "text": "loggerheads", "correct": true },
-            { "text": "cross purposes", "correct": false },
-            { "text": "swords points", "correct": false }
+        type: 'closed',
+        question: "Trójkąt równoboczny i kwadrat mają równe obwody. Stosunek pola kwadratu do pola trójkąta jest równy:",
+        answers: [
+            { text: "3√3 : 4", correct: true },
+            { text: "4 : 3√3", correct: false },
+            { text: "3 : 4", correct: false },
+            { text: "4 : 3", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "You overhear a friend making plans based on an unconfirmed rumor. How can you advise caution?",
-        "answers": [
-            { "text": "That's a great idea, go for it!", "correct": false },
-            { "text": "Let's not get ahead of ourselves; we should wait for official confirmation first.", "correct": true },
-            { "text": "You're being naive.", "correct": false },
-            { "text": "That will definitely happen, I'm sure of it.", "correct": false }
+        type: 'closed',
+        question: "Wartość wyrażenia |√7 - 3| + |2 - √7| jest równa:",
+        answers: [
+            { text: "1", correct: true },
+            { text: "5", correct: false },
+            { text: "2√7 - 5", correct: false },
+            { text: "5 - 2√7", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Use the word in brackets to form a word that fits the gap: 'The damage to the ancient manuscript was, unfortunately, ____ (REPAIR).'",
-        "answer": ["irreparable"]
+        type: 'open',
+        question: "W trójkącie prostokątnym o obwodzie 30 cm, promień okręgu wpisanego ma długość 2 cm. Oblicz pole tego trójkąta.",
+        answer: ["30"]
     },
     {
-        "type": "closed",
-        "question": "The fame of pop stars is often ______; they are famous one year and forgotten the next.",
-        "answers": [
-            { "text": "eternal", "correct": false },
-            { "text": "ephemeral", "correct": true },
-            { "text": "enduring", "correct": false },
-            { "text": "perpetual", "correct": false }
+        type: 'closed',
+        question: "W pudełku są kule białe i czarne. Stosunek liczby kul białych do czarnych wynosi 2:3. Losujemy jedną kulę. Jakie jest prawdopodobieństwo, że wylosowana kula nie jest biała?",
+        answers: [
+            { text: "2/3", correct: false },
+            { text: "1/2", correct: false },
+            { text: "2/5", correct: false },
+            { text: "3/5", correct: true }
         ]
     },
     {
-        "type": "closed",
-        "question": "If he weren't so stubborn (in general), he ______ the help yesterday.",
-        "answers": [
-            { "text": "would accept", "correct": false },
-            { "text": "would have accepted", "correct": true },
-            { "text": "accepted", "correct": false },
-            { "text": "had accepted", "correct": false }
+        type: 'open',
+        question: "Liczba a to 125% liczby 80. Liczba b to 80% liczby a. Podaj wartość liczby b.",
+        answer: ["80"]
+    },
+    {
+        type: 'closed',
+        question: "Dwie proste y = 2x - 5 i y = -x + 4 przecinają się w punkcie (x, y). Suma x + y jest równa:",
+        answers: [
+            { text: "2", correct: false },
+            { text: "4", correct: true },
+            { text: "6", correct: false },
+            { text: "-2", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence using a passive participle clause. Original sentence: 'Because he was abandoned by his friends, he felt completely alone.'",
-        "answer": ["Abandoned by his friends, he felt completely alone."]
+        type: 'open',
+        question: "Z miasta A do miasta B jedzie pociąg z prędkością 60 km/h. W tym samym momencie z miasta B do A wyrusza rowerzysta z prędkością 20 km/h. Odległość między miastami wynosi 120 km. Po jakim czasie (w minutach) się spotkają?",
+        answer: ["90"]
     },
     {
-        "type": "closed",
-        "question": "His performance was so poor that he was ______ to the reserve team.",
-        "answers": [
-            { "text": "relegated", "correct": true },
-            { "text": "promoted", "correct": false },
-            { "text": "assigned", "correct": false },
-            { "text": "delegated", "correct": false }
+        type: 'closed',
+        question: "Jeżeli logₓ81 = 4, to x jest równe:",
+        answers: [
+            { text: "2", correct: false },
+            { text: "3", correct: true },
+            { text: "4", correct: false },
+            { text: "9", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "She checked the document carefully, lest she ______ any mistakes.",
-        "answers": [
-            { "text": "would make", "correct": false },
-            { "text": "made", "correct": false },
-            { "text": "make", "correct": true },
-            { "text": "has made", "correct": false }
+        type: 'closed',
+        question: "Wysokość stożka i promień jego podstawy są równe h. Pole przekroju osiowego tego stożka wynosi 16. Ile wynosi objętość tego stożka?",
+        answers: [
+            { text: "16π", correct: false },
+            { text: "32π/3", correct: false },
+            { text: "64π/3", correct: true },
+            { text: "128π/3", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence starting with 'In no way...'. Original sentence: 'He did not intend to cause any offence.'",
-        "answer": ["In no way did he intend to cause any offence."]
+        type: 'open',
+        question: "Ile jest trzycyfrowych liczb parzystych o niepowtarzających się cyfrach, które można utworzyć z cyfr {1, 2, 3, 4, 5}?",
+        answer: ["24"]
     },
     {
-        "type": "closed",
-        "question": "His absence from the meeting was _______, given how important the topic was.",
-        "answers": [
-            { "text": "conspicuous", "correct": true },
-            { "text": "contiguous", "correct": false },
-            { "text": "conscious", "correct": false },
-            { "text": "consecutive", "correct": false }
+        type: 'closed',
+        question: "Suma długości wszystkich krawędzi graniastosłupa prawidłowego czworokątnego wynosi 80 cm. Krawędź boczna jest 3 razy dłuższa od krawędzi podstawy. Pole powierzchni bocznej tego graniastosłupa wynosi:",
+        answers: [
+            { text: "150 cm²", correct: false },
+            { text: "200 cm²", correct: false },
+            { text: "240 cm²", correct: true },
+            { text: "300 cm²", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "Arguing about such a minor issue is just ______; it doesn't solve the main problem.",
-        "answers": [
-            { "text": "a blessing in disguise", "correct": false },
-            { "text": "a storm in a teacup", "correct": true },
-            { "text": "a shot in the dark", "correct": false },
-            { "text": "a piece of cake", "correct": false }
+        type: 'closed',
+        question: "Która z liczb jest rozwiązaniem nierówności 2(x+1) < 3x - 1 < 2x + 5?",
+        answers: [
+            { text: "2", correct: false },
+            { text: "3", correct: false },
+            { text: "5", correct: true },
+            { text: "7", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Complete the sentence with the correct preposition: 'The landscape was completely devoid ____ any sign of life.'",
-        "answer": ["of"]
+        type: 'open',
+        question: "Statek płynie 24 km z prądem rzeki w ciągu 2 godzin, a 24 km pod prąd w ciągu 3 godzin. Jaka jest prędkość prądu rzeki w km/h?",
+        answer: ["2"]
     },
     {
-        "type": "closed",
-        "question": "We need to finish the research by Friday. ______, we must all work extra hours this week.",
-        "answers": [
-            { "text": "Therefore", "correct": false },
-            { "text": "To that end", "correct": true },
-            { "text": "Nevertheless", "correct": false },
-            { "text": "In addition", "correct": false }
+        type: 'closed',
+        question: "Stosunek objętości dwóch sześcianów wynosi 8:27. Jaki jest stosunek ich pól powierzchni całkowitych?",
+        answers: [
+            { text: "2:3", correct: false },
+            { text: "4:9", correct: true },
+            { text: "8:27", correct: false },
+            { text: "√8:√27", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The scientist conducted experiments to ______ his theory, but the results were inconclusive.",
-        "answers": [
-            { "text": "disprove", "correct": false },
-            { "text": "approve", "correct": false },
-            { "text": "prove", "correct": true },
-            { "text": "improve", "correct": false }
-        ]
-    },
-    { "type": "open", "question": "Use the word in brackets to form a word that fits the gap: 'The ____ (PRESUME) of innocence is a fundamental principle of law.'", "answer": ["presumption"] },
-    {
-        "type": "closed",
-        "question": "The manager's ______ criticism of the team's performance lowered morale.",
-        "answers": [
-            { "text": "veiled", "correct": false },
-            { "text": "unveiled", "correct": false },
-            { "text": "unvarnished", "correct": true },
-            { "text": "varnished", "correct": false }
+        type: 'closed',
+        question: "W okrąg wpisano trapez równoramienny, którego krótsza podstawa i ramiona mają długość 5, a kąt ostry ma 60°. Ile wynosi promień tego okręgu?",
+        answers: [
+            { text: "5", correct: true },
+            { text: "5√3/2", correct: false },
+            { text: "10", correct: false },
+            { text: "5√3", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "He tried to ______ an air of confidence, but his trembling hands betrayed his nervousness.",
-        "answers": [
-            { "text": "effect", "correct": true },
-            { "text": "affect", "correct": false },
-            { "text": "reflect", "correct": false },
-            { "text": "infect", "correct": false }
+        type: 'open',
+        question: "W klasie jest 12 dziewcząt i 8 chłopców. Średnia wzrostu dziewcząt to 164 cm, a chłopców 174 cm. Jaka jest średnia wzrostu całej klasy?",
+        answer: ["168"]
+    },
+    {
+        type: 'closed',
+        question: "Wartość wyrażenia 2²⁰ + 2²⁰ + 2²⁰ + 2²⁰ jest równa:",
+        answers: [
+            { text: "8²⁰", correct: false },
+            { text: "2⁸⁰", correct: false },
+            { text: "2²²", correct: true },
+            { text: "4²¹", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice: 'They are looking into the matter urgently.'",
-        "answer": ["The matter is being looked into urgently."]
-    },
-    {
-        "type": "closed",
-        "question": "His speech was full of empty ______ and promises he couldn't keep.",
-        "answers": [
-            { "text": "rhetoric", "correct": true },
-            { "text": "relics", "correct": false },
-            { "text": "rebuttals", "correct": false },
-            { "text": "responses", "correct": false }
+        type: 'closed',
+        question: "Prosta k jest prostopadła do prostej l o równaniu y = -2/3 x + 1 i przechodzi przez punkt (4, 1). Prosta k ma równanie:",
+        answers: [
+            { text: "y = 2/3 x - 5/3", correct: false },
+            { text: "y = -3/2 x + 7", correct: false },
+            { text: "y = 3/2 x - 5", correct: true },
+            { text: "y = -2/3 x + 11/3", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "He found it difficult to ______ the new software, but he persevered.",
-        "answers": [
-            { "text": "get to grips with", "correct": true },
-            { "text": "come to terms with", "correct": false },
-            { "text": "fall back on", "correct": false },
-            { "text": "do away with", "correct": false }
+        type: 'open',
+        question: "Jeden kran napełnia basen w 6 godzin, a drugi opróżnia go w 10 godzin. Po ilu godzinach basen się napełni, jeśli oba krany będą odkręcone jednocześnie?",
+        answer: ["15"]
+    },
+    {
+        type: 'closed',
+        question: "W trójkącie prostokątnym przyprostokątne mają długości 2√2 i 3√2. Długość wysokości opuszczonej na przeciwprostokątną wynosi:",
+        answers: [
+            { text: "√13", correct: false },
+            { text: "6√13/13", correct: true },
+            { text: "2.5", correct: false },
+            { text: "3", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence using the causative 'have'. Original sentence: 'I'll ask the developers to design a new website for us.'",
-        "answer": ["I'll have a new website designed for us."]
-    },
-    {
-        "type": "closed",
-        "question": "The treaty aims to ______ friendly relations between the two countries.",
-        "answers": [
-            { "text": "foster", "correct": true },
-            { "text": "fester", "correct": false },
-            { "text": "falter", "correct": false },
-            { "text": "founder", "correct": false }
-        ]
+        type: 'open',
+        question: "Jeśli x i y są dodatnie i 4x² = 9y², to ile wynosi stosunek x/y? (podaj w postaci ułamka a/b)",
+        answer: ["3/2"]
     }
 ];
 

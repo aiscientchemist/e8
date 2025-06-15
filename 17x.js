@@ -1,201 +1,204 @@
 const questions = [
     {
-        "type": "closed",
-        "question": "Not for a single moment ______ that his revolutionary idea might actually fail.",
-        "answers": [
-            { "text": "he considered", "correct": false },
-            { "text": "he did consider", "correct": false },
-            { "text": "did he consider", "correct": true },
-            { "text": "was he considering", "correct": false }
+        type: 'closed',
+        question: "Suma odwrotności dwóch dodatnich liczb naturalnych wynosi 5/36, a ich iloczyn to 36. Ile wynosi suma tych liczb?",
+        answers: [
+            { text: "5", correct: true },
+            { text: "13", correct: false },
+            { text: "15", correct: false },
+            { text: "20", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "Her ______ critique of the new policy, though brief, exposed all its fundamental weaknesses.",
-        "answers": [
-            { "text": "transient", "correct": false },
-            { "text": "trenchant", "correct": true },
-            { "text": "tangible", "correct": false },
-            { "text": "torpid", "correct": false }
+        type: 'open',
+        question: "W kulę o promieniu 10 wpisano walec, którego wysokość jest równa promieniowi kuli. Jaki jest stosunek objętości walca do objętości kuli? (Odpowiedź podaj w postaci ułamka nieskracalnego a/b).",
+        answer: ["9/16"]
+    },
+    {
+        type: 'closed',
+        question: "Pięciocyfrowa liczba 45X3Y jest podzielna przez 36. Jedną z możliwych wartości sumy X+Y jest:",
+        answers: [
+            { text: "5", correct: false },
+            { text: "6", correct: true },
+            { text: "7", correct: false },
+            { text: "8", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'We must have been being followed the whole time.'",
-        "answer": ["We must have been being followed the whole time."]
+        type: 'open',
+        question: "Maszyna A wykonuje pracę w 10 godzin, a maszyna B w 15 godzin. Obie maszyny pracowały razem przez 2 godziny, po czym maszyna A się zepsuła. Ile godzin potrzebuje maszyna B, aby samodzielnie dokończyć pracę?",
+        answer: ["10"]
     },
     {
-        "type": "closed",
-        "question": "He kept adding more and more unnecessary special effects to the film, essentially ______.",
-        "answers": [
-            { "text": "gilding the lily", "correct": true },
-            { "text": "calling a spade a spade", "correct": false },
-            { "text": "throwing caution to the wind", "correct": false },
-            { "text": "dotting the i's and crossing the t's", "correct": false }
+        type: 'closed',
+        question: "W trójkącie ABC poprowadzono prostą równoległą do boku AB, przecinającą boki AC i BC odpowiednio w punktach D i E. Stosunek |CD|:|DA| = 3:2. Stosunek pola trapezu ABED do pola trójkąta CDE wynosi:",
+        answers: [
+            { text: "4:9", correct: false },
+            { text: "2:3", correct: false },
+            { text: "16:9", correct: true },
+            { text: "5:3", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "You must cancel an important dinner with a client at the last minute. What is the most professional apology?",
-        "answers": [
-            { "text": "Sorry, something came up and I can't make it.", "correct": false },
-            { "text": "I'm deeply sorry for the last-minute cancellation, but an urgent and unavoidable matter has arisen. I was very much looking forward to our dinner and hope we can reschedule at your earliest convenience.", "correct": true },
-            { "text": "I have to cancel. Let's reschedule.", "correct": false },
-            { "text": "It's not my fault, but I can't come tonight.", "correct": false }
+        type: 'closed',
+        question: "Wartość wyrażenia (a+b+c)² jest równa 0. Jeśli a²+b²+c²=12, to ile wynosi ab+bc+ca?",
+        answers: [
+            { text: "-12", correct: false },
+            { text: "-6", correct: true },
+            { text: "6", correct: false },
+            { text: "12", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Use the word in brackets to form a word that fits the gap: 'The committee's decision was final and ____ (REVOCABLE).'",
-        "answer": ["irrevocable"]
+        type: 'open',
+        question: "Ile jest różnych sposobów zapłaty kwoty 17 zł przy użyciu wyłącznie monet 2 zł i 5 zł?",
+        answer: ["2"]
     },
     {
-        "type": "closed",
-        "question": "A wise leader must be ______, making careful and sensible decisions, and also understand ______ protocol when dealing with foreign dignitaries.",
-        "answers": [
-            { "text": "judicial / judicious", "correct": false },
-            { "text": "judicious / judicial", "correct": true },
-            { "text": "judicious / judicious", "correct": false },
-            { "text": "judicial / judicial", "correct": false }
+        type: 'closed',
+        question: "Prosta przechodząca przez początek układu współrzędnych i środek okręgu (x-2)² + (y-4)² = 9 ma równanie:",
+        answers: [
+            { text: "y = 1/2 x", correct: false },
+            { text: "y = 2x", correct: true },
+            { text: "y = -2x", correct: false },
+            { text: "y = -1/2 x", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "His tendency to ______ on subjects he knew little about was infuriating to the experts in the room.",
-        "answers": [
-            { "text": "pontificate", "correct": true },
-            { "text": "ponder", "correct": false },
-            { "text": "pander", "correct": false },
-            { "text": "peruse", "correct": false }
+        type: 'open',
+        question: "Jaka jest najmniejsza liczba naturalna, która ma dokładnie 8 dzielników?",
+        answer: ["24"]
+    },
+    {
+        type: 'closed',
+        question: "Ze zbioru wszystkich liczb trzycyfrowych losujemy jedną. Jakie jest prawdopodobieństwo, że jest to palindrom (czyli liczba, która czytana od tyłu jest taka sama)?",
+        answers: [
+            { text: "1/10", correct: true },
+            { text: "1/9", correct: false },
+            { text: "1/100", correct: false },
+            { text: "9/100", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in reported speech. Original sentence: ''What a magnificent performance!' he exclaimed.'",
-        "answer": ["He exclaimed that it was a magnificent performance.", "He exclaimed that it had been a magnificent performance."]
+        type: 'open',
+        question: "W trójkącie prostokątnym wysokość opuszczona na przeciwprostokątną dzieli ją w stosunku 1:4. Obwód trójkąta wynosi 60. Oblicz pole tego trójkąta.",
+        answer: ["150"]
     },
     {
-        "type": "closed",
-        "question": "The room was so quiet you could hear a pin drop. The silence was almost ______.",
-        "answers": [
-            { "text": "deafening", "correct": true },
-            { "text": "defining", "correct": false },
-            { "text": "defying", "correct": false },
-            { "text": "defusing", "correct": false }
+        type: 'closed',
+        question: "Jaka jest cyfra setek w wyniku dodawania 1 + 11 + 111 + 1111 + ... + (liczba z 50 jedynkami)?",
+        answers: [
+            { text: "1", correct: false },
+            { text: "2", correct: false },
+            { text: "8", correct: true },
+            { text: "9", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "This room needs ______ before the guests arrive; it's a mess.",
-        "answers": [
-            { "text": "to clean", "correct": false },
-            { "text": "cleaned", "correct": false },
-            { "text": "cleaning", "correct": true },
-            { "text": "to be cleaning", "correct": false }
+        type: 'closed',
+        question: "Wysokość ostrosłupa prawidłowego trójkątnego tworzy z krawędzią boczną kąt 30°. Krawędź podstawy ma długość 6. Jaka jest objętość tego ostrosłupa?",
+        answers: [
+            { text: "18√3", correct: false },
+            { text: "18", correct: true },
+            { text: "27", correct: false },
+            { text: "9√3", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence using an absolute construction. Original sentence: 'After the sun had set, the air grew cold.'",
-        "answer": ["The sun having set, the air grew cold."]
+        type: 'open',
+        question: "W pewnej klasie każdy uczeń uczy się języka niemieckiego lub angielskiego. 18 uczniów uczy się niemieckiego, 22 angielskiego, a 12 uczy się obu tych języków. Ilu uczniów liczy ta klasa?",
+        answer: ["28"]
     },
     {
-        "type": - "closed",
-        "question": "The new soundproofing was designed to ______ the noise from the nearby motorway.",
-        "answers": [
-            { "text": "accentuate", "correct": false },
-            { "text": "attenuate", "correct": true },
-            { "text": "articulate", "correct": false },
-            { "text": "amplify", "correct": false }
+        type: 'closed',
+        question: "Wartość wyrażenia log₅(√5 * ∛5 / ⁵√5) jest równa:",
+        answers: [
+            { text: "19/30", correct: true },
+            { text: "11/30", correct: false },
+            { text: "2/3", correct: false },
+            { text: "1", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "It's a ______: we can either accept the deal and lose money, or reject it and lose our reputation.",
-        "answers": [
-            { "text": "Pyrrhic victory", "correct": false },
-            { "text": "Hobson's choice", "correct": true },
-            { "text": "fait accompli", "correct": false },
-            { "text": "cause célèbre", "correct": false }
+        type: 'closed',
+        question: "Cena towaru wynosiła 1000 zł. Najpierw podniesiono ją o 10%, a następnie o 20%. O ile procent należy teraz obniżyć cenę, aby wróciła do 1000 zł?",
+        answers: [
+            { text: "o 30%", correct: false },
+            { text: "o 32%", correct: false },
+            { text: "o ok. 24,2%", correct: true },
+            { text: "o 25%", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Complete the sentence with the correct preposition: 'His speech was notable for its preoccupation ____ minor historical details.'",
-        "answer": ["with"]
+        type: 'open',
+        question: "W trójkącie równoramiennym podstawa ma długość 10, a kąt przy podstawie ma miarę 30°. Oblicz promień okręgu opisanego na tym trójkącie.",
+        answer: ["10"]
     },
     {
-        "type": "closed",
-        "question": "He was a gifted orator and could ______ for hours on his favourite subjects.",
-        "answers": [
-            { "text": "get off", "correct": false },
-            { "text": "hold forth", "correct": true },
-            { "text": "put up", "correct": false },
-            { "text": "let on", "correct": false }
+        type: 'closed',
+        question: "Samochód przejechał z miasta A do B ze średnią prędkością 50 km/h. W drodze powrotnej jego prędkość wzrosła o 20%. Średnia prędkość na całej trasie wynosiła:",
+        answers: [
+            { text: "54.5 km/h", correct: false },
+            { text: "54 i 6/11 km/h", correct: true },
+            { text: "55 km/h", correct: false },
+            { text: "56 km/h", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The ceasefire offered a brief ______ from the relentless fighting.",
-        "answers": [
-            { "text": "respite", "correct": true },
-            { "text": "reprisal", "correct": false },
-            { "text": "retort", "correct": false },
-            { "text": "remnant", "correct": false }
-        ]
-    },
-    { "type": "open", "question": "Use the word in brackets to form a word that fits the gap: 'The politician's career was ruined by a single thoughtless ____ (DISCREET).'", "answer": ["indiscretion"] },
-    {
-        "type": "closed",
-        "question": "His explanation was a ______ attempt to avoid taking responsibility for his mistake.",
-        "answers": [
-            { "text": "transparent", "correct": false },
-            { "text": "veiled", "correct": true },
-            { "text": "valid", "correct": false },
-            { "text": "virtuous", "correct": false }
+        type: 'closed',
+        question: "W trapezie ramiona mają długości 8 i 15, a wysokość wynosi 12. Krótsza podstawa ma długość 10. Pole tego trapezu może wynosić:",
+        answers: [
+            { text: "174", correct: false },
+            { text: "156 lub 174", correct: false },
+            { text: "126 lub 174", correct: true },
+            { text: "126", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The initial excitement for the new social media platform eventually ______ and it was shut down.",
-        "answers": [
-            { "text": "grew up", "correct": false },
-            { "text": "petered out", "correct": true },
-            { "text": "ran down", "correct": false },
-            { "text": "got by", "correct": false }
+        type: 'open',
+        question: "Punkty A=(2, -1), B=(6, 2) i C=(2, 5) są wierzchołkami rombu ABCD. Oblicz pole tego rombu.",
+        answer: ["24"]
+    },
+    {
+        type: 'closed',
+        question: "Wartość wyrażenia 9⁹ + 9⁹ + 9⁹ jest równa:",
+        answers: [
+            { text: "27⁹", correct: false },
+            { text: "9²⁷", correct: false },
+            { text: "3¹⁹", correct: true },
+            { text: "9¹⁰", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'He was seen to enter the restricted area.'",
-        "answer": ["He was seen entering the restricted area."]
-    },
-    {
-        "type": "closed",
-        "question": "She's so ______; she gave her lottery winnings to charity.",
-        "answers": [
-            { "text": "altruistic", "correct": true },
-            { "text": "avaricious", "correct": false },
-            { "text": "austere", "correct": false },
-            { "text": "arrogant", "correct": false }
+        type: 'closed',
+        question: "Trójkąt równoboczny ABC ma bok długości 6. Obrócono go o 60° wokół wierzchołka A. Jakie jest pole części wspólnej trójkąta ABC i jego obrazu w tym obrocie?",
+        answers: [
+            { text: "3√3", correct: false },
+            { text: "4.5√3", correct: false },
+            { text: "6√3", correct: true },
+            { text: "9√3", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "I simply won't have you ______ to your mother in that disrespectful tone.",
-        "answers": [
-            { "text": "to speak", "correct": false },
-            { "text": "speak", "correct": false },
-            { "text": "speaking", "correct": true },
-            { "text": "spoke", "correct": false }
+        type: 'open',
+        question: "Statek przepłynął 60 km z prądem rzeki w 3 godziny, a wrócił pod prąd w 5 godzin. Jaka jest prędkość własna statku w km/h?",
+        answer: ["16"]
+    },
+    {
+        type: 'closed',
+        question: "Ile jest par liczb całkowitych (x, y), które spełniają równanie x*y = 24?",
+        answers: [
+            { text: "4", correct: false },
+            { text: "8", correct: false },
+            { text: "16", correct: true },
+            { text: "nieskończenie wiele", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence using the causative 'have'. Original sentence: 'The director told an editor to shorten the final scene.'",
-        "answer": ["The director had the final scene shortened."]
-    },
-    { "type": "closed", "question": "The company's success can be explained, ______ as it has invested heavily in research and development.", "answers": [{ "text": "whereas", "correct": false }, { "text": "nonetheless", "correct": false }, { "text": "inasmuch", "correct": true }, { "text": "otherwise", "correct": false }] }
+        type: 'open',
+        question: "Pole powierzchni bocznej walca jest równe 60π, a jego objętość to 90π. Oblicz promień podstawy tego walca.",
+        answer: ["3"]
+    }
 ];
 
 // --- Pobranie elementów z HTML ---

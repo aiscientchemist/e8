@@ -1,201 +1,214 @@
 const questions = [
     {
-        "type": "closed",
-        "question": "Nowhere else in the world ______ find such a unique ecosystem.",
-        "answers": [
-            { "text": "you can", "correct": false },
-            { "text": "can you", "correct": true },
-            { "text": "you will", "correct": false },
-            { "text": "you are able to", "correct": false }
+        type: 'closed',
+        question: "Suma kwadratów trzech kolejnych dodatnich liczb nieparzystych wynosi 251. Jaka jest największa z tych liczb?",
+        answers: [
+            { text: "7", correct: false },
+            { text: "9", correct: false },
+            { text: "11", correct: true },
+            { text: "13", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "His ______ arguments, while fluent and smooth, lacked any real substance or sincerity.",
-        "answers": [
-            { "text": "grand", "correct": false },
-            { "text": "glib", "correct": true },
-            { "text": "glowing", "correct": false },
-            { "text": "genuine", "correct": false }
+        type: 'open',
+        question: "W trapezie równoramiennym podstawy mają długość 12 i 28. Przekątne tego trapezu są prostopadłe. Oblicz pole tego trapezu.",
+        answer: ["400"]
+    },
+    {
+        type: 'closed',
+        question: "Ile jest równa wartość wyrażenia 8⁻³ : (1/4)⁴?",
+        answers: [
+            { text: "1/2", correct: true },
+            { text: "2", correct: false },
+            { text: "1/8", correct: false },
+            { text: "8", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'They must have considered all the proposals before making a decision.'",
-        "answer": ["All the proposals must have been considered before a decision was made."]
+        type: 'open',
+        question: "W trójkącie prostokątnym o obwodzie 80, promień okręgu opisanego na tym trójkącie wynosi 17. Oblicz pole tego trójkąta.",
+        answer: ["240"]
     },
     {
-        "type": "closed",
-        "question": "After weeks of avoiding a clear stance, the politician finally ______ by publicly endorsing the controversial law.",
-        "answers": [
-            { "text": "crossed the Rubicon", "correct": false },
-            { "text": "nailed his colours to the mast", "correct": true },
-            { "text": "sailed close to the wind", "correct": false },
-            { "text": "threw down the gauntlet", "correct": false }
+        type: 'closed',
+        question: "W ostrosłupie prawidłowym czworokątnym krawędź boczna o długości 12 tworzy z wysokością ostrosłupa kąt 30°. Objętość tego ostrosłupa jest równa:",
+        answers: [
+            { text: "72√3", correct: false },
+            { text: "144√3", correct: true },
+            { text: "216", correct: false },
+            { text: "432", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "You have to deliver bad news to a friend, for example, that they didn't get a part in the school play. What is the most empathetic way to do it?",
-        "answers": [
-            { "text": "You didn't get the part. Better luck next time.", "correct": false },
-            { "text": "I've just heard about the casting. I'm so sorry, it wasn't the news we were hoping for. I know how much it meant to you and how hard you worked.", "correct": true },
-            { "text": "They gave the part to someone else.", "correct": false },
-            { "text": "It is what it is, you'll get over it.", "correct": false }
+        type: 'closed',
+        question: "Jaka jest cyfra jedności liczby 2¹⁰⁰ + 3¹⁰⁰ + 4¹⁰⁰?",
+        answers: [
+            { text: "1", correct: false },
+            { text: "3", correct: false },
+            { text: "7", correct: false },
+            { text: "3", correct: true } // 6+1+6 = 13
+        ]
+    },
+    { // Poprawka zad. 6
+        type: 'closed',
+        question: "Jaka jest cyfra jedności liczby 2¹⁰⁰ + 3¹⁰¹ + 4¹⁰²?",
+        answers: [
+            { text: "1", correct: false },
+            { text: "3", correct: false },
+            { text: "5", correct: true },
+            { text: "7", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Use the word in brackets to form a word that fits the gap: 'He was an ______ liar, and it was impossible to trust anything he said.'",
-        "answer": ["incorrigible"]
+        type: 'open',
+        question: "Ile jest liczb trzycyfrowych, w których cyfra setek jest większa od cyfry dziesiątek, a cyfra dziesiątek jest większa od cyfry jedności?",
+        answer: ["120"]
     },
     {
-        "type": "closed",
-        "question": "A ______ person will believe anything, even if the information comes from a source that is not very ______.",
-        "answers": [
-            { "text": "credible / credulous", "correct": false },
-            { "text": "credulous / credible", "correct": true },
-            { "text": "creditable / credulous", "correct": false },
-            { "text": "credulous / creditable", "correct": false }
+        type: 'closed',
+        question: "Wartość wyrażenia log₃(tg 60°)* log√2(cos 45°) jest równa:",
+        answers: [
+            { text: "1/2", correct: false },
+            { text: "-1/2", correct: true },
+            { text: "1", correct: false },
+            { text: "-1", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "It is of paramount importance that the team ______ as a single, cohesive unit.",
-        "answers": [
-            { "text": "functions", "correct": false },
-            { "text": "function", "correct": true },
-            { "text": "is functioning", "correct": false },
-            { "text": "to function", "correct": false }
+        type: 'open',
+        question: "W trójkącie ABC, kąt przy wierzchołku A ma 45°, a przy wierzchołku B ma 30°. Bok BC ma długość 8√2. Oblicz długość boku AC.",
+        answer: ["8"]
+    },
+    {
+        type: 'closed',
+        question: "Pociąg o długości 250 m jedzie z prędkością 60 km/h. Ile sekund potrzebuje, aby przejechać przez most o długości 750 m?",
+        answers: [
+            { text: "45", correct: false },
+            { text: "60", correct: true },
+            { text: "75", correct: false },
+            { text: "90", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in reported speech. Original sentence: ''What a terrible idea!' he scoffed.'",
-        "answer": ["He scoffed that it was a terrible idea."]
+        type: 'open',
+        question: "W pudełku jest 20 kul: białe, czerwone i zielone. Kul białych jest 2 razy więcej niż czerwonych, a czerwonych 3 razy mniej niż zielonych. Jakie jest prawdopodobieństwo wylosowania kuli, która nie jest zielona? (Odpowiedź podaj w postaci ułamka nieskracalnego)",
+        answer: ["2/5"]
     },
     {
-        "type": "closed",
-        "question": "His constant complaining and ______ attitude made him very difficult to be around.",
-        "answers": [
-            { "text": "quiet", "correct": false },
-            { "text": "querulous", "correct": true },
-            { "text": "quizzical", "correct": false },
-            { "text": "quaint", "correct": false }
+        type: 'closed',
+        question: "Prosta o równaniu ax + 2y - 6 = 0 jest równoległa do prostej 3x - y + 5 = 0. Współczynnik 'a' jest równy:",
+        answers: [
+            { text: "3", correct: false },
+            { text: "-3", correct: false },
+            { text: "6", correct: false },
+            { text: "-6", correct: true }
         ]
     },
     {
-        "type": "closed",
-        "question": "We need to ______ our current strategy, as it is clearly not working.",
-        "answers": [
-            { "text": "rethink", "correct": true },
-            { "text": "remind", "correct": false },
-            { "text": "return", "correct": false },
-            { "text": "repeat", "correct": false }
+        type: 'closed',
+        question: "Na działce w kształcie koła o promieniu 10 m, 20% powierzchni zajmują kwiaty, a resztę trawnik. Pole trawnika wynosi:",
+        answers: [
+            { text: "20π m²", correct: false },
+            { text: "80π m²", correct: true },
+            { text: "100π m²", correct: false },
+            { text: "20 m²", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'I dislike my boss giving me orders in front of the whole team.'",
-        "answer": ["I dislike being given orders by my boss in front of the whole team."]
+        type: 'open',
+        question: "Suma dwóch liczb wynosi 14, a suma ich sześcianów 1232. Podaj wartość iloczynu tych liczb.",
+        answer: ["33"]
     },
     {
-        "type": "closed",
-        "question": "The party was a rather ______ affair, with most guests leaving early due to the lack of atmosphere.",
-        "answers": [
-            { "text": "sublime", "correct": false },
-            { "text": "subdued", "correct": true },
-            { "text": "substantial", "correct": false },
-            { "text": "subsequent", "correct": false }
+        type: 'closed',
+        question: "W trójkąt równoboczny wpisano koło, a w to koło wpisano trójkąt równoboczny. Jaki jest stosunek pola większego trójkąta do pola mniejszego trójkąta?",
+        answers: [
+            { text: "2:1", correct: false },
+            { text: "3:1", correct: false },
+            { text: "4:1", correct: true },
+            { text: "√3:1", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "What is the meaning of the idiom 'a Parthian shot'?",
-        "answers": [
-            { "text": "A lucky guess.", "correct": false },
-            { "text": "A final, sharp remark made by someone as they are leaving.", "correct": true },
-            { "text": "The first step in a long process.", "correct": false },
-            { "text": "A proposal that is immediately rejected.", "correct": false }
+        type: 'closed',
+        question: "Liczba √(9 - 4√5) jest równa:",
+        answers: [
+            { text: "3 - 2√5", correct: false },
+            { text: "2 - √5", correct: false },
+            { text: "√5 - 2", correct: true },
+            { text: "√5 - 3", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Complete the sentence with the correct preposition: 'The government's actions were tantamount ____ a declaration of war.'",
-        "answer": ["to"]
+        type: 'open',
+        question: "W układzie współrzędnych dane są punkty A=(-2,-3) i B=(4,5). Wyznacz współrzędne punktu C, który dzieli odcinek AB w stosunku 1:3 (licząc od punktu A).",
+        answer: ["-0.5, -1"]
     },
     {
-        "type": "closed",
-        "question": "The team's success was not a stroke of luck, but the result of months of ______ planning and hard work.",
-        "answers": [
-            { "text": "meticulous", "correct": true },
-            { "text": "malicious", "correct": false },
-            { "text": "momentous", "correct": false },
-            { "text": "menial", "correct": false }
+        type: 'closed',
+        question: "Ile jest dodatnich liczb całkowitych 'n', dla których wyrażenie (n+30)/n jest liczbą całkowitą?",
+        answers: [
+            { text: "6", correct: false },
+            { text: "7", correct: false },
+            { text: "8", correct: true },
+            { text: "10", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "His ______ lifestyle eventually caught up with him, leaving him bankrupt and friendless.",
-        "answers": [
-            { "text": "frugal", "correct": false },
-            { "text": "profligate", "correct": true },
-            { "text": "prudent", "correct": false },
-            { "text": "prosperous", "correct": false }
-        ]
-    },
-    { "type": "open", "question": "Use the word in brackets to form a word that fits the gap: 'The lecture was on a rather ____ (ESOTERIC) topic that only a few specialists could understand.'", "answer": ["esoteric"] },
-    {
-        "type": "closed",
-        "question": "The problem with your argument is that its initial ______ is flawed.",
-        "answers": [
-            { "text": "promise", "correct": false },
-            { "text": "premise", "correct": true },
-            { "text": "premonition", "correct": false },
-            { "text": "preface", "correct": false }
+        type: 'closed',
+        question: "W rosnącym ciągu arytmetycznym drugi wyraz jest równy 5, a piąty 14. Suma dziesięciu pierwszych wyrazów tego ciągu wynosi:",
+        answers: [
+            { text: "145", correct: false },
+            { text: "155", correct: true },
+            { text: "160", correct: false },
+            { text: "175", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "I would just as soon you ______ a different colour for the walls; this one is too dark.",
-        "answers": [
-            { "text": "choose", "correct": false },
-            { "text": "chose", "correct": true },
-            { "text": "had chosen", "correct": false },
-            { "text": "are choosing", "correct": false }
+        type: 'open',
+        question: "W trapezie prostokątnym o kącie ostrym 45°, krótsza podstawa i wysokość mają tę samą długość, równą 8. Oblicz obwód tego trapezu (wynik zapisz w postaci a + b√c).",
+        answer: ["32+8√2"]
+    },
+    {
+        type: 'closed',
+        question: "Wartość wyrażenia 1/(2*3) + 1/(3*4) + 1/(4*5) + ... + 1/(99*100) jest równa:",
+        answers: [
+            { text: "0.49", correct: true },
+            { text: "0.5", correct: false },
+            { text: "0.98", correct: false },
+            { text: "0.99", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'One must obey the law.'",
-        "answer": ["The law must be obeyed."]
-    },
-    {
-        "type": "closed",
-        "question": "Be that as it may, his intentions, ______ good, do not excuse the disastrous results of his actions.",
-        "answers": [
-            { "text": "although", "correct": false },
-            { "text": "however", "correct": true },
-            { "text": "despite", "correct": false },
-            { "text": "nevertheless", "correct": false }
+        type: 'closed',
+        question: "Dwa sześciany mają objętości równe odpowiednio 24 cm³ i 81 cm³. Jaki jest stosunek długości krawędzi mniejszego sześcianu do krawędzi większego?",
+        answers: [
+            { text: "2:3", correct: true },
+            { text: "4:9", correct: false },
+            { text: "8:27", correct: false },
+            { text: "√2:√3", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The general was a brilliant tactician, but he was a terrible strategist. He could win any battle, but he kept losing the ______. ",
-        "answers": [
-            { "text": "war", "correct": true },
-            { "text": "argument", "correct": false },
-            { "text": "game", "correct": false },
-            { "text": "fight", "correct": false }
+        type: 'open',
+        question: "Rowerzysta jedzie z A do B. Połowę czasu podróży jedzie z prędkością 10 km/h, a drugą połowę czasu z prędkością 20 km/h. Jaka jest jego średnia prędkość na całej trasie?",
+        answer: ["15"]
+    },
+    {
+        type: 'closed',
+        question: "Na ile sposobów można rozmieścić 4 różne kule w 3 różnych szufladach, tak aby żadna szuflada nie była pusta?",
+        answers: [
+            { text: "24", correct: false },
+            { text: "36", correct: true },
+            { text: "64", correct: false },
+            { text: "81", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence using the causative 'have'. Original sentence: 'I am arranging for a professional to edit my manuscript.'",
-        "answer": ["I am having my manuscript edited."]
-    },
-    { "type": "closed", "question": "The widespread feeling of ______ after the election led to a period of political inactivity.", "answers": [{ "text": "ennui", "correct": true }, { "text": "energy", "correct": false }, { "text": "enthusiasm", "correct": false }, { "text": "empathy", "correct": false }] }
+        type: 'open',
+        question: "Liczba n! kończy się dokładnie 6 zerami. Jaka jest najmniejsza możliwa wartość n?",
+        answer: ["25"]
+    }
 ];
 
 // --- Pobranie elementów z HTML ---

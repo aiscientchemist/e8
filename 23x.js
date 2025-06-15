@@ -1,201 +1,204 @@
 const questions = [
     {
-        "type": "closed",
-        "question": "Scarcely had she finished her speech ______ the power went out.",
-        "answers": [
-            { "text": "than", "correct": false },
-            { "text": "then", "correct": false },
-            { "text": "when", "correct": true },
-            { "text": "that", "correct": false }
+        type: 'closed',
+        question: "Suma dwóch liczb wynosi 8, a ich iloczyn 12. Ile wynosi suma sześcianów tych liczb?",
+        answers: [
+            { text: "512", correct: false },
+            { text: "224", correct: true },
+            { text: "176", correct: false },
+            { text: "40", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "His ______ attention to detail, while sometimes tedious, ensured that no mistakes were ever made.",
-        "answers": [
-            { "text": "assiduous", "correct": true },
-            { "text": "asinine", "correct": false },
-            { "text": "astute", "correct": false },
-            { "text": "austere", "correct": false }
+        type: 'open',
+        question: "Z walca o promieniu podstawy 3 i wysokości 4 wycięto stożek o tej samej podstawie i wysokości. Oblicz pole powierzchni całkowitej powstałej w ten sposób bryły (wynik zapisz w postaci aπ).",
+        answer: ["48π"]
+    },
+    {
+        type: 'closed',
+        question: "Liczba a = 2⁶⁰, b = 3⁴⁰, c = 5²⁰. Prawdą jest, że:",
+        answers: [
+            { text: "a < b < c", correct: false },
+            { text: "c < a < b", correct: true },
+            { text: "b < c < a", correct: false },
+            { text: "a < c < b", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'They could have done much more to prevent the accident.'",
-        "answer": ["Much more could have been done to prevent the accident."]
+        type: 'open',
+        question: "Dwie osoby wyruszyły jednocześnie naprzeciw siebie z miast A i B. Po spotkaniu, pierwsza osoba dotarła do miasta B w ciągu 9 godzin, a druga do miasta A w ciągu 4 godzin. Jaki jest stosunek prędkości pierwszej osoby do prędkości drugiej? (Podaj w postaci ułamka a/b)",
+        answer: ["2/3"]
     },
     {
-        "type": "closed",
-        "question": "The sudden resignation of the project manager just before the deadline really ______.",
-        "answers": [
-            { "text": "threw a spanner in the works", "correct": true },
-            { "text": "put a sock in it", "correct": false },
-            { "text": "kicked the bucket", "correct": false },
-            { "text": "spilt the beans", "correct": false }
+        type: 'closed',
+        question: "W trójkącie prostokątnym o przyprostokątnych 6 i 8, odległość wierzchołka kąta prostego od przeciwprostokątnej wynosi:",
+        answers: [
+            { text: "4", correct: false },
+            { text: "4.8", correct: true },
+            { text: "5", correct: false },
+            { text: "6", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "You are in a conversation with someone who is talking endlessly and you need to leave. What is a polite way to exit?",
-        "answers": [
-            { "text": "I have to go now, bye.", "correct": false },
-            { "text": "It's been fascinating to hear your thoughts on this, but I'm afraid I have another commitment I must get to. We must continue this conversation another time.", "correct": true },
-            { "text": "Can you please stop talking? I'm leaving.", "correct": false },
-            { "text": "This is getting boring.", "correct": false }
+        type: 'closed',
+        question: "Wartość wyrażenia 2²⁰²⁴ - 2²⁰²² jest podzielna przez:",
+        answers: [
+            { text: "5", correct: false },
+            { text: "3", correct: true },
+            { text: "7", correct: false },
+            { text: "11", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Use the word in brackets to form a word that fits the gap: 'He has an ____ (SATISFY) appetite for knowledge, always reading and learning.'",
-        "answer": ["insatiable"]
+        type: 'open',
+        question: "W trójkąt równoramienny o podstawie 10 i ramionach 13 wpisano prostokąt tak, że jeden jego bok leży na podstawie trójkąta. Wysokość prostokąta wynosi 4. Oblicz pole tego prostokąta.",
+        answer: ["20"]
     },
     {
-        "type": "closed",
-        "question": "The building is of great ______ importance, but it has no real ______ value today.",
-        "answers": [
-            { "text": "historic / historical", "correct": false },
-            { "text": "historical / historic", "correct": true },
-            { "text": "historic / historic", "correct": false },
-            { "text": "historical / historical", "correct": false }
+        type: 'closed',
+        question: "Jaka jest cyfra jedności liczby, która jest wartością wyrażenia 13³¹ + 17¹⁷ + 21²¹?",
+        answers: [
+            { text: "1", correct: true },
+            { text: "3", correct: false },
+            { text: "5", correct: false },
+            { text: "7", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The judge insisted that the witness ______ the whole truth and nothing but the truth.",
-        "answers": [
-            { "text": "tells", "correct": false },
-            { "text": "tell", "correct": true },
-            { "text": "is telling", "correct": false },
-            { "text": "told", "correct": false }
+        type: 'open',
+        question: "Długość boku kwadratu zwiększono o 2 cm, co spowodowało wzrost jego pola o 24 cm². Jaka była pierwotna długość boku kwadratu?",
+        answer: ["5"]
+    },
+    {
+        type: 'closed',
+        question: "Na ile sposobów można wybrać trzyosobową delegację z grupy 5 chłopców i 4 dziewcząt tak, aby w delegacji znalazł się co najmniej jeden chłopiec?",
+        answers: [
+            { text: "84", correct: false },
+            { text: "80", correct: true },
+            { text: "76", correct: false },
+            { text: "60", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in reported speech. Original sentence: ''What do you think I should do next?' he asked.'",
-        "answer": ["He asked what I thought he should do next."]
+        type: 'open',
+        question: "Cena akcji wzrosła o 10%, a następnego dnia spadła o 10%. Po tych dwóch dniach akcja kosztowała 99 zł. Jaka była cena akcji na samym początku?",
+        answer: ["100"]
     },
     {
-        "type": "closed",
-        "question": "He has a natural ______ for making friends wherever he goes.",
-        "answers": [
-            { "text": "proclivity", "correct": true },
-            { "text": "problem", "correct": false },
-            { "text": "process", "correct": false },
-            { "text": "prohibition", "correct": false }
+        type: 'closed',
+        question: "Liczba rozwiązań równania |x-2| + |x+2| = 4 to:",
+        answers: [
+            { text: "0", correct: false },
+            { text: "1", correct: false },
+            { text: "2", correct: false },
+            { text: "nieskończenie wiele", correct: true }
         ]
     },
     {
-        "type": "closed",
-        "question": "I wouldn't ______ him arriving on time; he's notoriously unreliable.",
-        "answers": [
-            { "text": "bank on", "correct": true },
-            { "text": "break in", "correct": false },
-            { "text": "bring about", "correct": false },
-            { "text": "call for", "correct": false }
+        type: 'closed',
+        question: "W sześciokącie foremnym o boku 6 połączono co drugi wierzchołek, tworząc trójkąt równoboczny. Pole tego trójkąta jest równe:",
+        answers: [
+            { text: "9√3", correct: false },
+            { text: "18√3", correct: false },
+            { text: "27√3", correct: true },
+            { text: "36√3", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'They let him go after questioning.'",
-        "answer": ["He was let go after questioning."]
+        type: 'open',
+        question: "Wartość wyrażenia 2025² - 2024² jest równa:",
+        answer: ["4049"]
     },
     {
-        "type": "closed",
-        "question": "The facts of the case are clear and no one can ______ them.",
-        "answers": [
-            { "text": "gainsay", "correct": true },
-            { "text": "gamble", "correct": false },
-            { "text": "gather", "correct": false },
-            { "text": "garner", "correct": false }
+        type: 'closed',
+        question: "Jeśli logₓ(1/8) = -3/2, to x jest równe:",
+        answers: [
+            { text: "2", correct: false },
+            { text: "4", correct: true },
+            { text: "√8", correct: false },
+            { text: "1/4", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The threat of a hostile takeover hangs over the company like ______.",
-        "answers": [
-            { "text": "a Trojan horse", "correct": false },
-            { "text": "the sword of Damocles", "correct": true },
-            { "text": "a Gordian knot", "correct": false },
-            { "text": "a Pyrrhic victory", "correct": false }
+        type: 'closed',
+        question: "W graniastosłupie prawidłowym trójkątnym wszystkie krawędzie mają jednakową długość. Pole powierzchni całkowitej wynosi 50√3. Długość krawędzi tego graniastosłupa wynosi:",
+        answers: [
+            { text: "5", correct: true },
+            { text: "10", correct: false },
+            { text: "5√3", correct: false },
+            { text: "2√3", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Complete the sentence with the correct preposition: 'It is incumbent ____ the management to ensure a safe working environment.'",
-        "answer": ["upon"]
+        type: 'open',
+        question: "W torebce jest 21 cukierków: 3 razy więcej malinowych niż cytrynowych i o 3 mniej truskawkowych niż malinowych. Jakie jest prawdopodobieństwo wyjęcia cukierka, który nie jest malinowy? (Podaj w postaci ułamka nieskracalnego)",
+        answer: ["4/7"]
     },
     {
-        "type": "closed",
-        "question": "Over the years, she managed to ______ considerable support for her political cause.",
-        "answers": [
-            { "text": "garner", "correct": true },
-            { "text": "garnish", "correct": false },
-            { "text": "gasp", "correct": false },
-            { "text": "grapple", "correct": false }
+        type: 'closed',
+        question: "Prosta prostopadła do prostej y = (1/3)x - 2 i przechodząca przez punkt P=(1, 5) ma równanie:",
+        answers: [
+            { text: "y = 3x + 2", correct: false },
+            { text: "y = -3x + 8", correct: true },
+            { text: "y = -1/3 x + 16/3", correct: false },
+            { text: "y = -3x + 2", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "His ______ apology, delivered without any eye contact, felt worse than no apology at all.",
-        "answers": [
-            { "text": "profound", "correct": false },
-            { "text": "perfunctory", "correct": true },
-            { "text": "perfect", "correct": false },
-            { "text": "pompous", "correct": false }
-        ]
-    },
-    { "type": "open", "question": "Use the word in brackets to form a word that fits the gap: 'Many of his claims are ____ (PROVE) and based on speculation.'", "answer": ["unproven"] },
-    {
-        "type": "closed",
-        "question": "His methods were unorthodox, to ______.",
-        "answers": [
-            { "text": "say the most", "correct": false },
-            { "text": "say the least", "correct": true },
-            { "text": "tell the truth", "correct": false },
-            { "text": "be honest", "correct": false }
+        type: 'closed',
+        question: "Suma pierwszego i piątego wyrazu ciągu arytmetycznego wynosi 18. Trzeci wyraz tego ciągu jest równy:",
+        answers: [
+            { text: "6", correct: false },
+            { text: "9", correct: true },
+            { text: "12", correct: false },
+            { text: "Nie da się tego ustalić", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "If you keep ignoring the regulations, you will eventually ______ the authorities.",
-        "answers": [
-            { "text": "fall foul of", "correct": true },
-            { "text": "get wind of", "correct": false },
-            { "text": "make light of", "correct": false },
-            { "text": "take stock of", "correct": false }
+        type: 'open',
+        question: "Obwód rombu wynosi 60, a jego pole 150. Oblicz wysokość tego rombu.",
+        answer: ["10"]
+    },
+    {
+        type: 'closed',
+        question: "Wartość wyrażenia √(14 - 6√5) jest równa:",
+        answers: [
+            { text: "√14 - √6√5", correct: false },
+            { text: "3 - √5", correct: true },
+            { text: "√5 - 3", correct: false },
+            { text: "1 - √13", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'They suppose he is living abroad.'",
-        "answer": ["He is supposed to be living abroad."]
-    },
-    {
-        "type": "closed",
-        "question": "His ______ reason for the visit was business, but he really wanted to see his old friends.",
-        "answers": [
-            { "text": "ostensible", "correct": true },
-            { "text": "outstanding", "correct": false },
-            { "text": "outlandish", "correct": false },
-            { "text": "outright", "correct": false }
+        type: 'closed',
+        question: "W trójkącie prostokątnym o przyprostokątnych 5 i 12, stosunek promienia okręgu wpisanego do promienia okręgu opisanego wynosi:",
+        answers: [
+            { text: "2:5", correct: false },
+            { text: "3:13", correct: false },
+            { text: "4:13", correct: true },
+            { text: "5:12", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "I don't ______ people gossiping about their colleagues; I find it unprofessional.",
-        "answers": [
-            { "text": "hold with", "correct": true },
-            { "text": "hold up", "correct": false },
-            { "text": "hold on", "correct": false },
-            { "text": "hold back", "correct": false }
+        type: 'open',
+        question: "Zegar, który chodzi prawidłowo, pokazuje 3:00. Po ilu minutach wskazówka minutowa po raz pierwszy pokryje się ze wskazówką godzinową?",
+        answer: ["16 i 4/11", "180/11"]
+    },
+    {
+        type: 'closed',
+        question: "Ile jest różnych sposobów na pokonanie drogi z punktu A do punktu B po kratkach 3x2, poruszając się tylko w prawo lub w dół?",
+        answers: [
+            { text: "6", correct: false },
+            { text: "8", correct: false },
+            { text: "10", correct: true },
+            { text: "12", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence using a causative verb. Original sentence: 'The comedian managed to make the whole audience laugh hysterically.'",
-        "answer": ["The comedian had the whole audience laughing hysterically."]
-    },
-    { "type": "closed", "question": "She is the ______ of grace and professionalism.", "answers": [{ "text": "epilogue", "correct": false }, { "text": "epitome", "correct": true }, { "text": "epigram", "correct": false }, { "text": "epistle", "correct": false }] }
+        type: 'open',
+        question: "Suma cyfr liczby dwucyfrowej 'n' wynosi 12. Po odjęciu od 'n' liczby 36, otrzymujemy liczbę o przestawionych cyfrach. Jaka jest wartość 'n'?",
+        answer: ["84"]
+    }
 ];
 
 // --- Pobranie elementów z HTML ---

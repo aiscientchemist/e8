@@ -1,201 +1,204 @@
 const questions = [
     {
-        "type": "closed",
-        "question": "Seldom has a newcomer ______ such an immediate and profound impact on the industry.",
-        "answers": [
-            { "text": "done", "correct": false },
-            { "text": "created", "correct": false },
-            { "text": "made", "correct": true },
-            { "text": "had", "correct": false }
+        type: 'closed',
+        question: "Ile wynosi wartość wyrażenia (1 - 1/4)(1 - 1/9)(1 - 1/16)...(1 - 1/100)?",
+        answers: [
+            { text: "0.1", correct: false },
+            { text: "0.55", correct: true },
+            { text: "0.9", correct: false },
+            { text: "0.99", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "While the scenery was breathtaking, the plot of the film was utterly ______ and lacked any originality.",
-        "answers": [
-            { "text": "prosaic", "correct": true },
-            { "text": "poetic", "correct": false },
-            { "text": "profound", "correct": false },
-            { "text": "pedantic", "correct": false }
+        type: 'open',
+        question: "Jaka jest jedyna trzycyfrowa liczba, która jest równa sumie silni swoich cyfr?",
+        answer: ["145"]
+    },
+    {
+        type: 'closed',
+        question: "W trapezie wysokość jest równa średniej arytmetycznej długości podstaw. Pole tego trapezu wynosi 100 cm². Oblicz długość tej wysokości.",
+        answers: [
+            { text: "8 cm", correct: false },
+            { text: "10 cm", correct: true },
+            { text: "12 cm", correct: false },
+            { text: "Nie da się tego obliczyć", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'They ought to have warned us about the potential risks.'",
-        "answer": ["We ought to have been warned about the potential risks."]
+        type: 'open',
+        question: "Prosta o równaniu 2x + 5y = 20 tworzy z osiami układu współrzędnych trójkąt. Oblicz pole tego trójkąta.",
+        answer: ["20"]
     },
     {
-        "type": "closed",
-        "question": "By the time the staff were consulted, the decision was already a ______; it was too late to change anything.",
-        "answers": [
-            { "text": "cause célèbre", "correct": false },
-            { "text": "fait accompli", "correct": true },
-            { "text": "bête noire", "correct": false },
-            { "text": "tour de force", "correct": false }
+        type: 'closed',
+        question: "W ostrosłupie prawidłowym trójkątnym pole podstawy jest równe 9√3. Pole powierzchni bocznej jest 3 razy większe od pola podstawy. Ile wynosi wysokość tego ostrosłupa?",
+        answers: [
+            { text: "3√10", correct: false },
+            { text: "9", correct: false },
+            { text: "3√11", correct: false },
+            { text: "3√6", correct: true }
         ]
     },
     {
-        "type": "closed",
-        "question": "You have made a significant error at work. What is the most professional way to own up to it?",
-        "answers": [
-            { "text": "It wasn't entirely my fault, the instructions were unclear.", "correct": false },
-            { "text": "I apologize, that was my oversight. I've already identified the cause and am taking steps to rectify it immediately.", "correct": true },
-            { "text": "It's not a big deal, we can fix it later.", "correct": false },
-            { "text": "Who can I blame for this?", "correct": false }
+        type: 'closed',
+        question: "Świeże grzyby zawierają 90% wody, a suszone 15%. Ile kilogramów świeżych grzybów należy zebrać, aby otrzymać 1 kg suszonych?",
+        answers: [
+            { text: "1.5 kg", correct: false },
+            { text: "8.5 kg", correct: true },
+            { text: "9 kg", correct: false },
+            { text: "10 kg", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Use the word in brackets to form a word that fits the gap: 'His actions were considered ____ (NOBLE) and unworthy of a true leader.'",
-        "answer": ["ignoble"]
+        type: 'open',
+        question: "Wyznacz najmniejszą liczbę całkowitą n, dla której prawdziwa jest nierówność n > 4√5.",
+        answer: ["9"]
     },
     {
-        "type": "closed",
-        "question": "The witness didn't name the suspect, but did ______ to seeing a tattoo; meanwhile, the suspect managed to ______ the police for weeks.",
-        "answers": [
-            { "text": "elude / allude", "correct": false },
-            { "text": "allude / elude", "correct": true },
-            { "text": "allude / delude", "correct": false },
-            { "text": "elude / delude", "correct": false }
+        type: 'closed',
+        question: "Suma dwóch liczb wynosi 12. Ich suma sześcianów wynosi 792. Ile wynosi iloczyn tych liczb?",
+        answers: [
+            { text: "20", correct: false },
+            { text: "27", correct: false },
+            { text: "32", correct: false },
+            { text: "35", correct: true }
         ]
     },
     {
-        "type": "closed",
-        "question": "It is of the utmost importance that the security team ______ fully briefed on the new procedures.",
-        "answers": [
-            { "text": "is", "correct": false },
-            { "text": "be", "correct": true },
-            { "text": "are", "correct": false },
-            { "text": "to be", "correct": false }
+        type: 'open',
+        question: "W kwadrat o boku 10 wpisano cztery identyczne, wzajemnie styczne koła, z których każde jest styczne do dwóch boków kwadratu. Jaki jest promień jednego z tych kół?",
+        answer: ["2.5"]
+    },
+    {
+        type: 'closed',
+        question: "Rzucamy dwiema sześciennymi kostkami. Jakie jest prawdopodobieństwo, że suma wyrzuconych oczek jest liczbą pierwszą?",
+        answers: [
+            { text: "1/3", correct: false },
+            { text: "7/18", correct: false },
+            { text: "5/12", correct: true },
+            { text: "1/2", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in reported speech. Original sentence: ''Why don't I drive you to the airport?' she said.'",
-        "answer": ["She offered to drive me to the airport."]
+        type: 'open',
+        question: "W trójkącie ABC kąt przy wierzchołku B ma 60°, a kąt przy wierzchołku C ma 45°. Wysokość AD ma długość 6. Oblicz obwód tego trójkąta. Wynik podaj w postaci a√b + c√d + e.",
+        answer: ["6√2+4√3+6"]
     },
     {
-        "type": "closed",
-        "question": "It was ______ of him to forgive his rival, an act that won him widespread respect.",
-        "answers": [
-            { "text": "meticulous", "correct": false },
-            { "text": "magnanimous", "correct": true },
-            { "text": "malicious", "correct": false },
-            { "text": "mercenary", "correct": false }
+        type: 'closed',
+        question: "Liczba 5¹⁰⁰ - 5⁹⁸ jest podzielna przez:",
+        answers: [
+            { text: "10", correct: false },
+            { text: "13", correct: false },
+            { text: "17", correct: false },
+            { text: "24", correct: true }
         ]
     },
     {
-        "type": "closed",
-        "question": "The company's long-term success ______ on its ability to innovate and adapt.",
-        "answers": [
-            { "text": "hinges", "correct": true },
-            { "text": "hangs", "correct": false },
-            { "text": "holds", "correct": false },
-            { "text": "hovers", "correct": false }
+        type: 'closed',
+        question: "Na spotkaniu każdy uścisnął dłoń każdemu innemu dokładnie raz. Uścisków dłoni było 66. Ile osób było na spotkaniu?",
+        answers: [
+            { text: "10", correct: false },
+            { text: "11", correct: false },
+            { text: "12", correct: true },
+            { text: "13", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence starting with 'Be it...'. Original sentence: 'I am ready to help, whether it's a simple task or a complex project.'",
-        "answer": ["Be it a simple task or a complex project, I am ready to help."]
+        type: 'open',
+        question: "W pewnej firmie 40% pracowników to mężczyźni. 75% mężczyzn i 50% kobiet zarabia powyżej średniej krajowej. Jaki procent wszystkich pracowników tej firmy zarabia powyżej średniej krajowej?",
+        answer: ["60"]
     },
     {
-        "type": "closed",
-        "question": "The politician's attempt to ______ the complex issue only confused the public further.",
-        "answers": [
-            { "text": "elucidate", "correct": false },
-            { "text": "obfuscate", "correct": true },
-            { "text": "articulate", "correct": false },
-            { "text": "explicate", "correct": false }
+        type: 'closed',
+        question: "Wartość wyrażenia √(√10 - 3) * √(√10 + 3) jest równa:",
+        answers: [
+            { text: "1", correct: true },
+            { text: "√19", correct: false },
+            { text: "7", correct: false },
+            { text: "√7", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "What is the meaning of the idiom 'to burn one's bridges'?",
-        "answers": [
-            { "text": "To start something new and exciting.", "correct": false },
-            { "text": "To act in a way that destroys any possibility of returning to a previous situation.", "correct": true },
-            { "text": "To take a huge risk for a great reward.", "correct": false },
-            { "text": "To end a relationship on good terms.", "correct": false }
+        type: 'closed',
+        question: "Prosta o równaniu y = -2x + b przechodzi przez III i IV ćwiartkę układu współrzędnych oraz przez punkt A=(3, -8). Wynika stąd, że:",
+        answers: [
+            { text: "b = -2", correct: true },
+            { text: "b = -14", correct: false },
+            { text: "b = 2", correct: false },
+            { text: "b jest dowolną liczbą ujemną", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Complete the sentence with the correct preposition: 'The team's success is contingent ____ securing the necessary funding.'",
-        "answer": ["on"]
+        type: 'open',
+        question: "W trójkącie równoramiennym podstawa ma długość 18, a wysokość opuszczona na tę podstawę ma długość 12. Oblicz długość wysokości opuszczonej na ramię tego trójkąta.",
+        answer: ["14.4"]
     },
     {
-        "type": "closed",
-        "question": "The general's ______ confidence on the eve of battle worried his more experienced officers.",
-        "answers": [
-            { "text": "genuine", "correct": false },
-            { "text": "jejune", "correct": true },
-            { "text": "justified", "correct": false },
-            { "text": "jovial", "correct": false }
+        type: 'closed',
+        question: "W trapezie równoramiennym przekątne są prostopadłe, a wysokość trapezu ma długość 8 cm. Pole tego trapezu wynosi:",
+        answers: [
+            { text: "32 cm²", correct: false },
+            { text: "64 cm²", correct: true },
+            { text: "128 cm²", correct: false },
+            { text: "Nie da się tego obliczyć", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "His ______ behaviour at formal events was a source of constant embarrassment for his family.",
-        "answers": [
-            { "text": "urbane", "correct": false },
-            { "text": "boorish", "correct": true },
-            { "text": "composed", "correct": false },
-            { "text": "sophisticated", "correct": false }
-        ]
-    },
-    { "type": "open", "question": "Use the word in brackets to form a word that fits the gap: 'Her ____ (FATIGUE) energy and optimism were an inspiration to the whole team.'", "answer": ["indefatigable"] },
-    {
-        "type": "closed",
-        "question": "Far from being a sign of progress, the new policy was seen as a ______ step.",
-        "answers": [
-            { "text": "retrograde", "correct": true },
-            { "text": "forward", "correct": false },
-            { "text": "proactive", "correct": false },
-            { "text": "progressive", "correct": false }
+        type: 'closed',
+        question: "Jeżeli x² - 3x + 1 = 0, to wartość wyrażenia x² + 1/x² wynosi:",
+        answers: [
+            { text: "3", correct: false },
+            { text: "5", correct: false },
+            { text: "7", correct: true },
+            { text: "9", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The agreement was reached, ______ after months of difficult negotiations.",
-        "answers": [
-            { "text": "albeit", "correct": true },
-            { "text": "because", "correct": false },
-            { "text": "therefore", "correct": false },
-            { "text": "furthermore", "correct": false }
+        type: 'open',
+        question: "Na tarczy zegara jest 12 cyfr. Wybieramy losowo 3 różne cyfry. Na ile sposobów można je wybrać tak, aby tworzyły trójkąt równoboczny?",
+        answer: ["4"]
+    },
+    {
+        type: 'closed',
+        question: "Długości boków trójkąta są trzema kolejnymi liczbami naturalnymi. Średnim co do wielkości kątem w tym trójkącie jest:",
+        answers: [
+            { text: "Kąt ostry", correct: true },
+            { text: "Kąt prosty", correct: false },
+            { text: "Kąt rozwarty", correct: false },
+            { text: "Zależy od wybranych liczb", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'I don't remember them ever giving me the instructions.'",
-        "answer": ["I don't remember ever being given the instructions."]
-    },
-    {
-        "type": "closed",
-        "question": "The ______ of the group were all talented, but the lead singer was a true virtuoso.",
-        "answers": [
-            { "text": "rank and file", "correct": true },
-            { "text": "top brass", "correct": false },
-            { "text": "high-flyers", "correct": false },
-            { "text": "movers and shakers", "correct": false }
+        type: 'closed',
+        question: "Ile jest liczb trzycyfrowych, w których iloczyn cyfr jest równy 24?",
+        answers: [
+            { text: "12", correct: false },
+            { text: "15", correct: false },
+            { text: "18", correct: false },
+            { text: "21", correct: true }
         ]
     },
     {
-        "type": "closed",
-        "question": "The company needs a new leader to ______ it through these turbulent economic times.",
-        "answers": [
-            { "text": "stray", "correct": false },
-            { "text": "steer", "correct": true },
-            { "text": "stroll", "correct": false },
-            { "text": "strain", "correct": false }
+        type: 'open',
+        question: "W pewnym graniastosłupie liczba krawędzi jest o 10 większa od liczby wierzchołków. Jaka figura jest podstawą tego graniastosłupa?",
+        answer: ["pięciokąt", "pięciokąt foremny"]
+    },
+    {
+        type: 'closed',
+        question: "W trójkącie prostokątnym o obwodzie 24, przeciwprostokątna ma długość 10. Pole tego trójkąta wynosi:",
+        answers: [
+            { text: "24", correct: true },
+            { text: "30", correct: false },
+            { text: "48", correct: false },
+            { text: "60", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence using a causative verb. Original sentence: 'I need to tell my assistant to schedule the meeting.'",
-        "answer": ["I need to get my assistant to schedule the meeting."]
-    },
-    { "type": "closed", "question": "The first clear sunny day after a week of rain was a(n) ______ sign for the start of their holiday.", "answers": [{ "text": "ominous", "correct": false }, { "text": "auspicious", "correct": true }, { "text": "arbitrary", "correct": false }, { "text": "ambiguous", "correct": false }] }
+        type: 'open',
+        question: "Jaka jest cyfra jedności liczby, która jest wartością wyrażenia 2021²⁰²¹ + 2022²⁰²² + 2023²⁰²³?",
+        answer: ["4"]
+    }
 ];
 
 // --- Pobranie elementów z HTML ---

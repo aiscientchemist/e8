@@ -1,3 +1,4 @@
+/* --- Style ogólne (pozostają takie same) --- */
 body {
     background-color: #000000;
     color: #333;
@@ -50,7 +51,7 @@ h1 {
 
 .btn:hover:not(:disabled) {
     background-color: #e0e0e0;
-    border-color: #000000;
+    border-color: #3498db;
 }
 
 .btn.correct {
@@ -94,7 +95,7 @@ h1 {
 
 #open-answer-input:focus {
     outline: none;
-    border-color: #3498db;
+    border-color: #262626;
 }
 
 /* Style dla pola input po sprawdzeniu odpowiedzi */
@@ -118,7 +119,7 @@ h1 {
 /* --- Przycisk akcji (Sprawdź/Następne) i Restart --- */
 #action-btn,
 #restart-btn {
-    background-color: #000000;
+    background-color: #2d2d2d;
     color: white;
     border-radius: 10px;
     padding: 12px 30px;
@@ -135,7 +136,7 @@ h1 {
 
 #action-btn:hover,
 #restart-btn:hover {
-    background-color: #525252;
+    background-color: #515151;
 }
 
 /* RWD (bez zmian) */

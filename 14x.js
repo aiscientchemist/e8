@@ -1,201 +1,204 @@
 const questions = [
     {
-        "type": "closed",
-        "question": "On no condition ______ permitted to access the server room without authorization.",
-        "answers": [
-            { "text": "anyone is", "correct": false },
-            { "text": "is anyone", "correct": true },
-            { "text": "is no one", "correct": false },
-            { "text": "no one is", "correct": false }
+        type: 'closed',
+        question: "Suma kwadratów trzech kolejnych liczb naturalnych wynosi 110. Jaka jest środkowa z tych liczb?",
+        answers: [
+            { text: "5", correct: false },
+            { text: "6", correct: true },
+            { text: "7", correct: false },
+            { text: "8", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "Despite being an expert on the subject, she was surprisingly ______ and unwilling to share her opinions in the meeting.",
-        "answers": [
-            { "text": "garrulous", "correct": false },
-            { "text": "reticent", "correct": true },
-            { "text": "eloquent", "correct": false },
-            { "text": "boastful", "correct": false }
+        type: 'open',
+        question: "W romb o boku 10 i wysokości 8 wpisano koło. Jakie jest pole tego koła? (Odpowiedź zapisz w formie aπ)",
+        answer: ["16π"]
+    },
+    {
+        type: 'closed',
+        question: "Która z poniższych liczb NIE jest kwadratem liczby całkowitej?",
+        answers: [
+            { text: "4¹¹", correct: false },
+            { text: "9²⁵", correct: false },
+            { text: "8⁹", correct: true },
+            { text: "25³⁶", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'They expect the company to announce its merger next week.'",
-        "answer": ["The company is expected to announce its merger next week."]
+        type: 'open',
+        question: "Trzy identyczne pompy, pracując razem, napełniają basen w 5 godzin. Ile godzin zajęłoby napełnienie tego samego basenu pięciu takim pompom?",
+        answer: ["3"]
     },
     {
-        "type": "closed",
-        "question": "The promotion was a ______; it came with a huge workload and immense pressure for only a small pay rise.",
-        "answers": [
-            { "text": "golden handshake", "correct": false },
-            { "text": "poisoned chalice", "correct": true },
-            { "text": "golden opportunity", "correct": false },
-            { "text": "safe bet", "correct": false }
+        type: 'closed',
+        question: "Kwadratową kartkę papieru złożono na pół, tworząc prostokąt. Obwód tego prostokąta wynosi 18 cm. Jakie było pole kwadratowej kartki przed złożeniem?",
+        answers: [
+            { text: "24 cm²", correct: false },
+            { text: "36 cm²", correct: true },
+            { text: "49 cm²", correct: false },
+            { text: "81 cm²", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "You notice a flaw in a colleague's argument during a presentation. What's the most diplomatic way to address it?",
-        "answers": [
-            { "text": "Your logic is completely wrong here.", "correct": false },
-            { "text": "That's an interesting point, but I'm not sure I follow how you got from A to B. Could you elaborate on your reasoning?", "correct": true },
-            { "text": "That makes no sense at all.", "correct": false },
-            { "text": "Let me correct you on that.", "correct": false }
+        type: 'closed',
+        question: "Długości boków trójkąta wyrażają się liczbami całkowitymi. Dwa boki mają długość 8 i 3. Ile wynosi obwód tego trójkąta, jeśli jest on równoramienny?",
+        answers: [
+            { text: "14", correct: false },
+            { text: "19", correct: true },
+            { text: "14 lub 19", correct: false },
+            { text: "Nie można tego ustalić", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Use the word in brackets to form a word that fits the gap: 'He believed his own judgment to be ____ (FALLIBLE), which ultimately led to his downfall.'",
-        "answer": ["infallible"]
+        type: 'open',
+        question: "W trójkącie prostokątnym o przyprostokątnych a i b oraz przeciwprostokątnej c prawdziwa jest zależność log(c+b) + log(c-b) = 2log(a). Jaki jest stosunek c/a?",
+        answer: ["√2"]
     },
     {
-        "type": "closed",
-        "question": "The government body was created to ______ offensive content, while the free press is expected to ______ corruption wherever it is found.",
-        "answers": [
-            { "text": "censure / sensor", "correct": false },
-            { "text": "censor / censure", "correct": true },
-            { "text": "censor / sensor", "correct": false },
-            { "text": "censure / censure", "correct": false }
+        type: 'closed',
+        question: "Cena akcji wzrosła o 60%, a następnie spadła o 50%. W wyniku tych zmian cena akcji:",
+        answers: [
+            { text: "wzrosła o 10%", correct: false },
+            { text: "spadła o 10%", correct: false },
+            { text: "wzrosła o 20%", correct: false },
+            { text: "spadła o 20%", correct: true }
         ]
     },
     {
-        "type": "closed",
-        "question": "What is the meaning of the idiom 'to play devil's advocate'?",
-        "answers": [
-            { "text": "To genuinely support a very unpopular opinion.", "correct": false },
-            { "text": "To argue against an idea for the sake of debate, to test its strength.", "correct": true },
-            { "text": "To be pessimistic and negative about everything.", "correct": false },
-            { "text": "To make a deal that is not in your best interest.", "correct": false }
+        type: 'open',
+        question: "Wartość wyrażenia (√2)¹² * (√8)⁻³ zapisano w postaci potęgi 2ᵏ. Podaj wartość k.",
+        answer: ["1.5"]
+    },
+    {
+        type: 'closed',
+        question: "Wszystkie krawędzie ostrosłupa prawidłowego czworokątnego mają długość 'a'. Pole powierzchni całkowitej tego ostrosłupa wynosi:",
+        answers: [
+            { text: "a²(1 + √3)", correct: true },
+            { text: "2a²", correct: false },
+            { text: "a²√3", correct: false },
+            { text: "5a²", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence using a perfect passive participle. Original sentence: 'After he had been warned multiple times, he continued to ignore the safety procedures.'",
-        "answer": ["Having been warned multiple times, he continued to ignore the safety procedures."]
+        type: 'open',
+        question: "Suma dwóch liczb to 20, a suma ich kwadratów jest najmniejsza z możliwych. Podaj te liczby.",
+        answer: ["10 i 10", "10, 10"]
     },
     {
-        "type": "closed",
-        "question": "The politician presented the new tax as a ______ that would solve all the country's economic problems.",
-        "answers": [
-            { "text": "panacea", "correct": true },
-            { "text": "paradox", "correct": false },
-            { "text": "paragon", "correct": false },
-            { "text": "paradigm", "correct": false }
+        type: 'closed',
+        question: "W trójkącie ABC, którego pole wynosi 48, poprowadzono środkowe AD, BE, CF, które przecięły się w punkcie S. Pole trójkąta ABS jest równe:",
+        answers: [
+            { text: "8", correct: false },
+            { text: "12", correct: false },
+            { text: "16", correct: true },
+            { text: "24", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "______ you to reconsider your decision, we would be willing to offer improved terms.",
-        "answers": [
-            { "text": "If", "correct": false },
-            { "text": "Should", "correct": false },
-            { "text": "Were", "correct": true },
-            { "text": "Providing", "correct": false }
+        type: 'closed',
+        question: "Jaka jest cyfra jedności liczby 2023¹⁰⁰?",
+        answers: [
+            { text: "1", correct: true },
+            { text: "3", correct: false },
+            { text: "7", correct: false },
+            { text: "9", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'Nobody told me about the change of plan.'",
-        "answer": ["I wasn't told about the change of plan."]
+        type: 'open',
+        question: "Ze zbioru {1, 2, ..., 10} losujemy dwie różne liczby. Jakie jest prawdopodobieństwo, że ich iloczyn jest liczbą nieparzystą? (Odpowiedź podaj w postaci ułamka nieskracalnego a/b)",
+        answer: ["2/9"]
     },
     {
-        "type": "closed",
-        "question": "The team needs to ______ its efforts if it wants to meet the deadline.",
-        "answers": [
-            { "text": "redouble", "correct": true },
-            { "text": "reduce", "correct": false },
-            { "text": "remake", "correct": false },
-            { "text": "reconsider", "correct": false }
+        type: 'closed',
+        question: "Jeśli log₂(x) + log₂(x-2) = 3, to x jest równe:",
+        answers: [
+            { text: "3", correct: false },
+            { text: "-2", correct: false },
+            { text: "4", correct: true },
+            { text: "Nie ma takiego x", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The city's transport system, ______ adequate, is now struggling to cope with the growing population.",
-        "answers": [
-            { "text": "while", "correct": false },
-            { "text": "once", "correct": true },
-            { "text": "as", "correct": false },
-            { "text": "since", "correct": false }
+        type: 'closed',
+        question: "W trapezie równoramiennym podstawy mają długość 5 i 11, a pole wynosi 32. Długość ramienia tego trapezu wynosi:",
+        answers: [
+            { text: "4", correct: false },
+            { text: "5", correct: true },
+            { text: "6", correct: false },
+            { text: "√41", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Complete the sentence with the correct preposition: 'The company has a legal obligation to be transparent ____ its shareholders.'",
-        "answer": ["with"]
+        type: 'open',
+        question: "Prostokąt o bokach 12 i 16 ma takie samo pole jak pewien romb. Jedna z przekątnych rombu ma długość 24. Oblicz obwód tego rombu.",
+        answer: ["80"]
     },
     {
-        "type": "closed",
-        "question": "The diplomat was known for his ability to ______ tense situations and bring opposing sides to an agreement.",
-        "answers": [
-            { "text": "defuse", "correct": true },
-            { "text": "diffuse", "correct": false },
-            { "text": "defy", "correct": false },
-            { "text": "define", "correct": false }
+        type: 'closed',
+        question: "Punkty A=(-1, 2), B=(7, 2), C=(3, 8) są wierzchołkami trójkąta. Jest to trójkąt:",
+        answers: [
+            { text: "ostrokątny", correct: false },
+            { text: "prostokątny", correct: false },
+            { text: "rozwartokątny", correct: false },
+            { text: "równoramienny", correct: true }
         ]
     },
     {
-        "type": "closed",
-        "question": "His speech was so ______ that it left the audience confused and unsure of his actual position.",
-        "answers": [
-            { "text": "succinct", "correct": false },
-            { "text": "lucid", "correct": false },
-            { "text": "nebulous", "correct": true },
-            { "text": "cogent", "correct": false }
-        ]
-    },
-    { "type": "open", "question": "Use the word in brackets to form a word that fits the gap: 'The defendant's ____ (EVADE) answers made the judge suspicious.'", "answer": ["evasive"] },
-    {
-        "type": "closed",
-        "question": "The artist tried to ______ the traditional rules of painting in favour of a more modern style.",
-        "answers": [
-            { "text": "eschew", "correct": true },
-            { "text": "ensue", "correct": false },
-            { "text": "endow", "correct": false },
-            { "text": "embrace", "correct": false }
+        type: 'closed',
+        question: "Jeżeli a⁴ - b⁴ = 7 i a² + b² = 7, to a jest równe:",
+        answers: [
+            { text: "1", correct: false },
+            { text: "√2", correct: false },
+            { text: "2", correct: true },
+            { text: "√3", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The new evidence completely _______ the prosecution's case against him.",
-        "answers": [
-            { "text": "corroborated", "correct": false },
-            { "text": "bolstered", "correct": false },
-            { "text": "substantiated", "correct": false },
-            { "text": "demolished", "correct": true }
+        type: 'open',
+        question: "Pojemnik jest w 1/4 pełny. Gdy dolejemy 3 litry wody, będzie w 2/5 pełny. Jaka jest pojemność pojemnika w litrach?",
+        answer: ["20"]
+    },
+    {
+        type: 'closed',
+        question: "W okrąg o promieniu 5 wpisano trójkąt prostokątny. Suma długości przyprostokątnych tego trójkąta wynosi 14. Pole tego trójkąta jest równe:",
+        answers: [
+            { text: "12", correct: false },
+            { text: "24", correct: true },
+            { text: "35", correct: false },
+            { text: "48", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice. Original sentence: 'You must complete the safety training before you can operate this machine.'",
-        "answer": ["The safety training must be completed before this machine can be operated."]
-    },
-    {
-        "type": "closed",
-        "question": "His ______ behaviour towards the boss, always agreeing and fetching coffee, was quite embarrassing to watch.",
-        "answers": [
-            { "text": "obsequious", "correct": true },
-            { "text": "obstinate", "correct": false },
-            { "text": "oblivious", "correct": false },
-            { "text": "objective", "correct": false }
+        type: 'closed',
+        question: "W pewnej firmie mężczyźni stanowią 60% załogi. 20% mężczyzn i 30% kobiet ma wykształcenie wyższe. Jaki procent całej załogi ma wykształcenie wyższe?",
+        answers: [
+            { text: "24%", correct: true },
+            { text: "25%", correct: false },
+            { text: "26%", correct: false },
+            { text: "50%", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The final scene of the play, ______, was the most powerful part.",
-        "answers": [
-            { "text": "it could be argued", "correct": false },
-            { "text": "as argued", "correct": false },
-            { "text": "arguably", "correct": true },
-            { "text": "arguing", "correct": false }
+        type: 'open',
+        question: "Rowerzysta przejechał trasę 30 km w pewnym czasie. Gdyby jego średnia prędkość była o 5 km/h większa, przejechałby tę trasę w czasie o 30 minut krótszym. Jaka była jego początkowa prędkość w km/h?",
+        answer: ["15"]
+    },
+    {
+        type: 'closed',
+        question: "Prosta przechodząca przez I i III ćwiartkę układu współrzędnych, nachylona do osi OX pod kątem 45°, to prosta o równaniu:",
+        answers: [
+            { text: "y = x", correct: true },
+            { text: "y = -x", correct: false },
+            { text: "y = x + 1", correct: false },
+            { text: "y = 1", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence using the causative 'get'. Original sentence: 'I need to persuade someone to fix the leaky tap.'",
-        "answer": ["I need to get the leaky tap fixed."]
-    },
-    { "type": "closed", "question": "The two countries have been in a state of ______ peace for years, with neither side willing to fully commit to a treaty.", "answers": [{ "text": "precarious", "correct": true }, { "text": "permanent", "correct": false }, { "text": "pervasive", "correct": false }, { "text": "peaceful", "correct": false }] }
+        type: 'open',
+        question: "Sześcian o krawędzi 5 cm jest zbudowany z małych, pomalowanych na biało sześcianików o krawędzi 1 cm. Zewnętrzne ściany dużego sześcianu pomalowano na czerwono. Ile małych sześcianików pozostało w całości białych?",
+        answer: ["27"]
+    }
 ];
 
 // --- Pobranie elementów z HTML ---

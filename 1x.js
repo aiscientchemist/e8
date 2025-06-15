@@ -1,216 +1,225 @@
 // --- Definicja pytań (z nowym polem "type") ---
 const questions = [
     {
-        "type": "closed",
-        "question": "Read the sentence: 'If I hadn't missed my flight, I would be in Paris right now.' What does this sentence describe?",
-        "answers": [
-            { "text": "A likely future event.", "correct": false },
-            { "text": "A general truth or habit.", "correct": false },
-            { "text": "A hypothetical past event with a hypothetical present result.", "correct": true },
-            { "text": "A regret about a present situation.", "correct": false }
+        type: 'closed',
+        question: "Suma cyfr pewnej liczby dwucyfrowej wynosi 12. Jeśli przestawimy cyfry tej liczby, otrzymamy liczbę o 18 mniejszą. Jaka to liczba?",
+        answers: [
+            { text: "84", correct: false },
+            { text: "93", correct: false },
+            { text: "75", correct: true },
+            { text: "66", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "A sign in a library says: 'Patrons are kindly requested to refrain from eating.' What is the most accurate meaning of 'refrain from'?",
-        "answers": [
-            { "text": "to avoid doing something", "correct": true },
-            { "text": "to do something quietly", "correct": false },
-            { "text": "to ask for permission first", "correct": false },
-            { "text": "to eat only small snacks", "correct": false }
+        type: 'closed',
+        question: "Cenę produktu obniżono o 20%, a następnie nową cenę podwyższono o 25%. Jak zmieniła się cena produktu w stosunku do ceny początkowej?",
+        answers: [
+            { text: "Wzrosła o 5%", correct: false },
+            { text: "Zmalała o 5%", correct: false },
+            { text: "Nie zmieniła się", correct: true },
+            { text: "Wzrosła o 2,5%", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Complete the second sentence so that it has a similar meaning to the first sentence. Use the word 'prevented'. First sentence: 'The heavy snow stopped us from getting to the airport.'",
-        "answer": ["The heavy snow prevented us from getting to the airport."]
+        type: 'open',
+        question: "Jaka jest najmniejsza dodatnia liczba całkowita, która przy dzieleniu przez 3, 4 i 5 daje zawsze resztę 2?",
+        answer: ["62"]
     },
     {
-        "type": "closed",
-        "question": "Which sentence correctly uses the structure 'used to'?",
-        "answers": [
-            { "text": "I am used to live in a big city, so the noise doesn't bother me.", "correct": false },
-            { "text": "He can't get used to waking up so early for his new job.", "correct": true },
-            { "text": "Did you used to have a dog when you were a child?", "correct": false },
-            { "text": "She used to watching cartoons every Saturday morning.", "correct": false }
+        type: 'closed',
+        question: "W rombie o boku 13 cm jedna z przekątnych ma długość 24 cm. Jakie jest pole tego rombu?",
+        answers: [
+            { text: "156 cm²", correct: false },
+            { text: "312 cm²", correct: false },
+            { text: "120 cm²", correct: true },
+            { text: "60 cm²", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "Your friend says, 'I'm not sure my English is good enough for the exchange program.' How can you express reassurance?",
-        "answers": [
-            { "text": "Your grammar has always been a problem.", "correct": false },
-            { "text": "Don't be so hard on yourself. Your progress has been amazing!", "correct": true },
-            { "text": "Well, maybe you should wait another year.", "correct": false },
-            { "text": "I agree, the other candidates are very strong.", "correct": false }
+        type: 'closed',
+        question: "Wartość wyrażenia (√48 - √27) / √3 jest równa:",
+        answers: [
+            { text: "√7", correct: false },
+            { text: "1", correct: true },
+            { text: "7", correct: false },
+            { text: "√3", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Use the word in brackets to form a word that fits the gap: 'Despite his initial ____ (RELUCTANT), he eventually agreed to help.'",
-        "answer": ["reluctance"]
-    },
-    {
-        "type": "closed",
-        "question": "Read the dialogue. A: 'I can't believe I failed the test.' B: '______. You'll do better next time.' What is the most empathetic response for B?",
-        "answers": [
-            { "text": "I told you so.", "correct": false },
-            { "text": "That's tough luck.", "correct": true },
-            { "text": "You deserved it.", "correct": false },
-            { "text": "Why are you surprised?", "correct": false }
+        type: 'closed',
+        question: "W trójkącie prostokątnym jedna z przyprostokątnych jest o 7 cm krótsza od drugiej i o 8 cm krótsza od przeciwprostokątnej. Jaki jest obwód tego trójkąta?",
+        answers: [
+            { text: "24 cm", correct: false },
+            { text: "30 cm", correct: true },
+            { text: "40 cm", correct: false },
+            { text: "15 cm", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "Which sentence correctly implies that an action was unnecessary but was done anyway?",
-        "answers": [
-            { "text": "You didn't need to buy any milk, so I'm glad you didn't.", "correct": false },
-            { "text": "You needn't have bought any milk; we already have three cartons.", "correct": true },
-            { "text": "You shouldn't buy milk; it's not good for you.", "correct": false },
-            { "text": "You must not buy any milk; I will do it.", "correct": false }
+        type: 'open',
+        question: "Objętość sześcianu wynosi 216 cm³. Podaj długość przekątnej tego sześcianu (wynik zapisz w postaci a√b).",
+        answer: ["6√3"]
+    },
+    {
+        type: 'closed',
+        question: "Rzucamy dwiema standardowymi sześciennymi kostkami do gry. Jakie jest prawdopodobieństwo, że iloczyn wyrzuconych oczek będzie liczbą pierwszą?",
+        answers: [
+            { text: "1/6", correct: true },
+            { text: "1/12", correct: false },
+            { text: "5/36", correct: false },
+            { text: "7/36", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Complete the sentence with ONE word: 'Hardly had I sat down ______ the phone rang.'",
-        "answer": ["when"]
-    },
-    {
-        "type": "closed",
-        "question": "What is the primary purpose of this text? 'Our revolutionary new app tracks your sleep patterns, providing detailed analytics to help you improve your rest and boost your energy levels. Download today for a free 7-day trial!'",
-        "answers": [
-            { "text": "To inform readers about the science of sleep.", "correct": false },
-            { "text": "To warn about the dangers of sleep deprivation.", "correct": false },
-            { "text": "To persuade the reader to try a new product.", "correct": true },
-            { "text": "To review different sleep-tracking applications.", "correct": false }
+        type: 'closed',
+        question: "W kwadrat o boku 10 cm wpisano koło. Stosunek pola kwadratu do pola koła wynosi:",
+        answers: [
+            { text: "4 : π", correct: true },
+            { text: "2 : π", correct: false },
+            { text: "π : 4", correct: false },
+            { text: "1 : 1", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "Which word is the 'odd one out' based on its meaning?",
-        "answers": [
-            { "text": "Meticulous", "correct": false },
-            { "text": "Careless", "correct": true },
-            { "text": "Thorough", "correct": false },
-            { "text": "Precise", "correct": false }
+        type: 'closed',
+        question: "Liczba 4¹⁰ + 4¹⁰ + 4¹⁰ + 4¹⁰ jest równa:",
+        answers: [
+            { text: "4⁴⁰", correct: false },
+            { text: "16¹⁰", correct: false },
+            { text: "4¹¹", correct: true },
+            { text: "16⁴⁰", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the question using reported speech: She asked me, 'Can you help me tomorrow?'",
-        "answer": ["She asked me if I could help her the next day.", "She asked me whether I could help her the next day."]
+        type: 'open',
+        question: "Średnia arytmetyczna pięciu liczb wynosi 12. Gdy usunięto jedną z nich, średnia pozostałych czterech wyniosła 10. Jaką liczbę usunięto?",
+        answer: ["20"]
     },
     {
-        "type": "closed",
-        "question": "The government's decision had a profound ______ on the country's economy.",
-        "answers": [
-            { "text": "affect", "correct": false },
-            { "text": "effect", "correct": true },
-            { "text": "afflict", "correct": false },
-            { "text": "effort", "correct": false }
+        type: 'closed',
+        question: "W trójkącie równoramiennym ABC (|AC|=|BC|) kąt przy podstawie ma miarę 70°. Z wierzchołka C poprowadzono wysokość CD. Jaką miarę ma kąt BCD?",
+        answers: [
+            { text: "70°", correct: false },
+            { text: "40°", correct: false },
+            { text: "35°", correct: false },
+            { text: "20°", correct: true }
         ]
     },
     {
-        "type": "closed",
-        "question": "Situation: You are in a crowded bus and need to get to the exit. What is the most polite thing to say?",
-        "answers": [
-            { "text": "Move out of the way!", "correct": false },
-            { "text": "Let me pass.", "correct": false },
-            { "text": "Excuse me, could I just get past, please?", "correct": true },
-            { "text": "I'm getting off here!", "correct": false }
+        type: 'closed',
+        question: "Dwa pociągi o długościach 150 m i 250 m jadą w przeciwnych kierunkach po równoległych torach. Pierwszy z prędkością 60 km/h, a drugi z prędkością 84 km/h. Ile sekund minie od momentu spotkania się ich czoł do momentu minięcia się ich końców?",
+        answers: [
+            { text: "15 s", correct: false },
+            { text: "12 s", correct: false },
+            { text: "10 s", correct: true },
+            { text: "8 s", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Complete the sentence with the correct preposition: 'He prides himself ____ his ability to solve complex puzzles.'",
-        "answer": ["on"]
+        type: 'open',
+        question: "Ile jest liczb całkowitych x spełniających nierówność 2(x - 1) ≤ 5x + 13?",
+        // Rozwiązanie: 2x-2 <= 5x+13 -> -15 <= 3x -> -5 <= x. Nieskończenie wiele. Pytanie musi być inne.
+        // Poprawka: Ile jest liczb całkowitych x spełniających JEDNOCZEŚNIE nierówności: x > -4 i 2x < 7?
+        // x > -4 i x < 3.5. Liczby całkowite to: -3, -2, -1, 0, 1, 2, 3. Jest ich 7.
+        question: "Ile jest liczb całkowitych x spełniających jednocześnie warunki: x > -3.5 i 2x ≤ 6?",
+        answer: ["7"]
     },
     {
-        "type": "closed",
-        "question": "Which phrasal verb means 'to reject an offer'?",
-        "answers": [
-            { "text": "take up", "correct": false },
-            { "text": "turn down", "correct": true },
-            { "text": "bring up", "correct": false },
-            { "text": "look after", "correct": false }
+        type: 'closed',
+        question: "Promień podstawy stożka ma 5 cm, a jego tworząca ma 13 cm. Jaka jest objętość tego stożka?",
+        answers: [
+            { text: "65π cm³", correct: false },
+            { text: "325π cm³", correct: false },
+            { text: "100π cm³", correct: true },
+            { text: "120π cm³", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "I wish I ______ how to play the guitar. It looks so cool.",
-        "answers": [
-            { "text": "had known", "correct": false },
-            { "text": "would know", "correct": false },
-            { "text": "knew", "correct": true },
-            { "text": "am knowing", "correct": false }
+        type: 'closed',
+        question: "W trójkącie prostokątnym o przyprostokątnych 6 i 8, promień okręgu opisanego na tym trójkącie jest równy:",
+        answers: [
+            { text: "10", correct: false },
+            { text: "5", correct: true },
+            { text: "4", correct: false },
+            { text: "3", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence starting with 'This is the scientist...'. Original sentence: 'A famous scientist discovered this element. This is her.'",
-        "answer": ["This is the scientist who discovered this element."]
+        type: 'open',
+        question: "Wyrażenie (2x - 3y)² - (2x + 3y)² po uproszczeniu ma postać kxy. Podaj wartość liczbową k.",
+        answer: ["-24"]
     },
     {
-        "type": "closed",
-        "question": "This cheese is ______ to be the best in the world. Many experts agree.",
-        "answers": [
-            { "text": "considered", "correct": true },
-            { "text": "regarded", "correct": false },
-            { "text": "thought about", "correct": false },
-            { "text": "believed in", "correct": false }
+        type: 'closed',
+        question: "Mapa została wykonana w skali 1:50 000. Odległość między dwoma miastami na tej mapie wynosi 8 cm. Ile wynosi rzeczywista odległość między tymi miastami?",
+        answers: [
+            { text: "40 km", correct: false },
+            { text: "4 km", correct: true },
+            { text: "400 m", correct: false },
+            { text: "0.4 km", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "Situation: Your friend has been working on a project for weeks and is feeling discouraged. What can you say to motivate them?",
-        "answers": [
-            { "text": "Maybe you should just give up.", "correct": false },
-            { "text": "It's not as good as you think.", "correct": false },
-            { "text": "Don't lose heart! You've put in so much great work already.", "correct": true },
-            { "text": "It's probably too difficult for you.", "correct": false }
+        type: 'closed',
+        question: "W trapezie równoramiennym podstawy mają długość 10 cm i 22 cm, a pole wynosi 128 cm². Ile wynosi ramię tego trapezu?",
+        answers: [
+            { text: "8 cm", correct: false },
+            { text: "12 cm", correct: false },
+            { text: "10 cm", correct: true },
+            { text: "6 cm", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Use the word in brackets to form a word that fits the gap: 'The evidence presented in court was not ____ (CONVINCE) enough.'",
-        "answer": ["convincing"]
-    },
-    {
-        "type": "closed",
-        "question": "The film was a bit predictable; _______, the special effects were breathtaking.",
-        "answers": [
-            { "text": "consequently", "correct": false },
-            { "text": "in addition", "correct": false },
-            { "text": "nevertheless", "correct": true },
-            { "text": "furthermore", "correct": false }
+        type: 'closed',
+        question: "Która z poniższych liczb jest największa?",
+        answers: [
+            { text: "2⁶⁰", correct: false },
+            { text: "3⁴⁵", correct: true },
+            { text: "4³⁰", correct: false },
+            { text: "5¹⁵", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "What is the underlying meaning of the idiom 'to be on the same page'?",
-        "answers": [
-            { "text": "To be reading the same book.", "correct": false },
-            { "text": "To have a shared understanding or agreement.", "correct": true },
-            { "text": "To be of the same age.", "correct": false },
-            { "text": "To be physically close to someone.", "correct": false }
+        type: 'open',
+        question: "W akwarium w kształcie prostopadłościanu o wymiarach podstawy 50 cm x 40 cm, poziom wody podniósł się o 2 cm po wrzuceniu do niego kamienia. Jaka jest objętość kamienia w cm³?",
+        answer: ["4000"]
+    },
+    {
+        type: 'closed',
+        question: "Dwa trójkąty podobne T1 i T2 mają pola równe odpowiednio 18 cm² i 32 cm². Stosunek obwodu trójkąta T1 do obwodu trójkąta T2 jest równy:",
+        answers: [
+            { text: "9:16", correct: false },
+            { text: "√18:√32", correct: false },
+            { text: "3:4", correct: true },
+            { text: "2:3", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Complete the sentence with the correct form of the verb: 'My parents had my room ______ (paint) while I was at summer camp.'",
-        "answer": ["painted"]
+        type: 'closed',
+        question: "Jeżeli a = 3 - √5 i b = 3 + √5, to wartość wyrażenia a/b + b/a wynosi:",
+        answers: [
+            { text: "6", correct: false },
+            { text: "9", correct: false },
+            { text: "7", correct: true },
+            { text: "14", correct: false }
+        ]
     },
     {
-        "type": "closed",
-        "question": "______ being an excellent student, she is also a talented athlete.",
-        "answers": [
-            { "text": "Despite", "correct": false },
-            { "text": "Although", "correct": false },
-            { "text": "As well as", "correct": false },
-            { "text": "Besides", "correct": true }
+        type: 'open',
+        question: "W pudełku jest 15 kul: 5 czerwonych, 3 zielone i 7 niebieskich. Losujemy jedną kulę. Jakie jest prawdopodobieństwo, że wylosowana kula NIE będzie czerwona? (Odpowiedź podaj w postaci ułamka nieskracalnego a/b)",
+        answer: ["2/3"]
+    },
+    {
+        type: 'closed',
+        question: "Punkt S = (3, -2) jest środkiem odcinka AB. Wiedząc, że A = (-1, 4), jakie są współrzędne punktu B?",
+        answers: [
+            { text: "(7, -8)", correct: true },
+            { text: "(2, 2)", correct: false },
+            { text: "(1, 1)", correct: false },
+            { text: "(7, 8)", correct: false }
         ]
     }
-];
+];;
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

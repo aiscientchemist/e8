@@ -1,215 +1,214 @@
 const questions = [
     {
-        "type": "closed",
-        "question": "Under no circumstances ______ press that red button. It's for emergencies only.",
-        "answers": [
-            { "text": "you should", "correct": false },
-            { "text": "should you", "correct": true },
-            { "text": "you can", "correct": false },
-            { "text": "can you to", "correct": false }
+        type: 'closed',
+        question: "Suma dwóch liczb wynosi 15, a różnica ich kwadratów jest równa 45. Mniejsza z tych liczb to:",
+        answers: [
+            { text: "3", correct: false },
+            { text: "9", correct: false },
+            { text: "6", correct: true },
+            { text: "5", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "Read the text: 'Tom glanced at the clock, sighed heavily, and started tapping his fingers rhythmically on the table.' What does this text strongly imply about Tom?",
-        "answers": [
-            { "text": "He is relaxed and listening to music.", "correct": false },
-            { "text": "He is angry about the situation.", "correct": false },
-            { "text": "He is feeling impatient or bored.", "correct": true },
-            { "text": "He is deep in thought and concentrating.", "correct": false }
+        type: 'open',
+        question: "Krótsza przekątna sześciokąta foremnego ma długość 12 cm. Oblicz pole tego sześciokąta (wynik zapisz w postaci a√b).",
+        answer: ["72√3"]
+    },
+    {
+        type: 'closed',
+        question: "Która z poniższych liczb jest największa?",
+        answers: [
+            { text: "9²⁰", correct: false },
+            { text: "27¹⁴", correct: true },
+            { text: "81¹⁰", correct: false },
+            { text: "3³⁹", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence using a past modal of deduction. Original sentence: 'It's possible that he didn't receive the invitation.'",
-        "answer": ["He might not have received the invitation.", "He may not have received the invitation."]
-    },
-    {
-        "type": "closed",
-        "question": "The company needs to ______ a solution to this problem before it gets worse.",
-        "answers": [
-            { "text": "come up with", "correct": true },
-            { "text": "get along with", "correct": false },
-            { "text": "run out of", "correct": false },
-            { "text": "look forward to", "correct": false }
+        type: 'closed',
+        question: "Łódka płynie z prądem rzeki z prędkością 12 km/h, a pod prąd z prędkością 6 km/h. Jaką odległość (w obie strony) pokonała łódka, jeśli cała podróż trwała 9 godzin?",
+        answers: [
+            { text: "36 km", correct: false },
+            { text: "54 km", correct: false },
+            { text: "72 km", correct: true },
+            { text: "81 km", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "Your friend says, 'Your performance in the play was absolutely fantastic!' What is the most gracious and confident response?",
-        "answers": [
-            { "text": "Oh, it was nothing special.", "correct": false },
-            { "text": "Thank you so much, I'm really glad you enjoyed it.", "correct": true },
-            { "text": "You're just saying that to be nice.", "correct": false },
-            { "text": "I know, I was great, wasn't I?", "correct": false }
+        type: 'open',
+        question: "Jaka jest suma miar kątów wewnętrznych w siedmiokącie wypukłym? Podaj wynik w stopniach.",
+        answer: ["900"]
+    },
+    {
+        type: 'closed',
+        question: "W prostokącie jeden bok skrócono o 10%, a drugi wydłużono o 10%. Jak zmieniło się pole tego prostokąta?",
+        answers: [
+            { text: "Nie zmieniło się", correct: false },
+            { text: "Wzrosło o 1%", correct: false },
+            { text: "Zmalało o 1%", correct: true },
+            { text: "Zmalało o 10%", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Use the word in brackets to form a word that fits the gap: 'His explanation was completely ____ (LOGICAL) and confused everyone.'",
-        "answer": ["illogical"]
-    },
-    {
-        "type": "closed",
-        "question": "______ people came to the concert, so it was a financial disaster for the organizers.",
-        "answers": [
-            { "text": "A few", "correct": false },
-            { "text": "Few", "correct": true },
-            { "text": "A little", "correct": false },
-            { "text": "Little", "correct": false }
+        type: 'closed',
+        question: "Długość krawędzi sześcianu zwiększono o 10%. O ile procent wzrosła objętość tego sześcianu?",
+        answers: [
+            { text: "o 10%", correct: false },
+            { text: "o 30%", correct: false },
+            { text: "o 21%", correct: false },
+            { text: "o 33,1%", correct: true }
         ]
     },
     {
-        "type": "closed",
-        "question": "What does the idiom 'to see eye to eye' mean?",
-        "answers": [
-            { "text": "To look at someone directly.", "correct": false },
-            { "text": "To have the same opinion or to agree.", "correct": true },
-            { "text": "To have good eyesight.", "correct": false },
-            { "text": "To be suspicious of someone.", "correct": false }
+        type: 'open',
+        question: "Liczba √(7 - 4√3) jest równa a - √b, gdzie a i b są liczbami naturalnymi. Podaj wartość a+b.",
+        // √(4 - 4√3 + 3) = √((2-√3)²) = 2-√3. a=2, b=3. a+b=5.
+        answer: ["5"]
+    },
+    {
+        type: 'closed',
+        question: "W trójkącie prostokątnym ABC środkowa poprowadzona z wierzchołka kąta prostego C ma długość 8 cm. Pole tego trójkąta wynosi 32 cm². Jaki jest jego obwód?",
+        answers: [
+            { text: "16 + 8√2 cm", correct: true },
+            { text: "32 cm", correct: false },
+            { text: "24 cm", correct: false },
+            { text: "16 + 4√2 cm", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the question using reported speech: She asked, 'Must I finish this report today?'",
-        "answer": ["She asked if she had to finish that report that day.", "She asked whether she had to finish that report that day."]
-    },
-    {
-        "type": "closed",
-        "question": "Which word describes someone who is careful with money in a positive, wise way?",
-        "answers": [
-            { "text": "Stingy", "correct": false },
-            { "text": "Miserly", "correct": false },
-            { "text": "Frugal", "correct": true },
-            { "text": "Cheap", "correct": false }
+        type: 'closed',
+        question: "Ze zbioru liczb dwucyfrowych losujemy jedną. Jakie jest prawdopodobieństwo, że suma jej cyfr jest równa 5?",
+        answers: [
+            { text: "1/18", correct: true },
+            { text: "5/99", correct: false },
+            { text: "4/89", correct: false },
+            { text: "1/15", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "Had I taken your advice, I ________ in this difficult situation now.",
-        "answers": [
-            { "text": "wouldn't have been", "correct": false },
-            { "text": "wouldn't be", "correct": true },
-            { "text": "wouldn't have", "correct": false },
-            { "text": "weren't", "correct": false }
+        type: 'open',
+        question: "Kasia jest o 4 lata starsza od Basi. Za 6 lat będą miały razem 44 lata. Ile lat ma obecnie Kasia?",
+        answer: ["18"]
+    },
+    {
+        type: 'closed',
+        question: "W walec o promieniu podstawy 6 cm i wysokości 10 cm wpisano stożek o tej samej podstawie i wysokości. Ile wynosi stosunek objętości walca do objętości części walca pozostałej po wycięciu stożka?",
+        answers: [
+            { text: "3:1", correct: false },
+            { text: "3:2", correct: true },
+            { text: "2:1", correct: false },
+            { text: "1:2", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice, starting with 'The fire...'. Original sentence: 'Someone is thought to have started the fire deliberately.'",
-        "answer": ["The fire is thought to have been started deliberately."]
-    },
-    {
-        "type": "closed",
-        "question": "I can't go to the party on Saturday as I have a _______ arrangement that I can't cancel.",
-        "answers": [
-            { "text": "late", "correct": false },
-            { "text": "former", "correct": false },
-            { "text": "prior", "correct": true },
-            { "text": "next", "correct": false }
+        type: 'closed',
+        question: "Liczba 0,1(23) jest równa ułamkowi:",
+        answers: [
+            { text: "123/1000", correct: false },
+            { text: "122/990", correct: true },
+            { text: "123/999", correct: false },
+            { text: "122/900", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "You are very late for a meeting with a friend. What is the best apology?",
-        "answers": [
-            { "text": "Sorry about that.", "correct": false },
-            { "text": "I'm here now, let's start.", "correct": false },
-            { "text": "I'm so sorry for keeping you waiting, the traffic was absolutely terrible.", "correct": true },
-            { "text": "You won't believe what happened.", "correct": false }
+        type: 'open',
+        question: "W pudełku jest 10 kul, w tym 4 białe. Losujemy kolejno bez zwracania dwie kule. Jakie jest prawdopodobieństwo, że obie wylosowane kule będą białe? Odpowiedź podaj w postaci ułamka nieskracalnego a/b.",
+        answer: ["2/15"]
+    },
+    {
+        type: 'closed',
+        question: "Punkty A=(-2, -3), B=(4, 1), C=(-1, 3) są wierzchołkami trójkąta. Prosta zawierająca wysokość opuszczoną z wierzchołka C na bok AB ma równanie:",
+        answers: [
+            { text: "y = -2/3 x + 7/3", correct: false },
+            { text: "y = 2/3 x + 11/3", correct: false },
+            { text: "y = -3/2 x + 3/2", correct: true },
+            { text: "y = 3/2 x + 9/2", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Complete the sentence with a suitable preposition: 'I don't approve ____ his methods, even if they get results.'",
-        "answer": ["of"]
-    },
-    {
-        "type": "closed",
-        "question": "It was ______ a boring lecture that half the audience fell asleep.",
-        "answers": [
-            { "text": "so", "correct": false },
-            { "text": "such", "correct": true },
-            { "text": "very", "correct": false },
-            { "text": "too", "correct": false }
+        type: 'closed',
+        question: "Jeżeli 2ᵃ = 5 i 5ᵇ = 8, to ile wynosi iloczyn a*b?",
+        answers: [
+            { text: "40", correct: false },
+            { text: "log₂8", correct: false },
+            { text: "3", correct: true },
+            { text: "Nie da się obliczyć", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The athlete tried ______ the world record, but failed by a few milliseconds.",
-        "answers": [
-            { "text": "to break", "correct": true },
-            { "text": "breaking", "correct": false },
-            { "text": "to have broken", "correct": false },
-            { "text": "break", "correct": false }
+        type: 'open',
+        question: "Ile jest liczb czterocyfrowych o niepowtarzających się cyfrach, które są podzielne przez 5?",
+        answer: ["952"]
+    },
+    {
+        type: 'closed',
+        question: "W trapezie prostokątnym o wysokości 12, krótsza podstawa i ramię nieprostopadłe do podstaw mają tę samą długość. Dłuższa podstawa ma 18. Pole tego trapezu wynosi:",
+        answers: [
+            { text: "156", correct: true },
+            { text: "168", correct: false },
+            { text: "180", correct: false },
+            { text: "216", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence using the causative 'get'. Original sentence: 'I need to arrange for someone to test my eyes.'",
-        "answer": ["I need to get my eyes tested."]
-    },
-    {
-        "type": "closed",
-        "question": "The decision to build the new motorway was met with fierce ______ from local residents.",
-        "answers": [
-            { "text": "oppose", "correct": false },
-            { "text": "opposite", "correct": false },
-            { "text": "opposition", "correct": true },
-            { "text": "opposing", "correct": false }
+        type: 'closed',
+        question: "Reszta z dzielenia liczby (2023² - 2021²) przez 10 jest równa:",
+        answers: [
+            { text: "2", correct: false },
+            { text: "4", correct: false },
+            { text: "6", correct: false },
+            { text: "8", correct: true }
         ]
     },
     {
-        "type": "closed",
-        "question": "He's not very reliable. You can't ______ him to be on time.",
-        "answers": [
-            { "text": "count on", "correct": true },
-            { "text": "count in", "correct": false },
-            { "text": "count out", "correct": false },
-            { "text": "count up", "correct": false }
+        type: 'open',
+        question: "W trójkącie prostokątnym stosunek długości przyprostokątnych wynosi 3:4. Obwód tego trójkąta jest równy 60. Oblicz długość przeciwprostokątnej.",
+        answer: ["25"]
+    },
+    {
+        type: 'closed',
+        question: "W okrąg o promieniu R=10 wpisano kwadrat. W ten kwadrat wpisano okrąg o promieniu r. Ile wynosi stosunek R/r?",
+        answers: [
+            { text: "2", correct: false },
+            { text: "√2", correct: true },
+            { text: "√3", correct: false },
+            { text: "4/π", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Use the word in brackets to form a word that fits the gap: 'His ____ (ABLE) to adapt to new situations is his greatest strength.'",
-        "answer": ["ability"]
-    },
-    {
-        "type": "closed",
-        "question": "________ the weather was terrible, we still had a wonderful time on our holiday.",
-        "answers": [
-            { "text": "Despite", "correct": false },
-            { "text": "In spite", "correct": false },
-            { "text": "However", "correct": false },
-            { "text": "Although", "correct": true }
+        type: 'closed',
+        question: "Do 2 kg wody wlano 0,5 litra soku o gęstości 1,2 kg/l. Jakie jest stężenie procentowe (masowe) soku w otrzymanym napoju?",
+        answers: [
+            { text: "20%", correct: false },
+            { text: "23%", correct: true },
+            { text: "25%", correct: false },
+            { text: "30%", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "The new manager is very popular. She seems to have a good ______ with the staff.",
-        "answers": [
-            { "text": "rapport", "correct": true },
-            { "text": "report", "correct": false },
-            { "text": "relation", "correct": false },
-            { "text": "contact", "correct": false }
+        type: 'open',
+        question: "Wartość wyrażenia (1/2 + 1/3) / (1/4 - 1/5) jest równa... (podaj wynik w postaci liczby lub ułamka dziesiętnego)",
+        // (5/6) / (1/20) = 5/6 * 20 = 100/6 = 50/3 = 16.666...
+        question: "Wartość wyrażenia (1/2 + 1/3) / (1/3 - 1/4) jest równa...?",
+        // (5/6) / (1/12) = 5/6 * 12 = 10
+        answer: ["10"]
+    },
+    {
+        type: 'closed',
+        question: "Ostatnią cyfrą liczby 3¹⁰² + 2⁵¹ jest:",
+        answers: [
+            { text: "1", correct: false },
+            { text: "3", correct: false },
+            { text: "5", correct: false },
+            { text: "7", correct: true }
         ]
     },
     {
-        "type": "open",
-        "question": "Complete the sentence with ONE word: 'The sooner we start, the sooner we will ____.'",
-        "answer": ["finish"]
-    },
-    {
-        "type": "closed",
-        "question": "I can't meet you tomorrow. I _______ my cousins at the airport in the morning.",
-        "answers": [
-            { "text": "will meet", "correct": false },
-            { "text": "am meeting", "correct": true },
-            { "text": "meet", "correct": false },
-            { "text": "going to meet", "correct": false }
-        ]
+        type: 'open',
+        question: "Ojciec ma obecnie 3 razy tyle lat, ile ma jego syn. Za 12 lat ojciec będzie miał 2 razy tyle lat, ile będzie miał wtedy syn. Ile lat ma obecnie ojciec?",
+        answer: ["36"]
     }
-];
+];;
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

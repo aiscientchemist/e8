@@ -1,215 +1,211 @@
 const questions = [
     {
-        "type": "closed",
-        "question": "I didn't fix the leak myself; I ______ by a professional plumber.",
-        "answers": [
-            { "text": "had it repaired", "correct": true },
-            { "text": "had repaired it", "correct": false },
-            { "text": "was repaired it", "correct": false },
-            { "text": "repaired it", "correct": false }
+        type: 'closed',
+        question: "Suma dwóch liczb wynosi 10, a różnica ich kwadratów wynosi 60. Ile wynosi iloczyn tych dwóch liczb?",
+        answers: [
+            { text: "16", correct: true },
+            { text: "21", correct: false },
+            { text: "24", correct: false },
+            { text: "25", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "Read the text: 'Despite the initial major setback, the team rallied, worked overnight, and managed to deliver the project ahead of schedule.' What does this imply about the team?",
-        "answers": [
-            { "text": "They were lucky to finish on time.", "correct": false },
-            { "text": "They are resilient and work well under pressure.", "correct": true },
-            { "text": "The project was much easier than expected.", "correct": false },
-            { "text": "They had no real difficulties.", "correct": false }
+        type: 'open',
+        question: "W trapezie równoramiennym o kącie ostrym 60° podstawy mają długość 10 i 20. Oblicz obwód tego trapezu.",
+        answer: ["50"]
+    },
+    {
+        type: 'closed',
+        question: "Stosunek pola powierzchni całkowitej sześcianu do jego objętości wynosi 1:2. Jaka jest długość krawędzi tego sześcianu?",
+        answers: [
+            { text: "6", correct: false },
+            { text: "8", correct: false },
+            { text: "12", correct: true },
+            { text: "2", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence to add emphasis, starting with 'No sooner...'. Original sentences: 'He arrived home. The phone started ringing immediately.'",
-        "answer": ["No sooner had he arrived home than the phone started ringing."]
-    },
-    {
-        "type": "closed",
-        "question": "The police have decided to ______ the mysterious disappearance of the painting.",
-        "answers": [
-            { "text": "look up to", "correct": false },
-            { "text": "look down on", "correct": false },
-            { "text": "look out for", "correct": false },
-            { "text": "look into", "correct": true }
+        type: 'closed',
+        question: "Zeszyt i książka kosztują razem 54 zł. Książka jest o 200% droższa od zeszytu. Cenę książki obniżono o 50%. O ile procent książka jest teraz droższa od zeszytu?",
+        answers: [
+            { text: "O 100%", correct: false },
+            { text: "O 50%", correct: true },
+            { text: "Jest w tej samej cenie", correct: false },
+            { text: "O 25%", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "Your friend says, 'I'm sure I can finish this entire book tonight.' How would you express polite doubt?",
-        "answers": [
-            { "text": "That's impossible, don't be silly.", "correct": false },
-            { "text": "Are you sure? That seems a bit ambitious, but good luck!", "correct": true },
-            { "text": "You'll definitely fail.", "correct": false },
-            { "text": "Why would you even try that?", "correct": false }
+        type: 'open',
+        question: "Zegar wskazuje godzinę 4:40. Jaka jest miara kąta ostrego (mniejszego) utworzonego przez wskazówki zegara? (Podaj tylko wartość liczbową w stopniach)",
+        answer: ["100"]
+    },
+    {
+        type: 'closed',
+        question: "W trójkącie prostokątnym wysokość poprowadzona na przeciwprostokątną dzieli ją na odcinki o długości 4 cm i 9 cm. Jakie jest pole tego trójkąta?",
+        answers: [
+            { text: "18 cm²", correct: false },
+            { text: "26 cm²", correct: false },
+            { text: "36 cm²", correct: false },
+            { text: "39 cm²", correct: true }
         ]
     },
     {
-        "type": "open",
-        "question": "Use the word in brackets to form a word that fits the gap: 'Her ____ (DETERMINE) to become a doctor was truly inspiring.'",
-        "answer": ["determination"]
-    },
-    {
-        "type": "closed",
-        "question": "The lights are off and the curtains are drawn. They _______ gone on holiday.",
-        "answers": [
-            { "text": "must have", "correct": true },
-            { "text": "should have", "correct": false },
-            { "text": "can't", "correct": false },
-            { "text": "needn't have", "correct": false }
+        type: 'closed',
+        question: "Dwa koła zębate, mające 12 i 18 zębów, są ze sobą sprzężone. Po ilu pełnych obrotach mniejszego koła oba koła powrócą do pozycji wyjściowej?",
+        answers: [
+            { text: "2", correct: false },
+            { text: "3", correct: true },
+            { text: "6", correct: false },
+            { text: "12", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "What is the meaning of the idiom 'to keep your cards close to your chest'?",
-        "answers": [
-            { "text": "To be a professional gambler.", "correct": false },
-            { "text": "To not reveal your plans or ideas.", "correct": true },
-            { "text": "To feel cold and wrap your arms around yourself.", "correct": false },
-            { "text": "To be very shy and introverted.", "correct": false }
+        type: 'open',
+        question: "Wartość wyrażenia √[3](54) + √[3](-128) - √[3](2) można zapisać w postaci a√[3](b). Podaj wartość iloczynu a*b.",
+        // 3∛2 - 4∛2 - ∛2 = -2∛2. a=-2, b=2. a*b = -4
+        answer: ["-4"]
+    },
+    {
+        type: 'closed',
+        question: "Średnia wieku w 10-osobowej grupie wynosi 16 lat. Gdy do grupy dołączył nowy uczeń, średnia wieku wzrosła do 17 lat. Ile lat ma nowy uczeń?",
+        answers: [
+            { text: "17", correct: false },
+            { text: "26", correct: false },
+            { text: "27", correct: true },
+            { text: "18", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the command using reported speech: The librarian said to the children, 'Do not run in the library.'",
-        "answer": ["The librarian told the children not to run in the library."]
-    },
-    {
-        "type": "closed",
-        "question": "While the scientist was famous for his discoveries, his brother was a(n) _______ criminal.",
-        "answers": [
-            { "text": "distinguished", "correct": false },
-            { "text": "renowned", "correct": false },
-            { "text": "notorious", "correct": true },
-            { "text": "acclaimed", "correct": false }
+        type: 'closed',
+        question: "Na okręgu o promieniu 10 cm opisano trapez równoramienny, którego pole wynosi 200 cm². Jaki jest obwód tego trapezu?",
+        answers: [
+            { text: "40 cm", correct: true },
+            { text: "50 cm", correct: false },
+            { text: "80 cm", correct: false },
+            { text: "Nie da się tego obliczyć", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "______ I richer, I would buy a house by the sea. (This is a more formal way of saying 'If I were...')",
-        "answers": [
-            { "text": "Was", "correct": false },
-            { "text": "If", "correct": false },
-            { "text": "Am", "correct": false },
-            { "text": "Were", "correct": true }
+        type: 'open',
+        question: "Jeśli 3ˣ = 5, to ile wynosi 9ˣ⁺¹?",
+        answer: ["225"]
+    },
+    {
+        type: 'closed',
+        question: "Wysokość ostrosłupa prawidłowego czworokątnego i krawędź jego podstawy mają taką samą długość, równą 6 cm. Jaką długość ma krawędź boczna tego ostrosłupa?",
+        answers: [
+            { text: "6√2 cm", correct: false },
+            { text: "9 cm", correct: true },
+            { text: "6√3 cm", correct: false },
+            { text: "3√6 cm", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence in the passive voice: 'They should have delivered the package yesterday.'",
-        "answer": ["The package should have been delivered yesterday."]
-    },
-    {
-        "type": "closed",
-        "question": "It's a very serious matter and we need to ______ a decision as soon as possible.",
-        "answers": [
-            { "text": "do", "correct": false },
-            { "text": "make", "correct": true },
-            { "text": "have", "correct": false },
-            { "text": "get", "correct": false }
+        type: 'closed',
+        question: "Losowo wybieramy jedną literę ze słowa MATEMATYKA. Jakie jest prawdopodobieństwo, że wybrana litera jest spółgłoską?",
+        answers: [
+            { text: "1/2", correct: true },
+            { text: "4/10", correct: false },
+            { text: "3/5", correct: false },
+            { text: "4/5", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "You are in a meeting and you want to add a point. What is the most professional way to interrupt?",
-        "answers": [
-            { "text": "Wait, I have something to say.", "correct": false },
-            { "text": "Listen to me for a second.", "correct": "false" },
-            { "text": "Could I just jump in here for a moment?", "correct": true },
-            { "text": "Stop talking, it's my turn.", "correct": false }
+        type: 'open',
+        question: "Pusty basen napełniany jest przez dwa krany. Pierwszy kran napełnia go w ciągu 6 godzin, a drugi w ciągu 3 godzin. W jakim czasie (w minutach) napełni się basen, jeśli oba krany będą odkręcone jednocześnie?",
+        answer: ["120"]
+    },
+    {
+        type: 'closed',
+        question: "Liczba (√10 - 3)² jest równa:",
+        answers: [
+            { text: "1", correct: false },
+            { text: "19", correct: false },
+            { text: "19 - 6√10", correct: true },
+            { text: "1 - 6√10", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Complete the sentence with the correct preposition: 'He is responsible ____ the entire marketing department.'",
-        "answer": ["for"]
-    },
-    {
-        "type": "closed",
-        "question": "The concert was fantastic. _______, the tickets were incredibly expensive.",
-        "answers": [
-            { "text": "As a result", "correct": false },
-            { "text": "Furthermore", "correct": false },
-            { "text": "On the other hand", "correct": true },
-            { "text": "Thus", "correct": false }
+        type: 'closed',
+        question: "Przekątna graniastosłupa prawidłowego czworokątnego ma długość 15 cm, a krawędź podstawy ma długość 9 cm. Jakie jest pole powierzchni bocznej tego graniastosłupa?",
+        answers: [
+            { text: "324 cm²", correct: false },
+            { text: "432 cm²", correct: true },
+            { text: "108 cm²", correct: false },
+            { text: "540 cm²", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "I really wish I ______ more attention in class last week; I don't understand anything now.",
-        "answers": [
-            { "text": "paid", "correct": false },
-            { "text": "would pay", "correct": false },
-            { "text": "had paid", "correct": true },
-            { "text": "was paying", "correct": false }
+        type: 'open',
+        question: "Samochód przejechał pewną trasę ze średnią prędkością 60 km/h. Drogę powrotną pokonał z prędkością 90 km/h. Jaka była średnia prędkość samochodu na całej trasie (w obie strony)? Wynik podaj w km/h.",
+        answer: ["72"]
+    },
+    {
+        type: 'closed',
+        question: "Ile jest wszystkich liczb trzycyfrowych, w których każda kolejna cyfra jest o 1 większa od poprzedniej?",
+        answers: [
+            { text: "10", correct: false },
+            { text: "9", correct: false },
+            { text: "8", correct: false },
+            { text: "7", correct: true }
         ]
     },
     {
-        "type": "open",
-        "question": "Rewrite the sentence using 'If only...'. First sentence: 'It's a pity you didn't see that movie.'",
-        "answer": ["If only you had seen that movie."]
-    },
-    {
-        "type": "closed",
-        "question": "The company is looking for a ______ solution to its financial problems, not a temporary fix.",
-        "answers": [
-            { "text": "momentary", "correct": false },
-            { "text": "viable", "correct": true },
-            { "text": "debatable", "correct": false },
-            { "text": "superficial", "correct": false }
+        type: 'closed',
+        question: "W trójkąt równoboczny o boku 12 cm wpisano koło. Jakie jest pole tego koła?",
+        answers: [
+            { text: "36π cm²", correct: false },
+            { text: "16π cm²", correct: false },
+            { text: "12π cm²", correct: true },
+            { text: "4π cm²", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "We regret ______ you that the performance has been cancelled due to unforeseen circumstances.",
-        "answers": [
-            { "text": "informing", "correct": false },
-            { "text": "to inform", "correct": true },
-            { "text": "to have informed", "correct": false },
-            { "text": "inform", "correct": false }
+        type: 'open',
+        question: "Rozwiązaniem układu równań y = 2x - 3 i 3x + 2y = 22 jest para liczb (x, y). Podaj wartość x + y.",
+        answer: ["9"]
+    },
+    {
+        type: 'closed',
+        question: "Metalową kulę o promieniu 3 cm przetopiono na walec o takiej samej wysokości jak promień kuli. Ile wynosi promień podstawy tego walca?",
+        answers: [
+            { text: "6 cm", correct: true },
+            { text: "3 cm", correct: false },
+            { text: "3√2 cm", correct: false },
+            { text: "4 cm", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Use the word in brackets to form a word that fits the gap: 'The plot of the film was so ____ (PREDICT) that I knew how it would end after 20 minutes.'",
-        "answer": ["predictable"]
-    },
-    {
-        "type": "closed",
-        "question": "There was ______ damage to the building after the storm, but luckily no one was hurt.",
-        "answers": [
-            { "text": "considerable", "correct": true },
-            { "text": "considered", "correct": false },
-            { "text": "considerate", "correct": false },
-            { "text": "considering", "correct": false }
+        type: 'closed',
+        question: "Wartość wyrażenia |5 - √26| - |√26 - 4| jest równa:",
+        answers: [
+            { text: "1", correct: false },
+            { text: "-1", correct: true },
+            { text: "9 - 2√26", correct: false },
+            { text: "2√26 - 9", correct: false }
         ]
     },
     {
-        "type": "closed",
-        "question": "Due to the accident, there was ______ traffic on the road this morning.",
-        "answers": [
-            { "text": "a large number of", "correct": false },
-            { "text": "many", "correct": false },
-            { "text": "a great deal of", "correct": true },
-            { "text": "several", "correct": false }
+        type: 'open',
+        question: "Punkty A=(-4, -1), B=(4, -1) i C=(1, 5) są wierzchołkami trójkąta. Oblicz pole tego trójkąta.",
+        answer: ["24"]
+    },
+    {
+        type: 'closed',
+        question: "Cena akcji pewnej firmy spadła o 60%. O ile procent musi teraz wzrosnąć, aby powrócić do ceny początkowej?",
+        answers: [
+            { text: "O 60%", correct: false },
+            { text: "O 120%", correct: false },
+            { text: "O 150%", correct: true },
+            { text: "O 250%", correct: false }
         ]
     },
     {
-        "type": "open",
-        "question": "Complete the sentence with the correct form of the verb: 'You need to get that strange noise in your car ______ (check) by a mechanic.'",
-        "answer": ["checked"]
-    },
-    {
-        "type": "closed",
-        "question": "This is by ______ the most difficult exercise we've done so far.",
-        "answers": [
-            { "text": "far", "correct": true },
-            { "text": "much", "correct": false },
-            { "text": "long", "correct": false },
-            { "text": "way", "correct": false }
-        ]
+        type: 'open',
+        question: "Liczba a stanowi 80% liczby b, a liczba c stanowi 50% liczby a. Jakim procentem liczby b jest liczba c?",
+        answer: ["40"]
     }
-];
+];;
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");
