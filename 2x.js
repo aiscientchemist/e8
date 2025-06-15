@@ -1,211 +1,205 @@
 const questions = [
     {
-        type: 'closed',
-        question: "Suma dwóch liczb wynosi 10, a różnica ich kwadratów wynosi 60. Ile wynosi iloczyn tych dwóch liczb?",
-        answers: [
-            { text: "16", correct: true },
-            { text: "21", correct: false },
-            { text: "24", correct: false },
-            { text: "25", correct: false }
+        "type": "closed",
+        "question": "W 'Zemście' A. Fredry, spór o mur graniczny jest w istocie pretekstem. Co jest prawdziwym, głębszym źródłem konfliktu między Cześnikiem a Rejentem?",
+        "answers": [
+            { "text": "Walka o wpływy polityczne w regionie.", "correct": false },
+            { "text": "Konflikt dwóch skrajnie różnych temperamentów i urażona duma, które uniemożliwiają jakiekolwiek porozumienie.", "correct": true },
+            { "text": "Zaszłości historyczne i dawny spór o majątek, którego mur jest tylko częścią.", "correct": false },
+            { "text": "Niezgoda na planowany ślub Wacława i Klary.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trapezie równoramiennym o kącie ostrym 60° podstawy mają długość 10 i 20. Oblicz obwód tego trapezu.",
-        answer: ["50"]
+        "type": "open",
+        "question": "Wyjaśnij, na czym polega tragizm postaci Świtezianki z ballady Adama Mickiewicza. Weź pod uwagę nie tylko los strzelca, ale także jej własną sytuację.",
+        "answer": ["Jej tragizm polega na tym, że jest strażniczką moralnego prawa, które musi egzekwować nawet kosztem własnego szczęścia i miłości. Skazując strzelca, skazuje samą siebie na wieczną samotność. Jest jednocześnie sędzią i ofiarą."]
     },
     {
-        type: 'closed',
-        question: "Stosunek pola powierzchni całkowitej sześcianu do jego objętości wynosi 1:2. Jaka jest długość krawędzi tego sześcianu?",
-        answers: [
-            { text: "6", correct: false },
-            { text: "8", correct: false },
-            { text: "12", correct: true },
-            { text: "2", correct: false }
+        "type": "closed",
+        "question": "Porównując postawę bohaterów 'Kamieni na szaniec' i Marcina Borowicza z 'Syzyfowych prac' w kontekście walki z zaborcą, kluczowa różnica polega na:",
+        "answers": [
+            { "text": "Skuteczności ich działań – bohaterowie 'Kamieni...' odnosili większe sukcesy.", "correct": false },
+            { "text": "W wieku bohaterów – Borowicz był znacznie młodszy od Alka, Rudego i Zośki.", "correct": false },
+            { "text": "Formie walki – 'Kamienie...' opisują walkę zbrojną i dywersję, a 'Syzyfowe prace' – opór intelektualny i kulturowy w warunkach szkolnych.", "correct": true },
+            { "text": "Wsparciu ze strony dorosłych – Borowicz był osamotniony, a harcerze mieli wsparcie w swoich rodzinach.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Zeszyt i książka kosztują razem 54 zł. Książka jest o 200% droższa od zeszytu. Cenę książki obniżono o 50%. O ile procent książka jest teraz droższa od zeszytu?",
-        answers: [
-            { text: "O 100%", correct: false },
-            { text: "O 50%", correct: true },
-            { text: "Jest w tej samej cenie", correct: false },
-            { text: "O 25%", correct: false }
+        "type": "closed",
+        "question": "W 'Panu Tadeuszu' Adam Mickiewicz idealizuje obraz Soplicowa. Jaki jest główny cel artystyczny tej idealizacji?",
+        "answers": [
+            { "text": "Stworzenie realistycznego dokumentu życia szlachty na Litwie.", "correct": false },
+            { "text": "Ukazanie wyższości kultury polskiej nad kulturą zaborców.", "correct": false },
+            { "text": "Stworzenie mitycznej 'arkadii', ostoi polskości i porządku moralnego, aby 'pokrzepić serca' emigrantów i przypomnieć o utraconej ojczyźnie.", "correct": true },
+            { "text": "Skrytykowanie zacofania i wad szlachty poprzez ich wyolbrzymienie.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Zegar wskazuje godzinę 4:40. Jaka jest miara kąta ostrego (mniejszego) utworzonego przez wskazówki zegara? (Podaj tylko wartość liczbową w stopniach)",
-        answer: ["100"]
+        "type": "open",
+        "question": "W lekturze 'Chłopcy z Placu Broni' Ferenca Molnára, Plac Broni jest dla chłopców czymś więcej niż tylko miejscem zabaw. Zinterpretuj, co symbolizuje dla nich ten kawałek ziemi.",
+        "answer": ["Plac Broni symbolizuje dla nich ojczyznę, państwo w miniaturze. Ma swoje granice, 'rząd' (związek), prawo i 'armię'. Walka o niego to walka o wartości takie jak honor, wierność i poświęcenie, a jego utrata jest dla nich tragedią narodową."]
     },
     {
-        type: 'closed',
-        question: "W trójkącie prostokątnym wysokość poprowadzona na przeciwprostokątną dzieli ją na odcinki o długości 4 cm i 9 cm. Jakie jest pole tego trójkąta?",
-        answers: [
-            { text: "18 cm²", correct: false },
-            { text: "26 cm²", correct: false },
-            { text: "36 cm²", correct: false },
-            { text: "39 cm²", correct: true }
+        "type": "closed",
+        "question": "Gerwazy z 'Pana Tadeusza' i Syzyf z mitologii greckiej to postacie napędzane przez jedną, dominującą siłę. Mimo oczywistych różnic, łączy ich:",
+        "answers": [
+            { "text": "Bunt przeciwko boskim wyrokom.", "correct": false },
+            { "text": "Niezłomny, trwający latami upór w dążeniu do jednego, określonego celu (zemsta / wtoczenie głazu), który definiuje całe ich istnienie.", "correct": true },
+            { "text": "Działanie na rzecz dobra wspólnoty.", "correct": false },
+            { "text": "Poczucie bezsensu i rezygnacja ze swoich działań.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Dwa koła zębate, mające 12 i 18 zębów, są ze sobą sprzężone. Po ilu pełnych obrotach mniejszego koła oba koła powrócą do pozycji wyjściowej?",
-        answers: [
-            { text: "2", correct: false },
-            { text: "3", correct: true },
-            { text: "6", correct: false },
-            { text: "12", correct: false }
+        "type": "closed",
+        "question": "W 'Balladynie' Juliusza Słowackiego natura nie jest tylko tłem wydarzeń, ale aktywnym uczestnikiem dramatu. Jej rola polega przede wszystkim na:",
+        "answers": [
+            { "text": "Tworzeniu nastroju grozy i tajemniczości.", "correct": false },
+            { "text": "Byciu świadkiem zbrodni i strażnikiem moralnego porządku, który ostatecznie wymierza sprawiedliwość (np. piorun).", "correct": true },
+            { "text": "Dostarczaniu bohaterom schronienia i pożywienia.", "correct": false },
+            { "text": "Symbolizowaniu uczuć bohaterów, np. burza jako odzwierciedlenie gniewu Balladyny.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Wartość wyrażenia √[3](54) + √[3](-128) - √[3](2) można zapisać w postaci a√[3](b). Podaj wartość iloczynu a*b.",
-        // 3∛2 - 4∛2 - ∛2 = -2∛2. a=-2, b=2. a*b = -4
-        answer: ["-4"]
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego rozmowa z Pilotem była dla Małego Księcia najważniejszym i jedynym udanym spotkaniem z 'dorosłym'. Czym Pilot różnił się od mieszkańców planetoid?",
+        "answer": ["Pilot, w przeciwieństwie do innych dorosłych, nie zatracił w sobie dziecka. Potrafił dostrzec słonia w kapeluszu i zrozumieć rysunek baranka. Miał wyobraźnię i zdolność do nawiązania prawdziwej, opartej na przyjaźni i zrozumieniu relacji, a nie tylko skupiał się na 'poważnych sprawach' jak władza czy cyfry."]
     },
     {
-        type: 'closed',
-        question: "Średnia wieku w 10-osobowej grupie wynosi 16 lat. Gdy do grupy dołączył nowy uczeń, średnia wieku wzrosła do 17 lat. Ile lat ma nowy uczeń?",
-        answers: [
-            { text: "17", correct: false },
-            { text: "26", correct: false },
-            { text: "27", correct: true },
-            { text: "18", correct: false }
+        "type": "closed",
+        "question": "W zdaniu z tekstu 'Tajemniczy ogród': '...wtedy wiewiórka drapnęła na gałęzie, bażant skrył się w krzakach, a króliki uciekły w podskokach...', użycie czasowników 'drapnęła', 'skrył się', 'uciekły' zamiast np. 'weszła', 'schował się', 'pobiegły' ma na celu:",
+        "answers": [
+            { "text": "Uproszczenie języka, aby był bardziej zrozumiały dla młodych czytelników.", "correct": false },
+            { "text": "Oddanie dynamiki i gwałtowności ruchu, charakterystycznego dla spłoszonych zwierząt.", "correct": true },
+            { "text": "Podkreślenie lenistwa i powolności tych stworzeń.", "correct": false },
+            { "text": "Wprowadzenie elementów języka potocznego do narracji.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Na okręgu o promieniu 10 cm opisano trapez równoramienny, którego pole wynosi 200 cm². Jaki jest obwód tego trapezu?",
-        answers: [
-            { text: "40 cm", correct: true },
-            { text: "50 cm", correct: false },
-            { text: "80 cm", correct: false },
-            { text: "Nie da się tego obliczyć", correct: false }
+        "type": "open",
+        "question": "Zinterpretuj tytuł utworu Sławomira Mrożka 'Artysta'. Kto w tym opowiadaniu jest prawdziwym 'artystą' i dlaczego?",
+        "answer": ["Tytuł jest ironiczny. Prawdziwym artystą nie jest Kogut, który ma tylko ambicje, ale Lis. Lis potrafi doskonale odegrać swoją rolę (łowcy), jest autentyczny w swojej naturze i osiąga swój cel. Jego 'sztuka' jest skuteczna i prawdziwa."]
+    },
+    {
+        "type": "closed",
+        "question": "Jaka fundamentalna różnica dzieli świat wartości reprezentowany przez chrześcijan i świat Rzymu pod rządami Nerona w 'Quo vadis' Henryka Sienkiewicza?",
+        "answers": [
+            { "text": "Chrześcijanie cenili życie w ubóstwie, a Rzymianie bogactwo i luksus.", "correct": false },
+            { "text": "Rzym opierał się na sile fizycznej, władzy i hedonizmie, a świat chrześcijan na sile duchowej, miłości (agape), pokorze i nadziei na życie wieczne.", "correct": true },
+            { "text": "Rzymianie byli politeistami, a chrześcijanie monoteistami.", "correct": false },
+            { "text": "Chrześcijanie byli pacyfistami, a Rzymianie prowadzili liczne wojny.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Jeśli 3ˣ = 5, to ile wynosi 9ˣ⁺¹?",
-        answer: ["225"]
-    },
-    {
-        type: 'closed',
-        question: "Wysokość ostrosłupa prawidłowego czworokątnego i krawędź jego podstawy mają taką samą długość, równą 6 cm. Jaką długość ma krawędź boczna tego ostrosłupa?",
-        answers: [
-            { text: "6√2 cm", correct: false },
-            { text: "9 cm", correct: true },
-            { text: "6√3 cm", correct: false },
-            { text: "3√6 cm", correct: false }
+        "type": "closed",
+        "question": "W zdaniu: 'Chłopiec, pomimo że był onieśmielony, zdołał pokazać dziewczynce nasiona.' podrzędne zdanie okolicznikowe przyzwolenia można zastąpić wyrażeniem przyimkowym bez zmiany sensu. Którym?",
+        "answers": [
+            { "text": "Z powodu onieśmielenia...", "correct": false },
+            { "text": "W celu pokazania...", "correct": false },
+            { "text": "Mimo onieśmielenia...", "correct": true },
+            { "text": "Dzięki onieśmieleniu...", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Losowo wybieramy jedną literę ze słowa MATEMATYKA. Jakie jest prawdopodobieństwo, że wybrana litera jest spółgłoską?",
-        answers: [
-            { text: "1/2", correct: true },
-            { text: "4/10", correct: false },
-            { text: "3/5", correct: false },
-            { text: "4/5", correct: false }
+        "type": "open",
+        "question": "W 'Trenie VII' Jan Kochanowski zestawia 'lichą odzież' i 'uploteczki' córki z jej 'matką zasłoną'. Co poeta osiąga poprzez to zestawienie prostych, codziennych przedmiotów z pojęciem abstrakcyjnym?",
+        "answer": ["Poeta materializuje swoją rozpacz. Zestawienie konkretnych, namacalnych pamiątek po dziecku (ubranka) z abstrakcyjnym bólem i pustką (zasłona matki) potęguje wrażenie straty. Sprawia, że ból staje się niemal fizycznie odczuwalny i unaocznia ogrom tragedii."]
+    },
+    {
+        "type": "closed",
+        "question": "Wybierz parę bohaterów z różnych lektur, których postawy wobec życia i przeciwności losu są najbardziej do siebie ZBLIŻONE.",
+        "answers": [
+            { "text": "Ebenezer Scrooge (przed przemianą) i Rejent Milczek.", "correct": false },
+            { "text": "Mały Książę i Bilbo Baggins.", "correct": false },
+            { "text": "Zośka ('Kamienie na szaniec') i Ordon ('Reduta Ordona').", "correct": true },
+            { "text": "Balladyna i Telimena.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Pusty basen napełniany jest przez dwa krany. Pierwszy kran napełnia go w ciągu 6 godzin, a drugi w ciągu 3 godzin. W jakim czasie (w minutach) napełni się basen, jeśli oba krany będą odkręcone jednocześnie?",
-        answer: ["120"]
+        "type": "open",
+        "question": "W przypowieści o miłosiernym Samarytaninie, kapłan i lewita mijają rannego. Dlaczego Jezus w swojej opowieści wybrał właśnie przedstawicieli tych grup? Co chciał przez to podkreślić?",
+        "answer": ["Jezus wybrał kapłana i lewitę, czyli osoby duchowne, od których oczekiwano prawości i miłosierdzia. Ich obojętność pokazuje, że formalna przynależność religijna i znajomość prawa nie gwarantują człowieczeństwa. Podkreśla, że prawdziwa wiara objawia się w czynach, a nie w statusie społecznym."]
     },
     {
-        type: 'closed',
-        question: "Liczba (√10 - 3)² jest równa:",
-        answers: [
-            { text: "1", correct: false },
-            { text: "19", correct: false },
-            { text: "19 - 6√10", correct: true },
-            { text: "1 - 6√10", correct: false }
+        "type": "closed",
+        "question": "Analizując język fraszki 'Na lipę' Jana Kochanowskiego, można stwierdzić, że dominującym środkiem stylistycznym, budującym cały obraz poetycki, jest:",
+        "answers": [
+            { "text": "Apostrofa do gościa.", "correct": false },
+            { "text": "Porównanie homeryckie.", "correct": false },
+            { "text": "Personifikacja (uosobienie) – lipa przemawia ludzkim głosem, zapraszając do odpoczynku.", "correct": true },
+            { "text": "Hiperbola, wyolbrzymiająca zalety drzewa.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Przekątna graniastosłupa prawidłowego czworokątnego ma długość 15 cm, a krawędź podstawy ma długość 9 cm. Jakie jest pole powierzchni bocznej tego graniastosłupa?",
-        answers: [
-            { text: "324 cm²", correct: false },
-            { text: "432 cm²", correct: true },
-            { text: "108 cm²", correct: false },
-            { text: "540 cm²", correct: false }
+        "type": "open",
+        "question": "Przekształć zdanie złożone w wypowiedzenie z imiesłowowym równoważnikiem zdania: 'Gdy Mary zobaczyła Dicka, który grał na fujarce, zatrzymała się w zdumieniu.'",
+        "answer": ["Zobaczywszy Dicka grającego na fujarce, Mary zatrzymała się w zdumieniu."]
+    },
+    {
+        "type": "closed",
+        "question": "Które z podanych zdań najtrafniej oddaje uniwersalne przesłanie 'Opowieści wigilijnej' Karola Dickensa?",
+        "answers": [
+            { "text": "Warto jest gromadzić majątek, aby móc dzielić się nim z ubogimi w przyszłości.", "correct": false },
+            { "text": "Każdy człowiek, bez względu na swoje przeszłe błędy, ma szansę na wewnętrzną przemianę i odkupienie, jeśli otworzy serce na innych.", "correct": true },
+            { "text": "Duchy zmarłych mogą ingerować w życie ludzi, aby naprawić dawne krzywdy.", "correct": false },
+            { "text": "Rodzina i tradycja świąt są najważniejszymi wartościami w życiu człowieka.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Samochód przejechał pewną trasę ze średnią prędkością 60 km/h. Drogę powrotną pokonał z prędkością 90 km/h. Jaka była średnia prędkość samochodu na całej trasie (w obie strony)? Wynik podaj w km/h.",
-        answer: ["72"]
-    },
-    {
-        type: 'closed',
-        question: "Ile jest wszystkich liczb trzycyfrowych, w których każda kolejna cyfra jest o 1 większa od poprzedniej?",
-        answers: [
-            { text: "10", correct: false },
-            { text: "9", correct: false },
-            { text: "8", correct: false },
-            { text: "7", correct: true }
+        "type": "closed",
+        "question": "W którym z poniższych wyrazów przedrostek 'prze-' ma inne znaczenie niż w pozostałych (oznacza zmianę, transformację)?",
+        "answers": [
+            { "text": "Przekształcić", "correct": false },
+            { "text": "Przemienić", "correct": false },
+            { "text": "Przeskoczyć", "correct": true },
+            { "text": "Przerobić", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W trójkąt równoboczny o boku 12 cm wpisano koło. Jakie jest pole tego koła?",
-        answers: [
-            { text: "36π cm²", correct: false },
-            { text: "16π cm²", correct: false },
-            { text: "12π cm²", correct: true },
-            { text: "4π cm²", correct: false }
+        "type": "open",
+        "question": "W 'Hobbicie' J.R.R. Tolkiena, Bilbo Baggins wyrusza w podróż jako stateczny, lubiący wygodę hobbit, a wraca jako zupełnie inna osoba. Wymień jedną cechę, którą nabył w trakcie wyprawy, i podaj sytuację, w której ją ujawnił.",
+        "answer": ["Nabył odwagę i spryt. Ujawnił je na przykład podczas konfrontacji z pająkami w Mrocznej Puszczy, gdzie samotnie walczył, by ocalić krasnoludów, lub podczas gry w zagadki z Gollumem, gdzie wykazał się zimną krwią i inteligencją."]
+    },
+    {
+        "type": "closed",
+        "question": "Wypowiedzenie: 'Ptaki niełatwo zaprzyjaźniają się, a taki rudzik to potrafi wystrychnąć na dudka gorzej niż człowiek' to zdanie:",
+        "answers": [
+            { "text": "Złożone podrzędnie z podrzędnym dopełnieniowym.", "correct": false },
+            { "text": "Złożone współrzędnie łączne.", "correct": false },
+            { "text": "Złożone współrzędnie przeciwstawne.", "correct": true },
+            { "text": "Pojedyncze rozwinięte z wtrąceniem.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Rozwiązaniem układu równań y = 2x - 3 i 3x + 2y = 22 jest para liczb (x, y). Podaj wartość x + y.",
-        answer: ["9"]
+        "type": "open",
+        "question": "Wskaż wspólny motyw łączący mit o Dedalu i Ikarze oraz przypowieść o talentach. Wyjaśnij krótko, na czym polega to podobieństwo.",
+        "answer": ["Wspólnym motywem jest przestroga przed pychą i niewłaściwym wykorzystaniem daru/talentu. Ikar upada, bo w uniesieniu pychą ignoruje rady ojca i przekracza granice. Sługa z przypowieści zostaje ukarany, bo ze strachu nie wykorzystuje danego mu talentu. Oba utwory uczą odpowiedzialności i umiaru."]
     },
     {
-        type: 'closed',
-        question: "Metalową kulę o promieniu 3 cm przetopiono na walec o takiej samej wysokości jak promień kuli. Ile wynosi promień podstawy tego walca?",
-        answers: [
-            { text: "6 cm", correct: true },
-            { text: "3 cm", correct: false },
-            { text: "3√2 cm", correct: false },
-            { text: "4 cm", correct: false }
+        "type": "closed",
+        "question": "Czym różni się patriotyzm ukazywany w 'Reducie Ordona' od patriotyzmu przedstawionego w 'Mazurku Dąbrowskiego'?",
+        "answers": [
+            { "text": "'Reduta...' skupia się na heroicznej klęsce i ofierze, a 'Mazurek...' na nadziei, woli walki i wizji odzyskania niepodległości.", "correct": true },
+            { "text": "'Reduta...' opisuje walkę na lądzie, a 'Mazurek...' na morzu.", "correct": false },
+            { "text": "'Reduta...' jest utworem romantycznym, a 'Mazurek...' oświeceniowym.", "correct": false },
+            { "text": "'Reduta...' gloryfikuje dowódcę, a 'Mazurek...' anonimowego żołnierza.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Wartość wyrażenia |5 - √26| - |√26 - 4| jest równa:",
-        answers: [
-            { text: "1", correct: false },
-            { text: "-1", correct: true },
-            { text: "9 - 2√26", correct: false },
-            { text: "2√26 - 9", correct: false }
+        "type": "open",
+        "question": "Wpisz skrót, który poprawnie zastąpi wyrażenie 'między innymi' w formalnym tekście.",
+        "answer": ["m.in."]
+    },
+    {
+        "type": "closed",
+        "question": "Ostatnia scena 'Dziadów części II', w której pojawia się milczące Widmo podążające za Pasterką, ma kluczowe znaczenie dla całego cyklu. Jej funkcja to przede wszystkim:",
+        "answers": [
+            { "text": "Zakończenie obrzędu dziadów i odesłanie wszystkich duchów.", "correct": false },
+            { "text": "Wprowadzenie motywu nieszczęśliwej miłości i zapowiedź problematyki IV części 'Dziadów'.", "correct": true },
+            { "text": "Ukazanie, że nie wszystkie duchy można przywołać za pomocą zaklęć Guślarza.", "correct": false },
+            { "text": "Zasugerowanie, że Pasterka popełniła najcięższy grzech.", "correct": false }
         ]
-    },
-    {
-        type: 'open',
-        question: "Punkty A=(-4, -1), B=(4, -1) i C=(1, 5) są wierzchołkami trójkąta. Oblicz pole tego trójkąta.",
-        answer: ["24"]
-    },
-    {
-        type: 'closed',
-        question: "Cena akcji pewnej firmy spadła o 60%. O ile procent musi teraz wzrosnąć, aby powrócić do ceny początkowej?",
-        answers: [
-            { text: "O 60%", correct: false },
-            { text: "O 120%", correct: false },
-            { text: "O 150%", correct: true },
-            { text: "O 250%", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Liczba a stanowi 80% liczby b, a liczba c stanowi 50% liczby a. Jakim procentem liczby b jest liczba c?",
-        answer: ["40"]
     }
-];;
+]
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

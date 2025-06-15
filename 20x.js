@@ -1,194 +1,196 @@
-const questions = [
-    {
-        type: 'closed',
-        question: "Suma cyfr pewnej liczby dwucyfrowej 'n' wynosi 9. Jeśli od 'n' odejmiemy 45, otrzymamy liczbę o przestawionych cyfrach. Jaka jest wartość 'n'?",
-        answers: [
-            { text: "63", correct: false },
-            { text: "72", correct: true },
-            { text: "81", correct: false },
-            { text: "90", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "W trójkącie prostokątnym wysokość opuszczona na przeciwprostokątną dzieli ją na odcinki o długości 8 cm i 18 cm. Oblicz obwód tego trójkąta.",
-        answer: ["60"]
-    },
-    {
-        type: 'closed',
-        question: "Liczba a = 2⁵⁵, b = 3³³, c = 13¹¹. Która z poniższych nierówności jest prawdziwa?",
-        answers: [
-            { text: "c < b < a", correct: true },
-            { text: "b < c < a", correct: false },
-            { text: "a < b < c", correct: false },
-            { text: "c < a < b", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Pole powierzchni całkowitej stożka wynosi 200π, a pole powierzchni bocznej 136π. Oblicz objętość tego stożka.",
-        answer: ["320π"]
-    },
-    {
-        type: 'closed',
-        question: "W sześcianie o krawędzi 'a' połączono środki dwóch sąsiednich ścian. Odległość między tymi środkami wynosi:",
-        answers: [
-            { text: "a/2", correct: false },
-            { text: "a√2 / 2", correct: true },
-            { text: "a√3 / 2", correct: false },
-            { text: "a", correct: false }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "Wartość wyrażenia log√3(log₂8) jest równa:",
-        answers: [
-            { text: "1", correct: false },
-            { text: "2", correct: true },
-            { text: "3", correct: false },
-            { text: "4", correct: false }
-        ]
-    },
-
-    {
-        type: 'open',
-        question: "Wartość wyrażenia (1/2)⁻² + (1/3)⁻³ + (1/4)⁻¹ jest równa:",
-        answer: ["35"]
-    },
-    {
-        type: 'closed',
-        question: "W okrąg o promieniu R=5 wpisano trapez równoramienny, którego podstawy mają długości 6 i 8. Pole tego trapezu wynosi:",
-        answers: [
-            { text: "49", correct: true },
-            { text: "42", correct: false },
-            { text: "35", correct: false },
-            { text: "28", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Samochód przejechał 1/4 trasy z prędkością 80 km/h, a pozostałą część z prędkością 60 km/h. Jaka była średnia prędkość samochodu na całej trasie?",
-        answer: ["64"]
-    },
-    {
-        type: 'closed',
-        question: "Jeśli x - 1/x = 3, to x² + 1/x² jest równe:",
-        answers: [
-            { text: "7", correct: false },
-            { text: "9", correct: false },
-            { text: "11", correct: true },
-            { text: "13", correct: false }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "Dwie proste y = (m²-3)x + 1 i y = -2x - 5 są równoległe. Jedną z możliwych wartości 'm' jest:",
-        answers: [
-            { text: "1", correct: true },
-            { text: "-3", correct: false },
-            { text: "√5", correct: false },
-            { text: "2", correct: false }
-        ]
-
-    },
-    {
-        type: 'open',
-        question: "W turnieju szachowym każdy z 8 zawodników rozegrał z każdym innym dokładnie jedną partię. Ile partii rozegrano w całym turnieju?",
-        answer: ["28"]
-    },
-    {
-        type: 'closed',
-        question: "Liczba 15! / (13! * 3!) jest równa:",
-        answers: [
-            { text: "35", correct: true },
-            { text: "45", correct: false },
-            { text: "105", correct: false },
-            { text: "210", correct: false }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "Wartość wyrażenia (√2)¹ + (√2)² + (√2)³ + (√2)⁴ jest równa:",
-        answers: [
-            { text: "6 + 2√2", correct: false },
-            { text: "6 + 3√2", correct: true },
-            { text: "8 + 4√2", correct: false },
-            { text: "10", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "W trójkącie prostokątnym o obwodzie 36, jedna z przyprostokątnych ma długość 9. Oblicz pole tego trójkąta.",
-        answer: ["54"]
-    },
-    {
-        type: 'closed',
-        question: "W trapezie ABCD o podstawach AB i CD, punkty K i L są środkami ramion AD i BC. Odcinek KL ma długość 12, a wysokość trapezu wynosi 5. Pole tego trapezu wynosi:",
-        answers: [
-            { text: "30", correct: false },
-            { text: "60", correct: true },
-            { text: "90", correct: false },
-            { text: "120", correct: false }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "Ojciec jest 4 razy starszy od syna. Za 20 lat będzie od niego 2 razy starszy. Ile lat ma obecnie ojciec?",
-        answers: [
-            { text: "32", correct: false },
-            { text: "36", correct: false },
-            { text: "40", correct: true },
-            { text: "44", correct: false }
-        ]
-
-    },
-    {
-        type: 'open',
-        question: "Jaka jest reszta z dzielenia liczby 2²⁰²⁴ przez 5?",
-        answer: ["1"]
-    },
-    {
-        type: 'closed',
-        question: "Punkty A=(1,1), B=(5,1), C=(7,4), D=(3,4) są wierzchołkami:",
-        answers: [
-            { text: "prostokąta", correct: false },
-            { text: "rombu", correct: false },
-            { text: "równoległoboku, który nie jest rombem ani prostokątem", correct: true },
-            { text: "trapezu, który nie jest równoległobokiem", correct: false }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "Wartość wyrażenia ∛(7+5√2) * ∛(7-5√2) jest równa:",
-        answers: [
-            { text: "-1", correct: true },
-            { text: "1", correct: false },
-            { text: "7", correct: false },
-            { text: "√99", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Statek płynący z prądem rzeki pokonuje 48 km w 3 godziny. Wracając pod prąd, tę samą trasę pokonuje w 4 godziny. Jaka jest prędkość statku w wodzie stojącej (w km/h)?",
-        answer: ["14"]
-    },
-    {
-        type: 'closed',
-        question: "W pudełku jest 6 kul czerwonych, 4 zielone i 2 niebieskie. Losujemy jedną kulę. Jakie jest prawdopodobieństwo, że nie będzie ona ani czerwona, ani niebieska?",
-        answers: [
-            { text: "1/3", correct: true },
-            { text: "1/2", correct: false },
-            { text: "2/3", correct: false },
-            { text: "1/4", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Wszystkie krawędzie graniastosłupa prawidłowego sześciokątnego mają długość 4 cm. Oblicz pole jego powierzchni bocznej.",
-        answer: ["96"]
-    }
-];
-
+const questions =
+    [
+        {
+            "type": "closed",
+            "question": "Jaka jest fundamentalna różnica w funkcji postaci Papkina w 'Zemście' i postaci Chilona Chilonidesa w 'Quo vadis'?",
+            "answers": [
+                { "text": "Obie postacie są tchórzliwe, ale Papkin jest Polakiem, a Chilon Grekiem.", "correct": false },
+                { "text": "Papkin jest postacią głównie komiczną, której słabości służą rozrywce. Chilon, mimo początkowego cynizmu, przechodzi głęboką przemianę i staje się postacią tragiczną, symbolem odkupienia.", "correct": true },
+                { "text": "Papkin służy Cześnikowi, a Chilon Neronowi.", "correct": false },
+                { "text": "Papkin umiera ze strachu, a Chilon ginie śmiercią męczeńską.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "W 'Małym Księciu', co symbolizuje fakt, że planeta Pijaka jest najmniejsza ze wszystkich, które odwiedził Mały Książę?",
+            "answer": ["Symbolizuje to, że świat człowieka pogrążonego w nałogu i błędnym kole absurdu kurczy się do minimum. Nie ma w nim miejsca na nic innego – ani na relacje, ani na rozwój, ani na piękno. Jest to metafora egzystencjalnego zamknięcia i ciasnoty duchowej."]
+        },
+        {
+            "type": "closed",
+            "question": "Wskaż zdanie, w którym imiesłowowy równoważnik zdania jest użyty błędnie.",
+            "answers": [
+                { "text": "Biegnąc na autobus, zgubił portfel.", "correct": false },
+                { "text": "Wyprowadziwszy psa, wrócił do domu.", "correct": false },
+                { "text": "Jedząc zupę, widelec wypadł mu z ręki.", "correct": true },
+                { "text": "Słuchając muzyki, czuł się zrelaksowany.", "correct": false }
+            ]
+        },
+        {
+            "type": "closed",
+            "question": "Co łączy postawę moralną Aleksego Dawidowskiego ('Alek') z 'Kamieni na szaniec' z postawą Nemeczka z 'Chłopców z Placu Broni'?",
+            "answers": [
+                { "text": "Obaj są najmłodszymi członkami swoich grup.", "correct": false },
+                { "text": "W obu przypadkach cechuje ich brawurowa odwaga i skłonność do podejmowania indywidualnego, często niebezpiecznego ryzyka w imię sprawy, którą uważają za słuszną.", "correct": true },
+                { "text": "Obaj pełnią funkcje dowódcze i strategiczne.", "correct": false },
+                { "text": "Obaj giną w wyniku zdrady swoich towarzyszy.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "W 'Panu Tadeuszu' Zosia karmi ptactwo domowe. Jaka jest symboliczna funkcja tej sceny?",
+            "answer": ["Scena ta charakteryzuje Zosię jako osobę dobrą, opiekuńczą i żyjącą w harmonii z naturą. Jest ona 'panią' swojego małego świata, w którym panuje porządek i ład. To symbol jej niewinności, prostoty i gospodarności, cech idealnej przyszłej pani domu w sarmackim świecie."]
+        },
+        {
+            "type": "closed",
+            "question": "W 'Zemście' Cześnik mówi do Papkina: 'Idź, serdeńko, bo cię trzepnę'. Ten zwrot jest przykładem komizmu językowego opartego na:",
+            "answers": [
+                { "text": "Użyciu wulgaryzmów.", "correct": false },
+                { "text": "Zderzeniu pieszczotliwego, fałszywego zwrotu ('serdeńko') z brutalną groźbą ('bo cię trzepnę'), co tworzy absurdalny i komiczny efekt.", "correct": true },
+                { "text": "Niezrozumieniu przez Papkina słów Cześnika.", "correct": false },
+                { "text": "Użyciu archaicznego, niezrozumiałego słownictwa.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Wyjaśnij, dlaczego postać tytułowej 'Katarynki' z noweli Bolesława Prusa jest symbolem, a nie tylko instrumentem.",
+            "answer": ["Katarynka jest symbolem prostej, ludowej sztuki i radości, która jest w stanie przełamać barierę społeczną i estetyczną. Dla pana Tomasza, estety, jest ona początkowo symbolem kiczu, ale z miłości do niewidomej dziewczynki staje się dla niego narzędziem empatii i symbolem przemiany – otwarcia się na świat i potrzeby 'maluczkich'."]
+        },
+        {
+            "type": "closed",
+            "question": "W 'Balladynie' postać Filona, pasterza-romantyka, pełni funkcję:",
+            "answers": [
+                { "text": "Głównego antagonisty, który rywalizuje z Kirkorem o władzę.", "correct": false },
+                { "text": "Komicznego przerywnika, rozładowującego napięcie dramatu.", "correct": false },
+                { "text": "Kontrapunktu dla brutalnego realizmu zbrodni; jest on uosobieniem sentymentalnej, wyidealizowanej miłości, która szuka idealnej kochanki, co kontrastuje z pragmatyczną i zbrodniczą postawą Balladyny.", "correct": true },
+                { "text": "Detektywa, który próbuje rozwiązać zagadkę śmierci Aliny.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Zinterpretuj symbolikę przypowieści o miłosiernym Samarytaninie w kontekście pytania 'Kto jest moim bliźnim?'.",
+            "answer": ["Przypowieść ta redefiniuje pojęcie 'bliźniego'. Bliźnim nie jest ten, kto należy do tej samej grupy etnicznej czy religijnej (jak kapłan i lewita), ale każdy, kto potrzebuje pomocy, oraz ten, kto tej pomocy udziela. Samarytanin, pogardzany przez Żydów, okazuje się prawdziwym 'bliźnim', co pokazuje, że miłosierdzie i człowieczeństwo stoją ponad podziałami społecznymi."]
+        },
+        {
+            "type": "closed",
+            "question": "Wskaż zdanie, w którym występuje błąd polegający na niewłaściwym użyciu przyimka.",
+            "answers": [
+                { "text": "Idę do szkoły na ósmą.", "correct": false },
+                { "text": "Spotkajmy się za pięć minut.", "correct": false },
+                { "text": "Wziąłem tabletkę na ból głowy.", "correct": false },
+                { "text": "On mieszka na ulicy Kwiatowej.", "correct": true }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Wyjaśnij, na czym polega tragizm losu postaci tytułowej z bajki 'O rybaku i rybce' Aleksandra Puszkina.",
+            "answer": ["Jej tragizm polega na niepohamowanej chciwości i pysze, która prowadzi ją od biedy do absolutnej władzy, a następnie z powrotem do punktu wyjścia. Jest postacią, która nie potrafi docenić tego, co ma, i zawsze pragnie więcej. Jej upadek jest karą za moralną ślepotę i brak umiaru. To tragizm wiecznego niezaspokojenia."]
+        },
+        {
+            "type": "closed",
+            "question": "Wskaż, która z postaci literackich w najpełniejszy sposób uosabia romantyczny typ bohatera-tyrana, opętanego żądzą władzy.",
+            "answers": [
+                { "text": "Neron z 'Quo vadis'", "correct": false },
+                { "text": "Balladyna z 'Balladyny'", "correct": true },
+                { "text": "Rejent Milczek z 'Zemsty'", "correct": false },
+                { "text": "Kirkor z 'Balladyny'", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "W 'Panu Tadeuszu' często opisywane są posiłki i uczty. Jaka jest funkcja tych opisów?",
+            "answer": ["Opisy te pełnią funkcję obyczajową i kulturową. Pokazują bogactwo i specyfikę kuchni staropolskiej, a także hierarchię społeczną i zasady 'grzeczności' panujące przy stole. Uczta jest ważnym elementem życia wspólnoty, miejscem spotkań, rozmów i celebracji. Buduje to arkadyjski, uporządkowany obraz świata Soplicowa."]
+        },
+        {
+            "type": "closed",
+            "question": "W 'Opowieści wigilijnej', Duch Przyszłych Świąt jest jedynym duchem, który budzi w Scrooge'u prawdziwy strach. Dlaczego?",
+            "answers": [
+                { "text": "Ponieważ jest milczący, bezosobowy i nieubłagany, symbolizując ostateczność i nieodwracalność konsekwencji jego dotychczasowego życia.", "correct": true },
+                { "text": "Ponieważ grozi mu fizyczną karą, jeśli się nie zmieni.", "correct": false },
+                { "text": "Ponieważ pokazuje mu wizję piekła i wiecznego potępienia.", "correct": false },
+                { "text": "Ponieważ jest najbrzydszy i najbardziej przerażający z wyglądu.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Przekształć zdanie w mowie zależnej na mowę niezależną: 'Kazała mi, żebym posprzątał swój pokój.'",
+            "answer": ["Kazała mi: 'Posprzątaj swój pokój!'."]
+        },
+        {
+            "type": "closed",
+            "question": "Które z poniższych dzieł najpełniej realizuje model przypowieści (paraboli)?",
+            "answers": [
+                { "text": "'Zemsta'", "correct": false },
+                { "text": "'Mały Książę'", "correct": true },
+                { "text": "'Pan Tadeusz'", "correct": false },
+                { "text": "'Chłopcy z Placu Broni'", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Zinterpretuj symboliczną funkcję postaci Chilona Chilonidesa w 'Quo vadis'.",
+            "answer": ["Chilon symbolizuje ludzką słabość, cynizm i zdolność do zdrady dla zysku. Jest on uosobieniem intelektualisty na usługach zła. Jednak jego postać jest także dowodem na możliwość głębokiej przemiany – w obliczu męczeństwa chrześcijan i własnego cierpienia doznaje wstrząsu moralnego i nawraca się, co pokazuje, że nawet w najbardziej zdeprawowanym człowieku tkwi iskra dobra."]
+        },
+        {
+            "type": "closed",
+            "question": "Wskaż zdanie, w którym występuje błąd w użyciu zaimka.",
+            "answers": [
+                { "text": "Dałem mu książkę, którą polecałeś.", "correct": false },
+                { "text": "Poszedłem do niego, aby porozmawiać.", "correct": false },
+                { "text": "Usiadłem na krześle, którego noga była złamana.", "correct": false },
+                { "text": "Wziąłem parasol, bo jego prognoza zapowiadała deszcz.", "correct": true }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Jaka jest symboliczna funkcja postaci Telimeny w kontekście polskiego społeczeństwa epoki porozbiorowej?",
+            "answer": ["Telimena symbolizuje tę część polskiego społeczeństwa, która uległa fascynacji kulturą obcą (rosyjską, francuską), traktując ją jako wyznacznik nowoczesności i lepszego świata. Reprezentuje kosmopolityzm i odwrócenie się od rodzimej tradycji, co było jednym z dylematów tożsamościowych Polaków w tamtym okresie."]
+        },
+        {
+            "type": "closed",
+            "question": "Wskaż, która z postaci literackich w swoim postępowaniu kieruje się przede wszystkim wiernością i lojalnością wobec przywódcy/pana.",
+            "answers": [
+                { "text": "Papkin", "correct": false },
+                { "text": "Gerwazy", "correct": true },
+                { "text": "Wacław", "correct": false },
+                { "text": "Hrabia", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Wyjaśnij, na czym polega komizm sytuacyjny w 'Zemście'. Podaj jeden przykład.",
+            "answer": ["Komizm sytuacyjny polega na tworzeniu zabawnych, nieoczekiwanych i absurdalnych zbiegów okoliczności i wydarzeń. Przykładem jest scena, w której Wacław, syn Rejenta, dobrowolnie oddaje się w 'niewolę' Cześnikowi, swojemu wrogowi, aby być bliżej ukochanej Klary, co Cześnik interpretuje jako akt tchórzostwa i kapitulacji."]
+        },
+        {
+            "type": "closed",
+            "question": "Co jest wspólnym elementem losu Ikara i Balladyny?",
+            "answers": [
+                { "text": "Dążenie do władzy, które prowadzi do upadku.", "correct": false },
+                { "text": "Upadek (dosłowny i moralny) spowodowany przekroczeniem pewnych granic – Ikar przekracza granice wyznaczone przez naturę i ojca, a Balladyna granice moralne i ludzkie.", "correct": true },
+                { "text": "Miłość, która staje się przyczyną ich zguby.", "correct": false },
+                { "text": "Kara wymierzona przez bogów za nieposłuszeństwo.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Wskaż błąd frazeologiczny w zdaniu: 'On zawsze ubiera adidasy do garnituru' i wyjaśnij, na czym on polega.",
+            "answer": ["Błąd polega na generalizacji nazwy własnej ('adidasy' od marki Adidas) i używaniu jej jako nazwy gatunkowej (buty sportowe). Chociaż jest to powszechne w języku potocznym, w normie wzorcowej jest to błąd. Poprawnie: 'On zawsze ubiera buty sportowe do garnituru'."]
+        },
+        {
+            "type": "closed",
+            "question": "Które z poniższych dzieł w najpełniejszy sposób ukazuje konflikt pokoleń na tle wielkich przemian historycznych?",
+            "answers": [
+                { "text": "'Zemsta'", "correct": false },
+                { "text": "'Pan Tadeusz'", "correct": true },
+                { "text": "'Latarnik'", "correct": false },
+                { "text": "'Chłopcy z Placu Broni'", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "W 'Trenie XIX, czyli Śnie', matka mówi do Kochanowskiego: '[...] ludzkie przygody / Ludzkie noś'. Co oznaczają te słowa?",
+            "answer": ["Oznaczają one wezwanie do przyjęcia stoickiej postawy wobec życia. 'Ludzkie przygody' to ludzki los, pełen cierpienia i radości. 'Ludzkie noś' to nakaz, by znosić ten los z godnością, umiarem i odwagą, akceptując, że cierpienie jest nieodłączną częścią bycia człowiekiem. To filozofia akceptacji ludzkiej doli."]
+        }
+    ]
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");
 const answerButtonsElement = document.getElementById("answer-buttons");

@@ -1,206 +1,196 @@
-const questions = [
-    {
-        type: 'closed',
-        question: "Suma dwóch liczb wynosi 8, a ich iloczyn 12. Ile wynosi suma sześcianów tych liczb?",
-        answers: [
-            { text: "512", correct: false },
-            { text: "224", correct: true },
-            { text: "176", correct: false },
-            { text: "40", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Z walca o promieniu podstawy 3 i wysokości 4 wycięto stożek o tej samej podstawie i wysokości. Oblicz pole powierzchni całkowitej powstałej w ten sposób bryły (wynik zapisz w postaci aπ).",
-        answer: ["48π"]
-    },
-    {
-        type: 'closed',
-        question: "Liczba a = 2⁶⁰, b = 3⁴⁰, c = 5²⁰. Prawdą jest, że:",
-        answers: [
-            { text: "a < b < c", correct: false },
-            { text: "c < a < b", correct: true },
-            { text: "b < c < a", correct: false },
-            { text: "a < c < b", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Dwie osoby wyruszyły jednocześnie naprzeciw siebie z miast A i B. Po spotkaniu, pierwsza osoba dotarła do miasta B w ciągu 9 godzin, a druga do miasta A w ciągu 4 godzin. Jaki jest stosunek prędkości pierwszej osoby do prędkości drugiej? (Podaj w postaci ułamka a/b)",
-        answer: ["2/3"]
-    },
-    {
-        type: 'closed',
-        question: "W trójkącie prostokątnym o przyprostokątnych 6 i 8, odległość wierzchołka kąta prostego od przeciwprostokątnej wynosi:",
-        answers: [
-            { text: "4", correct: false },
-            { text: "4.8", correct: true },
-            { text: "5", correct: false },
-            { text: "6", correct: false }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "Wartość wyrażenia 2²⁰²⁴ - 2²⁰²² jest podzielna przez:",
-        answers: [
-            { text: "5", correct: false },
-            { text: "3", correct: true },
-            { text: "7", correct: false },
-            { text: "11", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "W trójkąt równoramienny o podstawie 10 i ramionach 13 wpisano prostokąt tak, że jeden jego bok leży na podstawie trójkąta. Wysokość prostokąta wynosi 4. Oblicz pole tego prostokąta.",
-        answer: ["20"]
-    },
-    {
-        type: 'closed',
-        question: "Jaka jest cyfra jedności liczby, która jest wartością wyrażenia 13³¹ + 17¹⁷ + 21²¹?",
-        answers: [
-            { text: "1", correct: true },
-            { text: "3", correct: false },
-            { text: "5", correct: false },
-            { text: "7", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Długość boku kwadratu zwiększono o 2 cm, co spowodowało wzrost jego pola o 24 cm². Jaka była pierwotna długość boku kwadratu?",
-        answer: ["5"]
-    },
-    {
-        type: 'closed',
-        question: "Na ile sposobów można wybrać trzyosobową delegację z grupy 5 chłopców i 4 dziewcząt tak, aby w delegacji znalazł się co najmniej jeden chłopiec?",
-        answers: [
-            { text: "84", correct: false },
-            { text: "80", correct: true },
-            { text: "76", correct: false },
-            { text: "60", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Cena akcji wzrosła o 10%, a następnego dnia spadła o 10%. Po tych dwóch dniach akcja kosztowała 99 zł. Jaka była cena akcji na samym początku?",
-        answer: ["100"]
-    },
-    {
-        type: 'closed',
-        question: "Liczba rozwiązań równania |x-2| + |x+2| = 4 to:",
-        answers: [
-            { text: "0", correct: false },
-            { text: "1", correct: false },
-            { text: "2", correct: false },
-            { text: "nieskończenie wiele", correct: true }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "W sześciokącie foremnym o boku 6 połączono co drugi wierzchołek, tworząc trójkąt równoboczny. Pole tego trójkąta jest równe:",
-        answers: [
-            { text: "9√3", correct: false },
-            { text: "18√3", correct: false },
-            { text: "27√3", correct: true },
-            { text: "36√3", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Wartość wyrażenia 2025² - 2024² jest równa:",
-        answer: ["4049"]
-    },
-    {
-        type: 'closed',
-        question: "Jeśli logₓ(1/8) = -3/2, to x jest równe:",
-        answers: [
-            { text: "2", correct: false },
-            { text: "4", correct: true },
-            { text: "√8", correct: false },
-            { text: "1/4", correct: false }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "W graniastosłupie prawidłowym trójkątnym wszystkie krawędzie mają jednakową długość. Pole powierzchni całkowitej wynosi 50√3. Długość krawędzi tego graniastosłupa wynosi:",
-        answers: [
-            { text: "5", correct: true },
-            { text: "10", correct: false },
-            { text: "5√3", correct: false },
-            { text: "2√3", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "W torebce jest 21 cukierków: 3 razy więcej malinowych niż cytrynowych i o 3 mniej truskawkowych niż malinowych. Jakie jest prawdopodobieństwo wyjęcia cukierka, który nie jest malinowy? (Podaj w postaci ułamka nieskracalnego)",
-        answer: ["4/7"]
-    },
-    {
-        type: 'closed',
-        question: "Prosta prostopadła do prostej y = (1/3)x - 2 i przechodząca przez punkt P=(1, 5) ma równanie:",
-        answers: [
-            { text: "y = 3x + 2", correct: false },
-            { text: "y = -3x + 8", correct: true },
-            { text: "y = -1/3 x + 16/3", correct: false },
-            { text: "y = -3x + 2", correct: false }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "Suma pierwszego i piątego wyrazu ciągu arytmetycznego wynosi 18. Trzeci wyraz tego ciągu jest równy:",
-        answers: [
-            { text: "6", correct: false },
-            { text: "9", correct: true },
-            { text: "12", correct: false },
-            { text: "Nie da się tego ustalić", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Obwód rombu wynosi 60, a jego pole 150. Oblicz wysokość tego rombu.",
-        answer: ["10"]
-    },
-    {
-        type: 'closed',
-        question: "Wartość wyrażenia √(14 - 6√5) jest równa:",
-        answers: [
-            { text: "√14 - √6√5", correct: false },
-            { text: "3 - √5", correct: true },
-            { text: "√5 - 3", correct: false },
-            { text: "1 - √13", correct: false }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "W trójkącie prostokątnym o przyprostokątnych 5 i 12, stosunek promienia okręgu wpisanego do promienia okręgu opisanego wynosi:",
-        answers: [
-            { text: "2:5", correct: false },
-            { text: "3:13", correct: false },
-            { text: "4:13", correct: true },
-            { text: "5:12", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Zegar, który chodzi prawidłowo, pokazuje 3:00. Po ilu minutach wskazówka minutowa po raz pierwszy pokryje się ze wskazówką godzinową?",
-        answer: ["16 i 4/11", "180/11"]
-    },
-    {
-        type: 'closed',
-        question: "Ile jest różnych sposobów na pokonanie drogi z punktu A do punktu B po kratkach 3x2, poruszając się tylko w prawo lub w dół?",
-        answers: [
-            { text: "6", correct: false },
-            { text: "8", correct: false },
-            { text: "10", correct: true },
-            { text: "12", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Suma cyfr liczby dwucyfrowej 'n' wynosi 12. Po odjęciu od 'n' liczby 36, otrzymujemy liczbę o przestawionych cyfrach. Jaka jest wartość 'n'?",
-        answer: ["84"]
-    }
-];
-
+const questions =
+    [
+        {
+            "type": "closed",
+            "question": "W 'Zemście' Rejent Milczek często powtarza sentencję: 'Niech się dzieje wola nieba, / Z nią się zawsze zgadzać trzeba'. W kontekście jego działań, ta dewiza jest przykładem:",
+            "answers": [
+                { "text": "Głębokiej, autentycznej pobożności i zgody na los.", "correct": false },
+                { "text": "Filozoficznego stoicyzmu i spokoju wewnętrznego.", "correct": false },
+                { "text": "Hipokryzji i instrumentalnego wykorzystywania religijności do usprawiedliwiania własnej chciwości i mściwości.", "correct": true },
+                { "text": "Fatalizmu, czyli wiary w nieuchronne przeznaczenie.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Słynny sekret Lisa z 'Małego Księcia' brzmi: 'Dobrze widzi się tylko sercem. Najważniejsze jest niewidoczne dla oczu'. Zinterpretuj to zdanie, odwołując się do relacji Małego Księcia z jego Różą.",
+            "answer": ["Oznacza to, że prawdziwa wartość relacji nie leży w powierzchownym wyglądzie czy słowach, ale w uczuciach, poświęconym czasie i więzi. Mały Książę na początku oceniał Różę przez pryzmat jej próżności i kolców (to, co widoczne dla oczu), a dopiero po rozstaniu zrozumiał, że kocha ją za jej unikalność i wspólnie spędzony czas (to, co widoczne dla serca)."]
+        },
+        {
+            "type": "closed",
+            "question": "W zdaniu z tekstu 'Tajemniczy ogród': 'To było niezwykłe!', podkreślony wyraz pełni w zdaniu funkcję:",
+            "answers": [
+                { "text": "Przydawki", "correct": false },
+                { "text": "Okolicznika sposobu", "correct": false },
+                { "text": "Orzecznika", "correct": true },
+                { "text": "Dopełnienia", "correct": false }
+            ]
+        },
+        {
+            "type": "closed",
+            "question": "Które z poniższych stwierdzeń najtrafniej oddaje wspólną istotę ofiary poniesionej przez Nemeczka ('Chłopcy z Placu Broni') i bohaterów 'Kamieni na szaniec'?",
+            "answers": [
+                { "text": "W obu przypadkach była to ofiara wymuszona przez okrutnych wrogów.", "correct": false },
+                { "text": "Obie ofiary były wynikiem młodzieńczej brawury i braku rozwagi.", "correct": false },
+                { "text": "W obu przypadkach bohaterowie oddają życie z poczucia honoru i wierności dla symbolicznej 'ojczyzny' (Placu Broni / Polski), traktując swój obowiązek ze śmiertelną powagą.", "correct": true },
+                { "text": "Obie ofiary okazały się bezcelowe i nie przyniosły żadnych rezultatów.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Andrzej Radek, jeden z bohaterów 'Syzyfowych prac', jest postacią kluczową dla zrozumienia społecznego tła powieści. Co symbolizuje jego droga życiowa i walka o edukację?",
+            "answer": ["Jego droga symbolizuje ogromny wysiłek i determinację warstw chłopskich w dążeniu do awansu społecznego poprzez edukację. Ukazuje bariery i upokorzenia, jakie musieli pokonywać. Jest żywym dowodem na to, że pęd do wiedzy i polskości istniał również poza środowiskiem szlacheckim."]
+        },
+        {
+            "type": "closed",
+            "question": "Taniec poloneza, kończący akcję 'Pana Tadeusza', jest symboliczną sceną, która wyraża przede wszystkim:",
+            "answers": [
+                { "text": "Radość z zaręczyn Tadeusza i Zosi oraz zakończenia sporu o zamek.", "correct": false },
+                { "text": "Nadzieję na odzyskanie niepodległości, harmonię społeczną, pojednanie zwaśnionych rodów i porządek narodowy pod wodzą wodza-patrioty.", "correct": true },
+                { "text": "Przywiązanie szlachty do tradycyjnych, sarmackich rozrywek i obyczajów.", "correct": false },
+                { "text": "Ostateczne zwycięstwo kultury polskiej nad wpływami zagranicznymi reprezentowanymi przez Telimenę.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Wyjaśnij, jakie jest współczesne, metaforyczne znaczenie związku frazeologicznego 'koń trojański', odwołując się do jego mitologicznego pochodzenia.",
+            "answer": ["W mitologii był to podstęp, dzięki któremu Grecy zdobyli Troję – dar ukrywający wrogów. Współcześnie 'koń trojański' oznacza ukryte, wrogie działanie, podstępny 'dar' lub osobę, która pod pozorem przyjaznych zamiarów działa na szkodę; także szkodliwe oprogramowanie komputerowe."]
+        },
+        {
+            "type": "closed",
+            "question": "Jaka jest rola Goplany w 'Balladynie'? Można ją najtrafniej określić jako:",
+            "answers": [
+                { "text": "Uosobienie czystego zła, które dąży do zniszczenia ludzkości.", "correct": false },
+                { "text": "Sprawiedliwą sędzię, która karze ludzkie występki.", "correct": false },
+                { "text": "Katalizator tragicznych wydarzeń; jej ingerencja w świat ludzi, motywowana kaprysem i namiętnością, uruchamia spiralę zbrodni, ale nie jest ich jedyną przyczyną.", "correct": true },
+                { "text": "Symbol harmonii natury, zakłóconej przez działania człowieka.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "W 'Opowieści wigilijnej' Duch Przyszłych Wigilii jest jedynym, który nie odzywa się do Scrooge'a. Dlaczego jego milczenie jest bardziej przerażające niż słowa pozostałych duchów?",
+            "answer": ["Jego milczenie jest przerażające, ponieważ symbolizuje nieuchronność konsekwencji, jeśli Scrooge się nie zmieni. Jest to przyszłość, która nie dyskutuje i nie negocjuje. Zmusza Scrooge'a do samodzielnej interpretacji strasznych wizji i wzięcia odpowiedzialności za ich kształt, co jest silniejszym bodźcem do zmiany niż gotowe pouczenie."]
+        },
+        {
+            "type": "closed",
+            "question": "Który z poniższych cytatów z 'Dziadów cz. II' wskazuje, że do pełnego człowieczeństwa potrzebne jest doświadczenie zarówno szczęścia, jak i cierpienia?",
+            "answers": [
+                { "text": "'Bo kto nie był ni razu człowiekiem, / Temu człowiek nic nie pomoże.'", "correct": false },
+                { "text": "'Kto nie doznał goryczy ni razu, / Ten nie dozna słodyczy w niebie.'", "correct": true },
+                { "text": "'Ciemno wszędzie, głucho wszędzie, / Co to będzie, co to będzie?'", "correct": false },
+                { "text": "'Są na świecie inne, gorsze winy.'", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Przekształć poniższe zdanie tak, aby zawierało stronę bierną czasownika, nie zmieniając jego sensu: 'Wiatr gwałtownie otworzył okno.'",
+            "answer": ["Okno zostało gwałtownie otworzone przez wiatr."]
+        },
+        {
+            "type": "closed",
+            "question": "Patriotyzm w 'Mazurku Dąbrowskiego' ma charakter czynny i optymistyczny. Jego głównym założeniem jest przekonanie, że:",
+            "answers": [
+                { "text": "Ojczyzna istnieje tylko w sercach Polaków i w pamięci o przeszłości.", "correct": false },
+                { "text": "Naród istnieje tak długo, jak długo żyją i walczą Polacy, a niepodległość można odzyskać własnym wysiłkiem zbrojnym.", "correct": true },
+                { "text": "Należy biernie czekać na pomoc ze strony Napoleona i innych sojuszników.", "correct": false },
+                { "text": "Najważniejsza jest praca organiczna i dbanie o rozwój gospodarczy kraju.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Wskaż jedną wspólną cechę łączącą postać Telimeny z 'Pana Tadeusza' i Koguta z 'Artysty' Sławomira Mrożka.",
+            "answer": ["Wspólną cechą jest kreowanie się na kogoś, kim się nie jest. Telimena udaje światową damę i znawczynię sztuki, by podnieść swój status, a Kogut udaje lwa, by zdobyć sławę. Obie postacie budują swój wizerunek na pozorach i aspiracjach niepopartych autentycznymi cechami."]
+        },
+        {
+            "type": "closed",
+            "question": "Czym jest 'nauka o grzeczności', którą w 'Panu Tadeuszu' wykłada Sędzia? W najgłębszym sensie jest to:",
+            "answers": [
+                { "text": "Zbiorem sztywnych reguł dotyczących zachowania przy stole.", "correct": false },
+                { "text": "Kodeksem moralnym i społecznym, który reguluje relacje międzyludzkie, wyraża szacunek dla hierarchii, wieku, płci i natury, zapewniając harmonię wspólnoty.", "correct": true },
+                { "text": "Sposobem na zaimponowanie gościom i pokazanie wyższości Soplicowa.", "correct": false },
+                { "text": "Próbą powstrzymania młodego pokolenia przed przejmowaniem obcych wzorców.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Wskaż błąd składniowy w zdaniu: 'Kupując bilety, kasa została już zamknięta.' i napisz je poprawnie.",
+            "answer": ["Błąd polega na tym, że czynność wyrażona imiesłowem ('kupując') nie jest wykonywana przez podmiot zdania głównego ('kasa'). Poprawnie: 'Gdy kupowałem/am bilety, kasa została już zamknięta.'"]
+        },
+        {
+            "type": "closed",
+            "question": "Analizując postać Hrabiego z 'Pana Tadeusza' i Don Kichota, można dostrzec pewne podobieństwo. Polega ono na:",
+            "answers": [
+                { "text": "Odwadze w walce zbrojnej i talencie dowódczym.", "correct": false },
+                { "text": "Postrzeganiu rzeczywistości przez pryzmat literatury i sztuki, co prowadzi do komicznych nieporozumień i idealizacji otoczenia (ruiny zamku / wiatraki).", "correct": true },
+                { "text": "Bogactwie i wysokiej pozycji społecznej.", "correct": false },
+                { "text": "Nieszczęśliwej miłości do prostej dziewczyny.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Wyjaśnij, dlaczego tytuł fraszki Jana Kochanowskiego 'O żywocie ludzkim' jest kluczem do zrozumienia jej filozoficznego przesłania.",
+            "answer": ["Tytuł wskazuje, że fraszka nie jest błahą igraszką, lecz filozoficzną refleksją nad ludzkim życiem ('żywotem ludzkim'). Zapowiada, że pod pozorem lekkiej formy kryje się poważna myśl o marności ludzkich starań i przemijaniu, co jest zgodne z toposem 'theatrum mundi' (świata-teatru)."]
+        },
+        {
+            "type": "closed",
+            "question": "Co jest fundamentalną przyczyną porażki i śmierci bohaterów 'Reduty Ordona' w interpretacji Adama Mickiewicza?",
+            "answers": [
+                { "text": "Błędy taktyczne i słabe wyszkolenie żołnierzy.", "correct": false },
+                { "text": "Ogromna przewaga liczebna i materialna wroga, symbolizująca starcie małego, bohaterskiego narodu z bezduszną potęgą tyranii.", "correct": true },
+                { "text": "Zdrada jednego z oficerów, który wpuścił wroga do reduty.", "correct": false },
+                { "text": "Brak pomocy ze strony innych oddziałów polskich.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Wpisz poprawną formę stopnia wyższego przysłówka 'źle'.",
+            "answer": ["gorzej"]
+        },
+        {
+            "type": "closed",
+            "question": "Zestawiając mit o Syzyfie z przypowieścią o siewcy, można dostrzec kontrast w przesłaniu dotyczącym ludzkiego wysiłku. Na czym on polega?",
+            "answers": [
+                { "text": "Syzyf jest karany za pychę, a siewca jest nagradzany za pokorę.", "correct": false },
+                { "text": "Wysiłek Syzyfa jest z góry skazany na bezsens i porażkę, podczas gdy praca siewcy, mimo trudności (skały, ciernie), ma szansę przynieść plon, jeśli trafi na podatny grunt. Mit mówi o absurdzie, przypowieść o nadziei.", "correct": true },
+                { "text": "Syzyf pracuje fizycznie, a siewca symbolicznie.", "correct": false },
+                { "text": "Syzyf jest samotny w swoim wysiłku, a siewca ma pomocników.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "W 'Zemście' Papkin przedstawia się jako 'lew Północy'. Jaki środek stylistyczny został tu użyty i jaka jest jego funkcja w charakterystyce postaci?",
+            "answer": ["Została tu użyta metafora (lub hiperbola). Jej funkcją jest komiczne wyolbrzymienie rzekomej odwagi i siły Papkina. Kontrast między tym określeniem a jego rzeczywistym tchórzostwem buduje komizm postaci i demaskuje jego samochwalstwo."]
+        },
+        {
+            "type": "closed",
+            "question": "Która lektura w najbardziej bezpośredni sposób podejmuje problematykę dojrzewania i kształtowania się tożsamości narodowej w warunkach zaborów i presji obcej kultury?",
+            "answers": [
+                { "text": "'Pan Tadeusz'", "correct": false },
+                { "text": "'Kamienie na szaniec'", "correct": false },
+                { "text": "'Syzyfowe prace'", "correct": true },
+                { "text": "'Zemsta'", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Wyjaśnij, na czym polega ironia losu w finale 'Balladyny'.",
+            "answer": ["Ironia losu polega na tym, że Balladyna, zdobywszy władzę poprzez serię zbrodni, musi jako nowa królowa stać się strażniczką prawa. Wydając na siebie trzykrotny wyrok śmierci (za otrucie, zabójstwo siostry i wyparcie się matki), sama staje się narzędziem sprawiedliwości, która ją dosięga. Jej sukces staje się przyczyną jej ostatecznej klęski."]
+        },
+        {
+            "type": "closed",
+            "question": "W zdaniu 'Wiem, co myślisz', zdanie podrzędne 'co myślisz' odpowiada na pytanie:",
+            "answers": [
+                { "text": "(wiem) jak?", "correct": false },
+                { "text": "(wiem) co?", "correct": true },
+                { "text": "(wiem) dlaczego?", "correct": false },
+                { "text": "(wiem) kiedy?", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "W kontekście całej lektury 'Opowieść wigilijna', co symbolizuje ogień płonący wesoło na kominku w kantorze Boba Cratchita, w przeciwieństwie do ledwo tlącego się ogieńka u Scrooge'a?",
+            "answer": ["Ogień symbolizuje ciepło rodzinne, miłość, radość życia i człowieczeństwo. U Cratchitów, mimo biedy, ogień jest duży, co symbolizuje bogactwo ich życia wewnętrznego i relacji. U Scrooge'a jest on znikomy, co odzwierciedla jego emocjonalny chłód, skąpstwo, samotność i martwotę duchową."]
+        }
+    ]
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");
 const answerButtonsElement = document.getElementById("answer-buttons");

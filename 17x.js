@@ -1,205 +1,195 @@
 const questions = [
     {
-        type: 'closed',
-        question: "Suma odwrotności dwóch dodatnich liczb naturalnych wynosi 5/36, a ich iloczyn to 36. Ile wynosi suma tych liczb?",
-        answers: [
-            { text: "5", correct: true },
-            { text: "13", correct: false },
-            { text: "15", correct: false },
-            { text: "20", correct: false }
+        "type": "closed",
+        "question": "Która para postaci z 'Zemsty' najlepiej ilustruje konflikt między porywczą, sarmacką naturą a chłodnym, obłudnym wyrachowaniem?",
+        "answers": [
+            { "text": "Klara i Wacław", "correct": false },
+            { "text": "Cześnik i Rejent", "correct": true },
+            { "text": "Papkin i Dyndalski", "correct": false },
+            { "text": "Podstolina i Klara", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W kulę o promieniu 10 wpisano walec, którego wysokość jest równa promieniowi kuli. Jaki jest stosunek objętości walca do objętości kuli? (Odpowiedź podaj w postaci ułamka nieskracalnego a/b).",
-        answer: ["9/16"]
+        "type": "open",
+        "question": "W 'Małym Księciu' wąż proponuje, że odeśle Małego Księcia 'tam, skąd przybył'. Co jest eufemistycznym, symbolicznym znaczeniem tej propozycji?",
+        "answer": ["Jest to eufemizm (złagodzone określenie) na śmierć. 'Odesłanie tam, skąd przybył' oznacza symboliczny powrót do świata duchowego, do gwiazd, skąd Mały Książę pochodzi. Śmierć jest tu przedstawiona nie jako koniec, ale jako podróż powrotna do domu, co łagodzi jej tragiczny wymiar."]
     },
     {
-        type: 'closed',
-        question: "Pięciocyfrowa liczba 45X3Y jest podzielna przez 36. Jedną z możliwych wartości sumy X+Y jest:",
-        answers: [
-            { text: "5", correct: false },
-            { text: "6", correct: true },
-            { text: "7", correct: false },
-            { text: "8", correct: false }
+        "type": "closed",
+        "question": "Wskaż grupę wyrazów, w której wszystkie są przymiotnikami w stopniu najwyższym.",
+        "answers": [
+            { "text": "lepszy, najgorszy, bardziej ciekawy", "correct": false },
+            { "text": "najmilszy, najtrudniejszy, najlepszy", "correct": true },
+            { "text": "wysoki, wyższy, najwyższy", "correct": false },
+            { "text": "najładniej, najszybciej, najdłużej", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Maszyna A wykonuje pracę w 10 godzin, a maszyna B w 15 godzin. Obie maszyny pracowały razem przez 2 godziny, po czym maszyna A się zepsuła. Ile godzin potrzebuje maszyna B, aby samodzielnie dokończyć pracę?",
-        answer: ["10"]
-    },
-    {
-        type: 'closed',
-        question: "W trójkącie ABC poprowadzono prostą równoległą do boku AB, przecinającą boki AC i BC odpowiednio w punktach D i E. Stosunek |CD|:|DA| = 3:2. Stosunek pola trapezu ABED do pola trójkąta CDE wynosi:",
-        answers: [
-            { text: "4:9", correct: false },
-            { text: "2:3", correct: false },
-            { text: "16:9", correct: true },
-            { text: "5:3", correct: false }
+        "type": "closed",
+        "question": "Co jest wspólną cechą podróży Odyseusza (bohatera mitologii) i tułaczki Skawińskiego z 'Latarnika'?",
+        "answers": [
+            { "text": "Obie są karą nałożoną przez bogów za pychę.", "correct": false },
+            { "text": "Są to wieloletnie wędrówki, podczas których bohaterowie tęsknią za powrotem do utraconej ojczyzny (Itaki / Polski), która staje się dla nich symbolem domu i spokoju.", "correct": true },
+            { "text": "Obie kończą się tryumfalnym powrotem i odzyskaniem dawnej pozycji.", "correct": false },
+            { "text": "Obie są motywowane chęcią zdobycia sławy i bogactw.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Wartość wyrażenia (a+b+c)² jest równa 0. Jeśli a²+b²+c²=12, to ile wynosi ab+bc+ca?",
-        answers: [
-            { text: "-12", correct: false },
-            { text: "-6", correct: true },
-            { text: "6", correct: false },
-            { text: "12", correct: false }
+        "type": "open",
+        "question": "W 'Panu Tadeuszu' Gerwazy opowiada historię zamku Horeszków. Jaki jest cel tej opowieści i jak ona wpływa na Hrabiego?",
+        "answer": ["Celem opowieści Gerwazego jest podtrzymanie pamięci o krzywdzie Horeszków i rozbudzenie w Hrabim, ostatnim z rodu, chęci zemsty. Opowieść ta działa na romantyczną wyobraźnię Hrabiego, przekształcając dla niego zamek z malowniczej ruiny w miejsce osobistej tragedii, co motywuje go do zorganizowania zajazdu."]
+    },
+    {
+        "type": "closed",
+        "question": "Postać Pustelnika w 'Balladynie' symbolizuje:",
+        "answers": [
+            { "text": "Siły natury, które sprzeciwiają się Goplanie.", "correct": false },
+            { "text": "Utracony, sprawiedliwy porządek moralny i prawowitą władzę, która została obalona przez tyranię.", "correct": true },
+            { "text": "Mądrość ludową i wiedzę na temat ziołolecznictwa.", "correct": false },
+            { "text": "Romantyczną samotność i ucieczkę od świata.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Ile jest różnych sposobów zapłaty kwoty 17 zł przy użyciu wyłącznie monet 2 zł i 5 zł?",
-        answer: ["2"]
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego postać Klary z 'Zemsty' jest często uważana za głos rozsądku w świecie rządzonym przez emocje.",
+        "answer": ["Jest głosem rozsądku, ponieważ jako jedyna podejmuje racjonalne i przemyślane decyzje. Nie daje się ponieść ani porywom serca (jak Wacław), ani cholerycznym nastrojom (jak Cześnik). Jej warunki postawione Papkinowi czy plan działania wobec Wacława świadczą o inteligencji, pragmatyzmie i umiejętności panowania nad sytuacją."]
     },
     {
-        type: 'closed',
-        question: "Prosta przechodząca przez początek układu współrzędnych i środek okręgu (x-2)² + (y-4)² = 9 ma równanie:",
-        answers: [
-            { text: "y = 1/2 x", correct: false },
-            { text: "y = 2x", correct: true },
-            { text: "y = -2x", correct: false },
-            { text: "y = -1/2 x", correct: false }
+        "type": "closed",
+        "question": "W 'Kamieniach na szaniec', które z poniższych stwierdzeń najlepiej charakteryzuje postać Alka (Aleksego Dawidowskiego)?",
+        "answers": [
+            { "text": "Refleksyjny intelektualista, zamknięty w sobie i skłonny do analizy.", "correct": false },
+            { "text": "Urodzony ryzykant, pełen brawury i humoru, często działający spontanicznie, specjalista od akcji 'na pierwszej linii'.", "correct": true },
+            { "text": "Typ przywódcy-organizatora, skupiony na strategii i dowodzeniu.", "correct": false },
+            { "text": "Postać wrażliwa i artystycznie uzdolniona.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Jaka jest najmniejsza liczba naturalna, która ma dokładnie 8 dzielników?",
-        answer: ["24"]
+        "type": "open",
+        "question": "Zinterpretuj symbolikę 'pracy u podstaw' w kontekście pozytywistycznych nowel (np. 'Katarynka').",
+        "answer": ["'Praca u podstaw' symbolizuje ideę edukacji i podnoszenia poziomu życia najniższych, najbardziej zaniedbanych warstw społecznych (ludu, biedoty miejskiej). Jest to metafora budowania siły narodu od fundamentów. Bohaterowie tych nowel (jak pan Tomasz) wierzą, że realna poprawa losu ojczyzny zaczyna się od małych, organicznych działań na rzecz najsłabszych."]
     },
     {
-        type: 'closed',
-        question: "Ze zbioru wszystkich liczb trzycyfrowych losujemy jedną. Jakie jest prawdopodobieństwo, że jest to palindrom (czyli liczba, która czytana od tyłu jest taka sama)?",
-        answers: [
-            { text: "1/10", correct: true },
-            { text: "1/9", correct: false },
-            { text: "1/100", correct: false },
-            { text: "9/100", correct: false }
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym występuje błąd leksykalny (użycie słowa w niewłaściwym znaczeniu).",
+        "answers": [
+            { "text": "Musimy zaadoptować się do nowych warunków.", "correct": true },
+            { "text": "Aktor zaadaptował powieść na potrzeby scenariusza.", "correct": false },
+            { "text": "Chciałbym zaadoptować psa ze schroniska.", "correct": false },
+            { "text": "Ta firma dobrze adaptuje się do zmian na rynku.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkącie prostokątnym wysokość opuszczona na przeciwprostokątną dzieli ją w stosunku 1:4. Obwód trójkąta wynosi 60. Oblicz pole tego trójkąta.",
-        answer: ["150"]
+        "type": "open",
+        "question": "Wyjaśnij, na czym polega tragizm losu bohatera ballady 'Powrót taty'.",
+        "answer": ["Jego tragizm polega na paradoksalnej sytuacji, w której jako zbójca, człowiek żyjący z krzywdy innych, zostaje skonfrontowany z niewinną wiarą i miłością własnych dzieci. Modlitwa dzieci za jego powrót staje się dla niego moralnym wstrząsem, który zmusza go do konfrontacji z własnym upadkiem. To tragizm nawrócenia pod wpływem nieświadomego działania jego ofiar."]
     },
     {
-        type: 'closed',
-        question: "Jaka jest cyfra setek w wyniku dodawania 1 + 11 + 111 + 1111 + ... + (liczba z 50 jedynkami)?",
-        answers: [
-            { text: "1", correct: false },
-            { text: "2", correct: false },
-            { text: "8", correct: true },
-            { text: "9", correct: false }
+        "type": "closed",
+        "question": "Wskaż, która z postaci literackich w najpełniejszy sposób uosabia romantyczny typ bohatera wallenrodycznego.",
+        "answers": [
+            { "text": "Jacek Soplica (jako ksiądz Robak)", "correct": true },
+            { "text": "Marcin Borowicz", "correct": false },
+            { "text": "Gerwazy Rębajło", "correct": false },
+            { "text": "Marek Winicjusz", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Wysokość ostrosłupa prawidłowego trójkątnego tworzy z krawędzią boczną kąt 30°. Krawędź podstawy ma długość 6. Jaka jest objętość tego ostrosłupa?",
-        answers: [
-            { text: "18√3", correct: false },
-            { text: "18", correct: true },
-            { text: "27", correct: false },
-            { text: "9√3", correct: false }
+        "type": "open",
+        "question": "W 'Panu Tadeuszu' Tadeusz, wchodząc do 'centrum' Soplicowa, widzi zegar kurantowy grający 'Mazurka Dąbrowskiego'. Jaka jest symboliczna funkcja tego przedmiotu?",
+        "answer": ["Zegar ten jest symbolem patriotyzmu i nadziei na odzyskanie niepodległości, które są sercem domu w Soplicowie. Granie 'Mazurka Dąbrowskiego', hymnu legionów, sygnalizuje, że w tym miejscu żyje się ideą walki o wolność. Jest to pierwszy znak wprowadzający w polityczny i narodowy wymiar epopei."]
+    },
+    {
+        "type": "closed",
+        "question": "W 'Opowieści wigilijnej', ignorancja i nędza są przedstawione jako dzieci Ducha Teraźniejszych Świąt. Dlaczego właśnie tego ducha?",
+        "answers": [
+            { "text": "Ponieważ jest to problem, który należy rozwiązać w przeszłości.", "correct": false },
+            { "text": "Ponieważ jest to problem, który jest realny i obecny 'tu i teraz', a jego skutki będą katastrofalne w przyszłości, jeśli nie zostaną rozwiązane.", "correct": true },
+            { "text": "Ponieważ duch ten jest najpotężniejszy i może udźwignąć ciężar tych problemów.", "correct": false },
+            { "text": "Ponieważ duch ten symbolizuje radość, a dzieci te są jej przeciwieństwem.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W pewnej klasie każdy uczeń uczy się języka niemieckiego lub angielskiego. 18 uczniów uczy się niemieckiego, 22 angielskiego, a 12 uczy się obu tych języków. Ilu uczniów liczy ta klasa?",
-        answer: ["28"]
+        "type": "open",
+        "question": "Przekształć zdanie w mowie zależnej na mowę niezależną: 'Nauczyciel ostrzegł, żebyśmy nie rozmawiali podczas egzaminu.'",
+        "answer": ["Nauczyciel ostrzegł: 'Nie rozmawiajcie podczas egzaminu!'."]
     },
     {
-        type: 'closed',
-        question: "Wartość wyrażenia log₅(√5 * ∛5 / ⁵√5) jest równa:",
-        answers: [
-            { text: "19/30", correct: true },
-            { text: "11/30", correct: false },
-            { text: "2/3", correct: false },
-            { text: "1", correct: false }
+        "type": "closed",
+        "question": "Które z poniższych dzieł najpełniej realizuje model utopii – wizji idealnego, arkadyjskiego świata?",
+        "answers": [
+            { "text": "'Syzyfowe prace' (wątek życia w Gawronkach)", "correct": false },
+            { "text": "'Pan Tadeusz' (wątek życia w Soplicowie)", "correct": true },
+            { "text": "'Zemsta' (wątek zamku)", "correct": false },
+            { "text": "'Chłopcy z Placu Broni' (wątek Placu)", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Cena towaru wynosiła 1000 zł. Najpierw podniesiono ją o 10%, a następnie o 20%. O ile procent należy teraz obniżyć cenę, aby wróciła do 1000 zł?",
-        answers: [
-            { text: "o 30%", correct: false },
-            { text: "o 32%", correct: false },
-            { text: "o ok. 24,2%", correct: true },
-            { text: "o 25%", correct: false }
+        "type": "open",
+        "question": "Zinterpretuj symbolikę 'nici Ariadny' w micie o Tezeuszu.",
+        "answer": ["'Nić Ariadny' symbolizuje spryt, inteligencję i pomocną dłoń, która pozwala wyjść z beznadziejnej sytuacji (labiryntu). Jest to metafora logicznego myślenia, planu lub wskazówki, która prowadzi przez chaos i zawiłości problemu. W szerszym sensie, symbolizuje każdą formę ratunku, która pozwala odnaleźć właściwą drogę."]
+    },
+    {
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym występuje podmiot zbiorowy.",
+        "answers": [
+            { "text": "Wszyscy uczniowie poszli na boisko.", "correct": false },
+            { "text": "Państwo Nowakowie kupili nowy dom.", "correct": true },
+            { "text": "W lesie rosło wiele drzew.", "correct": false },
+            { "text": "Trzech chłopców grało w piłkę.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkącie równoramiennym podstawa ma długość 10, a kąt przy podstawie ma miarę 30°. Oblicz promień okręgu opisanego na tym trójkącie.",
-        answer: ["10"]
+        "type": "open",
+        "question": "Jaka jest symboliczna funkcja postaci Telimeny w kontekście polskiego społeczeństwa epoki porozbiorowej?",
+        "answer": ["Telimena symbolizuje tę część polskiego społeczeństwa, która uległa fascynacji kulturą obcą (rosyjską, francuską), traktując ją jako wyznacznik nowoczesności i lepszego świata. Reprezentuje kosmopolityzm i odwrócenie się od rodzimej tradycji, co było jednym z dylematów tożsamościowych Polaków w tamtym okresie."]
     },
     {
-        type: 'closed',
-        question: "Samochód przejechał z miasta A do B ze średnią prędkością 50 km/h. W drodze powrotnej jego prędkość wzrosła o 20%. Średnia prędkość na całej trasie wynosiła:",
-        answers: [
-            { text: "54.5 km/h", correct: false },
-            { text: "54 i 6/11 km/h", correct: true },
-            { text: "55 km/h", correct: false },
-            { text: "56 km/h", correct: false }
+        "type": "closed",
+        "question": "Wskaż, która z postaci literackich w swoim postępowaniu kieruje się przede wszystkim wiernością i lojalnością wobec przywódcy/pana.",
+        "answers": [
+            { "text": "Papkin", "correct": false },
+            { "text": "Gerwazy", "correct": true },
+            { "text": "Wacław", "correct": false },
+            { "text": "Hrabia", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W trapezie ramiona mają długości 8 i 15, a wysokość wynosi 12. Krótsza podstawa ma długość 10. Pole tego trapezu może wynosić:",
-        answers: [
-            { text: "174", correct: false },
-            { text: "156 lub 174", correct: false },
-            { text: "126 lub 174", correct: true },
-            { text: "126", correct: false }
+        "type": "open",
+        "question": "Wyjaśnij, na czym polega komizm sytuacyjny w 'Zemście'. Podaj jeden przykład.",
+        "answer": ["Komizm sytuacyjny polega na tworzeniu zabawnych, nieoczekiwanych i absurdalnych zbiegów okoliczności i wydarzeń. Przykładem jest scena, w której Wacław, syn Rejenta, dobrowolnie oddaje się w 'niewolę' Cześnikowi, swojemu wrogowi, aby być bliżej ukochanej Klary, co Cześnik interpretuje jako akt tchórzostwa i kapitulacji."]
+    },
+    {
+        "type": "closed",
+        "question": "Co jest wspólnym elementem losu Ikara i Balladyny?",
+        "answers": [
+            { "text": "Dążenie do władzy, które prowadzi do upadku.", "correct": false },
+            { "text": "Upadek (dosłowny i moralny) spowodowany przekroczeniem pewnych granic – Ikar przekracza granice wyznaczone przez naturę i ojca, a Balladyna granice moralne i ludzkie.", "correct": true },
+            { "text": "Miłość, która staje się przyczyną ich zguby.", "correct": false },
+            { "text": "Kara wymierzona przez bogów za nieposłuszeństwo.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Punkty A=(2, -1), B=(6, 2) i C=(2, 5) są wierzchołkami rombu ABCD. Oblicz pole tego rombu.",
-        answer: ["24"]
+        "type": "open",
+        "question": "Wskaż błąd frazeologiczny w zdaniu: 'On zawsze ubiera adidasy do garnituru' i wyjaśnij, na czym on polega.",
+        "answer": ["Błąd polega na generalizacji nazwy własnej ('adidasy' od marki Adidas) i używaniu jej jako nazwy gatunkowej (buty sportowe). Chociaż jest to powszechne w języku potocznym, w normie wzorcowej jest to błąd. Poprawnie: 'On zawsze ubiera buty sportowe do garnituru'."]
     },
     {
-        type: 'closed',
-        question: "Wartość wyrażenia 9⁹ + 9⁹ + 9⁹ jest równa:",
-        answers: [
-            { text: "27⁹", correct: false },
-            { text: "9²⁷", correct: false },
-            { text: "3¹⁹", correct: true },
-            { text: "9¹⁰", correct: false }
+        "type": "closed",
+        "question": "Które z poniższych dzieł w najpełniejszy sposób ukazuje konflikt pokoleń na tle wielkich przemian historycznych?",
+        "answers": [
+            { "text": "'Zemsta'", "correct": false },
+            { "text": "'Pan Tadeusz'", "correct": true },
+            { "text": "'Latarnik'", "correct": false },
+            { "text": "'Chłopcy z Placu Broni'", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Trójkąt równoboczny ABC ma bok długości 6. Obrócono go o 60° wokół wierzchołka A. Jakie jest pole części wspólnej trójkąta ABC i jego obrazu w tym obrocie?",
-        answers: [
-            { text: "3√3", correct: false },
-            { text: "4.5√3", correct: false },
-            { text: "6√3", correct: true },
-            { text: "9√3", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Statek przepłynął 60 km z prądem rzeki w 3 godziny, a wrócił pod prąd w 5 godzin. Jaka jest prędkość własna statku w km/h?",
-        answer: ["16"]
-    },
-    {
-        type: 'closed',
-        question: "Ile jest par liczb całkowitych (x, y), które spełniają równanie x*y = 24?",
-        answers: [
-            { text: "4", correct: false },
-            { text: "8", correct: false },
-            { text: "16", correct: true },
-            { text: "nieskończenie wiele", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Pole powierzchni bocznej walca jest równe 60π, a jego objętość to 90π. Oblicz promień podstawy tego walca.",
-        answer: ["3"]
+        "type": "open",
+        "question": "W 'Trenie XIX, czyli Śnie', matka mówi do Kochanowskiego: '[...] ludzkie przygody / Ludzkie noś'. Co oznaczają te słowa?",
+        "answer": ["Oznaczają one wezwanie do przyjęcia stoickiej postawy wobec życia. 'Ludzkie przygody' to ludzki los, pełen cierpienia i radości. 'Ludzkie noś' to nakaz, by znosić ten los z godnością, umiarem i odwagą, akceptując, że cierpienie jest nieodłączną częścią bycia człowiekiem. To filozofia akceptacji ludzkiej doli."]
     }
-];
+]
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

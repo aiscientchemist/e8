@@ -1,215 +1,195 @@
 const questions = [
     {
-        type: 'closed',
-        question: "W pewnej liczbie trzycyfrowej cyfra dziesiątek jest równa sumie cyfry setek i jedności. Po przestawieniu cyfry setek i jedności otrzymamy liczbę o 396 mniejszą. Jaka jest cyfra dziesiątek tej liczby?",
-        answers: [
-            { text: "6", correct: false },
-            { text: "7", correct: false },
-            { text: "8", correct: true },
-            { text: "9", correct: false }
+        "type": "closed",
+        "question": "W 'Zemście', pragmatyzm Wacława, który próbuje różnych strategii, by zdobyć Klarę (np. udając jeńca), jest przedstawiony jako:",
+        "answers": [
+            { "text": "Postawa godna potępienia, ponieważ opiera się na kłamstwie.", "correct": false },
+            { "text": "Komiczna nieudolność, która nie przynosi żadnych rezultatów.", "correct": false },
+            { "text": "Nowoczesna, oświeceniowa alternatywa dla bezproduktywnego, sarmackiego uporu Cześnika i Rejenta.", "correct": true },
+            { "text": "Dowód na jego nieszczerą miłość do Klary.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Pole trapezu prostokątnego wynosi 54 cm². Jego wysokość jest o 3 cm krótsza od jednej podstawy i o 6 cm krótsza od drugiej podstawy. Oblicz wysokość tego trapezu.",
-        answer: ["6"]
+        "type": "open",
+        "question": "W 'Małym Księciu' Pyszałek słyszy tylko komplementy. Co symbolizuje ta 'selektywna głuchota' w kontekście ludzkich relacji?",
+        "answer": ["Symbolizuje ona skrajny egocentryzm i zamknięcie się na prawdziwy dialog. Osoba taka, skupiona wyłącznie na sobie i potrzebie bycia podziwianą, nie jest w stanie usłyszeć ani przyjąć niczego innego – ani krytyki, ani szczerej opinii, ani problemów drugiej osoby. To metafora komunikacyjnej ściany, którą buduje próżność."]
     },
     {
-        type: 'closed',
-        question: "Ile jest równa wartość wyrażenia 4¹⁰ * 8²⁰ : 2⁵⁰?",
-        answers: [
-            { text: "2¹⁰", correct: false },
-            { text: "2³⁰", correct: true },
-            { text: "2⁻²⁰", correct: false },
-            { text: "1", correct: false }
+        "type": "closed",
+        "question": "W którym z poniższych wyrazów przedrostek 'prze-' ma inne znaczenie niż w pozostałych (oznacza ruch przez coś, na drugą stronę)?",
+        "answers": [
+            { "text": "przebudować", "correct": false },
+            { "text": "przemalować", "correct": false },
+            { "text": "przeskoczyć", "correct": true },
+            { "text": "przerobić", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkącie prostokątnym o przyprostokątnych 9 i 12, oblicz długość środkowej poprowadzonej do przeciwprostokątnej.",
-        answer: ["7.5"]
-    },
-    {
-        type: 'closed',
-        question: "W pudełku jest 15 kul ponumerowanych od 1 do 15. Losujemy jedną kulę. Prawdopodobieństwo wylosowania kuli z numerem, który jest liczbą pierwszą, wynosi:",
-        answers: [
-            { text: "1/3", correct: false },
-            { text: "6/15", correct: true },
-            { text: "7/15", correct: false },
-            { text: "1/2", correct: false }
+        "type": "closed",
+        "question": "Co jest wspólną cechą podróży Bilba Bagginsa z 'Hobbita' i wędrówki Skawińskiego z 'Latarnika'?",
+        "answers": [
+            { "text": "Obie podróże są motywowane chęcią zdobycia bogactwa.", "correct": false },
+            { "text": "Obie są formą 'podróży inicjacyjnej', która prowadzi bohatera od stanu spokoju i nieświadomości do samopoznania, choć w przypadku Bilba jest to świadoma wyprawa, a w przypadku Skawińskiego – wieloletnia tułaczka.", "correct": true },
+            { "text": "Obie kończą się szczęśliwym powrotem do domu i spokojnym życiem.", "correct": false },
+            { "text": "Obie są wynikiem rozkazu potężnego władcy.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Pan Jan wpłacił do banku 4000 zł na lokatę z roczną kapitalizacją odsetek. Po dwóch latach stan jego konta wynosił 4410 zł. Jakie było oprocentowanie tej lokaty w skali roku?",
-        answers: [
-            { text: "4%", correct: false },
-            { text: "4.5%", correct: false },
-            { text: "5%", correct: true },
-            { text: "5.5%", correct: false }
+        "type": "open",
+        "question": "W 'Zemście' Rejent, planując ślub syna z Podstoliną, mówi: 'Ma grunt, pewny...'. Co to określenie demaskuje w jego systemie wartości?",
+        "answer": ["Demaskuje to jego skrajny materializm i postrzeganie małżeństwa jako transakcji biznesowej. 'Grunt' (majątek ziemski) jest dla niego jedyną realną i pewną wartością, ważniejszą niż uczucia, szczęście syna czy względy moralne. To kwintesencja jego chciwości i wyrachowania."]
+    },
+    {
+        "type": "closed",
+        "question": "Postać Zosi w 'Panu Tadeuszu' jest często postrzegana jako ucieleśnienie ideału. Czego jest ona symbolem?",
+        "answers": [
+            { "text": "Zbuntowanej, nowoczesnej kobiety, która walczy o swoje prawa.", "correct": false },
+            { "text": "Przyszłego pokolenia Polaków – wychowanego w zgodzie z naturą i polską tradycją, prostego, szczerego i gotowego do budowania nowej Polski.", "correct": true },
+            { "text": "Sarmackiej damy, biegłej w sztuce konwersacji i flirtu.", "correct": false },
+            { "text": "Tragicznej ofiary konfliktu między rodami.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Liczba √(27 - 10√2) jest równa a - b√c, gdzie a, b, c są liczbami naturalnymi. Podaj wartość iloczynu a*b*c.",
-        answer: ["50"]
+        "type": "open",
+        "question": "W 'Chłopcach z Placu Broni' Gereb zdradza swoich przyjaciół, ale później próbuje odpokutować swoją winę. Jaka jest funkcja jego postaci w utworze?",
+        "answer": ["Jego postać pokazuje, że człowiek może popełnić błąd, ale ma również szansę na rehabilitację i przebaczenie. Jest on kontrapunktem dla jednoznacznie honorowego Nemeczka. Jego historia wprowadza do świata powieści ważny motyw winy, skruchy i trudnej drogi do odzyskania zaufania wspólnoty."]
     },
     {
-        type: 'closed',
-        question: "Kwadrat i koło mają równe pola. Stosunek obwodu kwadratu do obwodu koła wynosi:",
-        answers: [
-            { text: "2 : √π", correct: true },
-            { text: "√π : 2", correct: false },
-            { text: "4 : π", correct: false },
-            { text: "π : 4", correct: false }
+        "type": "closed",
+        "question": "Które z poniższych dzieł najpełniej realizuje model 'powieści o dojrzewaniu' (tzw. Bildungsroman)?",
+        "answers": [
+            { "text": "'Zemsta'", "correct": false },
+            { "text": "'Syzyfowe prace'", "correct": true },
+            { "text": "'Latarnik'", "correct": false },
+            { "text": "'Quo vadis'", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Zegar spóźnia się 4 minuty na dobę. O której godzinie należy go nastawić w poniedziałek w południe, aby w piątek w południe wskazał dokładny czas?",
-        answer: ["11:44"]
+        "type": "open",
+        "question": "W 'Quo vadis' Petroniusz umiera, wydając ucztę i czytając szyderczy list do Nerona. Co symbolizuje jego samobójstwo?",
+        "answer": ["Jego samobójstwo jest ostatnim aktem estetycznym i manifestacją wolności. W świecie, w którym zapanowała brutalna siła i zły gust Nerona, Petroniusz wybiera śmierć na własnych warunkach, czyniąc z niej dzieło sztuki. To jego ostateczne zwycięstwo nad tyranią – nie pozwala, by tyran zadecydował o sposobie jego odejścia."]
     },
     {
-        type: 'closed',
-        question: "Liczba x przy dzieleniu przez 7 daje resztę 3. Jaką resztę przy dzieleniu przez 7 daje liczba 3x+5?",
-        answers: [
-            { text: "0", correct: true },
-            { text: "1", correct: false },
-            { text: "3", correct: false },
-            { text: "5", correct: false }
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym rzeczownik 'prawo' ma inne znaczenie niż w pozostałych.",
+        "answers": [
+            { "text": "Każdy obywatel musi przestrzegać prawa.", "correct": false },
+            { "text": "Skręć w prawo na następnym skrzyżowaniu.", "correct": true },
+            { "text": "Studiował prawo na uniwersytecie.", "correct": false },
+            { "text": "Miał prawo do obrony w sądzie.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W ostrosłupie prawidłowym czworokątnym krawędź boczna o długości 10 jest nachylona do płaszczyzny podstawy pod kątem 60°. Oblicz objętość tego ostrosłupa (wynik zapisz w postaci a√b).",
-        answer: ["250√3/3"]
+        "type": "open",
+        "question": "Wyjaśnij, na czym polega tragizm losu tytułowej bohaterki ballady 'Świtezianka'.",
+        "answer": ["Jej tragizm polega na konflikcie między miłością a obowiązkiem. Jako strażniczka moralnego prawa musi ukarać ukochanego za złamanie przysięgi, co jest równoznaczne ze skazaniem samej siebie na wieczną samotność. Jest jednocześnie ofiarą zdrady i sędzią, który musi wykonać wyrok, niszcząc własne szczęście."]
     },
     {
-        type: 'closed',
-        question: "Punkty A(-3, -1) i B(5, 5) są końcami średnicy okręgu. Jaki jest promień tego okręgu?",
-        answers: [
-            { text: "10", correct: false },
-            { text: "√50", correct: false },
-            { text: "5", correct: true },
-            { text: "√10", correct: false }
+        "type": "closed",
+        "question": "Wskaż, która z postaci literackich w najmniejszym stopniu podlega przemianie wewnętrznej w toku akcji utworu.",
+        "answers": [
+            { "text": "Jacek Soplica", "correct": false },
+            { "text": "Ebenezer Scrooge", "correct": false },
+            { "text": "Marcin Borowicz", "correct": false },
+            { "text": "Gerwazy Rębajło (aż do samego końca)", "correct": true }
         ]
     },
     {
-        type: 'closed',
-        question: "Jeżeli a + b = 5 i a² + b² = 13, to wartość wyrażenia a³ + b³ jest równa:",
-        answers: [
-            { text: "35", correct: true },
-            { text: "65", correct: false },
-            { text: "25", correct: false },
-            { text: "95", correct: false }
+        "type": "open",
+        "question": "W 'Panu Tadeuszu' Tadeusz myli Zosię z Telimeną. Jaka jest funkcja komiczna i symboliczna tej pomyłki?",
+        "answer": ["Funkcja komiczna polega na zabawnym nieporozumieniu i zakłopotaniu bohatera. Funkcja symboliczna polega na skontrastowaniu dwóch modeli kobiecości: naturalnej, niewinnej i swojskiej (Zosia) z wytworną, doświadczoną i kosmopolityczną (Telimena). Pomyłka Tadeusza jest symbolicznym wahaniem między tymi dwoma światami."]
+    },
+    {
+        "type": "closed",
+        "question": "W 'Dziadach części II' duchy przybywają na obrzęd, ponieważ:",
+        "answers": [
+            { "text": "Chcą zemścić się na żyjących za doznane krzywdy.", "correct": false },
+            { "text": "Są przywoływane siłą przez zaklęcia Guślarza.", "correct": false },
+            { "text": "Potrzebują pomocy żywych (modlitwy, ofiary), aby zakończyć swoją pośmiertną pokutę i osiągnąć zbawienie.", "correct": true },
+            { "text": "Chcą ostrzec żyjących przed niebezpieczeństwami.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W pięciokącie foremnym ABCDE przekątne AC i BD przecinają się w punkcie P. Jaka jest miara kąta APB?",
-        answer: ["108"]
+        "type": "open",
+        "question": "Utwórz zdanie z imiesłowowym równoważnikiem zdania, przekształcając wypowiedzenie: 'Gdy Bilbo znalazł pierścień, nie wiedział jeszcze o jego mocy.'",
+        "answer": ["Znalazłszy pierścień, Bilbo nie wiedział jeszcze o jego mocy."]
     },
     {
-        type: 'closed',
-        question: "Rowerzysta przejechał 1/3 trasy z prędkością 10 km/h, a pozostałe 2/3 trasy z prędkością 20 km/h. Jaka była jego średnia prędkość na całej trasie?",
-        answers: [
-            { text: "15 km/h", correct: false },
-            { text: "16 km/h", correct: false },
-            { text: "12 km/h", correct: false },
-            { text: "15 km/h", correct: true } // Vśr = 2s/(s/10 + s/20) ... = s/(s/10 + s/20)... Vśr = s/(t1+t2)... T=S/V... t1=(1/3S)/10=S/30, t2=(2/3S)/20=S/30. Całkowity czas T=S/15. Vśr=S/T = 15.
-        ]
-    },
-    { // Poprawka zad. 15
-        type: 'closed',
-        question: "Rowerzysta przejechał 1/3 trasy z prędkością 10 km/h, a pozostałą część z prędkością 20 km/h. Jaka była jego średnia prędkość na całej trasie?",
-        answers: [
-            { text: "15 km/h", correct: true },
-            { text: "16 km/h", correct: false },
-            { text: "12 km/h", correct: false },
-            { text: "16 i 2/3 km/h", correct: false }
+        "type": "closed",
+        "question": "Które z poniższych zdań jest przykładem ironii werbalnej (słownej)?",
+        "answers": [
+            { "text": "'Genialny' pomysł, żeby wyjść na deszcz bez parasola!", "correct": true },
+            { "text": "Po latach ciężkiej pracy wreszcie osiągnął sukces.", "correct": false },
+            { "text": "Strażak, który panicznie bał się ognia, zginął w pożarze.", "correct": false },
+            { "text": "To bardzo smutna historia.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Z cyfr 1, 2, 3, 4 tworzymy liczby dwucyfrowe o różnych cyfrach. Jakie jest prawdopodobieństwo, że wylosowana liczba będzie mniejsza od 32?",
-        answers: [
-            { text: "1/2", correct: false },
-            { text: "7/12", correct: false },
-            { text: "2/3", correct: false },
-            { text: "1/2", correct: true } // (12, 13, 14, 21, 23, 24) -> 6/12 = 1/2
+        "type": "open",
+        "question": "Zinterpretuj symbolikę pustyni w 'Małym Księciu'. Co ona reprezentuje?",
+        "answer": ["Pustynia symbolizuje samotność, pustkę egzystencjalną, ale także miejsce oczyszczenia i prawdziwego spotkania. To w pustce, z dala od zgiełku 'poważnych spraw', możliwe jest nawiązanie głębokiej relacji (z Lisem, z Pilotem) i odkrycie najważniejszych prawd o życiu, przyjaźni i miłości."]
+    },
+    {
+        "type": "closed",
+        "question": "W 'Kamieniach na szaniec', akcja 'pod Arsenałem' jest momentem przełomowym, ponieważ:",
+        "answers": [
+            { "text": "Była to pierwsza duża akcja zbrojna Grup Szturmowych.", "correct": false },
+            { "text": "Pokazała siłę i determinację polskiego podziemia, ale jednocześnie brutalnie uświadomiła bohaterom cenę walki – śmierć i cierpienie najbliższych przyjaciół.", "correct": true },
+            { "text": "Doprowadziła do aresztowania i śmierci Alka i Zośki.", "correct": false },
+            { "text": "Była to jedyna w pełni udana akcja odbicia więźniów w okupowanej Warszawie.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkąt równoramienny o podstawie 12 i ramionach 10 wpisano kwadrat tak, że jeden jego bok leży na podstawie trójkąta. Oblicz długość boku tego kwadratu.",
-        answer: ["4.8"]
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego 'Treny' Kochanowskiego można uznać za rodzaj psychologicznego autoportretu poety.",
+        "answer": ["Można je tak uznać, ponieważ cykl ten jest niezwykle szczerym i dogłębnym zapisem przeżyć wewnętrznych autora. Kochanowski nie tylko opłakuje córkę, ale przede wszystkim analizuje własny ból, kryzys wiary, bunt, zwątpienie i wreszcie próbę odnalezienia pocieszenia. To studium psychiki człowieka renesansu w konfrontacji z tragedią."]
     },
     {
-        type: 'closed',
-        question: "Wartość wyrażenia log√₂(8) jest równa:",
-        answers: [
-            { text: "3", correct: false },
-            { text: "4", correct: false },
-            { text: "6", correct: true },
-            { text: "8", correct: false }
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym zaimek względny został użyty niepoprawnie.",
+        "answers": [
+            { "text": "To jest film, który wczoraj oglądaliśmy.", "correct": false },
+            { "text": "Człowiek, co to zrobił, musi być bardzo silny.", "correct": true },
+            { "text": "Miejsce, w którym się spotkamy, jest bardzo ładne.", "correct": false },
+            { "text": "Pamiętam dzień, kiedy się poznaliśmy.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W trójkąt prostokątny o przyprostokątnych 6 i 8 wpisano półkole tak, że jego średnica leży na przeciwprostokątnej. Jaki jest promień tego półkola?",
-        answers: [
-            { text: "2.4", correct: false },
-            { text: "3", correct: false },
-            { text: "24/7", correct: true },
-            { text: "4", correct: false }
+        "type": "open",
+        "question": "Jaka jest rola postaci Protazego, woźnego Cześnika, w 'Zemście'?",
+        "answer": ["Protazy, podobnie jak Gerwazy dla Horeszków, jest strażnikiem pamięci i praw rodu Sopliców do zamku. Jest postacią wierną, ale i komiczną w swojej powadze i pedantycznym przywiązaniu do prawa ('w trzech aktach'). Jego spory z Gerwazym są miniaturowym odbiciem głównego konfliktu, dodając utworowi komizmu."]
+    },
+    {
+        "type": "closed",
+        "question": "Co jest fundamentalną różnicą między miłością w 'Świteziance' a miłością w 'Zemście' (Klara i Wacław)?",
+        "answers": [
+            { "text": "Miłość w 'Świteziance' jest uczuciem tragicznym i absolutnym, poddanym próbie wierności, podczas gdy miłość w 'Zemście' jest uczuciem z elementami sentymentalno-pragmatycznymi, które musi pokonać realne, komiczne przeszkody.", "correct": true },
+            { "text": "W 'Świteziance' miłość jest nieszczęśliwa, a w 'Zemście' szczęśliwa.", "correct": false },
+            { "text": "Miłość w 'Świteziance' jest platoniczna, a w 'Zemście' zmysłowa.", "correct": false },
+            { "text": "W 'Świteziance' kochankowie pochodzą z różnych światów, a w 'Zemście' z tej samej warstwy społecznej.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Ile jest liczb naturalnych n mniejszych od 50, dla których liczba n²-1 jest podzielna przez 5?",
-        answer: ["19"]
+        "type": "open",
+        "question": "Wskaż błąd frazeologiczny w zdaniu: 'Odniósł w życiu duży sukces' i zapisz je poprawnie.",
+        "answer": ["Błąd: pleonazm, pomieszanie związków 'odnieść zwycięstwo' i 'osiągnąć sukces'. Poprawnie: 'Osiągnął w życiu duży sukces' lub 'Odniósł w życiu duży triumf'."]
     },
     {
-        type: 'closed',
-        question: "Suma n początkowych liczb naturalnych dodatnich wynosi 210. Ile wynosi n?",
-        answers: [
-            { text: "19", correct: false },
-            { text: "20", correct: true },
-            { text: "21", correct: false },
-            { text: "22", correct: false }
+        "type": "closed",
+        "question": "W 'Opowieści wigilijnej', głównym celem wizyty Ducha Przeszłych Wigilii jest:",
+        "answers": [
+            { "text": "Ukaranie Scrooge'a za jego błędy z przeszłości.", "correct": false },
+            { "text": "Pokazanie mu, w którym momencie swojego życia porzucił miłość i empatię na rzecz pieniędzy, aby uświadomić mu źródło jego obecnego nieszczęścia.", "correct": true },
+            { "text": "Wzbudzenie w nim tęsknoty za utraconą młodością.", "correct": false },
+            { "text": "Sprawienie, by poczuł się winny za śmierć swojej siostry.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Jeżeli 3ˣ = 2, to wartość wyrażenia 9ˣ⁻¹ jest równa:",
-        answers: [
-            { text: "1", correct: false },
-            { text: "4/3", correct: false },
-            { text: "4/9", correct: true },
-            { text: "2/3", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Wysokość trapezu równoramiennego opuszczona z wierzchołka kąta rozwartego dzieli dłuższą podstawę na odcinki o długości 5 cm i 12 cm. Obwód trapezu wynosi 42 cm. Oblicz pole tego trapezu.",
-        answer: ["99"]
-    },
-    {
-        type: 'closed',
-        question: "Prosta k o równaniu y=ax+b jest prostopadła do osi OY i przechodzi przez punkt P=(-3, 5). Wówczas:",
-        answers: [
-            { text: "a=0, b=-3", correct: false },
-            { text: "a=-3, b=5", correct: false },
-            { text: "a=0, b=5", correct: true },
-            { text: "a=5, b=0", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Metalową kulę o promieniu 6 cm przetopiono na stożek, którego tworząca jest 2 razy dłuższa od promienia podstawy. Jaki jest promień podstawy tego stożka?",
-        answer: ["6"]
+        "type": "open",
+        "question": "Zinterpretuj symbolikę imienia Nemeczek w 'Chłopcach z Placu Broni'.",
+        "answer": ["Imię to pochodzi od węgierskiego słowa oznaczającego 'Niemiec', ale w kontekście utworu kojarzy się z kimś małym, niepozornym ('-czek' to zdrobnienie). Symbolizuje on 'szarego człowieka', najmniejszego i najsłabszego członka społeczności, który jednak okazuje się postacią o największym harcie ducha i poczuciu honoru. To symbol siły tkwiącej w pozornie słabych."]
     }
-];
+]
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

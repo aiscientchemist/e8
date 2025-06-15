@@ -1,205 +1,195 @@
 const questions = [
     {
-        type: 'closed',
-        question: "Suma dwóch liczb naturalnych wynosi 8, a suma ich odwrotności to 8/15. Ile wynosi iloczyn tych liczb?",
-        answers: [
-            { text: "8", correct: false },
-            { text: "15", correct: true },
-            { text: "16", correct: false },
-            { text: "64", correct: false }
+        "type": "closed",
+        "question": "Jaka jest kluczowa, poza komiczną, funkcja Papkina w rozwoju akcji 'Zemsty'?",
+        "answers": [
+            { "text": "Jest on moralnym autorytetem, który ocenia postępowanie Cześnika i Rejenta.", "correct": false },
+            { "text": "Jest on nieświadomym katalizatorem akcji; jako poseł i posłaniec między zwaśnionymi stronami, swoimi działaniami (i nieudolnością) popycha intrygę do przodu.", "correct": true },
+            { "text": "Jest on głównym antagonistą Wacława, rywalizując z nim o względy Klary.", "correct": false },
+            { "text": "Jest on symbolem upadku obyczajów szlachty polskiej.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Jaka jest miara kąta wewnętrznego w ośmiokącie foremnym? Podaj wynik w stopniach.",
-        answer: ["135"]
+        "type": "open",
+        "question": "Zinterpretuj postać Geografa z 'Małego Księcia'. Co symbolizuje jego postawa i dlaczego odrzuca on badanie 'rzeczy efemerycznych' jak kwiaty?",
+        "answer": ["Geograf symbolizuje naukę oderwaną od życia i doświadczenia; wiedzę teoretyczną, sterylną i zamkniętą w książkach. Odrzuca badanie kwiatów, bo są 'efemeryczne' (ulotne), co pokazuje jego lęk przed życiem, przemijaniem i uczuciami. Ceni tylko to, co niezmienne i 'poważne', tracąc z oczu prawdziwe piękno i wartość istnienia."]
     },
     {
-        type: 'closed',
-        question: "Która z poniższych liczb jest największa?",
-        answers: [
-            { text: "(1/2)⁻²⁰", correct: false },
-            { text: "(1/3)⁻¹⁵", correct: true },
-            { text: "(1/4)⁻¹⁰", correct: false },
-            { text: "Wszystkie są równe", correct: false }
+        "type": "closed",
+        "question": "W którym z poniższych zdań wyraz 'wokół' pełni funkcję inną niż w pozostałych (jest przysłówkiem, a nie przyimkiem)?",
+        "answers": [
+            { "text": "Dzieci biegały wokół domu.", "correct": false },
+            { "text": "Zbudowano ogrodzenie wokół placu.", "correct": false },
+            { "text": "Wszyscy stali cicho i patrzyli wokół.", "correct": true },
+            { "text": "Zgromadzili się wokół ogniska.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Ile jest liczb dwucyfrowych, które przy dzieleniu przez 7 dają resztę 3?",
-        answer: ["13"]
-    },
-    {
-        type: 'closed',
-        question: "Bryła powstała przez nałożenie półkuli o promieniu 3 cm na walec o tym samym promieniu podstawy i wysokości 5 cm. Jakie jest pole powierzchni całkowitej tej bryły?",
-        answers: [
-            { text: "57π cm²", correct: true },
-            { text: "45π cm²", correct: false },
-            { text: "63π cm²", correct: false },
-            { text: "36π cm²", correct: false }
+        "type": "closed",
+        "question": "Czym fundamentalnie różni się rola Pustelnika w 'Balladynie' od roli Gandalfa w 'Hobbicie'?",
+        "answers": [
+            { "text": "Oboje są potężnymi czarodziejami, ale Pustelnik jest zły, a Gandalf dobry.", "correct": false },
+            { "text": "Pustelnik jest pasywnym strażnikiem upadającego porządku moralnego, który potrafi zdiagnozować zło, ale jest wobec niego bezsilny. Gandalf jest aktywnym inicjatorem i uczestnikiem wydarzeń, który realnie kształtuje losy świata.", "correct": true },
+            { "text": "Pustelnik pomaga Balladynie, a Gandalf przeszkadza Bilbowi.", "correct": false },
+            { "text": "Pustelnik żyje w lesie, a Gandalf podróżuje po świecie.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Liczba √(13 + 4√3) jest równa a + b√c, gdzie a, b, c są liczbami naturalnymi, a c jest liczbą pierwszą. Podaj sumę a+b+c.",
-        answer: ["6"]
+        "type": "open",
+        "question": "W opisie grzybobrania w 'Panu Tadeuszu' Mickiewicz używa bardzo szczegółowych, niemal botanicznych nazw grzybów. Jaki cel artystyczny ma ten zabieg?",
+        "answer": ["Celem jest sakralizacja i apoteoza litewskiej przyrody. Użycie szczegółowych nazw świadczy o głębokiej, intymnej znajomości i miłości do tego świata. Podnosi to opis grzybobrania z prozaicznej czynności do rangi rytuału, a przyrodę czyni pełnoprawnym, bogatym bohaterem epopei, dowodząc jej wyjątkowości."]
     },
     {
-        type: 'closed',
-        question: "W kwadrat o boku 4 losowo wybrano punkt. Jakie jest prawdopodobieństwo, że punkt ten leży w odległości nie większej niż 2 od środka kwadratu?",
-        answers: [
-            { text: "π/2", correct: false },
-            { text: "π/4", correct: true },
-            { text: "π/8", correct: false },
-            { text: "1/2", correct: false }
+        "type": "closed",
+        "question": "Na czym, według powieści Żeromskiego, polegał najgłębszy, najtrudniejszy do zwalczenia aspekt rusyfikacji?",
+        "answers": [
+            { "text": "Na brutalności fizycznej nauczycieli i żandarmów.", "correct": false },
+            { "text": "Na przymusie nauki języka rosyjskiego i historii Rosji.", "correct": false },
+            { "text": "Na próbie zmiany mentalności, zaszczepieniu w młodych Polakach poczucia niższości kulturowej i zerwaniu ich emocjonalnej więzi z polską historią i literaturą.", "correct": true },
+            { "text": "Na korumpowaniu uczniów poprzez system stypendiów i nagród.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W trójkącie ABC boki mają długość 8, 10, 12. Trójkąt A'B'C' jest podobny do trójkąta ABC, a jego najdłuższy bok ma długość 30. Ile wynosi obwód trójkąta A'B'C'?",
-        answers: [
-            { text: "60", correct: false },
-            { text: "72", correct: false },
-            { text: "75", correct: true },
-            { text: "90", correct: false }
+        "type": "open",
+        "question": "Labirynt Minotaura jest nie tylko budowlą. Zinterpretuj jego uniwersalne, symboliczne znaczenie w kontekście ludzkich problemów i wewnętrznych zmagań.",
+        "answer": ["Labirynt symbolizuje skomplikowany, nierozwiązywalny problem, sytuację bez wyjścia lub złożoność ludzkiej psychiki. Wejście do labiryntu to metafora podróży w głąb siebie, by skonfrontować się z własnymi lękami, słabościami lub 'wewnętrznym potworem' (np. nałogiem, traumą)."]
+    },
+    {
+        "type": "closed",
+        "question": "Najważniejsza różnica między podejściem do 'pracy dla ojczyzny' w 'Kamieniach na szaniec' a podejściem w pozytywistycznych nowelach (np. 'Katarynka' Prusa) polega na:",
+        "answers": [
+            { "text": "Skupieniu się na walce zbrojnej w 'Kamieniach...' versus pracy organicznej i pracy u podstaw w pozytywizmie.", "correct": true },
+            { "text": "Działaniu w grupie w 'Kamieniach...' versus działaniu indywidualnym w nowelach.", "correct": false },
+            { "text": "Bohaterstwie mężczyzn w 'Kamieniach...' versus pracy kobiet w nowelach.", "correct": false },
+            { "text": "Optymizmie 'Kamieni...' versus pesymizmie nowel.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Podaj liczbę dzielników naturalnych liczby 360.",
-        answer: ["24"]
+        "type": "open",
+        "question": "Zinterpretuj symbolikę Scyzoryka – słynnego miecza Gerwazego z 'Pana Tadeusza'. Co on symbolizuje?",
+        "answer": ["Scyzoryk symbolizuje schyłek epoki sarmackiej. Jego potężna nazwa kontrastuje z prozaicznym, codziennym narzędziem, co ma wymiar ironiczny. Jest to broń osobista, służąca do prywatnej zemsty, a nie do walki za sprawę narodową. Reprezentuje świat, który musi odejść – świat warcholstwa i prywaty, który ustępuje miejsca zorganizowanej walce o niepodległość."]
     },
     {
-        type: 'closed',
-        question: "W okrąg wpisano trójkąt równoramienny ABC (|AC|=|BC|), w którym kąt między ramionami |∠ACB| = 30°. Ile wynosi miara kąta środkowego opartego na podstawie AB?",
-        answers: [
-            { text: "30°", correct: false },
-            { text: "60°", correct: true },
-            { text: "75°", correct: false },
-            { text: "150°", correct: false }
+        "type": "closed",
+        "question": "W 'Opowieści wigilijnej', postać siostrzeńca Scrooge'a, Freda, pełni funkcję:",
+        "answers": [
+            { "text": "Głównego antagonisty, który chce przejąć majątek wuja.", "correct": false },
+            { "text": "Kontrapunktu dla Scrooge'a; uosabia ciepło, radość życia, bezinteresowność i wartości rodzinne, stanowiąc żywy dowód na to, że szczęście nie zależy od pieniędzy.", "correct": true },
+            { "text": "Postaci komicznej, która rozładowuje napięcie.", "correct": false },
+            { "text": "Przewodnika, który pomaga Scrooge'owi w jego przemianie.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Cenę towaru podniesiono o 25%, a następnie obniżono o kwotę równą 1/4 nowej ceny. Końcowa cena towaru wynosi 200 zł. Jaka była cena początkowa?",
-        answer: ["200"]
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego zdanie 'Otworzyłem szeroko otwarte okno' zawiera błąd logiczno-językowy i jak się on nazywa.",
+        "answer": ["Błąd ten to pleonazm (potocznie 'masło maślane'). Polega na powtórzeniu tej samej treści za pomocą różnych słów. Skoro okno jest 'otwarte', określenie 'szeroko' jest dopuszczalne, ale 'otworzyć otwarte' jest nielogiczne. Poprawnie byłoby np. 'Otworzyłem okno na oścież' lub 'Podszedłem do szeroko otwartego okna'."]
     },
     {
-        type: 'closed',
-        question: "Dwie proste o równaniach y = (m-2)x + 3 oraz y = -3x + 1 są prostopadłe. Wynika stąd, że:",
-        answers: [
-            { text: "m = -1", correct: false },
-            { text: "m = 5", correct: false },
-            { text: "m = 7/3", correct: true },
-            { text: "m = 2", correct: false }
+        "type": "closed",
+        "question": "Które z poniższych zdań jest zdaniem złożonym współrzędnie rozłącznym?",
+        "answers": [
+            { "text": "Poczytam książkę i posłucham muzyki.", "correct": false },
+            { "text": "Poczytam książkę albo posłucham muzyki.", "correct": true },
+            { "text": "Poczytam książkę, ale najpierw posłucham muzyki.", "correct": false },
+            { "text": "Poczytam książkę, więc nie będę słuchał muzyki.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Sześcian i ostrosłup prawidłowy czworokątny mają identyczne podstawy. Jaki musi być stosunek wysokości ostrosłupa do wysokości (krawędzi) sześcianu, aby objętości obu brył były równe?",
-        answers: [
-            { text: "1:1", correct: false },
-            { text: "2:1", correct: false },
-            { text: "3:1", correct: true },
-            { text: "1:3", correct: false }
+        "type": "open",
+        "question": "Porównaj sposób, w jaki Rejent Milczek i Jacek Soplica (jako ksiądz Robak) ukrywają swoją prawdziwą tożsamość lub intencje. Wskaż kluczową różnicę.",
+        "answer": ["Kluczowa różnica leży w motywacji. Rejent używa maski pobożności i łagodności ('mocium panie') w celach egoistycznych, by ukryć swoją chciwość i skuteczniej ranić przeciwnika. Jacek Soplica przywdziewa habit w ramach pokuty, by ukryć swoją tożsamość w celu służenia ojczyźnie. Maska Rejenta służy złu, maska Soplicy – dobru i zadośćuczynieniu."]
+    },
+    {
+        "type": "closed",
+        "question": "Rola Róży w życiu Małego Księcia jest paradoksalna, ponieważ:",
+        "answers": [
+            { "text": "Jest piękna, ale ma kolce, które mogą ranić.", "correct": false },
+            { "text": "Jest przyczyną jego cierpienia i opuszczenia planety, a jednocześnie staje się dla niego najważniejszą wartością, uczy go odpowiedzialności i motywuje do powrotu.", "correct": true },
+            { "text": "Jest jedyną różą na jego planecie, ale we wszechświecie istnieją tysiące podobnych.", "correct": false },
+            { "text": "Wymaga opieki, ale twierdzi, że potrafi sama o siebie zadbać.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W pudełku jest 6 kul czerwonych i 4 niebieskie. Ania i Bartek losują kolejno po jednej kuli bez zwracania (Ania pierwsza). Jakie jest prawdopodobieństwo, że Bartek wylosuje kulę niebieską? Podaj wynik jako ułamek nieskracalny.",
-        answer: ["2/5"]
+        "type": "open",
+        "question": "Zapisz poprawnie zdanie, eliminując błąd składniowy: 'Jadąc na rowerze, spadła mi czapka.'",
+        "answer": ["Gdy jechałem/jechałam na rowerze, spadła mi czapka."]
     },
     {
-        type: 'closed',
-        question: "Liczba (2√5 - √10)² / √2 jest równa:",
-        answers: [
-            { text: "30√2 - 20", correct: false },
-            { text: "15√2 - 20", correct: true },
-            { text: "15 - 10√2", correct: false },
-            { text: "10", correct: false }
+        "type": "closed",
+        "question": "W 'Balladynie', relacja tytułowej bohaterki z jej matką, Wdową, jest kluczowa dla jej upadku. Dlaczego?",
+        "answers": [
+            { "text": "Ponieważ matka od początku faworyzowała Alinę.", "correct": false },
+            { "text": "Ponieważ wyparcie się matki i skazanie jej na tortury jest ostatecznym aktem zerwania z ludzkim porządkiem i naturą, co ściąga na Balladynę ostateczną karę.", "correct": true },
+            { "text": "Ponieważ matka znała jej tajemnicę i mogła ją wydać.", "correct": false },
+            { "text": "Ponieważ matka namawiała ją do ślubu z Kirkorem.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W trapezie równoramiennym przekątna o długości 10 cm jest prostopadła do ramienia o długości 6 cm. Pole tego trapezu wynosi:",
-        answers: [
-            { text: "30 cm²", correct: false },
-            { text: "36 cm²", correct: false },
-            { text: "48 cm²", correct: true },
-            { text: "60 cm²", correct: false }
+        "type": "open",
+        "question": "Wyjaśnij, na czym polega tragizm postaci Skawińskiego z 'Latarnika'.",
+        "answer": ["Jego tragizm polega na konflikcie dwóch uniwersalnych ludzkich pragnień: potrzeby bezpieczeństwa i spokoju oraz potrzeby przynależności do ojczyzny. Gdy wreszcie osiąga spokój, przypomnienie o ojczyźnie niszczy go, zmuszając do powrotu do tułaczki. Nie jest w stanie pogodzić tych dwóch wartości; jedna zawsze wyklucza drugą."]
+    },
+    {
+        "type": "closed",
+        "question": "Wskaż grupę wyrazów, w której wszystkie są imiesłowami.",
+        "answers": [
+            { "text": "czytając, pisanie, narysowany", "correct": false },
+            { "text": "myślący, napisawszy, zrobiono", "correct": true },
+            { "text": "biegnąc, biegacz, przebiegnięty", "correct": false },
+            { "text": "zamknięty, otwierając, klucz", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Bartek czyta książkę w tempie 15 stron na godzinę. Gdyby czytał o 5 stron na godzinę szybciej, skończyłby książkę 2 godziny wcześniej. Ile stron ma książka?",
-        answer: ["120"]
+        "type": "open",
+        "question": "W 'Zemście' pojawia się motyw 'porwania' Klary przez Cześnika. Na czym polega komizm i ironia tego 'porwania'?",
+        "answer": ["Komizm polega na tym, że jest to 'porwanie' za zgodą i ku radości porwanej – Klara od dawna kocha Wacława, którego Cześnik jej przeznaczył. Ironia polega na tym, że Cześnik, myśląc, że dokonuje aktu zemsty na Rejencie, w rzeczywistości realizuje marzenia młodej pary i doprowadza do szczęśliwego zakończenia, działając wbrew własnym intencjom."]
     },
     {
-        type: 'closed',
-        question: "Punkty A=(-3, 2) i C=(5, 4) są przeciwległymi wierzchołkami kwadratu ABCD. Pole tego kwadratu jest równe:",
-        answers: [
-            { text: "68", correct: false },
-            { text: "34", correct: true },
-            { text: "16", correct: false },
-            { text: "32", correct: false }
+        "type": "closed",
+        "question": "Które z poniższych dzieł literackich najpełniej realizuje ideę 'utworu pisanego ku pokrzepieniu serc'?",
+        "answers": [
+            { "text": "'Syzyfowe prace'", "correct": false },
+            { "text": "'Dziady cz. II'", "correct": false },
+            { "text": "'Pan Tadeusz'", "correct": true },
+            { "text": "'Zemsta'", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Wartość wyrażenia log₃(54) - log₃(2) jest równa:",
-        answers: [
-            { text: "log₃(52)", correct: false },
-            { text: "3", correct: true },
-            { text: "4", correct: false },
-            { text: "27", correct: false }
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego 'Rota' Marii Konopnickiej, mimo że nie jest hymnem państwowym, ma dla Polaków tak wielkie znaczenie historyczne i emocjonalne.",
+        "answer": ["'Rota' ma tak wielkie znaczenie, ponieważ powstała jako bezpośredni protest przeciwko brutalnej germanizacji w zaborze pruskim (strajk dzieci we Wrześni). Jej tekst jest uroczystą przysięgą wierności językowi, wierze i ziemi. Stała się nieoficjalnym hymnem oporu, symbolem niezłomności i jedności narodu w walce o zachowanie tożsamości."]
+    },
+    {
+        "type": "closed",
+        "question": "Finałowy sąd w 'Balladynie', podczas którego bohaterka sama wydaje na siebie wyrok, jest przykładem:",
+        "answers": [
+            { "text": "Sprawiedliwości ludowej.", "correct": false },
+            { "text": "Ironii tragicznej, w której sprawca zbrodni staje się narzędziem własnej kary.", "correct": true },
+            { "text": "Boskiej interwencji w losy bohaterów.", "correct": false },
+            { "text": "Zemsty duchów jej ofiar.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Średnia arytmetyczna zestawu sześciu liczb: 3, 5, 8, x, 12, 14 jest równa 9. Jaka jest mediana tego zestawu liczb?",
-        answer: ["8.5"]
+        "type": "open",
+        "question": "Przekształć zdanie z mowy zależnej na mowę niezależną: 'Ojciec zapytał, czy odrobiłem już lekcje.'",
+        "answer": ["Ojciec zapytał: 'Czy odrobiłeś już lekcje?'."]
     },
     {
-        type: 'closed',
-        question: "Przekątna graniastosłupa prawidłowego sześciokątnego (najdłuższa) ma długość 10. Krawędź podstawy ma długość 3. Jaka jest wysokość tego graniastosłupa?",
-        answers: [
-            { text: "√91", correct: false },
-            { text: "√64", correct: false },
-            { text: "8", correct: true },
-            { text: "√109", correct: false }
+        "type": "closed",
+        "question": "W 'Chłopcach z Placu Broni', Plac nie jest zwykłym miejscem zabaw, lecz 'małą ojczyzną'. Które z poniższych zjawisk NIE potwierdza tej interpretacji?",
+        "answers": [
+            { "text": "Istnienie 'armii' ze stopniami wojskowymi i regulaminem.", "correct": false },
+            { "text": "Uważanie terenu Placu za święte terytorium, którego należy bronić.", "correct": false },
+            { "text": "Wybieranie miejsca do gry w palanta i budowanie szałasów.", "correct": true },
+            { "text": "Traktowanie Feriego Acza i jego grupy jako wrogiej armii, a zdrady jako zdrady stanu.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Jeżeli 3/(x-2) = 5/(x+2), to x jest równe:",
-        answers: [
-            { text: "4", correct: false },
-            { text: "1/2", correct: false },
-            { text: "8", correct: true },
-            { text: "-8", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "W romb o kącie ostrym 30° wpisano koło o polu 9π. Oblicz pole tego rombu.",
-        answer: ["72"]
-    },
-    {
-        type: 'closed',
-        question: "Pociąg o długości 200 m, jadący z prędkością 90 km/h, wjeżdża do tunelu o długości 1 km. Ile czasu upłynie od momentu wjechania czoła pociągu do tunelu do momentu wyjechania z niego końca ostatniego wagonu?",
-        answers: [
-            { text: "40 s", correct: false },
-            { text: "44 s", correct: false },
-            { text: "48 s", correct: true },
-            { text: "52 s", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "W systemie dwójkowym liczba 19 to 10011. Jak w systemie dwójkowym zapiszemy liczbę 38?",
-        answer: ["100110"]
+        "type": "open",
+        "question": "W 'Trenie V', śmierć Urszulki jest porównana do przypadkowego podcięcia oliwki przez nieuważnego ogrodnika. Kto lub co kryje się pod symboliczną postacią tego 'ogrodnika'?",
+        "answer": ["'Ogrodnik' symbolizuje ślepy, okrutny los, przypadek lub nawet samego Boga (w ujęciu zbuntowanego poety), który działa w sposób niezrozumiały i bezwzględny. Jest to siła, która niszczy kruche życie bez wyraźnego powodu, co podkreśla absurd i niesprawiedliwość śmierci dziecka."]
     }
-];;
+]
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

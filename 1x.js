@@ -1,225 +1,205 @@
-// --- Definicja pytań (z nowym polem "type") ---
 const questions = [
     {
-        type: 'closed',
-        question: "Suma cyfr pewnej liczby dwucyfrowej wynosi 12. Jeśli przestawimy cyfry tej liczby, otrzymamy liczbę o 18 mniejszą. Jaka to liczba?",
-        answers: [
-            { text: "84", correct: false },
-            { text: "93", correct: false },
-            { text: "75", correct: true },
-            { text: "66", correct: false }
+        "type": "closed",
+        "question": "W przytoczonym fragmencie 'Tajemniczego ogrodu', relacja Dicka ze zwierzętami opiera się przede wszystkim na:",
+        "answers": [
+            { "text": "Wydawaniu im poleceń, które posłusznie wykonują.", "correct": false },
+            { "text": "Sile jego autorytetu jako człowieka dominującego nad naturą.", "correct": false },
+            { "text": "Empatii, cierpliwości i zrozumieniu ich natury, co buduje zaufanie.", "correct": true },
+            { "text": "Użyciu magicznej fujarki, która zmusza je do określonych zachowań.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Cenę produktu obniżono o 20%, a następnie nową cenę podwyższono o 25%. Jak zmieniła się cena produktu w stosunku do ceny początkowej?",
-        answers: [
-            { text: "Wzrosła o 5%", correct: false },
-            { text: "Zmalała o 5%", correct: false },
-            { text: "Nie zmieniła się", correct: true },
-            { text: "Wzrosła o 2,5%", correct: false }
+        "type": "closed",
+        "question": "Postawa Mary w początkowej fazie rozmowy z Dickiem ('odpowiadała trochę sztywno i czuła się lekko onieśmielona') wynika najprawdopodobniej z:",
+        "answers": [
+            { "text": "Jej wrodzonej niechęci do mieszkańców wsi.", "correct": false },
+            { "text": "Braku wcześniejszych doświadczeń w swobodnych, partnerskich relacjach z rówieśnikami.", "correct": true },
+            { "text": "Poczucia wyższości społecznej wobec syna służącej.", "correct": false },
+            { "text": "Obawy, że Dick odkryje jej sekret dotyczący ogrodu.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Jaka jest najmniejsza dodatnia liczba całkowita, która przy dzieleniu przez 3, 4 i 5 daje zawsze resztę 2?",
-        answer: ["62"]
+        "type": "open",
+        "question": "W kontekście fragmentu 'Tajemniczego ogrodu', wyjaśnij, co oznacza stwierdzenie Dicka, że rudzik 'potrafi wystrychnąć na dudka gorzej niż człowiek'. Co to mówi o naturze?",
+        "answer": ["Oznacza to, że zdobycie zaufania dzikiego stworzenia jest trudne i wymaga autentyczności, a natura jest szczera i nie da się jej oszukać powierzchownymi gestami.", "Zdobycie zaufania przyrody jest trudniejsze niż oszukanie człowieka; wymaga prawdziwej więzi."]
     },
     {
-        type: 'closed',
-        question: "W rombie o boku 13 cm jedna z przekątnych ma długość 24 cm. Jakie jest pole tego rombu?",
-        answers: [
-            { text: "156 cm²", correct: false },
-            { text: "312 cm²", correct: false },
-            { text: "120 cm²", correct: true },
-            { text: "60 cm²", correct: false }
+        "type": "closed",
+        "question": "Główną tezą tekstu Sebastiana Taboła 'Istota czytania' jest stwierdzenie, że:",
+        "answers": [
+            { "text": "Czytanie literatury pięknej jest najważniejszą formą rozwoju intelektualnego.", "correct": false },
+            { "text": "Czytanie to uniwersalny proces interpretacji różnorodnych znaków, nieograniczający się tylko do pisma.", "correct": true },
+            { "text": "Współcześnie ludzie czytają znacznie mniej niż w przeszłości z powodu rozwoju technologii.", "correct": false },
+            { "text": "Każdy człowiek powinien opanować technikę szybkiego czytania, aby sprostać wymaganiom świata.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Wartość wyrażenia (√48 - √27) / √3 jest równa:",
-        answers: [
-            { text: "√7", correct: false },
-            { text: "1", correct: true },
-            { text: "7", correct: false },
-            { text: "√3", correct: false }
+        "type": "open",
+        "question": "Autor tekstu 'Istota czytania' pisze o 'czytaniu między wierszami'. Podaj własny, oryginalny przykład sytuacji (inny niż rozmowa), w której można zastosować tę umiejętność.",
+        "answer": ["Analizując reklamę, która obiecuje 'niesamowite efekty', ale drobnym drukiem podaje wiele wyłączeń.", "Oglądając przemówienie polityka, który mówi o 'potrzebie reform', ale unika podania konkretów, co sugeruje, że nie ma planu."]
+    },
+    {
+        "type": "closed",
+        "question": "Wspólnym mianownikiem losów Jacka Soplicy ('Pan Tadeusz') i Ebenezera Scrooge'a ('Opowieść wigilijna') jest:",
+        "answers": [
+            { "text": "Walka o niepodległość ojczyzny.", "correct": false },
+            { "text": "Doświadczenie nieszczęśliwej miłości w młodości.", "correct": false },
+            { "text": "Motyw winy, pokuty i głębokiej wewnętrznej przemiany pod wpływem przełomowych wydarzeń.", "correct": true },
+            { "text": "Dążenie do zdobycia ogromnego majątku za wszelką cenę.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W trójkącie prostokątnym jedna z przyprostokątnych jest o 7 cm krótsza od drugiej i o 8 cm krótsza od przeciwprostokątnej. Jaki jest obwód tego trójkąta?",
-        answers: [
-            { text: "24 cm", correct: false },
-            { text: "30 cm", correct: true },
-            { text: "40 cm", correct: false },
-            { text: "15 cm", correct: false }
+        "type": "closed",
+        "question": "Która z postaci literackich z listy lektur obowiązkowych najpełniej realizuje wzorzec bohatera tragicznego, którego do katastrofy prowadzi jego własna wada charakteru (hamartia)?",
+        "answers": [
+            { "text": "Alina z 'Balladyny', ponieważ jest ofiarą zbrodni.", "correct": false },
+            { "text": "Jacek Soplica z 'Pana Tadeusza', ponieważ jego pycha prowadzi do zbrodni.", "correct": false },
+            { "text": "Balladyna z 'Balladyny', ponieważ jej niepohamowana żądza władzy prowadzi ją od jednej zbrodni do kolejnej i ostatecznie do zguby.", "correct": true },
+            { "text": "Marcin Borowicz z 'Syzyfowych prac', ponieważ walczy z rusyfikacją.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Objętość sześcianu wynosi 216 cm³. Podaj długość przekątnej tego sześcianu (wynik zapisz w postaci a√b).",
-        answer: ["6√3"]
+        "type": "open",
+        "question": "Wyjaśnij, na czym polega ironia tragiczna w finale 'Zemsty' Aleksandra Fredry. Weź pod uwagę plany bohaterów i ostateczny rezultat ich działań.",
+        "answer": ["Ironia polega na tym, że nienawidzący się Cześnik i Rejent, knując przeciwko sobie, doprowadzają do ślubu swoich dzieci, co ostatecznie godzi zwaśnione rody. Osiągają cel przeciwny do zamierzonego, który okazuje się dla wszystkich szczęśliwym rozwiązaniem."]
     },
     {
-        type: 'closed',
-        question: "Rzucamy dwiema standardowymi sześciennymi kostkami do gry. Jakie jest prawdopodobieństwo, że iloczyn wyrzuconych oczek będzie liczbą pierwszą?",
-        answers: [
-            { text: "1/6", correct: true },
-            { text: "1/12", correct: false },
-            { text: "5/36", correct: false },
-            { text: "7/36", correct: false }
+        "type": "closed",
+        "question": "Postawa patriotyczna w 'Reducie Ordona' Mickiewicza i 'Kamieniach na szaniec' Kamińskiego, mimo różnic epokowych, opiera się na wspólnym fundamencie, którym jest:",
+        "answers": [
+            { "text": "Przekonanie o konieczności walki dyplomatycznej.", "correct": false },
+            { "text": "Apoteoza poświęcenia jednostki i gotowość oddania życia za ojczyznę jako najwyższy akt heroizmu.", "correct": true },
+            { "text": "Krytyka bezsensownej śmierci i pochwała pracy organicznej.", "correct": false },
+            { "text": "Wiara w nieuchronną pomoc ze strony sojuszników z Zachodu.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W kwadrat o boku 10 cm wpisano koło. Stosunek pola kwadratu do pola koła wynosi:",
-        answers: [
-            { text: "4 : π", correct: true },
-            { text: "2 : π", correct: false },
-            { text: "π : 4", correct: false },
-            { text: "1 : 1", correct: false }
+        "type": "open",
+        "question": "Interpretując 'Małego Księcia', wyjaśnij, co symbolizują baobaby i dlaczego tak ważne jest, by 'wyrywać je zaraz po odrośnięciu'. Odnieś tę symbolikę do życia człowieka.",
+        "answer": ["Baobaby symbolizują zło, złe myśli, wady, nałogi lub problemy, które na początku są małe i łatwe do usunięcia. Jeśli się je zignoruje, rozrosną się, zdominują całe życie ('planetę') i doprowadzą do katastrofy. To metafora konieczności pracy nad sobą i rozwiązywania problemów, póki są małe."]
+    },
+    {
+        "type": "closed",
+        "question": "W zdaniu z tekstu 'Istota czytania': 'Inaczej czyta się teksty naukowe, najeżone specjalistycznymi terminami, a inaczej – literaturę piękną', wyraz 'najeżone' pełni funkcję metaforyczną. Co ona komunikuje o języku tekstów naukowych?",
+        "answers": [
+            { "text": "Że jest on nieprzyjemny i kłujący w odbiorze dla laika.", "correct": false },
+            { "text": "Że zawiera bardzo dużą liczbę trudnych, specjalistycznych słów, które tworzą barierę poznawczą.", "correct": true },
+            { "text": "Że jest chaotyczny i nieuporządkowany jak sierść jeża.", "correct": false },
+            { "text": "Że jest przestarzały i archaiczny.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Liczba 4¹⁰ + 4¹⁰ + 4¹⁰ + 4¹⁰ jest równa:",
-        answers: [
-            { text: "4⁴⁰", correct: false },
-            { text: "16¹⁰", correct: false },
-            { text: "4¹¹", correct: true },
-            { text: "16⁴⁰", correct: false }
+        "type": "open",
+        "question": "Wpisz tytuł lektury obowiązkowej, w której motyw 'non omnis moriar' (nie wszystek umrę) Horacego znajduje swoje najpełniejsze odzwierciedlenie w postawie poety-bohatera lirycznego. Uzasadnij krótko swój wybór.",
+        "answer": ["Pieśni Jana Kochanowskiego (np. 'Niezwykłym i nie leda piórem obdarzony...'). Poeta wyraża w nich przekonanie, że jego twórczość zapewni mu nieśmiertelność i sławę po śmierci."]
+    },
+    {
+        "type": "closed",
+        "question": "Który z poniższych cytatów z 'Dziadów cz. II' zawiera uniwersalną prawdę moralną dotyczącą wagi ludzkiego cierpienia i empatii?",
+        "answers": [
+            { "text": "'Ciemno wszędzie, głucho wszędzie, / Co to będzie, co to będzie?'", "correct": false },
+            { "text": "'Kto nie dotknął ziemi ni razu, / Ten nigdy nie może być w niebie.'", "correct": false },
+            { "text": "'Bo kto nie był ni razu człowiekiem, / Temu człowiek nic nie pomoże.'", "correct": true },
+            { "text": "'Spieszmy się kochać ludzi, tak szybko odchodzą.'", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Średnia arytmetyczna pięciu liczb wynosi 12. Gdy usunięto jedną z nich, średnia pozostałych czterech wyniosła 10. Jaką liczbę usunięto?",
-        answer: ["20"]
+        "type": "open",
+        "question": "Porównaj postać Telimeny z 'Pana Tadeusza' i tytułowej bohaterki satyry 'Żona modna' I. Krasickiego. Wskaż jedną wspólną, charakterystyczną dla obu postaci cechę i zilustruj ją przykładem z utworu.",
+        "answer": ["Wspólną cechą jest fascynacja obcą (francuską) modą i kulturą, połączona z pogardą dla rodzimych obyczajów. Telimena organizuje 'ucztę na modę francuską' i dyskutuje o sztuce, a Żona Modna przemeblowuje dwór męża w stylu francuskim, gardząc staropolskim porządkiem."]
     },
     {
-        type: 'closed',
-        question: "W trójkącie równoramiennym ABC (|AC|=|BC|) kąt przy podstawie ma miarę 70°. Z wierzchołka C poprowadzono wysokość CD. Jaką miarę ma kąt BCD?",
-        answers: [
-            { text: "70°", correct: false },
-            { text: "40°", correct: false },
-            { text: "35°", correct: false },
-            { text: "20°", correct: true }
+        "type": "closed",
+        "question": "Recytacja 'Reduty Ordona' przez Bernarda Zygiera na lekcji języka polskiego w 'Syzyfowych pracach' jest momentem przełomowym, ponieważ:",
+        "answers": [
+            { "text": "Jest to akt otwartego buntu wobec nauczyciela rusyfikatora, który budzi uśpioną świadomość narodową w Marcinie Borowiczu.", "correct": true },
+            { "text": "Pokazuje doskonałą pamięć Zygiera i jego talent recytatorski.", "correct": false },
+            { "text": "Jest to próba zaimponowania Annie Stogowskiej, 'Birucie'.", "correct": false },
+            { "text": "Prowadzi do natychmiastowego usunięcia Zygiera i Borowicza ze szkoły.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Dwa pociągi o długościach 150 m i 250 m jadą w przeciwnych kierunkach po równoległych torach. Pierwszy z prędkością 60 km/h, a drugi z prędkością 84 km/h. Ile sekund minie od momentu spotkania się ich czoł do momentu minięcia się ich końców?",
-        answers: [
-            { text: "15 s", correct: false },
-            { text: "12 s", correct: false },
-            { text: "10 s", correct: true },
-            { text: "8 s", correct: false }
+        "type": "closed",
+        "question": "W zdaniu: 'Chłopiec, który potrafił naśladować głosy ptaków, zaimponował Mary, chociaż początkowo czuła się przy nim onieśmielona', występuje następująca kolejność zdań składowych:",
+        "answers": [
+            { "text": "Nadrzędne - podrzędne przydawkowe - nadrzędne - podrzędne okolicznikowe przyzwolenia", "correct": true },
+            { "text": "Nadrzędne - podrzędne podmiotowe - nadrzędne - podrzędne dopełnieniowe", "correct": false },
+            { "text": "Podrzędne orzecznikowe - nadrzędne - podrzędne okolicznikowe celu", "correct": false },
+            { "text": "Dwa zdania nadrzędne połączone spójnikiem 'chociaż'", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Ile jest liczb całkowitych x spełniających nierówność 2(x - 1) ≤ 5x + 13?",
-        // Rozwiązanie: 2x-2 <= 5x+13 -> -15 <= 3x -> -5 <= x. Nieskończenie wiele. Pytanie musi być inne.
-        // Poprawka: Ile jest liczb całkowitych x spełniających JEDNOCZEŚNIE nierówności: x > -4 i 2x < 7?
-        // x > -4 i x < 3.5. Liczby całkowite to: -3, -2, -1, 0, 1, 2, 3. Jest ich 7.
-        question: "Ile jest liczb całkowitych x spełniających jednocześnie warunki: x > -3.5 i 2x ≤ 6?",
-        answer: ["7"]
+        "type": "open",
+        "question": "Przekształć zdanie 'Dick schylił się, żeby podnieść narzędzia' na zdanie z imiesłowowym równoważnikiem zdania, zachowując jego sens.",
+        "answer": ["Schyliwszy się, Dick podniósł narzędzia."]
     },
     {
-        type: 'closed',
-        question: "Promień podstawy stożka ma 5 cm, a jego tworząca ma 13 cm. Jaka jest objętość tego stożka?",
-        answers: [
-            { text: "65π cm³", correct: false },
-            { text: "325π cm³", correct: false },
-            { text: "100π cm³", correct: true },
-            { text: "120π cm³", correct: false }
+        "type": "closed",
+        "question": "Pojęcie 'syzyfowa praca', użyte w tytule powieści Żeromskiego, odnosi się w najgłębszym sensie do:",
+        "answers": [
+            { "text": "Ciężkiej i bezowocnej pracy Marcina Borowicza nad własnym charakterem.", "correct": false },
+            { "text": "Beznadziejnych wysiłków nauczycieli, by nauczyć polskie dzieci języka rosyjskiego.", "correct": false },
+            { "text": "Dwoistego znaczenia: z jednej strony bezowocnych wysiłków rusyfikatorów, a z drugiej - heroicznej, choć pozornie beznadziejnej walki polskiej młodzieży o zachowanie tożsamości.", "correct": true },
+            { "text": "Trudów związanych z codziennym dojeżdżaniem do szkoły w Klerykowie.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W trójkącie prostokątnym o przyprostokątnych 6 i 8, promień okręgu opisanego na tym trójkącie jest równy:",
-        answers: [
-            { text: "10", correct: false },
-            { text: "5", correct: true },
-            { text: "4", correct: false },
-            { text: "3", correct: false }
+        "type": "closed",
+        "question": "W którym z poniższych związków frazeologicznych słowo 'pięta' ma znaczenie symboliczne, odwołujące się do mitologii?",
+        "answers": [
+            { "text": "Nadeptywać komuś na pięty.", "correct": false },
+            { "text": "Pięta achillesowa.", "correct": true },
+            { "text": "Pójść w piętkę.", "correct": false },
+            { "text": "Pokazać komuś pięty.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Wyrażenie (2x - 3y)² - (2x + 3y)² po uproszczeniu ma postać kxy. Podaj wartość liczbową k.",
-        answer: ["-24"]
+        "type": "open",
+        "question": "W 'Trenie VIII' Jan Kochanowski pisze: 'Pełno nas, a jakoby nikogo nie było'. Wyjaśnij, na czym polega paradoks wyrażony w tym fragmencie i co on mówi o stanie emocjonalnym podmiotu lirycznego.",
+        "answer": ["Paradoks polega na sprzeczności między fizyczną obecnością wielu osób w domu a odczuciem pustki po stracie jednej, konkretnej osoby (Urszulki). Mówi to o głębokim smutku, żalu i poczuciu osamotnienia ojca, dla którego zmarła córka była centrum życia domowego, a jej brak sprawia, że dom wydaje się pusty."]
     },
     {
-        type: 'closed',
-        question: "Mapa została wykonana w skali 1:50 000. Odległość między dwoma miastami na tej mapie wynosi 8 cm. Ile wynosi rzeczywista odległość między tymi miastami?",
-        answers: [
-            { text: "40 km", correct: false },
-            { text: "4 km", correct: true },
-            { text: "400 m", correct: false },
-            { text: "0.4 km", correct: false }
+        "type": "closed",
+        "question": "Analizując 'Latarnika' Sienkiewicza, można dojść do wniosku, że lektura 'Pana Tadeusza' dla Skawińskiego była przede wszystkim:",
+        "answers": [
+            { "text": "Intelektualną rozrywką po latach prostej pracy fizycznej.", "correct": false },
+            { "text": "Przypomnieniem o obowiązkach wobec dalekiej ojczyzny.", "correct": false },
+            { "text": "Katalizatorem, który wywołał potężną, stłumioną tęsknotę i przywrócił mu poczucie tożsamości narodowej, niszcząc jego spokój.", "correct": true },
+            { "text": "Powodem do dumy, że polska literatura jest znana na świecie.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W trapezie równoramiennym podstawy mają długość 10 cm i 22 cm, a pole wynosi 128 cm². Ile wynosi ramię tego trapezu?",
-        answers: [
-            { text: "8 cm", correct: false },
-            { text: "12 cm", correct: false },
-            { text: "10 cm", correct: true },
-            { text: "6 cm", correct: false }
+        "type": "open",
+        "question": "Wskaż błąd składniowy w poniższym zdaniu i zapisz je poprawnie: 'Idąc do szkoły, zaczął padać deszcz.'",
+        "answer": ["Błąd polega na tym, że podmiot logiczny imiesłowu ('idąc') jest inny niż podmiot zdania głównego ('deszcz'). Poprawnie: 'Gdy szedłem/szłam do szkoły, zaczął padać deszcz.'"]
+    },
+    {
+        "type": "closed",
+        "question": "Konflikt między Cześnikiem a Rejentem w 'Zemście' ma charakter sporu 'o miedzę'. Jakie uniwersalne cechy polskiego charakteru narodowego (lub szerzej: ludzkiej natury) są w tym konflikcie ośmieszone przez Fredrę?",
+        "answers": [
+            { "text": "Gościnność i życzliwość.", "correct": false },
+            { "text": "Odwaga i waleczność na polu bitwy.", "correct": false },
+            { "text": "Porywczość, upór, pieniactwo i przywiązanie do własnej racji za wszelką cenę.", "correct": true },
+            { "text": "Pracowitość i gospodarność.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Która z poniższych liczb jest największa?",
-        answers: [
-            { text: "2⁶⁰", correct: false },
-            { text: "3⁴⁵", correct: true },
-            { text: "4³⁰", correct: false },
-            { text: "5¹⁵", correct: false }
-        ]
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego narrator w 'Opowieści wigilijnej' nazywa Marleya 'martwym jak ćwiek w drzwiach' ('dead as a doornail'). Jaki cel artystyczny osiąga autor przez to dosadne, nietypowe porównanie na samym początku utworu?",
+        "answer": ["Celem jest hiperboliczne, definitywne i niepozostawiające wątpliwości podkreślenie faktu śmierci Marleya. To uwiarygadnia późniejsze pojawienie się jego ducha jako zjawiska nadprzyrodzonego i wstrząsającego, a nie np. halucynacji Scrooge'a. Buduje to fundament dla świata fantastycznego utworu."]
     },
     {
-        type: 'open',
-        question: "W akwarium w kształcie prostopadłościanu o wymiarach podstawy 50 cm x 40 cm, poziom wody podniósł się o 2 cm po wrzuceniu do niego kamienia. Jaka jest objętość kamienia w cm³?",
-        answer: ["4000"]
-    },
-    {
-        type: 'closed',
-        question: "Dwa trójkąty podobne T1 i T2 mają pola równe odpowiednio 18 cm² i 32 cm². Stosunek obwodu trójkąta T1 do obwodu trójkąta T2 jest równy:",
-        answers: [
-            { text: "9:16", correct: false },
-            { text: "√18:√32", correct: false },
-            { text: "3:4", correct: true },
-            { text: "2:3", correct: false }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "Jeżeli a = 3 - √5 i b = 3 + √5, to wartość wyrażenia a/b + b/a wynosi:",
-        answers: [
-            { text: "6", correct: false },
-            { text: "9", correct: false },
-            { text: "7", correct: true },
-            { text: "14", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "W pudełku jest 15 kul: 5 czerwonych, 3 zielone i 7 niebieskich. Losujemy jedną kulę. Jakie jest prawdopodobieństwo, że wylosowana kula NIE będzie czerwona? (Odpowiedź podaj w postaci ułamka nieskracalnego a/b)",
-        answer: ["2/3"]
-    },
-    {
-        type: 'closed',
-        question: "Punkt S = (3, -2) jest środkiem odcinka AB. Wiedząc, że A = (-1, 4), jakie są współrzędne punktu B?",
-        answers: [
-            { text: "(7, -8)", correct: true },
-            { text: "(2, 2)", correct: false },
-            { text: "(1, 1)", correct: false },
-            { text: "(7, 8)", correct: false }
+        "type": "closed",
+        "question": "Jeśli założymy, że 'Artysta' Sławomira Mrożka jest parabolą, to postawa Koguta, który za wszelką cenę chce 'być lwem', jest satyrą na:",
+        "answers": [
+            { "text": "Wysokie ambicje i dążenie do samorozwoju.", "correct": false },
+            { "text": "Przerost ambicji nad możliwościami, udawanie kogoś, kim się nie jest i pogoń za sławą bez pokrycia w talencie.", "correct": true },
+            { "text": "Niesprawiedliwy system oceny artystów przez dyrektorów cyrków.", "correct": false },
+            { "text": "Trudne warunki życia zwierząt w cyrkach.", "correct": false }
         ]
     }
-];;
+]
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

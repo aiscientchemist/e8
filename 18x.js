@@ -1,207 +1,195 @@
 const questions = [
     {
-        type: 'closed',
-        question: "Różnica kwadratów dwóch kolejnych dodatnich liczb parzystych wynosi 100. Ile wynosi iloczyn tych liczb?",
-        answers: [
-            { text: "624", correct: true },
-            { text: "528", correct: false },
-            { text: "440", correct: false },
-            { text: "360", correct: false }
+        "type": "closed",
+        "question": "W 'Zemście' język Rejenta, pełen zdrobnień i pozornej pokory ('mocium panie', 'serdeńko'), stoi w jaskrawym kontraście do jego czynów. Ten zabieg artystyczny to:",
+        "answers": [
+            { "text": "Hiperbola, czyli wyolbrzymienie.", "correct": false },
+            { "text": "Ironia charakterologiczna, demaskująca hipokryzję postaci.", "correct": true },
+            { "text": "Eufemizm, czyli łagodzenie wyrażeń.", "correct": false },
+            { "text": "Peryfraza, czyli omówienie.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Pole rombu wynosi 120. Jedna z przekątnych jest o 14 dłuższa od drugiej. Oblicz obwód tego rombu.",
-        answer: ["52"]
+        "type": "open",
+        "question": "W 'Małym Księciu' Pilot na początku opowieści mówi, że dorośli zmusili go do porzucenia kariery malarza. Co symbolizuje ten 'zawód malarza'?",
+        "answer": ["'Zawód malarza' symbolizuje dziecięcą wyobraźnię, kreatywność i zdolność do postrzegania świata w sposób nieszablonowy i metaforyczny (jak słoń w wężu boa). Porzucenie go na rzecz 'poważnych' zajęć (geografia, arytmetyka) to metafora procesu dorastania, w którym często traci się wrażliwość i fantazję na rzecz pragmatyzmu."]
     },
     {
-        type: 'closed',
-        question: "Liczba 2²⁰ * 5¹⁵ jest równa:",
-        answers: [
-            { text: "10³⁵", correct: false },
-            { text: "32 * 10¹⁵", correct: true },
-            { text: "10 * 10²⁰", correct: false },
-            { text: "7¹⁵ * 10¹⁵", correct: false }
+        "type": "closed",
+        "question": "W którym z poniższych zdań imiesłów przysłówkowy współczesny został użyty niepoprawnie?",
+        "answers": [
+            { "text": "Słuchając wykładu, robił notatki.", "correct": false },
+            { "text": "Jedząc obiad, oglądał telewizję.", "correct": false },
+            { "text": "Idąc do domu, spotkał go kolega.", "correct": true },
+            { "text": "Czytając książkę, pił herbatę.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkącie prostokątnym o obwodzie 70, promień okręgu wpisanego wynosi 5. Oblicz długość przeciwprostokątnej.",
-        answer: ["30"]
-    },
-    {
-        type: 'closed',
-        question: "W ostrosłupie prawidłowym czworokątnym wysokość ściany bocznej ma długość 13, a wysokość ostrosłupa 12. Pole powierzchni całkowitej tej bryły wynosi:",
-        answers: [
-            { text: "260", correct: false },
-            { text: "340", correct: false },
-            { text: "360", correct: true },
-            { text: "520", correct: false }
+        "type": "closed",
+        "question": "Co jest wspólną cechą losu Jacka Soplicy i Edypa, bohatera mitologii greckiej?",
+        "answers": [
+            { "text": "Obaj nieświadomie popełniają straszną zbrodnię, która rzutuje na całe ich późniejsze życie i zmusza do pokuty lub cierpienia.", "correct": true },
+            { "text": "Obaj są królami, którzy tracą władzę.", "correct": false },
+            { "text": "Obaj toczą walkę z przeznaczeniem, próbując je oszukać.", "correct": false },
+            { "text": "Obaj umierają w samotności, opuszczeni przez wszystkich.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Wartość wyrażenia (log₂3) * (log₃4) * (log₄5) * ... * (log₁₅16) jest równa:",
-        answers: [
-            { text: "1", correct: false },
-            { text: "2", correct: false },
-            { text: "3", correct: false },
-            { text: "4", correct: true }
+        "type": "open",
+        "question": "W 'Panu Tadeuszu' Asesor i Rejent toczą spór o swoje psy myśliwskie. Jaka jest funkcja tego sporu w strukturze utworu?",
+        "answer": ["Spór ten jest miniaturowym, komicznym odbiciem głównego konfliktu o zamek. Pokazuje on, że w świecie sarmackim każda dziedzina życia, nawet polowanie, jest pretekstem do rywalizacji, obrony honoru i kłótni. Jest to element budujący obraz obyczajowości szlacheckiej i dodający utworowi humoru."]
+    },
+    {
+        "type": "closed",
+        "question": "Postać Ligii w 'Quo vadis' reprezentuje:",
+        "answers": [
+            { "text": "Dzikość i prostotę ludów barbarzyńskich.", "correct": false },
+            { "text": "Siłę i czystość moralną nowej wiary (chrześcijaństwa), która jest w stanie przetrwać prześladowania i przemienić serca pogan.", "correct": true },
+            { "text": "Kruchą i bezbronną ofiarę rzymskiej tyranii.", "correct": false },
+            { "text": "Buntowniczą naturę kobiety, która nie chce podporządkować się woli mężczyzn.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Ile jest liczb trzycyfrowych podzielnych przez 4, w których wszystkie cyfry są nieparzyste?",
-        answer: ["20"]
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego postać Papkina jest zarówno postacią dynamiczną (zmieniającą się), jak i statyczną (niezmienną).",
+        "answer": ["Jest dynamiczna, bo w toku akcji przeżywa różne stany – od brawury, przez zaloty, po strach przed śmiercią i rozczarowanie. Jest jednak statyczna w swojej istocie – do końca pozostaje tchórzliwym mitomanem i samochwałą. Jego okoliczności się zmieniają, ale jego fundamentalny charakter pozostaje taki sam."]
     },
     {
-        type: 'closed',
-        question: "Cenę towaru podniesiono o 20%, a następnie o 25%. O ile procent łącznie podniesiono cenę towaru?",
-        answers: [
-            { text: "o 45%", correct: false },
-            { text: "o 50%", correct: true },
-            { text: "o 55%", correct: false },
-            { text: "o 60%", correct: false }
+        "type": "closed",
+        "question": "W 'Kamieniach na szaniec', która z akcji dywersyjnych miała największe znaczenie psychologiczne i propagandowe dla mieszkańców okupowanej Warszawy?",
+        "answers": [
+            { "text": "Wysadzenie pociągu z amunicją.", "correct": false },
+            { "text": "Usunięcie niemieckiej płyty z pomnika Mikołaja Kopernika.", "correct": true },
+            { "text": "Likwidacja znienawidzonych oficerów Gestapo.", "correct": false },
+            { "text": "Rozrzucanie ulotek antyniemieckich.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkąt równoramienny o podstawie 24 i ramionach 13 wpisano koło. Oblicz promień tego koła.",
-        answer: ["10/3", "3.33", "3 i 1/3"]
+        "type": "open",
+        "question": "Zinterpretuj symbolikę 'pracy organicznej' jako idei pozytywistycznej.",
+        "answer": ["'Praca organiczna' to metafora postrzegania społeczeństwa jako żywego organizmu. Zgodnie z tą ideą, naród może być silny i zdrowy tylko wtedy, gdy wszystkie jego części (warstwy społeczne, gałęzie gospodarki) harmonijnie ze sobą współpracują i rozwijają się. Był to program wzmacniania narodu poprzez rozwój ekonomiczny, edukacyjny i technologiczny, a nie poprzez walkę zbrojną."]
     },
     {
-        type: 'closed',
-        question: "Z cyfr 1, 2, 3, 4, 5 losujemy kolejno bez zwracania dwie cyfry i tworzymy liczbę dwucyfrową. Jakie jest prawdopodobieństwo, że otrzymana liczba jest podzielna przez 3?",
-        answers: [
-            { text: "1/5", correct: false },
-            { text: "1/4", correct: false },
-            { text: "2/5", correct: true },
-            { text: "1/2", correct: false }
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym występuje błąd polegający na niewłaściwym użyciu strony biernej.",
+        "answers": [
+            { "text": "Problem został wnikliwie przeanalizowany przez ekspertów.", "correct": false },
+            { "text": "Zostałem zapytany o drogę przez turystę.", "correct": false },
+            { "text": "Wypadek został spowodowany przez kierowcę.", "correct": true },
+            { "text": "List został napisany i wysłany wczoraj.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W pewnej firmie średnia pensja wynosi 4000 zł. Średnia pensja mężczyzn to 4400 zł, a kobiet 3800 zł. Jaki procent pracowników stanowią kobiety?",
-        answer: ["66.67", "66 i 2/3"]
+        "type": "open",
+        "question": "Wyjaśnij, na czym polega tragizm losu postaci z ballady 'Pani Twardowska'.",
+        "answer": ["Jej tragizm jest tragikomedią pychy. Twardowski, pewny swego sprytu, myśli, że przechytrzył diabła, podpisując cyrograf. Jednak jego ludzka natura (strach przed żoną, miłość do niej) okazuje się silniejsza niż jego magiczne moce i zobowiązania. Zostaje pokonany nie przez siły piekielne, ale przez prozę życia i własne uczucia, co jest dla niego upokarzającą klęską."]
     },
     {
-        type: 'closed',
-        question: "Dwa wierzchołki kwadratu leżą na osi OX, a dwa pozostałe na paraboli o równaniu y = 16 - x². Pole tego kwadratu wynosi:",
-        answers: [
-            { text: "16", correct: false },
-            { text: "32", correct: true },
-            { text: "36", correct: false },
-            { text: "48", correct: false }
+        "type": "closed",
+        "question": "Wskaż, która z postaci literackich w najpełniejszy sposób uosabia romantyczny typ bohatera-pielgrzyma.",
+        "answers": [
+            { "text": "Skawiński z 'Latarnika'", "correct": true },
+            { "text": "Marcin Borowicz z 'Syzyfowych prac'", "correct": false },
+            { "text": "Bilbo Baggins z 'Hobbita'", "correct": false },
+            { "text": "Rejent Milczek z 'Zemsty'", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Na spotkaniu 10 osób, każda wita się z każdą. Ile nastąpi powitań, jeśli 3 osoby się spóźniły i nie przywitały się ze sobą nawzajem?",
-        answers: [
-            { text: "45", correct: false },
-            { text: "42", correct: true },
-            { text: "39", correct: false },
-            { text: "36", correct: false }
+        "type": "open",
+        "question": "W 'Panu Tadeuszu' często pojawia się motyw 'ostatni'. Jaka jest funkcja tego motywu?",
+        "answer": ["Motyw ten (ostatni zajazd, ostatni co tak poloneza wodził) podkreśla, że utwór opisuje świat odchodzący w przeszłość. Jest to nostalgiczne pożegnanie z epoką sarmacką, jej obyczajami, ludźmi i tradycjami. Nadaje to epopei elegijny, melancholijny ton i wzmacnia jej funkcję jako 'arki przymierza między dawnymi i nowymi laty'."]
+    },
+    {
+        "type": "closed",
+        "question": "W 'Opowieści wigilijnej', głównym powodem, dla którego Scrooge tak bardzo nienawidzi świąt Bożego Narodzenia, jest to, że:",
+        "answers": [
+            { "text": "Są one dla niego czasem straty finansowej, bo musi dać pracownikowi dzień wolny.", "correct": false },
+            { "text": "Święta przypominają mu o jego samotności, utraconej miłości i błędach młodości, od których ucieka w pracę i gromadzenie pieniędzy.", "correct": true },
+            { "text": "Uważa je za pogański zwyczaj, który nie ma nic wspólnego z prawdziwą religią.", "correct": false },
+            { "text": "Denerwuje go hałas i radosna atmosfera, która przeszkadza mu w pracy.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Suma n początkowych wyrazów ciągu arytmetycznego wyraża się wzorem Sn = 2n² + 3n. Podaj wartość piątego wyrazu tego ciągu.",
-        answer: ["21"]
+        "type": "open",
+        "question": "Przekształć zdanie w mowie zależnej na mowę niezależną: 'Zapewnił mnie, że na pewno dotrzyma słowa.'",
+        "answer": ["Zapewnił mnie: 'Na pewno dotrzymam słowa!'."]
     },
     {
-        type: 'closed',
-        question: "Prosta przechodząca przez punkty A=(√2, 3) i B=(2√2, 5) ma równanie:",
-        answers: [
-            { text: "y = 2x + 1", correct: false },
-            { text: "y = √2 x + 1", correct: true },
-            { text: "y = x + 3-√2", correct: false },
-            { text: "y = 2√2 x - 5", correct: false }
+        "type": "closed",
+        "question": "Które z poniższych dzieł najpełniej realizuje model satyry obyczajowej, krytykującej konkretne wady społeczne?",
+        "answers": [
+            { "text": "'Zemsta'", "correct": false },
+            { "text": "'Żona modna'", "correct": true },
+            { "text": "'Artysta'", "correct": false },
+            { "text": "'Pan Tadeusz'", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Ostatnią cyfrą liczby 1! + 2! + 3! + ... + 2024! jest:",
-        answers: [
-            { text: "0", correct: false },
-            { text: "1", correct: false },
-            { text: "3", correct: true },
-            { text: "9", correct: false }
+        "type": "open",
+        "question": "Zinterpretuj symbolikę 'kainowego znamienia' (czerwonej plamy na czole), które nosi Balladyna.",
+        "answer": ["Jest to nawiązanie do biblijnej historii Kaina, pierwszego zabójcy. 'Kainowe znamię' to widoczny, niezmywalny znak popełnionej zbrodni i wyrzutów sumienia. Symbolizuje on, że zbrodni nie da się ukryć, a wina jest trwale wpisana w tożsamość sprawcy, stając się jego przekleństwem i piętnem, które widzą inni."]
+    },
+    {
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym występuje podmiot logiczny.",
+        "answers": [
+            { "text": "W lesie przybywało grzybów po deszczu.", "correct": true },
+            { "text": "Na stole leżała otwarta książka.", "correct": false },
+            { "text": "Tysiące ludzi protestowało na ulicach.", "correct": false },
+            { "text": "Wszyscy byli zmęczeni po długiej podróży.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkącie prostokątnym o przyprostokątnych 6 i 8, na przeciwprostokątnej obrano punkt P. Jaka jest najmniejsza możliwa suma kwadratów odległości punktu P od przyprostokątnych?",
-        answer: ["14.4"]
+        "type": "open",
+        "question": "Jaka jest symboliczna funkcja postaci Jankiela w 'Panu Tadeuszu'?",
+        "answer": ["Jankiel, Żyd-patriota, symbolizuje ideę Rzeczypospolitej jako państwa wielu narodów i kultur, zjednoczonych miłością do wspólnej ojczyzny. Jest on strażnikiem pamięci narodowej, a jego postawa pokazuje, że polskość to nie kwestia krwi, ale wyboru i ducha. Jest uosobieniem nadziei na zgodę i jedność."]
     },
     {
-        type: 'closed',
-        question: "Ile jest liczb naturalnych dwucyfrowych, które nie są podzielne ani przez 5, ani przez 7?",
-        answers: [
-            { text: "90 - 18 - 13 + 2 = 61", correct: true }, // (90 - (18+13-2))
-            { text: "61", correct: true },
-            { text: "59", correct: false },
-            { text: "68", correct: false },
-            { text: "72", correct: false }
+        "type": "closed",
+        "question": "Wskaż, która z postaci literackich w swoim postępowaniu kieruje się przede wszystkim chęcią przypodobania się innym i zdobycia ich aprobaty.",
+        "answers": [
+            { "text": "Rejent Milczek", "correct": false },
+            { "text": "Papkin", "correct": true },
+            { "text": "Gerwazy Rębajło", "correct": false },
+            { "text": "Sędzia Soplica", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W trójkącie równoramiennym podstawa jest 2 razy krótsza od ramienia. Stosunek wysokości opuszczonej na podstawę do długości podstawy wynosi:",
-        answers: [
-            { text: "√15:2", correct: true },
-            { text: "√15:1", correct: false },
-            { text: "√3:1", correct: false },
-            { text: "√3:2", correct: false }
+        "type": "open",
+        "question": "Wyjaśnij, na czym polega komizm słowny w 'Zemście'. Podaj jeden przykład.",
+        "answer": ["Komizm słowny polega na tworzeniu zabawnych efektów poprzez specyficzne użycie języka – grę słów, zabawne powiedzonka, kontrast między stylem a treścią. Przykładem jest stałe powiedzonko Rejenta: 'Niech się dzieje wola nieba, / Z nią się zawsze zgadzać trzeba', które staje się śmieszne, gdy jest używane do usprawiedliwiania jego własnych, niecnych intryg."]
+    },
+    {
+        "type": "closed",
+        "question": "Co jest wspólnym elementem losu postaci z przypowieści o talentach i postaci Koguta z 'Artysty'?",
+        "answers": [
+            { "text": "Obie opowieści mówią o konieczności pomnażania majątku.", "correct": false },
+            { "text": "W obu przypadkach bohaterowie zostają poddani próbie, która ma zweryfikować, czy potrafią właściwie wykorzystać posiadane zdolności (talenty/bycie kogutem). Niezdanie tej próby prowadzi do porażki.", "correct": true },
+            { "text": "Obie historie kończą się szczęśliwie dla głównych bohaterów.", "correct": false },
+            { "text": "W obu utworach kluczową rolę odgrywa motyw podróży.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W pudełku jest 12 kul, w tym 'b' białych. Losujemy dwie kule bez zwracania. Prawdopodobieństwo wylosowania dwóch kul białych wynosi 5/33. Ile jest kul białych?",
-        answer: ["5"]
+        "type": "open",
+        "question": "Wskaż błąd frazeologiczny w zdaniu: 'W tej firmie panuje duża dyscyplina' i zapisz je poprawnie.",
+        "answer": ["Błąd: pleonazm, tzw. masło maślane. 'Dyscyplina' sama w sobie oznacza wysoki stopień porządku. Poprawnie: 'W tej firmie panuje dyscyplina' lub 'W tej firmie panuje żelazna dyscyplina'."]
     },
     {
-        type: 'closed',
-        question: "Dwa okręgi o promieniach 6 cm są tak położone, że każdy przechodzi przez środek drugiego. Pole części wspólnej tych okręgów wynosi:",
-        answers: [
-            { text: "12π - 9√3", correct: false },
-            { text: "24π - 18√3", correct: false },
-            { text: "24π - 36√3", correct: true },
-            { text: "18π - 12√3", correct: false }
+        "type": "closed",
+        "question": "Które z poniższych dzieł w najpełniejszy sposób ukazuje problematykę władzy i jej demoralizującego wpływu na człowieka?",
+        "answers": [
+            { "text": "'Zemsta'", "correct": false },
+            { "text": "'Balladyna'", "correct": true },
+            { "text": "'Pan Tadeusz'", "correct": false },
+            { "text": "'Mały Książę'", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Wartość wyrażenia 2/(√3-1) - 2/(√3+1) jest równa:",
-        answers: [
-            { text: "2", correct: true },
-            { text: "2√3", correct: false },
-            { text: "4", correct: false },
-            { text: "0", correct: false }
-        ]
-
-    },
-    {
-        type: 'open',
-        question: "Samochód przejechał połowę trasy z prędkością 40 km/h, a drugą połowę z prędkością 60 km/h. Jaka była średnia prędkość samochodu na całej trasie w km/h?",
-        answer: ["48"]
-    },
-    {
-        type: 'closed',
-        question: "Ile jest przekątnych w dziesięciokącie wypukłym?",
-        answers: [
-            { text: "27", correct: false },
-            { text: "35", correct: true },
-            { text: "45", correct: false },
-            { text: "90", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Wartość wyrażenia (1 - 1/2) * (1 - 1/3) * (1 - 1/4) * ... * (1 - 1/100) jest równa:",
-        answer: ["0.01", "1/100"]
+        "type": "open",
+        "question": "W 'Trenie V' Kochanowski porównuje śmierć Urszulki do ścięcia oliwki. Dlaczego wybrał właśnie oliwkę, a nie inne drzewo?",
+        "answer": ["Oliwka w kulturze śródziemnomorskiej i chrześcijańskiej jest symbolem pokoju, życia, płodności i boskiego błogosławieństwa. Wybór tego drzewa potęguje tragizm – zniszczone zostaje nie tylko młode życie, ale także symbol nadziei i świętości. Podkreśla to bezsens i okrucieństwo śmierci, która uderza w to, co najcenniejsze."]
     }
-];
+]
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

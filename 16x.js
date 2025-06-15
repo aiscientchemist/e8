@@ -1,205 +1,195 @@
 const questions = [
     {
-        type: 'closed',
-        question: "Ile wynosi wartość wyrażenia (1 - 1/4)(1 - 1/9)(1 - 1/16)...(1 - 1/100)?",
-        answers: [
-            { text: "0.1", correct: false },
-            { text: "0.55", correct: true },
-            { text: "0.9", correct: false },
-            { text: "0.99", correct: false }
+        "type": "closed",
+        "question": "Jaka jest fundamentalna różnica w podejściu do życia między Sędzią Soplicą a Hrabią Horeszką?",
+        "answers": [
+            { "text": "Sędzia ceni życie praktyczne, zgodne z rytmem natury i tradycji, a Hrabia ceni życie jako estetyczne doświadczenie, poszukując w nim malowniczości i romantycznych uniesień.", "correct": true },
+            { "text": "Sędzia jest patriotą, a Hrabia kosmopolitą.", "correct": false },
+            { "text": "Sędzia jest zwolennikiem pracy, a Hrabia preferuje bezczynność.", "correct": false },
+            { "text": "Sędzia jest ubogi, a Hrabia bardzo bogaty.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Jaka jest jedyna trzycyfrowa liczba, która jest równa sumie silni swoich cyfr?",
-        answer: ["145"]
+        "type": "open",
+        "question": "W 'Małym Księciu' biznesmen liczy gwiazdy, twierdząc, że je 'posiada', bo 'nikt przed nim o tym nie pomyślał'. Co autor krytykuje poprzez tę postać?",
+        "answer": ["Autor krytykuje absurdalną logikę kapitalizmu i chciwości, w której posiadanie sprowadza się do abstrakcyjnego aktu zawłaszczenia (zapisu na papierze), bez realnego pożytku czy odpowiedzialności. Ośmiesza ideę, że można 'posiadać' coś, co jest wspólnym, nieograniczonym dobrem, jak gwiazdy."]
     },
     {
-        type: 'closed',
-        question: "W trapezie wysokość jest równa średniej arytmetycznej długości podstaw. Pole tego trapezu wynosi 100 cm². Oblicz długość tej wysokości.",
-        answers: [
-            { text: "8 cm", correct: false },
-            { text: "10 cm", correct: true },
-            { text: "12 cm", correct: false },
-            { text: "Nie da się tego obliczyć", correct: false }
+        "type": "closed",
+        "question": "W którym z poniższych zdań wyraz 'obok' pełni funkcję inną niż w pozostałych (jest przysłówkiem, a nie przyimkiem)?",
+        "answers": [
+            { "text": "Mój dom stoi obok poczty.", "correct": false },
+            { "text": "Przechodziłem właśnie obok, gdy to się stało.", "correct": true },
+            { "text": "Postaw ten fotel obok kanapy.", "correct": false },
+            { "text": "Siedziałem obok niego w kinie.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Prosta o równaniu 2x + 5y = 20 tworzy z osiami układu współrzędnych trójkąt. Oblicz pole tego trójkąta.",
-        answer: ["20"]
-    },
-    {
-        type: 'closed',
-        question: "W ostrosłupie prawidłowym trójkątnym pole podstawy jest równe 9√3. Pole powierzchni bocznej jest 3 razy większe od pola podstawy. Ile wynosi wysokość tego ostrosłupa?",
-        answers: [
-            { text: "3√10", correct: false },
-            { text: "9", correct: false },
-            { text: "3√11", correct: false },
-            { text: "3√6", correct: true }
+        "type": "closed",
+        "question": "Co łączy sposób śmierci Ebenezera Scrooge'a (w wizji Ducha Przyszłych Świąt) ze sposobem śmierci Widma Złego Pana z 'Dziadów cz. II'?",
+        "answers": [
+            { "text": "Obaj umierają w wyniku choroby zakaźnej.", "correct": false },
+            { "text": "Ich śmierć jest samotna, pozbawiona żalu i współczucia ze strony innych, co jest konsekwencją ich egoistycznego życia i braku więzi międzyludzkich.", "correct": true },
+            { "text": "Obaj zostają zamordowani przez swoje ofiary.", "correct": false },
+            { "text": "Obaj umierają w wielkim bogactwie, którego nie mogą zabrać ze sobą.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Świeże grzyby zawierają 90% wody, a suszone 15%. Ile kilogramów świeżych grzybów należy zebrać, aby otrzymać 1 kg suszonych?",
-        answers: [
-            { text: "1.5 kg", correct: false },
-            { text: "8.5 kg", correct: true },
-            { text: "9 kg", correct: false },
-            { text: "10 kg", correct: false }
+        "type": "open",
+        "question": "W 'Panu Tadeuszu' Robak organizuje zajazd na Soplicowo pod pretekstem walki z Moskalami. Jaki jest jego prawdziwy, ukryty cel polityczny?",
+        "answer": ["Jego prawdziwym celem jest sprowokowanie lokalnego powstania na Litwie, które miałoby zbiec się w czasie z wejściem wojsk Napoleona. Chce wykorzystać energię i zapał szlachty, kierując ich prywatne spory ku wspólnej walce z zaborcą. Zajazd jest więc dla niego politycznym manewrem."]
+    },
+    {
+        "type": "closed",
+        "question": "Postać Nemeczka z 'Chłopców z Placu Broni' jest postacią tragiczną, ponieważ:",
+        "answers": [
+            { "text": "Jest zdradzany przez swoich najlepszych przyjaciół.", "correct": false },
+            { "text": "Jego największe poświęcenie i heroizm zostają początkowo niezauważone i niesłusznie ocenione (wpis do czarnej księgi), a ostateczne uznanie przychodzi zbyt późno, w obliczu śmierci.", "correct": true },
+            { "text": "Przegrywa decydującą bitwę o Plac Broni.", "correct": false },
+            { "text": "Jest zbyt słaby fizycznie, by sprostać wymaganiom wojskowego życia.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Wyznacz najmniejszą liczbę całkowitą n, dla której prawdziwa jest nierówność n > 4√5.",
-        answer: ["9"]
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego postać Rejenta Milczka jest bardziej niebezpieczna i odpychająca niż postać Cześnika Raptusiewicza.",
+        "answer": ["Rejent jest bardziej niebezpieczny, ponieważ jego zło jest ukryte pod maską pobożności i łagodności. Działa w sposób przemyślany, chłodny i wyrachowany, posługując się prawem jako narzędziem zemsty. Cześnik jest porywczy i szczery w swojej złości, przez co jego działania są bardziej przewidywalne i mniej podstępne."]
     },
     {
-        type: 'closed',
-        question: "Suma dwóch liczb wynosi 12. Ich suma sześcianów wynosi 792. Ile wynosi iloczyn tych liczb?",
-        answers: [
-            { text: "20", correct: false },
-            { text: "27", correct: false },
-            { text: "32", correct: false },
-            { text: "35", correct: true }
+        "type": "closed",
+        "question": "W 'Kamieniach na szaniec', które z poniższych stwierdzeń najlepiej oddaje sens tytułowej metafory?",
+        "answers": [
+            { "text": "Życie młodych bohaterów było twarde i ciężkie jak kamienie.", "correct": false },
+            { "text": "Ich czyny i ofiara są kolejnymi 'kamieniami' rzuconymi na 'szaniec' – symboliczną budowlę niepodległej Polski, kontynuacją dzieła poprzednich pokoleń.", "correct": true },
+            { "text": "Bohaterowie używali kamieni jako broni w walce z okupantem.", "correct": false },
+            { "text": "Ich serca były twarde jak kamień w obliczu okrucieństwa wojny.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W kwadrat o boku 10 wpisano cztery identyczne, wzajemnie styczne koła, z których każde jest styczne do dwóch boków kwadratu. Jaki jest promień jednego z tych kół?",
-        answer: ["2.5"]
+        "type": "open",
+        "question": "Zinterpretuj symbolikę mitu o Dedalu i Ikarze w kontekście relacji między pokoleniami.",
+        "answer": ["Mit ten symbolizuje odwieczny konflikt między doświadczeniem i rozwagą starszego pokolenia (Dedal) a porywczością, entuzjazmem i brakiem pokory młodego pokolenia (Ikar). Jest to przestroga przed ignorowaniem rad starszych, ale także obraz nieuchronnego dążenia młodości do przekraczania granic i testowania własnych możliwości."]
     },
     {
-        type: 'closed',
-        question: "Rzucamy dwiema sześciennymi kostkami. Jakie jest prawdopodobieństwo, że suma wyrzuconych oczek jest liczbą pierwszą?",
-        answers: [
-            { text: "1/3", correct: false },
-            { text: "7/18", correct: false },
-            { text: "5/12", correct: true },
-            { text: "1/2", correct: false }
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym występuje błąd polegający na niepoprawnym połączeniu przyimka z rzeczownikiem.",
+        "answers": [
+            { "text": "Idę na pocztę, żeby wysłać list.", "correct": false },
+            { "text": "Wziąłem ze sobą sweter na wszelki wypadek.", "correct": false },
+            { "text": "Poszedłem do sklepu po bułki.", "correct": false },
+            { "text": "W dniu wczorajszym odbyła się konferencja.", "correct": true }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkącie ABC kąt przy wierzchołku B ma 60°, a kąt przy wierzchołku C ma 45°. Wysokość AD ma długość 6. Oblicz obwód tego trójkąta. Wynik podaj w postaci a√b + c√d + e.",
-        answer: ["6√2+4√3+6"]
+        "type": "open",
+        "question": "Wyjaśnij, na czym polega tragizm wyboru, przed którym staje bohater ballady 'Świtezianka'.",
+        "answer": ["Jego tragizm polega na konflikcie między wiernością złożonej przysiędze a ludzką ciekawością i pokusą. Jest on rozdarty między miłością do ziemskiej dziewczyny a tajemniczym pięknem Świtezianki. Wybierając pogoń za zjawą, łamie świętą przysięgę, co nieuchronnie prowadzi go do kary i śmierci. To konflikt między lojalnością a pokusą."]
     },
     {
-        type: 'closed',
-        question: "Liczba 5¹⁰⁰ - 5⁹⁸ jest podzielna przez:",
-        answers: [
-            { text: "10", correct: false },
-            { text: "13", correct: false },
-            { text: "17", correct: false },
-            { text: "24", correct: true }
+        "type": "closed",
+        "question": "Wskaż, która z postaci literackich w najpełniejszy sposób uosabia romantyczny indywidualizm i bunt przeciwko światu.",
+        "answers": [
+            { "text": "Sędzia Soplica", "correct": false },
+            { "text": "Boka z 'Chłopców z Placu Broni'", "correct": false },
+            { "text": "Giaur (bohater innego utworu Byrona, ale archetyp obecny w epoce)", "correct": true },
+            { "text": "Rejent Milczek", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Na spotkaniu każdy uścisnął dłoń każdemu innemu dokładnie raz. Uścisków dłoni było 66. Ile osób było na spotkaniu?",
-        answers: [
-            { text: "10", correct: false },
-            { text: "11", correct: false },
-            { text: "12", correct: true },
-            { text: "13", correct: false }
+        "type": "open",
+        "question": "W 'Panu Tadeuszu' Sędzia wygłasza naukę o grzeczności. Co, według niego, jest największym zagrożeniem dla tej grzeczności?",
+        "answer": ["Największym zagrożeniem jest, według Sędziego, bezkrytyczne naśladowanie obcych, zagranicznych mód i obyczajów (głównie francuskich), które prowadzi do zaniku tradycyjnych, polskich form zachowania. Krytykuje on porzucanie własnej kultury na rzecz powierzchownej i sztucznej 'cywilizacji' z Zachodu."]
+    },
+    {
+        "type": "closed",
+        "question": "W 'Opowieści wigilijnej', postać Tiny Tima (małego, chorego synka Boba Cratchita) pełni w utworze funkcję:",
+        "answers": [
+            { "text": "Głównego bohatera, którego losy śledzimy.", "correct": false },
+            { "text": "Symbolu niewinnego cierpienia i ofiary bezdusznego systemu społecznego, a jego potencjalna śmierć ma wstrząsnąć sumieniem Scrooge'a.", "correct": true },
+            { "text": "Postaci komicznej, która rozładowuje napięcie.", "correct": false },
+            { "text": "Przewodnika, który oprowadza Scrooge'a po Londynie.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W pewnej firmie 40% pracowników to mężczyźni. 75% mężczyzn i 50% kobiet zarabia powyżej średniej krajowej. Jaki procent wszystkich pracowników tej firmy zarabia powyżej średniej krajowej?",
-        answer: ["60"]
+        "type": "open",
+        "question": "Przekształć zdanie w mowie zależnej na mowę niezależną: 'Zapytała mnie, czy nie chciałbym pójść z nią do teatru.'",
+        "answer": ["Zapytała mnie: 'Czy nie chciałbyś pójść ze mną do teatru?'."]
     },
     {
-        type: 'closed',
-        question: "Wartość wyrażenia √(√10 - 3) * √(√10 + 3) jest równa:",
-        answers: [
-            { text: "1", correct: true },
-            { text: "√19", correct: false },
-            { text: "7", correct: false },
-            { text: "√7", correct: false }
+        "type": "closed",
+        "question": "Które z poniższych dzieł najpełniej realizuje model powieści historycznej według wzoru Waltera Scotta, łącząc losy fikcyjnych bohaterów z autentycznym tłem historycznym?",
+        "answers": [
+            { "text": "'Syzyfowe prace'", "correct": false },
+            { "text": "'Quo vadis'", "correct": true },
+            { "text": "'Chłopcy z Placu Broni'", "correct": false },
+            { "text": "'Mały Książę'", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Prosta o równaniu y = -2x + b przechodzi przez III i IV ćwiartkę układu współrzędnych oraz przez punkt A=(3, -8). Wynika stąd, że:",
-        answers: [
-            { text: "b = -2", correct: true },
-            { text: "b = -14", correct: false },
-            { text: "b = 2", correct: false },
-            { text: "b jest dowolną liczbą ujemną", correct: false }
+        "type": "open",
+        "question": "Zinterpretuj symbolikę 'pola' w przypowieści o siewcy.",
+        "answer": ["'Pole' w tej przypowieści symbolizuje świat, w którym głoszona jest nauka (Słowo Boże). Różne rodzaje gleby w tym polu reprezentują różne typy ludzi i ich postawy wobec tej nauki. Pole jest więc przestrzenią duchowej 'uprawy', gdzie każdy człowiek ma szansę przyjąć 'ziarno' i wydać plon."]
+    },
+    {
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym imiesłów przymiotnikowy został użyty niepoprawnie.",
+        "answers": [
+            { "text": "To jest list piszący przez moją siostrę.", "correct": true },
+            { "text": "Dziecko śpiące w kołysce wyglądało uroczo.", "correct": false },
+            { "text": "Przeczytałem książkę poleconą mi przez kolegę.", "correct": false },
+            { "text": "Zepsuty zegar wciąż stał na kominku.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkącie równoramiennym podstawa ma długość 18, a wysokość opuszczona na tę podstawę ma długość 12. Oblicz długość wysokości opuszczonej na ramię tego trójkąta.",
-        answer: ["14.4"]
+        "type": "open",
+        "question": "Jaka jest symboliczna funkcja postaci Maćka nad Maćkami w 'Panu Tadeuszu'?",
+        "answer": ["Maciek nad Maćkami jest symbolem starej, sarmackiej Polski – uosobieniem mądrości ludowej, doświadczenia, przywiązania do tradycji i nieufności wobec nowinek i obcych wpływów (nawet Napoleona). Jest on żywą historią i moralnym autorytetem, którego opinia jest niezwykle ceniona w społeczności."]
     },
     {
-        type: 'closed',
-        question: "W trapezie równoramiennym przekątne są prostopadłe, a wysokość trapezu ma długość 8 cm. Pole tego trapezu wynosi:",
-        answers: [
-            { text: "32 cm²", correct: false },
-            { text: "64 cm²", correct: true },
-            { text: "128 cm²", correct: false },
-            { text: "Nie da się tego obliczyć", correct: false }
+        "type": "closed",
+        "question": "Wskaż, która z postaci literackich w swoim postępowaniu kieruje się przede wszystkim chciwością.",
+        "answers": [
+            { "text": "Cześnik Raptusiewicz", "correct": false },
+            { "text": "Rejent Milczek", "correct": true },
+            { "text": "Gerwazy Rębajło", "correct": false },
+            { "text": "Sędzia Soplica", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Jeżeli x² - 3x + 1 = 0, to wartość wyrażenia x² + 1/x² wynosi:",
-        answers: [
-            { text: "3", correct: false },
-            { text: "5", correct: false },
-            { text: "7", correct: true },
-            { text: "9", correct: false }
+        "type": "open",
+        "question": "Wyjaśnij, na czym polega komizm językowy w postaci Papkina.",
+        "answer": ["Jego komizm językowy polega na używaniu kwiecistego, napuszonego stylu, pełnego wyszukanych, często obcojęzycznych zwrotów, który zupełnie nie przystaje do jego tchórzliwego charakteru i prozaicznych sytuacji. Stara się mówić jak rycerz z romansu, co w zderzeniu z jego prawdziwą naturą tworzy absurdalny i komiczny efekt. Przykładem jest jego opis Artemidy czy opowieść o walce."]
+    },
+    {
+        "type": "closed",
+        "question": "Co jest wspólnym elementem losu Prometeusza i Chrystusa z przypowieści ewangelicznych?",
+        "answers": [
+            { "text": "Niewinna ofiara poniesiona z miłości do ludzkości, która ma przynieść jej dobro (ogień / zbawienie) i która wiąże się z ogromnym cierpieniem.", "correct": true },
+            { "text": "Walka z tyranem w obronie swojego ludu.", "correct": false },
+            { "text": "Dar czynienia cudów i panowania nad siłami natury.", "correct": false },
+            { "text": "Zgromadzenie wokół siebie dwunastu wiernych uczniów.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Na tarczy zegara jest 12 cyfr. Wybieramy losowo 3 różne cyfry. Na ile sposobów można je wybrać tak, aby tworzyły trójkąt równoboczny?",
-        answer: ["4"]
+        "type": "open",
+        "question": "Wskaż błąd frazeologiczny w zdaniu: 'Oni odgrywają w tym projekcie pierwsze skrzypce' i zapisz je poprawnie.",
+        "answer": ["Błąd: niepoprawna forma czasownika. Poprawny związek frazeologiczny to 'grać pierwsze skrzypce'. Poprawnie: 'Oni grają w tym projekcie pierwsze skrzypce'."]
     },
     {
-        type: 'closed',
-        question: "Długości boków trójkąta są trzema kolejnymi liczbami naturalnymi. Średnim co do wielkości kątem w tym trójkącie jest:",
-        answers: [
-            { text: "Kąt ostry", correct: true },
-            { text: "Kąt prosty", correct: false },
-            { text: "Kąt rozwarty", correct: false },
-            { text: "Zależy od wybranych liczb", correct: false }
+        "type": "closed",
+        "question": "Które z poniższych dzieł w najpełniejszy sposób ukazuje problem rusyfikacji polskiej młodzieży w XIX wieku?",
+        "answers": [
+            { "text": "'Pan Tadeusz'", "correct": false },
+            { "text": "'Syzyfowe prace'", "correct": true },
+            { "text": "'Reduta Ordona'", "correct": false },
+            { "text": "'Latarnik'", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Ile jest liczb trzycyfrowych, w których iloczyn cyfr jest równy 24?",
-        answers: [
-            { text: "12", correct: false },
-            { text: "15", correct: false },
-            { text: "18", correct: false },
-            { text: "21", correct: true }
-        ]
-    },
-    {
-        type: 'open',
-        question: "W pewnym graniastosłupie liczba krawędzi jest o 10 większa od liczby wierzchołków. Jaka figura jest podstawą tego graniastosłupa?",
-        answer: ["pięciokąt", "pięciokąt foremny"]
-    },
-    {
-        type: 'closed',
-        question: "W trójkącie prostokątnym o obwodzie 24, przeciwprostokątna ma długość 10. Pole tego trójkąta wynosi:",
-        answers: [
-            { text: "24", correct: true },
-            { text: "30", correct: false },
-            { text: "48", correct: false },
-            { text: "60", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Jaka jest cyfra jedności liczby, która jest wartością wyrażenia 2021²⁰²¹ + 2022²⁰²² + 2023²⁰²³?",
-        answer: ["4"]
+        "type": "open",
+        "question": "W 'Trenie XIX, czyli Śnie', Kochanowski odzyskuje spokój. Na jakiej filozoficznej podstawie opiera się to ostateczne pocieszenie?",
+        "answer": ["Ostateczne pocieszenie opiera się na syntezie filozofii chrześcijańskiej i stoickiej. Matka przekonuje go, że Urszulka jest szczęśliwa w niebie (chrześcijaństwo) i że on, jako człowiek, musi znosić los ze spokojem i godnością, akceptując ludzką dolę ('ludzkie przygody, ludzkie noś'). To wezwanie do stoickiej cnoty wytrwałości."]
     }
-];
+]
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

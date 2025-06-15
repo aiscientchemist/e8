@@ -1,219 +1,195 @@
-// --- Definicja pytań (z nowym polem "type") ---
 const questions = [
-
-
     {
         "type": "closed",
-        "question": "Which sentence correctly uses a mixed conditional to describe a past action with a present result?",
+        "question": "Jaka jest kluczowa różnica w motywacji do przemiany między Jackiem Soplicą ('Pan Tadeusz') a Ebenezerem Scrooge'em ('Opowieść wigilijna')?",
         "answers": [
-            { "text": "If I went to bed earlier last night, I wouldn't be so tired now.", "correct": false },
-            { "text": "If I had gone to bed earlier last night, I wouldn't be so tired now.", "correct": true },
-            { "text": "If I had gone to bed earlier last night, I wouldn't have been so tired now.", "correct": false },
-            { "text": "If I would have gone to bed earlier, I wasn't so tired now.", "correct": false }
-        ]
-    },
-    {
-        "type": "closed",
-        "question": "Read the short text: 'Despite the pouring rain and the freezing wind, Sarah continued her journey to the mountain peak. Her goal was the only thing on her mind.' What does this text imply about Sarah?",
-        "answers": [
-            { "text": "She is reckless and unprepared.", "correct": false },
-            { "text": "She regrets starting her journey.", "correct": false },
-            { "text": "She is very determined and focused.", "correct": true },
-            { "text": "She enjoys bad weather.", "correct": false }
+            { "text": "Soplica działa z pobudek patriotycznych, a Scrooge z chęci zyskania szacunku rodziny.", "correct": false },
+            { "text": "Przemiana Soplicy jest wynikiem długoletniej pokuty i chęci zadośćuczynienia za konkretną winę, podczas gdy przemiana Scrooge'a jest gwałtowna i motywowana strachem przed samotną śmiercią i duchową pustką.", "correct": true },
+            { "text": "Obaj bohaterowie zmieniają się pod wpływem nadprzyrodzonych interwencji.", "correct": false },
+            { "text": "Soplica dąży do odzyskania majątku, a Scrooge do jego rozdania.", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Rewrite the sentence using the passive voice, starting with 'It...'. Original sentence: 'People believe that a healthy diet is essential.'",
-        "answer": ["It is believed that a healthy diet is essential."]
+        "question": "W 'Syzyfowych pracach' dochodzi do bójki Marcina Borowicza z uczniem mówiącym po rosyjsku 'na górze u Gontali'. Zinterpretuj tę scenę jako symbol.",
+        "answer": ["Bójka ta jest symbolicznym, fizycznym wybuchem stłumionego konfliktu kulturowego i narodowego. Przenosi walkę o polskość, toczoną dotąd w sferze intelektualnej i emocjonalnej (na lekcjach, w teatrze), na płaszczyznę brutalnej, bezpośredniej konfrontacji, pokazując głębię i siłę oporu."]
     },
     {
         "type": "closed",
-        "question": "Which phrasal verb means 'to invent a story or an excuse'?",
+        "question": "W zdaniu z 'Pana Tadeusza': 'Wojski, chlubnie skończywszy łowy, już na konia siadał', imiesłów 'skończywszy' wskazuje na czynność:",
         "answers": [
-            { "text": "make up", "correct": true },
-            { "text": "make out", "correct": false },
-            { "text": "give up", "correct": false },
-            { "text": "look up", "correct": false }
+            { "text": "jednoczesną z czynnością 'siadał'.", "correct": false },
+            { "text": "późniejszą niż czynność 'siadał'.", "correct": false },
+            { "text": "wcześniejszą niż czynność 'siadał'.", "correct": true },
+            { "text": "której warunkiem było 'siadanie'.", "correct": false }
         ]
     },
     {
         "type": "closed",
-        "question": "A friend says: 'I'm not sure if I should apply for this scholarship. It seems very competitive.' How would you encourage them?",
+        "question": "Co łączy naukę Lisa o 'oswajaniu' z 'Małego Księcia' ze sposobem, w jaki Dick z 'Tajemniczego ogrodu' nawiązuje relacje ze zwierzętami?",
         "answers": [
-            { "text": "You're probably right, it's not worth it.", "correct": false },
-            { "text": "You'll never know unless you give it a shot.", "correct": true },
-            { "text": "I wouldn't have applied if I were you.", "correct": false },
-            { "text": "There are too many people applying.", "correct": false }
-        ]
-    },
-    {
-        "type": "open",
-        "question": "Complete the sentence with ONE word: 'Not only did he forget my birthday, ____ he also didn't apologize.'",
-        "answer": ["but"]
-    },
-    {
-        "type": "closed",
-        "question": "Which of these words is the 'odd one out' based on its meaning?",
-        "answers": [
-            { "text": "Anxious", "correct": false },
-            { "text": "Apprehensive", "correct": false },
-            { "text": "Content", "correct": true },
-            { "text": "Uneasy", "correct": false }
-        ]
-    },
-    {
-        "type": "closed",
-        "question": "Your friend's new phone has just broken. What is the most empathetic response?",
-        "answers": [
-            { "text": "You should have been more careful.", "correct": false },
-            { "text": "That's a shame. Is there anything I can do to help?", "correct": true },
-            { "text": "Well, I told you not to buy that model.", "correct": false },
-            { "text": "It's just a phone, you can always buy a new one.", "correct": false }
+            { "text": "Użycie magicznych przedmiotów (fujarka, różdżka) do zdobycia zaufania.", "correct": false },
+            { "text": "Przekonanie, że prawdziwa, unikalna więź opiera się na cierpliwości, poświęconym czasie i wzajemnym zrozumieniu, a nie na dominacji czy sile.", "correct": true },
+            { "text": "Dążenie do wykorzystania zwierząt dla własnych korzyści.", "correct": false },
+            { "text": "Zdolność do dosłownego rozumienia mowy zwierząt.", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Rewrite the sentence using reported speech: He said, 'I will finish my project tomorrow.'",
-        "answer": ["He said that he would finish his project the next day.", "He said he would finish his project the next day."]
+        "question": "W 'Zemście' Papkin na łożu śmierci spisuje testament. Jaka jest główna funkcja komiczna i charakterologiczna tej sceny?",
+        "answer": ["Główną funkcją jest ostateczne zdemaskowanie Papkina. Jego 'majątek' (gitara angielska, kolekcja motyli) okazuje się bezwartościowy, a gest spisania testamentu jest ostatnią, patetyczną próbą odegrania roli wielkiego pana. Scena obnaża jego biedę, mitomanię i rozdźwięk między aspiracjami a rzeczywistością."]
     },
     {
         "type": "closed",
-        "question": "Choose the correct sentence to express a past possibility that did not happen.",
+        "question": "Spośród bohaterów lektur obowiązkowych, postawę 'błędnego rycerza' – idealisty postrzegającego świat przez pryzmat literatury i marzeń – najpełniej uosabia:",
         "answers": [
-            { "text": "He must have passed the exam. He studied a lot.", "correct": false },
-            { "text": "He can't have passed the exam. He looks so sad.", "correct": false },
-            { "text": "He could have passed the exam, but he didn't check his answers.", "correct": true },
-            { "text": "He should pass the exam. He is very clever.", "correct": false }
-        ]
-    },
-    {
-        "type": "closed",
-        "question": "Situation: You see a long queue in front of a new bakery. What can you logically conclude?",
-        "answers": [
-            { "text": "The bakery must be very good or have a special offer.", "correct": true },
-            { "text": "The bakery is definitely closed for the day.", "correct": false },
-            { "text": "The people in the queue are waiting for a bus.", "correct": false },
-            { "text": "The bakery has run out of everything.", "correct": false }
+            { "text": "Tadeusz Soplica", "correct": false },
+            { "text": "Cześnik Raptusiewicz", "correct": false },
+            { "text": "Hrabia Horeszko", "correct": true },
+            { "text": "Wacław Milczek", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Use the word in brackets to form a word that fits in the gap: 'Her speech was so ____ (INSPIRE) that everyone gave her a standing ovation.'",
-        "answer": ["inspiring"]
+        "question": "Tytuł 'Kamienie na szaniec' jest cytatem z wiersza Juliusza Słowackiego. Wyjaśnij, co autor książki, Aleksander Kamiński, chciał zasugerować poprzez wybór takiego tytułu dla opowieści o Alku, Rudym i Zośce.",
+        "answer": ["Kamiński chciał w ten sposób umieścić swoich bohaterów w długim panteonie polskich bojowników o wolność. Sugeruje, że ich ofiara jest kolejnym 'kamieniem' rzuconym na 'szaniec' – budowlę niepodległej Polski, kontynuacją romantycznej tradycji walki i poświęcenia dla ojczyzny."]
     },
     {
         "type": "closed",
-        "question": "Which sentence implies criticism or regret about a past action?",
+        "question": "'Balladyna' jest dramatem romantycznym, ponieważ, w przeciwieństwie do tragedii klasycznej:",
         "answers": [
-            { "text": "You could ask for help.", "correct": false },
-            { "text": "You should be more polite.", "correct": false },
-            { "text": "You might have told me you were going to be late.", "correct": true },
-            { "text": "You must be very proud.", "correct": false }
-        ]
-    },
-    {
-        "type": "closed",
-        "question": "A notice says: 'All items not claimed within 30 days will be disposed of.' What does 'disposed of' mean in this context?",
-        "answers": [
-            { "text": "They will be sold at a discount.", "correct": false },
-            { "text": "They will be repaired and returned.", "correct": false },
-            { "text": "They will be put in a special display.", "correct": false },
-            { "text": "They will be thrown away or given away.", "correct": true }
+            { "text": "Jest napisana wierszem i podzielona na akty i sceny.", "correct": false },
+            { "text": "Opowiada o nieszczęśliwej miłości i żądzy władzy.", "correct": false },
+            { "text": "Łączy w sobie elementy świata realnego i fantastycznego (Goplana), miesza tragizm z komizmem i odrzuca zasadę jedności miejsca, czasu i akcji.", "correct": true },
+            { "text": "Kończy się śmiercią głównej bohaterki.", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Complete the second sentence so it has a similar meaning to the first, using the word 'unless'. First sentence: 'If you don't study, you will fail.'",
-        "answer": ["You will fail unless you study."]
+        "question": "W finale 'Latarnika' Skawiński traci posadę, ale odzyskuje tożsamość. Jaką uniwersalną prawdę o naturze 'domu' i tożsamości dla emigranta sugeruje to zakończenie?",
+        "answer": ["Sugeruje, że 'dom' dla emigranta to nie tylko fizyczne miejsce, ale przede wszystkim przestrzeń duchowa, którą tworzy język, kultura i literatura. Skawiński, tracąc bezpieczną przystań, odzyskuje 'przenośną ojczyznę' w postaci książki, która jest jego prawdziwym domem."]
     },
     {
         "type": "closed",
-        "question": "Read the dialogue. A: 'I managed to fix the computer!' B: '_______. I was about to call a technician.' What is the best response for B?",
+        "question": "Pojawiający się w 'Panu Tadeuszu' kometa ('gwiazda z warkoczem') jest znakiem na niebie, który w tradycji literackiej i ludowej symbolizuje:",
         "answers": [
-            { "text": "That's a relief!", "correct": true },
-            { "text": "How could you?", "correct": false },
-            { "text": "What a pity.", "correct": false },
-            { "text": "You shouldn't have.", "correct": false }
-        ]
-    },
-    {
-        "type": "closed",
-        "question": "Which sentence has a different meaning from the others?",
-        "answers": [
-            { "text": "I wish I had more free time.", "correct": false },
-            { "text": "If only I had more free time.", "correct": false },
-            { "text": "I regret not having more free time.", "correct": false },
-            { "text": "I'm used to having a lot of free time.", "correct": true }
+            { "text": "Nadchodzący urodzaj i pomyślność.", "correct": false },
+            { "text": "Nadchodzące wielkie, przełomowe i często burzliwe wydarzenia, takie jak wojna czy zmiana władzy.", "correct": true },
+            { "text": "Prywatne nieszczęście jednego z bohaterów.", "correct": false },
+            { "text": "Koniec świata i sąd ostateczny.", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Complete the sentence with a suitable preposition: 'He was accused ____ stealing the documents from the office.'",
-        "answer": ["of"]
+        "question": "Odwołując się do tekstu 'Istota czytania', wyjaśnij, w jaki sposób finał 'Balladyny' (uderzenie pioruna) jest aktem 'czytania' znaków przez bohaterów i odbiorców dramatu.",
+        "answer": ["Zjawisko naturalne (piorun) zostaje odczytane jako znak o znaczeniu symbolicznym. Bohaterowie i odbiorcy interpretują go nie jako przypadek, lecz jako wyrok boski, tekst sprawiedliwości zapisany na niebie. 'Czytają' w tym wydarzeniu potwierdzenie moralnego porządku świata."]
     },
     {
         "type": "closed",
-        "question": "'The concert was good, ______ the lead singer's voice was a bit weak.' Which linking word fits best in the gap?",
+        "question": "W wyrazie 'niedowidzieć' przedrostek 'nie-' pełni funkcję:",
         "answers": [
-            { "text": "therefore", "correct": false },
-            { "text": "although", "correct": true },
-            { "text": "because", "correct": false },
-            { "text": "moreover", "correct": false }
-        ]
-    },
-    {
-        "type": "closed",
-        "question": "Situation: You lent your favourite book to a friend a month ago and they haven't returned it. How can you ask for it back politely but firmly?",
-        "answers": [
-            { "text": "Give me my book back right now!", "correct": false },
-            { "text": "Where is my book? I need it.", "correct": false },
-            { "text": "Hey, I was wondering if you've finished with that book I lent you? I'd love to have it back when you're done.", "correct": true },
-            { "text": "You've lost my book, haven't you?", "correct": false }
+            { "text": "tworzenia prostego zaprzeczenia (jak w 'nie lubić').", "correct": false },
+            { "text": "wskazania na brak lub niedostatek pewnej cechy lub zdolności (widzieć słabo, niedostatecznie).", "correct": true },
+            { "text": "wzmocnienia znaczenia wyrazu podstawowego.", "correct": false },
+            { "text": "oznaczenia czynności wykonanej błędnie.", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Rewrite the sentence using 'so... that...'. The movie was very boring. I fell asleep. ",
-        "answer": ["The movie was so boring that I fell asleep."]
+        "question": "Jaką rolę w rozwoju moralnym bohaterów 'Chłopców z Placu Broni' odgrywał 'Związek Kitowców' i jego surowe prawo (np. wpisanie nazwiska Nemeczka do czarnej księgi)?",
+        "answer": ["Był to dla nich poligon uczenia się zasad sprawiedliwości, lojalności i odpowiedzialności. Surowe prawo, choć czasem stosowane zbyt pochopnie (jak wobec Nemeczka), uczyło ich konsekwencji. Uznanie błędu przez Bokę pokazało, że sprawiedliwość wymaga też empatii i umiejętności przyznania się do pomyłki."]
     },
     {
         "type": "closed",
-        "question": "What is the function of this sentence? 'Would you mind not making so much noise?'",
+        "question": "Co jest podstawową różnicą między satyrą 'Żona modna' a komedią 'Zemsta'?",
         "answers": [
-            { "text": "Making a suggestion.", "correct": false },
-            { "text": "Giving an order.", "correct": false },
-            { "text": "Making a polite request or complaint.", "correct": true },
-            { "text": "Asking for permission.", "correct": false }
-        ]
-    },
-    {
-        "type": "closed",
-        "question": "I haven't seen Mark for ages. He _________ abroad, but I'm not sure.",
-        "answers": [
-            { "text": "must have moved", "correct": false },
-            { "text": "can't have moved", "correct": false },
-            { "text": "should have moved", "correct": false },
-            { "text": "might have moved", "correct": true }
+            { "text": "'Żona modna' krytykuje wady, a 'Zemsta' je pochwala.", "correct": false },
+            { "text": "Satyra jest gatunkiem epickim (wierszowana opowieść) mającym na celu ośmieszenie i napiętnowanie wad, podczas gdy komedia jest utworem dramatycznym z dynamiczną akcją, której celem jest przede wszystkim bawić, a ośmieszenie wad jest środkiem do tego celu.", "correct": true },
+            { "text": "'Żona modna' jest utworem krótkim, a 'Zemsta' długim.", "correct": false },
+            { "text": "W 'Zemście' występuje więcej bohaterów niż w 'Żonie modnej'.", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Fill in the blank with the correct form of the verb: 'I'd rather you ______ (not tell) anyone about this. It's a secret.'",
-        "answer": ["didn't tell"]
+        "question": "Wyjaśnij paradoks zawarty w imieniu i nazwisku Cześnika Raptusiewicza.",
+        "answer": ["Paradoks polega na sprzeczności między nazwiskiem a tytułem. 'Raptusiewicz' pochodzi od słowa 'raptus', oznaczającego człowieka gwałtownego, porywczego. 'Cześnik' to dawny, zaszczytny urząd dworski, kojarzący się z godnością i opanowaniem. Ta sprzeczność definiuje komizm postaci: człowieka na wysokim stanowisku, który zachowuje się impulsywnie."]
     },
     {
         "type": "closed",
-        "question": "The project was far more challenging _______ we had initially anticipated.",
+        "question": "Poetycka refleksja w 'Trenach' Kochanowskiego ewoluuje. Porównując 'Tren VIII' ('Pełno nas, a jakoby nikogo nie było') z 'Trenem I' ('Wszytki płacze, wszytki łzy Heraklitowe'), można zauważyć zmianę perspektywy z:",
         "answers": [
-            { "text": "as", "correct": false },
-            { "text": "like", "correct": false },
-            { "text": "than", "correct": true },
-            { "text": "then", "correct": false }
+            { "text": "osobistej na uniwersalną.", "correct": false },
+            { "text": "filozoficznej i ogólnoludzkiej refleksji nad śmiercią na skrajnie osobiste, intymne i konkretne odczucie pustki po stracie dziecka.", "correct": true },
+            { "text": "buntu przeciwko Bogu na pełną akceptację jego woli.", "correct": false },
+            { "text": "gniewu na rezygnację.", "correct": false }
         ]
+    },
+    {
+        "type": "open",
+        "question": "Podaj poprawną formę wołacza (V.) dla imienia i nazwiska bohatera 'Syzyfowych prac': Bernard Zygier.",
+        "answer": ["Bernardzie Zygierze!"]
+    },
+    {
+        "type": "closed",
+        "question": "Relacja między Winicjuszem a Ligią w 'Quo vadis' jest mikrokosmosem głównego konfliktu powieści, ponieważ:",
+        "answers": [
+            { "text": "Odzwierciedla konflikt między bogatymi a biednymi w Rzymie.", "correct": false },
+            { "text": "Ukazuje przemianę bohatera od pogańskiej, zaborczej miłości (eros) do chrześcijańskiej miłości opartej na szacunku i poświęceniu (agape), co symbolizuje starcie dwóch systemów wartości.", "correct": true },
+            { "text": "Jest przyczyną prześladowań chrześcijan przez Nerona.", "correct": false },
+            { "text": "Pokazuje, jak miłość może przezwyciężyć różnice kulturowe między Rzymianinem a barbarzynką.", "correct": false }
+        ]
+    },
+    {
+        "type": "open",
+        "question": "W 'Małym Księciu' Latarnik jest jedynym dorosłym, którego praca nie służy jemu samemu. Co symbolizuje jego postawa i dlaczego budzi ona szacunek Małego Księcia?",
+        "answer": ["Jego postawa symbolizuje wierność rozkazowi, poczucie obowiązku i bezinteresowność, nawet jeśli sama czynność wydaje się absurdalna. Budzi szacunek, ponieważ w przeciwieństwie do innych dorosłych, nie jest skupiony na sobie, posiadaniu czy władzy. Jest symbolem odpowiedzialności, wartości cenionej przez Małego Księcia."]
+    },
+    {
+        "type": "closed",
+        "question": "W obu utworach: 'Żona modna' Krasickiego i 'Artysta' Mrożka, autorzy ośmieszają tę samą ludzką wadę, którą jest:",
+        "answers": [
+            { "text": "Skąpstwo i chciwość.", "correct": false },
+            { "text": "Próżność, snobizm i bezkrytyczne naśladowanie obcych wzorców w celu podniesienia własnego prestiżu.", "correct": true },
+            { "text": "Tchórzostwo i lenistwo.", "correct": false },
+            { "text": "Zazdrość i mściwość.", "correct": false }
+        ]
+    },
+    {
+        "type": "open",
+        "question": "Zinterpretuj sformułowanie, że Dick z 'Tajemniczego ogrodu' 'rozumie mowę ptaków'. Czy należy je traktować dosłownie?",
+        "answer": ["Nie należy go traktować dosłownie. Jest to metafora oznaczająca jego głęboką empatię, intuicję i więź z naturą. 'Rozumienie mowy ptaków' to umiejętność interpretacji ich zachowań, naśladowania głosów i nawiązywania z nimi relacji opartej na zaufaniu, a nie na znajomości języka."]
+    },
+    {
+        "type": "closed",
+        "question": "Guślarz w 'Dziadach cz. II' pełni w społeczności wiejskiej funkcję:",
+        "answers": [
+            { "text": "Władcy absolutnego, który decyduje o losie żywych i umarłych.", "correct": false },
+            { "text": "Lekarza leczącego choroby za pomocą ziół i zaklęć.", "correct": false },
+            { "text": "Pośrednika (medium) między światem żywych a światem duchów, przewodnika obrzędu i strażnika moralnego porządku.", "correct": true },
+            { "text": "Wędrownego opowiadacza, który zabawia ludność historiami o duchach.", "correct": false }
+        ]
+    },
+    {
+        "type": "open",
+        "question": "Przekształć zdanie w mowie niezależnej na zdanie w mowie zależnej, zachowując jego sens: Nauczycielka poleciła uczniom: 'Otwórzcie jutro wasze podręczniki na stronie dwudziestej'.",
+        "answer": ["Nauczycielka poleciła uczniom, aby następnego dnia otworzyli swoje podręczniki na stronie dwudziestej."]
+    },
+    {
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym wyraz 'zamek' ma inne znaczenie niż w pozostałych.",
+        "answers": [
+            { "text": "Hrabia marzył o tym, by zamieszkać w starym zamku Horeszków.", "correct": false },
+            { "text": "Klucz nie pasował do tego zamka.", "correct": true },
+            { "text": "Zwiedziliśmy wczoraj piękny, gotycki zamek.", "correct": false },
+            { "text": "Ruiny zamku górowały nad okolicą.", "correct": false }
+        ]
+    },
+    {
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego miłość Balladyny do Kirkora można określić jako miłość interesowną, a miłość Aliny do niego jako miłość bezinteresowną.",
+        "answer": ["Miłość Balladyny jest interesowna, ponieważ traktuje Kirkora jako środek do osiągnięcia celu: bogactwa, władzy i awansu społecznego. Miłość Aliny jest bezinteresowna, ponieważ kocha Kirkora dla niego samego, jest gotowa do poświęceń (chciała oddać siostrze maliny) i cieszy się jego szczęściem."]
     }
-
-];
+]
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

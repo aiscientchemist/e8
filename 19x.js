@@ -1,207 +1,195 @@
 const questions = [
     {
-        type: 'closed',
-        question: "Różnica sześcianów dwóch kolejnych liczb naturalnych wynosi 91. Ile wynosi suma tych liczb?",
-        answers: [
-            { text: "9", correct: false },
-            { text: "11", correct: true },
-            { text: "13", correct: false },
-            { text: "15", correct: false }
+        "type": "closed",
+        "question": "W 'Zemście' Papkin, pisząc swój testament, odwołuje się do motywów mitologicznych (Artemida). Jaka jest funkcja tego nawiązania?",
+        "answers": [
+            { "text": "Dowodzi jego głębokiej znajomości kultury antycznej.", "correct": false },
+            { "text": "Jest to komiczna próba nobilitacji własnej postaci i nadania swoim prozaicznym losom wymiaru heroicznego, co podkreśla jego mitomanię.", "correct": true },
+            { "text": "Sugeruje, że Klara, do której porównuje Artemidę, jest równie okrutna.", "correct": false },
+            { "text": "Ma na celu zaimponowanie Cześnikowi i Rejentowi.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkącie równoramiennym o obwodzie 36, wysokość opuszczona na podstawę ma długość 12. Oblicz pole tego trójkąta.",
-        answer: ["60"]
+        "type": "open",
+        "question": "W 'Małym Księciu' Lis mówi, że jego życie jest monotonne. Co zmienia w nim 'oswojenie' Małego Księcia?",
+        "answer": ["'Oswojenie' nadaje jego życiu sens i kolor. Zboże, które wcześniej było dla niego bezużyteczne, teraz będzie mu przypominać o złotych włosach Małego Księcia. Monotonna rzeczywistość zyskuje wartość emocjonalną i symboliczną. To metafora tego, jak relacje z innymi wzbogacają nasze postrzeganie świata."]
     },
     {
-        type: 'closed',
-        question: "Liczba a = 3³³ , b = 5²² , c = 7¹¹. Która z poniższych nierówności jest prawdziwa?",
-        answers: [
-            { text: "c < b < a", correct: true },
-            { text: "b < c < a", correct: false },
-            { text: "a < b < c", correct: false },
-            { text: "c < a < b", correct: false }
+        "type": "closed",
+        "question": "W którym z poniższych zdań wyraz 'tył' jest inną częścią mowy niż w pozostałych?",
+        "answers": [
+            { "text": "Usiadł w tyle samochodu.", "correct": false },
+            { "text": "Wróg zaatakował od tyłu.", "correct": false },
+            { "text": "Tył budynku wymagał remontu.", "correct": true },
+            { "text": "Cofnij się w tył, proszę.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Suma dwóch liczb jest równa 2√6, a ich różnica to 2√2. Oblicz iloczyn tych liczb.",
-        answer: ["4"]
-    },
-    {
-        type: 'closed',
-        question: "Prosta k jest prostopadła do prostej l: y = -x/2 + 4 i jest styczna w punkcie (0, 5) do okręgu. Jaki jest środek tego okręgu?",
-        answers: [
-            { text: "(-2, 4)", correct: false },
-            { text: "(2, 1)", correct: false },
-            { text: "(-2, 1)", correct: false },
-            { text: "(-1, 3)", correct: true }
+        "type": "closed",
+        "question": "Co łączy postawę moralną Ligii z 'Quo vadis' z postawą Antygony z mitu greckiego?",
+        "answers": [
+            { "text": "Obie są córkami królewskiego rodu, które walczą o władzę.", "correct": false },
+            { "text": "Obie w imię wyższego prawa (boskiego/moralnego) sprzeciwiają się rozkazom ziemskiego władcy (Nerona/Kreona), wykazując się niezwykłą odwagą i gotowością na śmierć.", "correct": true },
+            { "text": "Obie zakochują się w mężczyznach, którzy są ich wrogami.", "correct": false },
+            { "text": "Obie ponoszą śmierć na arenie cyrkowej.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Do 3 kg solanki o stężeniu 10% dolano 2 kg solanki o stężeniu 25%. Jakie jest stężenie procentowe otrzymanej mieszaniny?",
-        answers: [
-            { text: "15%", correct: false },
-            { text: "16%", correct: true },
-            { text: "17.5%", correct: false },
-            { text: "20%", correct: false }
+        "type": "open",
+        "question": "W 'Panu Tadeuszu' zajazd jest anachronicznym, sarmackim sposobem rozwiązywania sporów. Dlaczego Mickiewicz wprowadza go do utworu?",
+        "answer": ["Mickiewicz wprowadza zajazd, by pokazać schyłek pewnej epoki. Jest to barwny, ale i destrukcyjny relikt przeszłości. Jednocześnie, poprzez skierowanie energii zajazdu przeciwko wspólnemu wrogowi (Rosjanom), poeta pokazuje, jak dawne wady mogą zostać przekute w nową, patriotyczną cnotę. To symboliczny moment przejścia od prywaty do sprawy narodowej."]
+    },
+    {
+        "type": "closed",
+        "question": "Postać Ursusa w 'Quo vadis' symbolizuje:",
+        "answers": [
+            { "text": "Dziką, nieokiełznaną siłę ludów barbarzyńskich.", "correct": false },
+            { "text": "Prostą, niezachwianą wiarę i fizyczną potęgę oddaną na służbę dobru, która jest w stanie pokonać symbol zła i tyranii (tura).", "correct": true },
+            { "text": "Głupotę i naiwność pierwszych chrześcijan.", "correct": false },
+            { "text": "Bunt przeciwko rzymskiej dominacji.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W ostrosłupie prawidłowym sześciokątnym krawędź podstawy ma długość 4, a wysokość ostrosłupa 6. Oblicz długość krawędzi bocznej.",
-        answer: ["2√13"]
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego postać Podstoliny w 'Zemście' jest postacią komiczną.",
+        "answer": ["Jej komizm wynika z jej pragmatyzmu i chwiejności uczuć. Jest 'wdową po trzech mężach', która desperacko szuka czwartego, by zabezpieczyć swój majątek. Jej szybkie przerzucanie 'uczuć' z Cześnika na Wacława, podyktowane czysto finansowymi kalkulacjami, jest źródłem zabawnych sytuacji i demaskuje jej prawdziwe motywacje."]
     },
     {
-        type: 'closed',
-        question: "Wartość wyrażenia (1 - 2 + 3 - 4 + ... + 99 - 100) jest równa:",
-        answers: [
-            { text: "50", correct: false },
-            { text: "-50", correct: true },
-            { text: "100", correct: false },
-            { text: "-100", correct: false }
+        "type": "closed",
+        "question": "W 'Kamieniach na szaniec', która z postaci jest symbolem 'wiecznego chłopca' – osoby pełnej optymizmu, fantazji i skłonności do brawury?",
+        "answers": [
+            { "text": "Rudy (Jan Bytnar)", "correct": false },
+            { "text": "Alek (Alek Dawidowski)", "correct": true },
+            { "text": "Zośka (Tadeusz Zawadzki)", "correct": false },
+            { "text": "Leszek Domański", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Na tarczy zegara o godzinie 8:20, jaki jest mniejszy kąt między wskazówkami? (Podaj wynik w stopniach)",
-        answer: ["130"]
+        "type": "open",
+        "question": "Zinterpretuj symbolikę ognia w micie o Prometeuszu.",
+        "answer": ["Ogień w tym micie ma podwójne znaczenie. Dosłownie jest to narzędzie, które pozwala ludziom gotować, ogrzewać się i bronić. Symbolicznie reprezentuje on iskrę bożą, czyli rozum, wiedzę, cywilizację i postęp techniczny. Jest to dar, który wynosi ludzkość ponad świat zwierząt i pozwala jej kształtować własny los."]
     },
     {
-        type: 'closed',
-        question: "Ile jest liczb czterocyfrowych, w których cyfra tysięcy jest nieparzysta, a pozostałe cyfry są parzyste i różne od siebie?",
-        answers: [
-            { text: "120", correct: false },
-            { text: "180", correct: false },
-            { text: "240", correct: true },
-            { text: "300", correct: false }
-        ]
-
-    },
-    {
-        type: 'open',
-        question: "Suma n początkowych wyrazów ciągu geometrycznego wyraża się wzorem Sn = 3(2ⁿ - 1). Oblicz czwarty wyraz tego ciągu.",
-        answer: ["24"]
-    },
-    {
-        type: 'closed',
-        question: "Liczba log₂√2(16) jest równa:",
-        answers: [
-            { text: "2", correct: false },
-            { text: "4", correct: false },
-            { text: "8", correct: true },
-            { text: "16", correct: false }
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym występuje błąd składniowy polegający na niewłaściwym użyciu formy czasownika.",
+        "answers": [
+            { "text": "Chciałbym, żebyś poszedł ze mną.", "correct": false },
+            { "text": "Proszę, abyś wyszedł z pokoju.", "correct": false },
+            { "text": "Rozumiem, że masz dużo pracy.", "correct": false },
+            { "text": "Oni weszli do klasy i usiedli w ławkach.", "correct": true }
         ]
     },
     {
-        type: 'closed',
-        question: "Dwa trójkąty równoboczne o boku 6 są tak nałożone na siebie, że tworzą gwiazdę sześcioramienną (heksagram). Pole tej gwiazdy jest równe:",
-        answers: [
-            { text: "9√3", correct: false },
-            { text: "12√3", correct: true },
-            { text: "15√3", correct: false },
-            { text: "18√3", correct: false }
+        "type": "open",
+        "question": "Wyjaśnij, na czym polega tragizm losu postaci tytułowej z bajki 'O rybaku i rybce' Aleksandra Puszkina.",
+        "answer": ["Jej tragizm polega na niepohamowanej chciwości i pysze, która prowadzi ją od biedy do absolutnej władzy, a następnie z powrotem do punktu wyjścia. Jest postacią, która nie potrafi docenić tego, co ma, i zawsze pragnie więcej. Jej upadek jest karą za moralną ślepotę i brak umiaru. To tragizm wiecznego niezaspokojenia."]
+    },
+    {
+        "type": "closed",
+        "question": "Wskaż, która z postaci literackich w najpełniejszy sposób uosabia romantyczny typ bohatera-tyrana, opętanego żądzą władzy.",
+        "answers": [
+            { "text": "Neron z 'Quo vadis'", "correct": false },
+            { "text": "Balladyna z 'Balladyny'", "correct": true },
+            { "text": "Rejent Milczek z 'Zemsty'", "correct": false },
+            { "text": "Kirkor z 'Balladyny'", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Rzucamy dwiema kostkami do gry. Jakie jest prawdopodobieństwo, że suma oczek będzie większa od ich iloczynu? (Podaj wynik w postaci ułamka nieskracalnego)",
-        answer: ["11/36"]
+        "type": "open",
+        "question": "W 'Panu Tadeuszu' często opisywane są posiłki i uczty. Jaka jest funkcja tych opisów?",
+        "answer": ["Opisy te pełnią funkcję obyczajową i kulturową. Pokazują bogactwo i specyfikę kuchni staropolskiej, a także hierarchię społeczną i zasady 'grzeczności' panujące przy stole. Uczta jest ważnym elementem życia wspólnoty, miejscem spotkań, rozmów i celebracji. Buduje to arkadyjski, uporządkowany obraz świata Soplicowa."]
     },
     {
-        type: 'closed',
-        question: "Jeżeli a/b = 2/3 i b/c = 4/5, to a/c jest równe:",
-        answers: [
-            { text: "2/5", correct: false },
-            { text: "8/15", correct: true },
-            { text: "6/15", correct: false },
-            { text: "10/12", correct: false }
+        "type": "closed",
+        "question": "W 'Opowieści wigilijnej', Duch Przyszłych Świąt jest jedynym duchem, który budzi w Scrooge'u prawdziwy strach. Dlaczego?",
+        "answers": [
+            { "text": "Ponieważ jest milczący, bezosobowy i nieubłagany, symbolizując ostateczność i nieodwracalność konsekwencji jego dotychczasowego życia.", "correct": true },
+            { "text": "Ponieważ grozi mu fizyczną karą, jeśli się nie zmieni.", "correct": false },
+            { "text": "Ponieważ pokazuje mu wizję piekła i wiecznego potępienia.", "correct": false },
+            { "text": "Ponieważ jest najbrzydszy i najbardziej przerażający z wyglądu.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Odległość punktu P=(4, -2) od prostej 3x - 4y - 5 = 0 jest równa:",
-        answers: [
-            { text: "2", correct: false },
-            { text: "3", correct: true },
-            { text: "4", correct: false },
-            { text: "5", correct: false }
+        "type": "open",
+        "question": "Przekształć zdanie w mowie zależnej na mowę niezależną: 'Kazała mi, żebym posprzątał swój pokój.'",
+        "answer": ["Kazała mi: 'Posprzątaj swój pokój!'."]
+    },
+    {
+        "type": "closed",
+        "question": "Które z poniższych dzieł najpełniej realizuje model przypowieści (paraboli)?",
+        "answers": [
+            { "text": "'Zemsta'", "correct": false },
+            { "text": "'Mały Książę'", "correct": true },
+            { "text": "'Pan Tadeusz'", "correct": false },
+            { "text": "'Chłopcy z Placu Broni'", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkąt o bokach 13, 14, 15 wpisano koło. Oblicz promień tego koła.",
-        answer: ["4"]
+        "type": "open",
+        "question": "Zinterpretuj symboliczną funkcję postaci Chilona Chilonidesa w 'Quo vadis'.",
+        "answer": ["Chilon symbolizuje ludzką słabość, cynizm i zdolność do zdrady dla zysku. Jest on uosobieniem intelektualisty na usługach zła. Jednak jego postać jest także dowodem na możliwość głębokiej przemiany – w obliczu męczeństwa chrześcijan i własnego cierpienia doznaje wstrząsu moralnego i nawraca się, co pokazuje, że nawet w najbardziej zdeprawowanym człowieku tkwi iskra dobra."]
     },
     {
-        type: 'closed',
-        question: "Po obniżce ceny o 30% sweter kosztuje 84 zł. Ile kosztowałby ten sweter, gdyby jego cenę obniżono o 15%?",
-        answers: [
-            { text: "120 zł", correct: false },
-            { text: "102 zł", correct: true },
-            { text: "96 zł", correct: false },
-            { text: "105 zł", correct: false }
-        ]
-    },
-
-    { // Poprawka zad. 19
-        type: 'closed',
-        question: "W trapezie równoramiennym przekątna jest dwusieczną kąta ostrego. Krótsza podstawa jest równa ramieniu i ma długość 10. Dłuższa podstawa ma długość:",
-        answers: [
-            { text: "12.5", correct: false },
-            { text: "15", correct: true },
-            { text: "17.5", correct: false },
-            { text: "20", correct: false }
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym występuje błąd w użyciu zaimka.",
+        "answers": [
+            { "text": "Dałem mu książkę, którą polecałeś.", "correct": false },
+            { "text": "Poszedłem do niego, aby porozmawiać.", "correct": false },
+            { "text": "Usiadłem na krześle, którego noga była złamana.", "correct": false },
+            { "text": "Wziąłem parasol, bo jego prognoza zapowiadała deszcz.", "correct": true }
         ]
     },
     {
-        type: 'open',
-        question: "Wartość wyrażenia ∛(10²⁰²⁴ + 10²⁰²⁴ + ... + 10²⁰²⁴) (dziesięć składników) jest potęgą liczby 10. Jaki jest wykładnik tej potęgi?",
-        answer: ["675"]
+        "type": "open",
+        "question": "Jaka jest symboliczna funkcja postaci Telimeny w kontekście polskiego społeczeństwa epoki porozbiorowej?",
+        "answer": ["Telimena symbolizuje tę część polskiego społeczeństwa, która uległa fascynacji kulturą obcą (rosyjską, francuską), traktując ją jako wyznacznik nowoczesności i lepszego świata. Reprezentuje kosmopolityzm i odwrócenie się od rodzimej tradycji, co było jednym z dylematów tożsamościowych Polaków w tamtym okresie."]
     },
     {
-        type: 'closed',
-        question: "Wartość wyrażenia √(11 - 6√2) jest równa:",
-        answers: [
-            { text: "√11 - √6√2", correct: false },
-            { text: "3 - √2", correct: true },
-            { text: "√2 - 3", correct: false },
-            { text: "1 - √10", correct: false }
+        "type": "closed",
+        "question": "Wskaż, która z postaci literackich w swoim postępowaniu kieruje się przede wszystkim wiernością i lojalnością wobec przywódcy/pana.",
+        "answers": [
+            { "text": "Papkin", "correct": false },
+            { "text": "Gerwazy", "correct": true },
+            { "text": "Wacław", "correct": false },
+            { "text": "Hrabia", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Pociąg o długości 100 m mija stojącego obserwatora w ciągu 5 sekund. Z jaką prędkością (w km/h) jedzie ten pociąg?",
-        answers: [
-            { text: "20 km/h", correct: false },
-            { text: "36 km/h", correct: false },
-            { text: "72 km/h", correct: true },
-            { text: "90 km/h", correct: false }
+        "type": "open",
+        "question": "Wyjaśnij, na czym polega komizm sytuacyjny w 'Zemście'. Podaj jeden przykład.",
+        "answer": ["Komizm sytuacyjny polega na tworzeniu zabawnych, nieoczekiwanych i absurdalnych zbiegów okoliczności i wydarzeń. Przykładem jest scena, w której Wacław, syn Rejenta, dobrowolnie oddaje się w 'niewolę' Cześnikowi, swojemu wrogowi, aby być bliżej ukochanej Klary, co Cześnik interpretuje jako akt tchórzostwa i kapitulacji."]
+    },
+    {
+        "type": "closed",
+        "question": "Co jest wspólnym elementem losu Ikara i Balladyny?",
+        "answers": [
+            { "text": "Dążenie do władzy, które prowadzi do upadku.", "correct": false },
+            { "text": "Upadek (dosłowny i moralny) spowodowany przekroczeniem pewnych granic – Ikar przekracza granice wyznaczone przez naturę i ojca, a Balladyna granice moralne i ludzkie.", "correct": true },
+            { "text": "Miłość, która staje się przyczyną ich zguby.", "correct": false },
+            { "text": "Kara wymierzona przez bogów za nieposłuszeństwo.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Ile jest różnych trójkątów prostokątnych o bokach całkowitych, których jeden z boków ma długość 12?",
-        answer: ["8"]
+        "type": "open",
+        "question": "Wskaż błąd frazeologiczny w zdaniu: 'On zawsze ubiera adidasy do garnituru' i wyjaśnij, na czym on polega.",
+        "answer": ["Błąd polega na generalizacji nazwy własnej ('adidasy' od marki Adidas) i używaniu jej jako nazwy gatunkowej (buty sportowe). Chociaż jest to powszechne w języku potocznym, w normie wzorcowej jest to błąd. Poprawnie: 'On zawsze ubiera buty sportowe do garnituru'."]
     },
     {
-        type: 'closed',
-        question: "Wszystkie ściany graniastosłupa prostego są kwadratami. Stosunek pola powierzchni całkowitej do pola podstawy wynosi:",
-        answers: [
-            { text: "4:1", correct: false },
-            { text: "5:1", correct: false },
-            { text: "6:1", correct: true },
-            { text: "Zależy od długości boku", correct: false }
+        "type": "closed",
+        "question": "Które z poniższych dzieł w najpełniejszy sposób ukazuje konflikt pokoleń na tle wielkich przemian historycznych?",
+        "answers": [
+            { "text": "'Zemsta'", "correct": false },
+            { "text": "'Pan Tadeusz'", "correct": true },
+            { "text": "'Latarnik'", "correct": false },
+            { "text": "'Chłopcy z Placu Broni'", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W biegu na 100m startuje 6 zawodników. Na ile sposobów mogą oni ukończyć bieg (zakładając, że nie ma miejsc ex aequo)?",
-        answer: ["720"]
+        "type": "open",
+        "question": "W 'Trenie XIX, czyli Śnie', matka mówi do Kochanowskiego: '[...] ludzkie przygody / Ludzkie noś'. Co oznaczają te słowa?",
+        "answer": ["Oznaczają one wezwanie do przyjęcia stoickiej postawy wobec życia. 'Ludzkie przygody' to ludzki los, pełen cierpienia i radości. 'Ludzkie noś' to nakaz, by znosić ten los z godnością, umiarem i odwagą, akceptując, że cierpienie jest nieodłączną częścią bycia człowiekiem. To filozofia akceptacji ludzkiej doli."]
     }
-];
+]
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

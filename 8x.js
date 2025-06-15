@@ -1,215 +1,195 @@
 const questions = [
     {
-        type: 'closed',
-        question: "Iloczyn dwóch kolejnych liczb parzystych dodatnich wynosi 224. Ile wynosi suma tych liczb?",
-        answers: [
-            { text: "26", correct: false },
-            { text: "28", correct: false },
-            { text: "30", correct: true },
-            { text: "32", correct: false }
+        "type": "closed",
+        "question": "W 'Zemście', postać Wacława, w przeciwieństwie do Cześnika i Rejenta, reprezentuje:",
+        "answers": [
+            { "text": "Sarmacki ideał honoru i wierności rodowi.", "correct": false },
+            { "text": "Oświeceniowy pragmatyzm i racjonalne dążenie do celu, nawet za cenę drobnych manipulacji i nieszczerości.", "correct": true },
+            { "text": "Romantyczny idealizm i skłonność do nieszczęśliwej miłości.", "correct": false },
+            { "text": "Głęboką pobożność i chęć pogodzenia zwaśnionych sąsiadów.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Przyprostokątne trójkąta prostokątnego mają długości 7 cm i 24 cm. Oblicz promień okręgu wpisanego w ten trójkąt.",
-        answer: ["3"]
+        "type": "open",
+        "question": "W 'Małym Księciu' Żmija mówi, że 'rozwiązuje wszystkie zagadki'. Zinterpretuj to enigmatyczne stwierdzenie w kontekście jej roli i symboliki śmierci.",
+        "answer": ["Stwierdzenie to jest metaforą ostateczności śmierci. Śmierć, którą oferuje Żmija, jest 'rozwiązaniem' wszystkich ziemskich problemów, trudów i pytań – kończy je w sposób definitywny. Jest to gorzka prawda o śmierci jako kresie wszelkich doczesnych zmagań i zagadek egzystencji."]
     },
     {
-        type: 'closed',
-        question: "Liczba x jest o 25% większa od liczby 160. Liczba y jest o 20% mniejsza od liczby x. W takim razie:",
-        answers: [
-            { text: "y jest o 5% większe od 160", correct: false },
-            { text: "y jest równe 160", correct: true },
-            { text: "y jest mniejsze od 160", correct: false },
-            { text: "y jest o 5% mniejsze od 160", correct: false }
+        "type": "closed",
+        "question": "Wyraz 'przedwiośnie' jest pod względem budowy słowotwórczej:",
+        "answers": [
+            { "text": "Wyrazem pochodnym z przyrostkiem.", "correct": false },
+            { "text": "Złożeniem, czyli wyrazem powstałym z połączenia dwóch tematów słowotwórczych.", "correct": true },
+            { "text": "Wyrazem pochodnym z przedrostkiem 'przed-'.", "correct": false },
+            { "text": "Wyrazem podstawowym, niepodzielnym słowotwórczo.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Z drutu o długości 96 cm zbudowano szkielet sześcianu. Jaka jest objętość tego sześcianu w cm³?",
-        answer: ["512"]
-    },
-    {
-        type: 'closed',
-        question: "Punkt P' = (-3, -7) jest obrazem punktu P w symetrii względem osi OX. Jakie są współrzędne punktu P?",
-        answers: [
-            { text: "(3, 7)", correct: false },
-            { text: "(3, -7)", correct: false },
-            { text: "(-3, 7)", correct: true },
-            { text: "(-7, -3)", correct: false }
+        "type": "closed",
+        "question": "Co łączy podmiot liryczny Inwokacji 'Pana Tadeusza' ze Skawińskim z 'Latarnika'?",
+        "answers": [
+            { "text": "Obaj są żołnierzami walczącymi w legionach Napoleona.", "correct": false },
+            { "text": "Doświadczenie emigracji i tułaczki oraz postrzeganie ojczyzny jako utraconej, wyidealizowanej krainy dzieciństwa, której obraz nosi się w sercu.", "correct": true },
+            { "text": "Nadzieja na rychły powrót do kraju dzięki pomocy Francji.", "correct": false },
+            { "text": "Pragnienie znalezienia spokojnego miejsca, by spisać swoje wspomnienia.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Jaka jest ostatnia cyfra liczby 4³³ + 5⁴⁴ + 6⁵⁵?",
-        answers: [
-            { text: "3", correct: false },
-            { text: "5", correct: true },
-            { text: "7", correct: false },
-            { text: "9", correct: false }
+        "type": "open",
+        "question": "W 'Zemście' Rejent jest autorem słów: 'Jeśli nie chcesz mojej zguby, Krokodyla daj mi, luby!'. Jaką cechę charakteru Rejenta demaskuje ta próba napisania listu miłosnego?",
+        "answer": ["Demaskuje to jego całkowity brak wrażliwości, empatii i autentycznych uczuć. Nawet w sferze miłości myśli kategoriami transakcji, podstępu i 'chwytania' kogoś w pułapkę ('krokodyl'). Pokazuje to, że jego umysł jest na stałe nastawiony na intrygę i zysk, a język miłości jest mu całkowicie obcy."]
+    },
+    {
+        "type": "closed",
+        "question": "Postać Telimeny w 'Panu Tadeuszu' jest postacią niejednoznaczną, ponieważ:",
+        "answers": [
+            { "text": "Z jednej strony jest patriotką, a z drugiej współpracuje z Rosjanami.", "correct": false },
+            { "text": "Z jednej strony jest postacią komiczną i pretensjonalną, z drugiej – pragmatyczną kobietą walczącą o przetrwanie i pozycję w świecie zdominowanym przez mężczyzn.", "correct": true },
+            { "text": "Kocha Tadeusza, ale jednocześnie flirtuje z Hrabią i Asesorem.", "correct": false },
+            { "text": "Jest opiekunką Zosi, ale w rzeczywistości jej zazdrości i szkodzi.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkącie prostokątnym jedna z przyprostokątnych jest 3 razy krótsza od przeciwprostokątnej. Jaki jest sinus najmniejszego kąta w tym trójkącie? Odpowiedź podaj w postaci ułamka a/b.",
-        answer: ["1/3"]
+        "type": "open",
+        "question": "Pojedynek Cześnika z Rejentem, na który obaj się umawiają, ostatecznie nie dochodzi do skutku. Co symbolizuje przerwanie tego pojedynku przez Księdza Robaka?",
+        "answer": ["Symbolizuje to koniec epoki sarmackiej, w której prywatne spory i wendety ('zajazdy') były na porządku dziennym. Interwencja Robaka, emisariusza narodowego, oznacza, że czas prywaty musi ustąpić miejsca ważniejszej sprawie – zorganizowanej walce o niepodległość. To symboliczne podporządkowanie interesu prywatnego interesowi narodowemu."]
     },
     {
-        type: 'closed',
-        question: "Pole powierzchni całkowitej walca wynosi 150π. Promień podstawy i wysokość walca są równe. Ile wynosi objętość tego walca?",
-        answers: [
-            { text: "125π", correct: true },
-            { text: "150π", correct: false },
-            { text: "250π", correct: false },
-            { text: "75π", correct: false }
+        "type": "closed",
+        "question": "Wskaż cechę, która jest wspólna dla Boki z 'Chłopców z Placu Broni' i Zośki z 'Kamieni na szaniec' jako przywódców.",
+        "answers": [
+            { "text": "Skłonność do brawury i podejmowania niepotrzebnego ryzyka.", "correct": false },
+            { "text": "Poczucie odpowiedzialności za grupę, strategiczne myślenie i zdolność do podejmowania trudnych, niepopularnych decyzji dla dobra sprawy.", "correct": true },
+            { "text": "Bezwzględne egzekwowanie posłuszeństwa za pomocą siły.", "correct": false },
+            { "text": "Dążenie do osobistej sławy i zaszczytów.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Wyrażenie (x - 2y)² - (x - 2y)(x + 2y) po uproszczeniu ma postać ay(by - x). Podaj iloczyn a*b.",
-        answer: ["-8"]
+        "type": "open",
+        "question": "Jaka jest główna przyczyna upadku moralnego Balladyny?",
+        "answer": ["Główną przyczyną jest jej niepohamowana, patologiczna ambicja i żądza władzy, która całkowicie zagłusza w niej głos sumienia i wszelkie ludzkie uczucia, takie jak miłość siostrzana czy córkowski obowiązek. Zbrodnia nie jest dla niej celem, a jedynie narzędziem do osiągnięcia wyższej pozycji."]
     },
     {
-        type: 'closed',
-        question: "Wszystkich liczb czterocyfrowych o różnych cyfrach, utworzonych z cyfr 0, 1, 2, 3 jest:",
-        answers: [
-            { text: "24", correct: false },
-            { text: "18", correct: true },
-            { text: "16", correct: false },
-            { text: "12", correct: false }
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym czasownik 'ubrać' został użyty niepoprawnie z punktu widzenia normy wzorcowej języka polskiego.",
+        "answers": [
+            { "text": "Matka ubrała choinkę w piękne bombki.", "correct": false },
+            { "text": "Trzeba ubrać buty, bo na dworze jest zimno.", "correct": true },
+            { "text": "Projektantka mody ubrała modelkę w nową suknię.", "correct": false },
+            { "text": "Na święta ubrała stół w najlepszy obrus.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W szufladzie jest 6 par czarnych i 4 pary brązowych skarpetek (wszystkie luzem). Ile co najmniej skarpetek trzeba wyjąć po ciemku, aby mieć pewność, że wyjęliśmy parę w tym samym kolorze?",
-        answer: ["3"]
+        "type": "open",
+        "question": "W 'Dziadach części II', dlaczego duch pasterki Zosi nie może trafić ani do nieba, ani do piekła i jest zawieszony 'pomiędzy'?",
+        "answer": ["Jest zawieszona pomiędzy światami, ponieważ za życia nie doświadczyła pełni człowieczeństwa. Odrzucając miłość i unikając zarówno ziemskiego szczęścia, jak i cierpienia, żyła w świecie iluzji i marzeń. Jej kara jest symbolicznym odzwierciedleniem jej życia – stanu 'nieważkości' i braku zakorzenienia w realnym świecie."]
     },
     {
-        type: 'closed',
-        question: "W trapezie równoramiennym ramię ma długość 10, a wysokość 8. Krótsza podstawa ma długość 6. Pole tego trapezu wynosi:",
-        answers: [
-            { text: "72", correct: false },
-            { text: "84", correct: false },
-            { text: "96", correct: true },
-            { text: "108", correct: false }
+        "type": "closed",
+        "question": "Które z poniższych zdań zawiera podmiot logiczny (wyrażony w dopełniaczu)?",
+        "answers": [
+            { "text": "Na stole leżały książki i zeszyty.", "correct": false },
+            { "text": "W pokoju zabrakło świeżego powietrza.", "correct": true },
+            { "text": "Dzieci radośnie bawiły się na placu zabaw.", "correct": false },
+            { "text": "Ktoś zapukał głośno do drzwi.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Liczba a jest o 40% mniejsza od liczby b. O ile procent liczba b jest większa od liczby a?",
-        answers: [
-            { text: "o 40%", correct: false },
-            { text: "o 60%", correct: false },
-            { text: "o 66 i 2/3%", correct: true },
-            { text: "o 140%", correct: false }
+        "type": "open",
+        "question": "Wyjaśnij, na czym polega tragizm losu postaci Ordona w interpretacji Adama Mickiewicza.",
+        "answer": ["Jego tragizm polega na tym, że jest zmuszony do dokonania wyboru między nieuchronną klęską i niewolą a samobójczą śmiercią, która jest jednocześnie aktem zniszczenia i ostatecznego zwycięstwa moralnego. Wysadzając redutę, niszczy siebie i swoich żołnierzy, ale ratuje honor i zadaje wrogowi straty. To wybór między złem a złem."]
+    },
+    {
+        "type": "closed",
+        "question": "Która z postaci literackich z podanej listy lektur najpełniej uosabia renesansowy ideał 'poety doctus' (poety uczonego), który łączy talent z rozległą wiedzą i świadomością tradycji antycznej?",
+        "answers": [
+            { "text": "Adam Mickiewicz (jako autor 'Pana Tadeusza')", "correct": false },
+            { "text": "Jan Kochanowski", "correct": true },
+            { "text": "Juliusz Słowacki", "correct": false },
+            { "text": "Henryk Sienkiewicz", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W graniastosłupie prawidłowym trójkątnym krawędź podstawy ma długość 6. Przekątna ściany bocznej ma długość 10. Oblicz objętość tego graniastosłupa (wynik zapisz w postaci a√b).",
-        answer: ["72√3"]
+        "type": "open",
+        "question": "Zinterpretuj symbolicznie scenę, w której Nemeczek z 'Chłopców z Placu Broni' trzykrotnie zanurza się w zimnej wodzie w ogrodzie botanicznym. Co symbolizuje ten akt?",
+        "answer": ["Ten akt symbolizuje jego niezłomny charakter, poczucie obowiązku i honoru. Jest to rodzaj 'potrójnej próby', która potwierdza jego wierność sprawie Placu Broni. Mimo strachu i słabości fizycznej, jego hart ducha zwycięża. To symboliczne poświęcenie, które ostatecznie prowadzi do jego choroby i śmierci, ale także do jego moralnego triumfu."]
     },
     {
-        type: 'closed',
-        question: "Suma dwóch liczb jest równa 2√10, a ich iloczyn jest równy 6. Ile wynosi suma kwadratów tych liczb?",
-        answers: [
-            { text: "40", correct: false },
-            { text: "34", correct: false },
-            { text: "28", correct: true },
-            { text: "22", correct: false }
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym występuje błąd w stopniowaniu przymiotnika lub przysłówka.",
+        "answers": [
+            { "text": "To jest najciekawsza książka, jaką czytałem.", "correct": false },
+            { "text": "On jest bardziej inteligentniejszy od swojego brata.", "correct": true },
+            { "text": "Dzisiaj czuję się gorzej niż wczoraj.", "correct": false },
+            { "text": "Ten film był mniej interesujący niż poprzedni.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W trójkąt równoboczny o boku 6 wpisano okrąg. W ten okrąg wpisano kwadrat. Jaka jest długość boku tego kwadratu?",
-        answers: [
-            { text: "√6", correct: true },
-            { text: "3", correct: false },
-            { text: "√3", correct: false },
-            { text: "2", correct: false }
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego postawa Bankiera z 'Małego Księcia' jest absurdalna z punktu widzenia logiki i użyteczności.",
+        "answer": ["Jego postawa jest absurdalna, ponieważ 'posiada' gwiazdy tylko na papierze – liczy je i zapisuje, ale to 'posiadanie' niczego nie zmienia, nie przynosi żadnego pożytku ani jemu, ani gwiazdom. Jest to metafora chciwości i gromadzenia dla samego gromadzenia, całkowicie oderwanego od realnej wartości i celu."]
+    },
+    {
+        "type": "closed",
+        "question": "W 'Latarniku' polska książka działa na Skawińskiego jak 'płomień ogarniający starą strzechę'. Jaki środek stylistyczny został tu użyty i co on wyraża?",
+        "answers": [
+            { "text": "Metafora; wyraża gwałtowność i siłę stłumionych uczuć patriotycznych, które wybuchają z niszczycielską siłą.", "correct": true },
+            { "text": "Apostrofa; wyraża bezpośredni zwrot do książki.", "correct": false },
+            { "text": "Personifikacja; nadaje książce cechy istoty żywej.", "correct": false },
+            { "text": "Hiperbola; wyolbrzymia znaczenie lektury dla bohatera.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Zmieszano 3 kg roztworu soli o stężeniu 20% z 5 kg roztworu soli o stężeniu 12%. Jakie jest stężenie procentowe otrzymanej mieszaniny?",
-        answer: ["15"]
+        "type": "open",
+        "question": "Przekształć zdanie w mowie niezależnej na mowę zależną: 'Pomyślałem sobie: To jest naprawdę niezwykłe!'",
+        "answer": ["Pomyślałem sobie, że to jest/było naprawdę niezwykłe."]
     },
     {
-        type: 'closed',
-        question: "Długość przekątnej sześcianu wynosi 5√3. Pole powierzchni całkowitej tego sześcianu jest równe:",
-        answers: [
-            { text: "75", correct: false },
-            { text: "125", correct: false },
-            { text: "150", correct: true },
-            { text: "25√3", correct: false }
+        "type": "closed",
+        "question": "Która z wymienionych par postaci najlepiej ilustruje konflikt między sarmacką porywczością a oświeceniowym, chłodnym wyrachowaniem?",
+        "answers": [
+            { "text": "Alina i Balladyna", "correct": false },
+            { "text": "Gerwazy i Protazy", "correct": false },
+            { "text": "Cześnik i Rejent", "correct": true },
+            { "text": "Tadeusz i Hrabia", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Liczba log₅(100) - log₅(4) jest równa:",
-        answers: [
-            { text: "log₅(96)", correct: false },
-            { text: "25", correct: false },
-            { text: "5", correct: false },
-            { text: "2", correct: true }
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego Alina, siostra Balladyny, może być uznana za postać-symbol, a nie w pełni rozwiniętą postać psychologiczną.",
+        "answer": ["Alina jest postacią-symbolem, ponieważ uosabia czyste, wyidealizowane dobro, niewinność i miłość. Brakuje jej wewnętrznych konfliktów, wad czy skomplikowanej psychologii. Jej funkcja w dramacie polega na stworzeniu jaskrawego kontrastu dla zła i ambicji Balladyny, a nie na realistycznym przedstawieniu ludzkiego charakteru."]
+    },
+    {
+        "type": "closed",
+        "question": "Analizując 'Treny' Kochanowskiego jako cykl, można zauważyć, że kryzys światopoglądowy poety najgłębiej wyraża się w podważeniu:",
+        "answers": [
+            { "text": "Wartości poezji i sztuki.", "correct": false },
+            { "text": "Renesansowej wiary w harmonię świata, rozum i cnotę jako gwarancję szczęśliwego życia.", "correct": true },
+            { "text": "Wartości rodziny i miłości rodzicielskiej.", "correct": false },
+            { "text": "Autorytetu władzy królewskiej i porządku społecznego.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkącie ABC, punkty D i E leżą odpowiednio na bokach AC i BC tak, że odcinek DE jest równoległy do boku AB. Wiadomo, że |CD|:|DA| = 2:1 oraz |DE|=8. Oblicz długość boku AB.",
-        answer: ["12"]
+        "type": "open",
+        "question": "Wskaż błąd składniowy w zdaniu: 'Idąc na spotkanie, zaczął padać ulewny deszcz.' i zapisz je poprawnie.",
+        "answer": ["Błąd: podmiot logiczny imiesłowu ('ja') jest inny niż podmiot zdania głównego ('deszcz'). Poprawnie: 'Gdy szedłem/szłam na spotkanie, zaczął padać ulewny deszcz.'"]
     },
     {
-        type: 'closed',
-        question: "Liczba a = 1/(√5 - 2). Liczba b = 1/(√5 + 2). Ile wynosi wartość wyrażenia (a+b)²?",
-        answers: [
-            { text: "20", correct: true },
-            { text: "4", correct: false },
-            { text: "1", correct: false },
-            { text: "16", correct: false }
+        "type": "closed",
+        "question": "Który z bohaterów literackich, poprzez swoje działanie, najpełniej realizuje przesłanie biblijnej przypowieści o miłosiernym Samarytaninie?",
+        "answers": [
+            { "text": "Ksiądz Robak opatrujący rannych po bitwie.", "correct": true },
+            { "text": "Scrooge dający indyka rodzinie Cratchitów.", "correct": false },
+            { "text": "Boka opiekujący się chorym Nemeczkiem.", "correct": false },
+            { "text": "Dick przynoszący Mary narzędzia i nasiona.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W dwunastokącie foremnym miara kąta wewnętrznego jest o x stopni większa od miary kąta wewnętrznego w dziewięciokącie foremnym. Ile wynosi x?",
-        answers: [
-            { text: "5", correct: false },
-            { text: "10", correct: true },
-            { text: "12", correct: false },
-            { text: "15", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Trzej pracownicy wykonują pewną pracę w 4 godziny. W ile godzin wykonałoby tę samą pracę dwóch pracowników, przy założeniu, że każdy pracuje z taką samą wydajnością?",
-        answer: ["6"]
-    },
-    {
-        type: 'closed',
-        question: "Wybieramy losowo jedną liczbę ze zbioru {1, 2, 3, ..., 30}. Prawdopodobieństwo, że wybrana liczba nie jest podzielna ani przez 2, ani przez 3, wynosi:",
-        answers: [
-            { text: "1/2", correct: false },
-            { text: "1/3", correct: false },
-            { text: "10/30", correct: false },
-            { text: "1/3", correct: true } // (1,5,7,11,13,17,19,23,25,29) -> 10/30 = 1/3
-        ]
-    },
-    { // Zmieniam treść zad. 24, bo się powtórzyła odp.
-        type: 'closed',
-        question: "Wybieramy losowo jedną liczbę ze zbioru {1, 2, 3, ..., 30}. Prawdopodobieństwo, że wybrana liczba nie jest podzielna ani przez 2, ani przez 3, wynosi:",
-        answers: [
-            { text: "1/3", correct: true },
-            { text: "8/30", correct: false },
-            { text: "7/30", correct: false },
-            { text: "1/4", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Pociąg jechał z miasta A do B ze średnią prędkością 80 km/h, a wracał z B do A ze średnią prędkością 120 km/h. Podróż w obie strony zajęła 5 godzin. Jaka jest odległość między miastami A i B?",
-        answer: ["240"]
+        "type": "open",
+        "question": "Zinterpretuj ostatnie słowa Gerwazego w 'Panu Tadeuszu' wypowiedziane po spowiedzi Księdza Robaka: 'Amen'. Co wyraża to jedno słowo?",
+        "answer": ["Słowo 'Amen' wyraża ostateczną akceptację, przebaczenie i pojednanie. Jest to symboliczne zakończenie trwającej latami nienawiści i żądzy zemsty. Gerwazy, uznając pokutę i bohaterstwo Jacka Soplicy, zamyka stary rozdział i akceptuje nowy porządek oparty na przebaczeniu w imię sprawy narodowej."]
     }
-];
+]
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

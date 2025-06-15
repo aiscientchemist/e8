@@ -1,196 +1,195 @@
 const questions = [
     {
-        type: 'closed',
-        question: "W trójkącie prostokątnym o obwodzie 60, stosunek długości przyprostokątnych wynosi 3:4. Ile wynosi długość promienia okręgu opisanego na tym trójkącie?",
-        answers: [
-            { text: "10", correct: false },
-            { text: "12", correct: false },
-            { text: "12.5", correct: true },
-            { text: "15", correct: false }
+        "type": "closed",
+        "question": "Jaka jest główna różnica w postrzeganiu historii między Hrabią a Sędzią w 'Panu Tadeuszu'?",
+        "answers": [
+            { "text": "Hrabia postrzega historię jako zbiór malowniczych, romantycznych anegdot i inspiracji (ruiny, legendy), a Sędzia jako żywą tradycję, obyczaj i kodeks moralny, który należy kultywować w codziennym życiu.", "correct": true },
+            { "text": "Hrabia jest zwolennikiem Napoleona, a Sędzia jest mu przeciwny.", "correct": false },
+            { "text": "Hrabia zna historię Polski lepiej niż Sędzia.", "correct": false },
+            { "text": "Hrabia chce pomścić historię Horeszków, a Sędzia chce o niej zapomnieć.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Znajdź najmniejszą liczbę całkowitą, która jest jednocześnie kwadratem i sześcianem innej liczby całkowitej (większej od 1).",
-        answer: ["64"]
+        "type": "open",
+        "question": "W 'Małym Księciu', co symbolizuje studnia na pustyni i akt wspólnego picia wody przez Pilota i Małego Księcia?",
+        "answer": ["Studnia symbolizuje ukryty sens życia, prawdę i duchowe wartości, które trzeba odnaleźć z wysiłkiem. Wspólne picie wody to metafora nawiązania głębokiej, autentycznej więzi i porozumienia. To 'pokarm' dla serca, a nie tylko dla ciała, co podkreśla, że najcenniejsze w życiu są relacje międzyludzkie."]
     },
     {
-        type: 'closed',
-        question: "Liczba 7²⁰²⁴ - 3²⁰²⁴ ma cyfrę jedności równą:",
-        answers: [
-            { text: "0", correct: true },
-            { text: "2", correct: false },
-            { text: "4", correct: false },
-            { text: "6", correct: false }
+        "type": "closed",
+        "question": "W którym z poniższych zdań zaimek 'swój' został użyty niepoprawnie?",
+        "answers": [
+            { "text": "Każdy uczeń powinien przynieść swój podręcznik.", "correct": false },
+            { "text": "Kocham swoją mamę i swojego tatę.", "correct": false },
+            { "text": "Poprosiłem kolegę, żeby pożyczył mi swój rower.", "correct": true },
+            { "text": "Zawsze pamiętam o swoich obowiązkach.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trapezie podstawy mają długość 10 i 30. Każde z ramion ma długość 26. Oblicz pole tego trapezu.",
-        answer: ["480"]
-    },
-    {
-        type: 'closed',
-        question: "W graniastosłupie prawidłowym trójkątnym pole powierzchni bocznej jest równe sumie pól obu podstaw. Stosunek wysokości tego graniastosłupa do krawędzi podstawy wynosi:",
-        answers: [
-            { text: "√3 : 2", correct: false },
-            { text: "1 : 2", correct: false },
-            { text: "√3 : 6", correct: true },
-            { text: "1 : √3", correct: false }
+        "type": "closed",
+        "question": "Co łączy postawę Rejenta Milczka z 'Zemsty' z postawą Bankiera z 'Małego Księcia'?",
+        "answers": [
+            { "text": "Obaj są bardzo religijni i często się modlą.", "correct": false },
+            { "text": "Ich życie i system wartości są całkowicie zdominowane przez ideę posiadania i gromadzenia (majątku ziemskiego / gwiazd), co prowadzi do absurdalnych i nieludzkich zachowań.", "correct": true },
+            { "text": "Obaj gardzą swoimi synami/pracownikami.", "correct": false },
+            { "text": "Obaj są postaciami tragicznymi, które ponoszą klęskę.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Handlarz kupił pewną liczbę jabłek po 2 zł za kilogram. Sprzedał 1/3 jabłek z zyskiem 50%, a połowę reszty z zyskiem 20%. Z jaką stratą (w procentach) musi sprzedać pozostałe jabłka, aby wyjść na zero (bez zysku i straty)?",
-        answers: [
-            { text: "10%", correct: false },
-            { text: "15%", correct: false },
-            { text: "25%", correct: false },
-            { text: "30%", correct: true }
+        "type": "open",
+        "question": "Jaka jest rola postaci Robaka w sporze o zamek? Jak zmienia on jego charakter?",
+        "answer": ["Robak przekształca prywatny, sarmacki spór w element większej, narodowej sprawy. Jego celem jest pogodzenie zwaśnionych rodów, aby mogły zjednoczyć się w walce z Rosjanami. Zmienia charakter konfliktu z osobistej wendetty w kwestię polityczną i patriotyczną, nadając mu wyższy sens."]
+    },
+    {
+        "type": "closed",
+        "question": "Postać Telimeny w 'Panu Tadeuszu' może być postrzegana jako literacka spadkobierczyni:",
+        "answers": [
+            { "text": "Antycznej heroiny, jak Antygona.", "correct": false },
+            { "text": "Bohaterki 'Żony modnej' Ignacego Krasickiego.", "correct": true },
+            { "text": "Świętej i ascetki z literatury średniowiecznej.", "correct": false },
+            { "text": "Romantycznej wieszczki, jak Świtezianka.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Wartość wyrażenia √[3](5√2 + 7) - √[3](5√2 - 7) jest liczbą całkowitą. Podaj tę liczbę.",
-        answer: ["2"]
+        "type": "open",
+        "question": "W 'Quo vadis' Winicjusz na początku chce 'posiadać' Ligię. Wyjaśnij, jak zmienia się jego rozumienie miłości pod wpływem chrześcijaństwa.",
+        "answer": ["Jego rozumienie miłości ewoluuje od pogańskiego, zmysłowego i zaborczego pożądania (eros) do miłości chrześcijańskiej (agape). Uczy się, że prawdziwa miłość to nie posiadanie, lecz szacunek, troska, gotowość do poświęcenia i dbanie o dobro duchowe drugiej osoby. Zaczyna kochać 'duszę' Ligii, a nie tylko jej ciało."]
     },
     {
-        type: 'closed',
-        question: "Wysokość ostrosłupa prawidłowego czworokątnego jest równa krawędzi podstawy. Kąt nachylenia ściany bocznej do płaszczyzny podstawy wynosi α. Wtedy:",
-        answers: [
-            { text: "tg α = 1", correct: false },
-            { text: "tg α = 2", correct: true },
-            { text: "tg α = √2", correct: false },
-            { text: "tg α = 1/2", correct: false }
+        "type": "closed",
+        "question": "Wskaż, która z postaci literackich w najpełniejszy sposób realizuje archetyp 'everymana' – zwykłego człowieka rzuconego w wir wielkich wydarzeń, który odkrywa w sobie nieoczekiwane pokłady siły.",
+        "answers": [
+            { "text": "Jacek Soplica", "correct": false },
+            { "text": "Bilbo Baggins", "correct": true },
+            { "text": "Cześnik Raptusiewicz", "correct": false },
+            { "text": "Marcin Borowicz", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Dwie sieczne poprowadzone z punktu P przecinają okrąg w punktach A, B oraz C, D (w kolejności P-A-B i P-C-D). Wiadomo, że |PA|=4, |AB|=5, |PD|=9. Oblicz długość odcinka PC.",
-        answer: ["3"]
+        "type": "open",
+        "question": "W 'Zemście' Klara stawia Papkinowi warunki, które musi spełnić, by zdobyć jej rękę (milczenie, post, krokodyl). Jaki jest cel tych warunków?",
+        "answer": ["Celem jest ośmieszenie i zniechęcenie natrętnego zalotnika. Warunki są celowo absurdalne i niewykonalne. Klara, jako osoba inteligentna i racjonalna, używa tej strategii, by w sposób dowcipny i elegancki pozbyć się Papkina, demaskując jednocześnie jego bufonadę i tchórzostwo."]
     },
     {
-        type: 'closed',
-        question: "Spośród wszystkich wierzchołków sześcianu losujemy dwa różne. Jakie jest prawdopodobieństwo, że połączone odcinkiem utworzą one przekątną sześcianu (a nie krawędź czy przekątną ściany)?",
-        answers: [
-            { text: "1/7", correct: true },
-            { text: "4/7", correct: false },
-            { text: "1/8", correct: false },
-            { text: "2/7", correct: false }
+        "type": "closed",
+        "question": "W którym z poniższych zdań wyraz 'lepiej' jest użyty niepoprawnie?",
+        "answers": [
+            { "text": "Lepiej późno niż wcale.", "correct": false },
+            { "text": "On zna się na tym lepiej ode mnie.", "correct": false },
+            { "text": "W tej sukience wyglądasz bardziej lepiej.", "correct": true },
+            { "text": "Czuję się już o wiele lepiej.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Ile jest różnych (nieprzystających) trójkątów o obwodzie 15, których boki mają długości całkowite?",
-        answer: ["7"]
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego 'Balladyna' jest dramatem o mechanizmie zła.",
+        "answer": ["Jest dramatem o mechanizmie zła, ponieważ pokazuje, jak jedna zbrodnia nieuchronnie prowadzi do następnej. Aby ukryć pierwsze zabójstwo (Aliny), Balladyna musi eliminować kolejnych świadków i rywali (Gralon, Kostryn, Pustelnik). To ilustracja spirali zła, w której każda kolejna zbrodnia jest logiczną konsekwencją poprzedniej."]
     },
     {
-        type: 'closed',
-        question: "Która z poniższych liczb jest największa?",
-        answers: [
-            { text: "2⁵⁵", correct: false },
-            { text: "3⁴⁴", correct: true },
-            { text: "4³³", correct: false },
-            { text: "5²²", correct: false }
+        "type": "closed",
+        "question": "Wskaż, która z postaci literackich jest bohaterem dynamicznym, czyli przechodzi głęboką, udokumentowaną psychologicznie przemianę.",
+        "answers": [
+            { "text": "Rejent Milczek", "correct": false },
+            { "text": "Telimena", "correct": false },
+            { "text": "Marek Winicjusz", "correct": true },
+            { "text": "Gerwazy Rębajło", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W trójkąt równoboczny o boku 12 wpisano 3 identyczne, wzajemnie styczne koła, z których każde jest styczne do dwóch boków trójkąta. Jaki jest promień jednego z tych kół?",
-        answers: [
-            { text: "√3", correct: false },
-            { text: "2√3 - 3", correct: true },
-            { text: "2", correct: false },
-            { text: "3√3 - 4", correct: false }
+        "type": "open",
+        "question": "Jaki jest sens i funkcja sceny, w której Hrabia szkicuje w swoim albumie? Co ona mówi o jego podejściu do świata?",
+        "answer": ["Scena ta charakteryzuje Hrabiego jako typowego romantyka. Jego podejście do świata jest estetyczne i mediatyzowane przez sztukę. Nie interesuje go realna istota rzeczy, lecz ich malowniczość i potencjał do bycia 'tematem' artystycznym. Zamiast uczestniczyć w życiu, woli je obserwować i przekształcać w obraz, co pokazuje jego pewne oderwanie od rzeczywistości."]
+    },
+    {
+        "type": "closed",
+        "question": "W 'Opowieści wigilijnej', głównym grzechem Scrooge'a, z którego wynikają wszystkie inne, jest:",
+        "answers": [
+            { "text": "Brak wiary w Boga i życie pozagrobowe.", "correct": false },
+            { "text": "Chciwość i egoizm, które doprowadziły go do zerwania więzi międzyludzkich i postrzegania innych wyłącznie przez pryzmat zysku.", "correct": true },
+            { "text": "Złe traktowanie swojego pracownika, Boba Cratchita.", "correct": false },
+            { "text": "Odrzucenie miłości swojej narzeczonej w młodości.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Układ równań x+y=5 i x³+y³=65 ma dwa rozwiązania (pary x, y). Podaj wartość iloczynu xy, który jest taki sam dla obu rozwiązań.",
-        answer: ["6"]
+        "type": "open",
+        "question": "Przekształć zdanie w mowie zależnej na mowę niezależną, stosując odpowiednie znaki interpunkcyjne: 'Zapytałem go, która jest godzina.'",
+        "answer": ["Zapytałem go: 'Która jest godzina?'."]
     },
     {
-        type: 'closed',
-        question: "Wartość wyrażenia 1/(√2+1) + 1/(√3+√2) + 1/(√4+√3) + ... + 1/(√100+√99) jest równa:",
-        answers: [
-            { text: "9", correct: true },
-            { text: "10", correct: false },
-            { text: "99", correct: false },
-            { text: "√99", correct: false }
+        "type": "closed",
+        "question": "Które z poniższych dzieł najpełniej realizuje model ballady romantycznej?",
+        "answers": [
+            { "text": "'Reduta Ordona'", "correct": false },
+            { "text": "'Świtezianka'", "correct": true },
+            { "text": "'Opowieść wigilijna'", "correct": false },
+            { "text": "'Tren VIII'", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Liczba (10¹⁰ + 10¹²)/(10¹¹ + 10¹³) jest równa:",
-        answers: [
-            { text: "0.1", correct: true },
-            { text: "1", correct: false },
-            { text: "10", correct: false },
-            { text: "0.01", correct: false }
+        "type": "open",
+        "question": "Zinterpretuj symbolikę 'pustej mogiły' w 'Reducie Ordona'.",
+        "answer": ["'Pusta mogiła' symbolizuje nieśmiertelną sławę i ideę, która przetrwa fizyczną śmierć bohatera. Ordon, wysadzając się w powietrze, nie pozostawia po sobie ciała do pochówku, ale pozostawia po sobie legendę i inspirację do dalszej walki. Jego grób to pamięć narodu, a nie kawałek ziemi."]
+    },
+    {
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym orzeczenie wyrażone jest w trybie przypuszczającym.",
+        "answers": [
+            { "text": "Z pewnością pójdę jutro do kina.", "correct": false },
+            { "text": "Poszedłbym jutro do kina, gdybym miał czas.", "correct": true },
+            { "text": "Pójdź jutro do kina!", "correct": false },
+            { "text": "On codziennie chodzi do kina.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W akwarium o wymiarach podstawy 30cm x 50cm wlano 6 litrów wody. Następnie wrzucono kamień, co spowodowało podniesienie się poziomu wody o 1 cm. Jaka jest objętość kamienia w cm³?",
-        answer: ["1500"]
+        "type": "open",
+        "question": "W 'Syzyfowych pracach' uczniowie spotykają się 'na górce u Gontali'. Jaka jest symboliczna funkcja tego miejsca?",
+        "answer": ["'Górka u Gontali' jest symbolem 'małej, wolnej Polski' – przestrzeni wyłączonej spod kontroli rusyfikatorów. To miejsce konspiracji, samokształcenia i swobodnej wymiany myśli. Jest to symboliczna oaza polskości, gdzie bohaterowie mogą być sobą i pielęgnować swoją tożsamość, w przeciwieństwie do opresyjnej przestrzeni szkoły."]
     },
-
     {
-        type: 'closed',
-        question: "W trójkącie prostokątnym ABC o kącie prostym przy wierzchołku C, punkt D jest środkiem boku AB. Jeśli |AC|=8 i |CD|=5, to pole trójkąta ABC wynosi:",
-        answers: [
-            { text: "40", correct: false },
-            { text: "30", correct: false },
-            { text: "24", correct: true },
-            { text: "20", correct: false }
+        "type": "closed",
+        "question": "Wskaż, która z postaci literackich jest przykładem bohatera-everymana, czyli zwykłego człowieka skonfrontowanego z niezwykłymi okolicznościami.",
+        "answers": [
+            { "text": "Achilles", "correct": false },
+            { "text": "Skawiński", "correct": true },
+            { "text": "Herkules", "correct": false },
+            { "text": "Cześnik Raptusiewicz", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Basen jest napełniany przez kran A w 4 godziny, a przez kran B w 6 godzin. Kran C opróżnia pełny basen w 3 godziny. Jaki czas (w godzinach) zajmie napełnienie basenu, jeśli wszystkie trzy krany zostaną otwarte jednocześnie?",
-        answer: ["12"]
+        "type": "open",
+        "question": "Wyjaśnij, na czym polega komizm postaci Podstoliny w 'Zemście'.",
+        "answer": ["Jej komizm polega na kontraście między jej deklarowaną żałobą a desperackim poszukiwaniem kolejnego męża ('trzy razy była zamężna'). Jest postacią chciwą i pragmatyczną, która instrumentalnie traktuje mężczyzn, jednocześnie próbując zachować pozory damy w trudnej sytuacji. Jej szybkie zmiany frontu (od Cześnika do Wacława) są źródłem komicznych sytuacji."]
     },
     {
-        type: 'closed',
-        question: "Liczba log₄(log₂16) jest równa:",
-        answers: [
-            { text: "2", correct: false },
-            { text: "1", correct: true },
-            { text: "0.5", correct: false },
-            { text: "0.25", correct: false }
+        "type": "closed",
+        "question": "Co jest wspólnym elementem losu Nemeczka z 'Chłopców z Placu Broni' i bohatera wiersza 'Śmierć pułkownika'?",
+        "answers": [
+            { "text": "Śmierć w wyniku choroby, która jest konsekwencją poświęcenia dla sprawy.", "correct": true },
+            { "text": "Dowodzenie oddziałem w ważnej bitwie.", "correct": false },
+            { "text": "Zdrada popełniona wobec swoich towarzyszy.", "correct": false },
+            { "text": "Pochodzenie z biednej, chłopskiej rodziny.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Znajdź punkt na osi OY, który jest jednakowo odległy od punktów A=(-3, 1) i B=(5, 5).",
-        answers: [
-            { text: "(0, 4)", correct: false },
-            { text: "(0, 5)", correct: true },
-            { text: "(0, 6)", correct: false },
-            { text: "(0, 4.5)", correct: false }
+        "type": "open",
+        "question": "Wskaż błąd frazeologiczny w zdaniu: 'W każdym bądź razie musimy podjąć decyzję' i zapisz je poprawnie.",
+        "answer": ["Błąd: jest to kontaminacja (skrzyżowanie) dwóch zwrotów: 'w każdym razie' i 'bądź co bądź'. Poprawnie: 'W każdym razie musimy podjąć decyzję' LUB 'Bądź co bądź, musimy podjąć decyzję'."]
+    },
+    {
+        "type": "closed",
+        "question": "Które z poniższych dzieł w najpełniejszy sposób ukazuje proces formowania się świadomości narodowej młodego człowieka?",
+        "answers": [
+            { "text": "'Pan Tadeusz'", "correct": false },
+            { "text": "'Syzyfowe prace'", "correct": true },
+            { "text": "'Kamienie na szaniec'", "correct": false },
+            { "text": "'Chłopcy z Placu Broni'", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Dwa pociągi jadą po równoległych torach w tę samą stronę. Pociąg A o długości 150m jedzie z prędkością 90 km/h, a pociąg B o długości 100m z prędkością 72 km/h. Ile sekund zajmie pociągowi A całkowite wyprzedzenie pociągu B?",
-        answer: ["50"]
-    },
-    {
-        type: 'closed',
-        question: "Na bokach kwadratu o boku 4 zbudowano na zewnątrz cztery trójkąty równoboczne. Wierzchołki tych trójkątów, niebędące wierzchołkami kwadratu, tworzą nowy kwadrat. Pole tego nowego kwadratu wynosi:",
-        answers: [
-            { text: "16 + 8√3", correct: false },
-            { text: "32 + 16√3", correct: true },
-            { text: "32", correct: false },
-            { text: "16(1+√3)", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Wszystkie krawędzie graniastosłupa prostego, którego podstawą jest sześciokąt foremny, mają jednakową długość. Suma długości tych krawędzi wynosi 108. Oblicz objętość tego graniastosłupa (wynik zapisz w postaci a√b).",
-        answer: ["324√3"]
+        "type": "open",
+        "question": "W 'Trenie XIX, czyli Śnie', matka pociesza Kochanowskiego, mówiąc, że Urszulka uniknęła trudów ziemskiego życia. Jaka filozofia stoi za tym pocieszeniem?",
+        "answer": ["Jest to pocieszenie oparte na filozofii chrześcijańskiej i stoickiej. Zgodnie z nią, życie ziemskie jest pełne cierpienia, trosk i niepewności. Śmierć w niewinności jest więc formą boskiej łaski, która chroni dziecko przed bólem istnienia i zapewnia mu wieczne szczęście w niebie. To próba znalezienia sensu i ukojenia w tragedii."]
     }
-];
+]
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

@@ -1,214 +1,195 @@
 const questions = [
     {
-        type: 'closed',
-        question: "Suma dwóch liczb wynosi 15, a różnica ich kwadratów jest równa 45. Mniejsza z tych liczb to:",
-        answers: [
-            { text: "3", correct: false },
-            { text: "9", correct: false },
-            { text: "6", correct: true },
-            { text: "5", correct: false }
+        "type": "closed",
+        "question": "Czym fundamentalnie różni się sposób, w jaki Balladyna i Telimena wykorzystują swój wpływ na mężczyzn?",
+        "answers": [
+            { "text": "Balladyna kieruje się miłością, a Telimena chęcią zysku.", "correct": false },
+            { "text": "Balladyna dąży do zdobycia twardej, politycznej władzy poprzez zbrodnię, a Telimena używa flirtu i manipulacji społecznej do zdobycia pozycji i zabezpieczenia materialnego.", "correct": true },
+            { "text": "Obie dążą do tego samego celu, ale Telimena jest bardziej skuteczna.", "correct": false },
+            { "text": "Balladyna jest postacią tragiczną, a Telimena wyłącznie komiczną.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Krótsza przekątna sześciokąta foremnego ma długość 12 cm. Oblicz pole tego sześciokąta (wynik zapisz w postaci a√b).",
-        answer: ["72√3"]
+        "type": "open",
+        "question": "W 'Małym Księciu' Lis tłumaczy, że 'oswajanie' wymaga rytuałów, np. przychodzenia o tej samej porze. Co ta potrzeba rytuału symbolizuje w kontekście budowania relacji międzyludzkich?",
+        "answer": ["Symbolizuje to, że prawdziwe więzi i zaufanie buduje się na fundamencie przewidywalności, bezpieczeństwa i konsekwentnego wysiłku. Rytuał tworzy bezpieczną przestrzeń, w której druga strona wie, czego się spodziewać, co zmniejsza lęk i pozwala się otworzyć."]
     },
     {
-        type: 'closed',
-        question: "Która z poniższych liczb jest największa?",
-        answers: [
-            { text: "9²⁰", correct: false },
-            { text: "27¹⁴", correct: true },
-            { text: "81¹⁰", correct: false },
-            { text: "3³⁹", correct: false }
+        "type": "closed",
+        "question": "W którym z poniższych zdań wyraz 'rano' pełni funkcję inną niż w pozostałych?",
+        "answers": [
+            { "text": "Spotkajmy się jutro rano.", "correct": false },
+            { "text": "Zimny, mglisty poranek nie nastrajał optymistycznie.", "correct": false },
+            { "text": "Najpiękniejszą porą dnia jest dla mnie rano.", "correct": true },
+            { "text": "Zawsze wstaję bardzo wcześnie rano.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Łódka płynie z prądem rzeki z prędkością 12 km/h, a pod prąd z prędkością 6 km/h. Jaką odległość (w obie strony) pokonała łódka, jeśli cała podróż trwała 9 godzin?",
-        answers: [
-            { text: "36 km", correct: false },
-            { text: "54 km", correct: false },
-            { text: "72 km", correct: true },
-            { text: "81 km", correct: false }
+        "type": "closed",
+        "question": "Na czym polega kluczowa różnica w postawie moralnej Feriego Acza z 'Chłopców z Placu Broni' i Balladyny?",
+        "answers": [
+            { "text": "Oboje są zdrajcami, ale Feri Acz ponosi karę, a Balladyna nie.", "correct": false },
+            { "text": "Feri Acz, mimo chwilowej zdrady, kieruje się swoistym kodeksem honorowym i szacunkiem dla godnego przeciwnika, podczas gdy Balladyna nie kieruje się żadnymi zasadami moralnymi poza własną, nieograniczoną ambicją.", "correct": true },
+            { "text": "Feri Acz działa w grupie, a Balladyna samotnie.", "correct": false },
+            { "text": "Feri Acz odczuwa skruchę, a Balladyna nie.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Jaka jest suma miar kątów wewnętrznych w siedmiokącie wypukłym? Podaj wynik w stopniach.",
-        answer: ["900"]
+        "type": "open",
+        "question": "Jeśli tytuł 'Syzyfowe prace' odnosi się do daremnych wysiłków, to wskaż w powieści jedno wydarzenie, które jest zaprzeczeniem 'syzyfowej pracy' i wyjaśnij, dlaczego.",
+        "answer": ["Zaprzeczeniem jest recytacja 'Reduty Ordona' przez Bernarda Zygiera. Jest to jeden, konkretny akt, który przełamuje cykl rusyfikacji i apatii. W przeciwieństwie do 'kamienia Syzyfa', który zawsze spada, ten 'kamień' (przebudzenie narodowe Borowicza) pozostaje na szczycie, trwale zmieniając bohatera i dynamikę w klasie."]
     },
     {
-        type: 'closed',
-        question: "W prostokącie jeden bok skrócono o 10%, a drugi wydłużono o 10%. Jak zmieniło się pole tego prostokąta?",
-        answers: [
-            { text: "Nie zmieniło się", correct: false },
-            { text: "Wzrosło o 1%", correct: false },
-            { text: "Zmalało o 1%", correct: true },
-            { text: "Zmalało o 10%", correct: false }
+        "type": "closed",
+        "question": "Opisany w 'Panu Tadeuszu' zajazd na Soplicowo jest w istocie symbolicznym przedstawieniem:",
+        "answers": [
+            { "text": "Sprawiedliwej próby odzyskania rodowego majątku.", "correct": false },
+            { "text": "Ostatniego aktu sarmackiej, anarchicznej samowoli szlacheckiej, która ustępuje miejsca nowemu, zorganizowanemu patriotyzmowi w walce o sprawę narodową.", "correct": true },
+            { "text": "Zwykłej, sąsiedzkiej kłótni o pieniądze i wpływy.", "correct": false },
+            { "text": "Skutecznej metody walki z rosyjskim zaborcą.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Długość krawędzi sześcianu zwiększono o 10%. O ile procent wzrosła objętość tego sześcianu?",
-        answers: [
-            { text: "o 10%", correct: false },
-            { text: "o 30%", correct: false },
-            { text: "o 21%", correct: false },
-            { text: "o 33,1%", correct: true }
+        "type": "open",
+        "question": "Mit o Demeter i Korze, poza wyjaśnianiem cyklu pór roku, przekazuje głębszą prawdę o naturze świata. Jaką?",
+        "answer": ["Mit ten przekazuje prawdę o nieuchronnym splocie życia i śmierci, straty i odrodzenia. Pokazuje, że światem rządzi cykliczność i kompromis między przeciwstawnymi siłami (świat podziemny i świat na powierzchni). Uczy też o potędze miłości (matczynej) jako siły zdolnej wpłynąć na porządek boski."]
+    },
+    {
+        "type": "closed",
+        "question": "Scena, w której Dyndalski pisze list 'krokodyla daj tu, kole', dyktowany przez Cześnika, jest przykładem komizmu językowego, który polega na:",
+        "answers": [
+            { "text": "Użyciu śmiesznych, przestarzałych wyrazów.", "correct": false },
+            { "text": "Dosłownym potraktowaniu mowy potocznej i zapisaniu jej jako oficjalnego tekstu, co tworzy absurdalny efekt.", "correct": true },
+            { "text": "Celowym robieniu błędów ortograficznych, by ośmieszyć Cześnika.", "correct": false },
+            { "text": "Parodiowaniu stylu pisania listów miłosnych z epoki.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Liczba √(7 - 4√3) jest równa a - √b, gdzie a i b są liczbami naturalnymi. Podaj wartość a+b.",
-        // √(4 - 4√3 + 3) = √((2-√3)²) = 2-√3. a=2, b=3. a+b=5.
-        answer: ["5"]
+        "type": "open",
+        "question": "Wskaż fundamentalne podobieństwo między procesem 'odradzania się' Tajemniczego Ogrodu a przemianą Ebenezera Scrooge'a.",
+        "answer": ["Podobieństwo polega na tym, że w obu przypadkach 'odrodzenie' jest procesem wymagającym troski, pracy i otwarcia się na świat. Zaniedbany, zamknięty ogród jest metaforą zamkniętej i osamotnionej duszy Mary. Jego stopniowe ożywanie, dzięki pracy i przyjaźni, odzwierciedla duchową przemianę Scrooge'a, który również 'rozkwita' pod wpływem empatii i relacji z innymi."]
     },
     {
-        type: 'closed',
-        question: "W trójkącie prostokątnym ABC środkowa poprowadzona z wierzchołka kąta prostego C ma długość 8 cm. Pole tego trójkąta wynosi 32 cm². Jaki jest jego obwód?",
-        answers: [
-            { text: "16 + 8√2 cm", correct: true },
-            { text: "32 cm", correct: false },
-            { text: "24 cm", correct: false },
-            { text: "16 + 4√2 cm", correct: false }
+        "type": "closed",
+        "question": "Analizując postać księdza Robaka i tytułowego bohatera 'Latarnika', można stwierdzić, że łączy ich:",
+        "answers": [
+            { "text": "Dążenie do spokojnego życia na odludziu.", "correct": false },
+            { "text": "Status emigranta-tułacza, który po latach odnajduje sens życia w służbie (Bogu i Ojczyźnie / społeczeństwu) lub powrocie do symbolicznej ojczyzny (przez książkę).", "correct": true },
+            { "text": "Talent do opowiadania historii ze swojego życia.", "correct": false },
+            { "text": "Ucieczka przed odpowiedzialnością za popełnione błędy.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Ze zbioru liczb dwucyfrowych losujemy jedną. Jakie jest prawdopodobieństwo, że suma jej cyfr jest równa 5?",
-        answers: [
-            { text: "1/18", correct: true },
-            { text: "5/99", correct: false },
-            { text: "4/89", correct: false },
-            { text: "1/15", correct: false }
+        "type": "open",
+        "question": "Utwórz poprawne zdanie, w którym rzeczownik 'dłoń' wystąpi w formie Narzędnika liczby mnogiej.",
+        "answer": ["Chłopiec trzymał nasiona w obu dłoniach."]
+    },
+    {
+        "type": "closed",
+        "question": "Jaka jest rola postaci Sędziego w 'Panu Tadeuszu'?",
+        "answers": [
+            { "text": "Jest głównym antagonistą, prowadzącym spór z Hrabią.", "correct": false },
+            { "text": "Jest strażnikiem polskiej tradycji, obyczaju i porządku moralnego (arkadii), a jego dwór jest ostoją polskości.", "correct": true },
+            { "text": "Jest postacią komiczną, której zadaniem jest rozbawianie czytelnika.", "correct": false },
+            { "text": "Jest rewolucjonistą przygotowującym powstanie na Litwie.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Kasia jest o 4 lata starsza od Basi. Za 6 lat będą miały razem 44 lata. Ile lat ma obecnie Kasia?",
-        answer: ["18"]
+        "type": "open",
+        "question": "W 'Trenie VII' Kochanowski określa ubiory Urszulki jako 'żałosne ojca dziwy'. Wyjaśnij, co oznacza tu archaiczne słowo 'dziwy' i jaki efekt emocjonalny wywołuje jego użycie.",
+        "answer": ["'Dziwy' oznaczają tu 'widowisko', 'spektakl'. Użycie tego słowa jest pełne gorzkiej ironii. Zwykłe ubranka dziecięce stają się dla ojca tragicznym spektaklem pustki i straty. Efektem jest spotęgowanie bólu i ukazanie, jak codzienne przedmioty zmieniają swoje znaczenie w obliczu śmierci."]
     },
     {
-        type: 'closed',
-        question: "W walec o promieniu podstawy 6 cm i wysokości 10 cm wpisano stożek o tej samej podstawie i wysokości. Ile wynosi stosunek objętości walca do objętości części walca pozostałej po wycięciu stożka?",
-        answers: [
-            { text: "3:1", correct: false },
-            { text: "3:2", correct: true },
-            { text: "2:1", correct: false },
-            { text: "1:2", correct: false }
+        "type": "closed",
+        "question": "Które z podanych zdań jest zdaniem złożonym z podrzędnym okolicznikowym przyzwolenia?",
+        "answers": [
+            { "text": "Poszedł na spacer, ponieważ pogoda była piękna.", "correct": false },
+            { "text": "Poszedł na spacer, chociaż zaczynało kropić.", "correct": true },
+            { "text": "Poszedł na spacer, aby zaczerpnąć świeżego powietrza.", "correct": false },
+            { "text": "Jeśli pogoda się poprawi, pójdę na spacer.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Liczba 0,1(23) jest równa ułamkowi:",
-        answers: [
-            { text: "123/1000", correct: false },
-            { text: "122/990", correct: true },
-            { text: "123/999", correct: false },
-            { text: "122/900", correct: false }
+        "type": "open",
+        "question": "Porównaj funkcję pieniędzy w życiu Ebenezera Scrooge'a (przed przemianą) i w życiu bohaterów przypowieści o talentach. Wskaż kluczową różnicę.",
+        "answer": ["Dla Scrooge'a pieniądze są celem samym w sobie, gromadzonym i zamkniętym ('zakopanym'), nie przynoszącym pożytku. W przypowieści talenty (pieniądze) są środkiem, który ma być 'puszczony w obieg', pomnażany i wykorzystywany. Różnica polega na postrzeganiu kapitału: jako martwego skarbu (Scrooge) lub jako narzędzia pracy i rozwoju (przypowieść)."]
+    },
+    {
+        "type": "closed",
+        "question": "W której z poniższych par postaci kontrast charakterów jest najsłabiej zarysowany?",
+        "answers": [
+            { "text": "Cześnik Raptusiewicz i Rejent Milczek", "correct": false },
+            { "text": "Alina i Balladyna", "correct": false },
+            { "text": "Scrooge (przed i po przemianie)", "correct": false },
+            { "text": "Alek i Zośka ('Kamienie na szaniec')", "correct": true }
         ]
     },
     {
-        type: 'open',
-        question: "W pudełku jest 10 kul, w tym 4 białe. Losujemy kolejno bez zwracania dwie kule. Jakie jest prawdopodobieństwo, że obie wylosowane kule będą białe? Odpowiedź podaj w postaci ułamka nieskracalnego a/b.",
-        answer: ["2/15"]
+        "type": "open",
+        "question": "Zinterpretuj milczenie Widma pojawiającego się na końcu 'Dziadów cz. II'. Dlaczego nie odpowiada ono na wezwania Guślarza?",
+        "answer": ["Milczenie Widma symbolizuje, że jego cierpienie jest natury osobistej, miłosnej i wykracza poza sferę obrzędu wspólnotowego. Nie jest to duch, któremu można pomóc ofiarą czy modlitwą. Jego problem należy do innego porządku – porządku romantycznej, indywidualnej tragedii, co jest zapowiedzią IV części 'Dziadów'."]
     },
     {
-        type: 'closed',
-        question: "Punkty A=(-2, -3), B=(4, 1), C=(-1, 3) są wierzchołkami trójkąta. Prosta zawierająca wysokość opuszczoną z wierzchołka C na bok AB ma równanie:",
-        answers: [
-            { text: "y = -2/3 x + 7/3", correct: false },
-            { text: "y = 2/3 x + 11/3", correct: false },
-            { text: "y = -3/2 x + 3/2", correct: true },
-            { text: "y = 3/2 x + 9/2", correct: false }
+        "type": "closed",
+        "question": "Przekształcenie zdania 'Chłopiec, który grał na fujarce, uspokoił zwierzęta' na 'Chłopiec grający na fujarce uspokoił zwierzęta' polega na zastąpieniu zdania podrzędnego:",
+        "answers": [
+            { "text": "Równoważnikiem zdania.", "correct": false },
+            { "text": "Imiesłowowym przymiotnikowym czynnym.", "correct": true },
+            { "text": "Imiesłowowym przysłówkowym współczesnym.", "correct": false },
+            { "text": "Porównaniem homeryckim.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Jeżeli 2ᵃ = 5 i 5ᵇ = 8, to ile wynosi iloczyn a*b?",
-        answers: [
-            { text: "40", correct: false },
-            { text: "log₂8", correct: false },
-            { text: "3", correct: true },
-            { text: "Nie da się obliczyć", correct: false }
+        "type": "open",
+        "question": "W 'Hobbicie' Bilbo Baggins wygrywa z Gollumem dzięki zagadce 'Co mam w kieszeni?'. Jaki głębszy, symboliczny sens ma ta 'nie-zagadka'?",
+        "answer": ["Symbolizuje ona wkroczenie do świata reguł i logiki (zagadek) elementu przypadku, przypadku i prozy życia. Bilbo wygrywa nie dzięki sprytowi w ramach gry, ale przez złamanie jej zasad i odwołanie się do konkretnej, banalnej rzeczywistości. To moment, w którym prosty, przyziemny świat hobbitów triumfuje nad mrocznym, mitycznym światem Golluma."]
+    },
+    {
+        "type": "closed",
+        "question": "Wskaż grupę wyrazów, w której wszystkie pochodzą od tego samego rdzenia.",
+        "answers": [
+            { "text": "ręka, poręczyć, zarękawki, ranek", "correct": false },
+            { "text": "mówić, wymowny, rozmowa, zmowa", "correct": true },
+            { "text": "pisać, pisarz, przepis, पीस (czyt. pis - pokój w hindi)", "correct": false },
+            { "text": "czytać, czytelnik, poczta, odczyt", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Ile jest liczb czterocyfrowych o niepowtarzających się cyfrach, które są podzielne przez 5?",
-        answer: ["952"]
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego narrator w 'Opowieści wigilijnej' tak mocno podkreśla, że 'Marley był martwy'. Jaka jest funkcja tego uporczywego powtórzenia?",
+        "answer": ["Funkcją jest uwiarygodnienie świata fantastycznego utworu. Poprzez definitywne stwierdzenie śmierci Marleya, narrator wyklucza racjonalne wytłumaczenia (np. sen, halucynacja Scrooge'a). To buduje fundament, na którym pojawienie się duchów staje się realnym, nadprzyrodzonym wydarzeniem, a nie wytworem wyobraźni, co nadaje przesłaniu utworu większą wagę."]
     },
     {
-        type: 'closed',
-        question: "W trapezie prostokątnym o wysokości 12, krótsza podstawa i ramię nieprostopadłe do podstaw mają tę samą długość. Dłuższa podstawa ma 18. Pole tego trapezu wynosi:",
-        answers: [
-            { text: "156", correct: true },
-            { text: "168", correct: false },
-            { text: "180", correct: false },
-            { text: "216", correct: false }
+        "type": "closed",
+        "question": "Patriotyzm Alka, Rudego i Zośki w 'Kamieniach na szaniec' najlepiej można scharakteryzować jako:",
+        "answers": [
+            { "text": "Patriotyzm romantyczny, oparty na martyrologii i kulcie cierpienia.", "correct": false },
+            { "text": "Patriotyzm czynu, łączący ideały służby i braterstwa z praktycznym działaniem, samokształceniem i ciągłą pracą nad sobą.", "correct": true },
+            { "text": "Patriotyzm sentymentalny, wyrażający się w tęsknocie za utraconą ojczyzną.", "correct": false },
+            { "text": "Patriotyzm polityczny, skupiony na tworzeniu struktur państwa podziemnego.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Reszta z dzielenia liczby (2023² - 2021²) przez 10 jest równa:",
-        answers: [
-            { text: "2", correct: false },
-            { text: "4", correct: false },
-            { text: "6", correct: false },
-            { text: "8", correct: true }
+        "type": "open",
+        "question": "Zacytuj fragment z 'Pana Tadeusza', który jest przykładem apostrofy, i wyjaśnij, do kogo zwraca się podmiot liryczny.",
+        "answer": ["Fragment: 'Litwo! Ojczyzno moja! ty jesteś jak zdrowie.'. Podmiot liryczny zwraca się do Litwy, swojej 'prywatnej' ojczyzny, uosabiając ją i nadając jej cechy istoty, z którą można prowadzić dialog."]
+    },
+    {
+        "type": "closed",
+        "question": "Które z poniższych zdań zawiera błąd frazeologiczny?",
+        "answers": [
+            { "text": "Ten problem to jego prawdziwa pięta achillesowa.", "correct": false },
+            { "text": "Musimy zakasać rękawy i wziąć się do pracy.", "correct": false },
+            { "text": "Wykonał tę pracę po najmniejszej linii oporu.", "correct": true },
+            { "text": "Nie rób z igły wideł, to nie jest aż tak poważne.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkącie prostokątnym stosunek długości przyprostokątnych wynosi 3:4. Obwód tego trójkąta jest równy 60. Oblicz długość przeciwprostokątnej.",
-        answer: ["25"]
-    },
-    {
-        type: 'closed',
-        question: "W okrąg o promieniu R=10 wpisano kwadrat. W ten kwadrat wpisano okrąg o promieniu r. Ile wynosi stosunek R/r?",
-        answers: [
-            { text: "2", correct: false },
-            { text: "√2", correct: true },
-            { text: "√3", correct: false },
-            { text: "4/π", correct: false }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "Do 2 kg wody wlano 0,5 litra soku o gęstości 1,2 kg/l. Jakie jest stężenie procentowe (masowe) soku w otrzymanym napoju?",
-        answers: [
-            { text: "20%", correct: false },
-            { text: "23%", correct: true },
-            { text: "25%", correct: false },
-            { text: "30%", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Wartość wyrażenia (1/2 + 1/3) / (1/4 - 1/5) jest równa... (podaj wynik w postaci liczby lub ułamka dziesiętnego)",
-        // (5/6) / (1/20) = 5/6 * 20 = 100/6 = 50/3 = 16.666...
-        question: "Wartość wyrażenia (1/2 + 1/3) / (1/3 - 1/4) jest równa...?",
-        // (5/6) / (1/12) = 5/6 * 12 = 10
-        answer: ["10"]
-    },
-    {
-        type: 'closed',
-        question: "Ostatnią cyfrą liczby 3¹⁰² + 2⁵¹ jest:",
-        answers: [
-            { text: "1", correct: false },
-            { text: "3", correct: false },
-            { text: "5", correct: false },
-            { text: "7", correct: true }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Ojciec ma obecnie 3 razy tyle lat, ile ma jego syn. Za 12 lat ojciec będzie miał 2 razy tyle lat, ile będzie miał wtedy syn. Ile lat ma obecnie ojciec?",
-        answer: ["36"]
+        "type": "open",
+        "question": "W 'Artyscie' Sławomira Mrożka, Lis proponuje Kogutowi, że 'da mu dobrą lekcję'. Czego, w symbolicznym sensie, Lis uczy Koguta (i czytelnika)?",
+        "answer": ["Lis uczy go brutalnej prawdy o naturze i sztuce. Pokazuje, że prawdziwa 'rola' (bycie lisem, bycie kogutem) wynika z autentycznej tożsamości, a nie z ambicji i udawania. Uczy, że w konfrontacji z rzeczywistością (głodny lis) sztuczne kreacje (kogut-lew) przegrywają. To lekcja o różnicy między byciem a udawaniem."]
     }
-];;
+]
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

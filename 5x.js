@@ -1,205 +1,195 @@
 const questions = [
     {
-        type: 'closed',
-        question: "Suma dwóch liczb naturalnych wynosi 8, a suma ich odwrotności to 8/15. Ile wynosi iloczyn tych liczb?",
-        answers: [
-            { text: "8", correct: false },
-            { text: "15", correct: true },
-            { text: "16", correct: false },
-            { text: "64", correct: false }
+        "type": "closed",
+        "question": "W 'Zemście', język Cześnika jest pełen krótkich, rozkazujących zwrotów i dosadnych określeń ('mocium panie', 'hej, Gerwazy! daj gwintówkę!'). Co ten styl mówienia komunikuje o jego charakterze?",
+        "answers": [
+            { "text": "Jego głęboką refleksyjność i skłonność do filozofowania.", "correct": false },
+            { "text": "Jego impulsywność, porywczość i nawyk do wydawania poleceń; jest to język człowieka czynu, a nie namysłu.", "correct": true },
+            { "text": "Jego niskie pochodzenie społeczne i brak wykształcenia.", "correct": false },
+            { "text": "Jego próbę naśladowania stylu Rejenta w sposób prześmiewczy.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Jaka jest miara kąta wewnętrznego w ośmiokącie foremnym? Podaj wynik w stopniach.",
-        answer: ["135"]
+        "type": "open",
+        "question": "W micie o Syzyfie, absurd jego kary polega na powtarzalności i bezcelowości wysiłku. Wskaż postać z 'Małego Księcia', której codzienna praca ma cechy syzyfowe, i wyjaśnij, na czym polega podobieństwo.",
+        "answer": ["Postacią tą jest Latarnik. Podobieństwo polega na absurdalnej, mechanicznej powtarzalności jego pracy (zapalanie i gaszenie latarni co minutę) podyktowanej bezmyślnym rozkazem. Jego wysiłek, podobnie jak praca Syzyfa, jest bezcelowy w kontekście zmieniających się warunków (skrócenie doby na planecie)."]
     },
     {
-        type: 'closed',
-        question: "Która z poniższych liczb jest największa?",
-        answers: [
-            { text: "(1/2)⁻²⁰", correct: false },
-            { text: "(1/3)⁻¹⁵", correct: true },
-            { text: "(1/4)⁻¹⁰", correct: false },
-            { text: "Wszystkie są równe", correct: false }
+        "type": "closed",
+        "question": "W którym z poniższych wyrazów 'ż' jest niewymienne?",
+        "answers": [
+            { "text": "Książka", "correct": false },
+            { "text": "Mężczyzna", "correct": false },
+            { "text": "Ważny", "correct": false },
+            { "text": "Młodzież", "correct": true }
         ]
     },
     {
-        type: 'open',
-        question: "Ile jest liczb dwucyfrowych, które przy dzieleniu przez 7 dają resztę 3?",
-        answer: ["13"]
-    },
-    {
-        type: 'closed',
-        question: "Bryła powstała przez nałożenie półkuli o promieniu 3 cm na walec o tym samym promieniu podstawy i wysokości 5 cm. Jakie jest pole powierzchni całkowitej tej bryły?",
-        answers: [
-            { text: "57π cm²", correct: true },
-            { text: "45π cm²", correct: false },
-            { text: "63π cm²", correct: false },
-            { text: "36π cm²", correct: false }
+        "type": "closed",
+        "question": "Zarówno Jacek Soplica ('Pan Tadeusz'), jak i Ebenezer Scrooge ('Opowieść wigilijna') przechodzą głęboką przemianę. Kluczowa różnica w ich 'nowym' życiu polega na tym, że:",
+        "answers": [
+            { "text": "Soplica działa w ukryciu, w pokorze i pod przybranym nazwiskiem, a Scrooge działa otwarcie, ciesząc się nowo odnalezioną radością życia.", "correct": true },
+            { "text": "Soplica staje się patriotą, a Scrooge filantropem.", "correct": false },
+            { "text": "Przemiana Soplicy jest trwała, a Scrooge'a tymczasowa.", "correct": false },
+            { "text": "Soplica umiera wkrótce po przemianie, a Scrooge żyje długo i szczęśliwie.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Liczba √(13 + 4√3) jest równa a + b√c, gdzie a, b, c są liczbami naturalnymi, a c jest liczbą pierwszą. Podaj sumę a+b+c.",
-        answer: ["6"]
+        "type": "open",
+        "question": "Opisz, na czym polega funkcja komiczna postaci Dyndalskiego w 'Zemście', odwołując się do sceny pisania listu.",
+        "answer": ["Komizm Dyndalskiego polega na jego ograniczeniu umysłowym i dosłownym traktowaniu poleceń Cześnika. W scenie pisania listu, jego niezdolność do odróżnienia treści dyktanda od pobocznych komentarzy Cześnika ('bardzo proszę... mocium panie') tworzy absurdalny tekst. Jest on postacią 'nieświadomego błazna', którego prostoduszność demaskuje choleryczny charakter jego pana."]
     },
     {
-        type: 'closed',
-        question: "W kwadrat o boku 4 losowo wybrano punkt. Jakie jest prawdopodobieństwo, że punkt ten leży w odległości nie większej niż 2 od środka kwadratu?",
-        answers: [
-            { text: "π/2", correct: false },
-            { text: "π/4", correct: true },
-            { text: "π/8", correct: false },
-            { text: "1/2", correct: false }
+        "type": "closed",
+        "question": "Koncert Jankiela na cymbałach w 'Panu Tadeuszu' jest przykładem utworu w utworze (tzw. wstawki nowelistycznej). Jaka jest jego główna funkcja artystyczna?",
+        "answers": [
+            { "text": "Zapewnienie rozrywki gościom na zaręczynach Tadeusza i Zosi.", "correct": false },
+            { "text": "Skondensowanie i przypomnienie kluczowych wydarzeń historycznych (od Konstytucji 3 Maja do wojen napoleońskich) w symbolicznej, muzycznej formie, budząc w słuchaczach patriotyczne uczucia.", "correct": true },
+            { "text": "Charakterystyka postaci Jankiela jako utalentowanego muzyka.", "correct": false },
+            { "text": "Spowolnienie akcji utworu przed ostatecznym rozwiązaniem.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W trójkącie ABC boki mają długość 8, 10, 12. Trójkąt A'B'C' jest podobny do trójkąta ABC, a jego najdłuższy bok ma długość 30. Ile wynosi obwód trójkąta A'B'C'?",
-        answers: [
-            { text: "60", correct: false },
-            { text: "72", correct: false },
-            { text: "75", correct: true },
-            { text: "90", correct: false }
+        "type": "open",
+        "question": "W przypowieści o siewcy, ziarno pada na różne rodzaje gleby. Zinterpretuj symbolikę 'ziarna' i 'gleby' w kontekście przekazu ewangelicznego.",
+        "answer": ["'Ziarno' symbolizuje Słowo Boże, naukę ewangeliczną. 'Gleba' symbolizuje ludzkie serca i umysły, czyli różne postawy ludzi wobec tej nauki. Skała to serce twarde i zamknięte, droga to serce rozproszone, a ciernie to serce przytłoczone troskami materialnymi. Żyzna gleba to serce otwarte, gotowe przyjąć naukę i wydać owoce (dobre uczynki)."]
+    },
+    {
+        "type": "closed",
+        "question": "Co jest wspólnym mianownikiem postawy 'żony modnej' z satyry Krasickiego i postawy Telimeny z 'Pana Tadeusza'?",
+        "answers": [
+            { "text": "Głęboka miłość do swoich mężów/partnerów.", "correct": false },
+            { "text": "Krytyczny stosunek do kultury sarmackiej i fascynacja obcą (głównie francuską) modą, obyczajowością i językiem jako wyznacznikiem wyższego statusu społecznego.", "correct": true },
+            { "text": "Szczere zaangażowanie w walkę o niepodległość Polski.", "correct": false },
+            { "text": "Skromność i unikanie publicznych wystąpień.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Podaj liczbę dzielników naturalnych liczby 360.",
-        answer: ["24"]
+        "type": "open",
+        "question": "W 'Quo vadis' ogień trawiący Rzym ma podwójne znaczenie. Wyjaśnij, co symbolizuje on dla Nerona, a co dla chrześcijan.",
+        "answer": ["Dla Nerona ogień jest źródłem artystycznej inspiracji i narzędziem do realizacji jego megalomańskich planów architektonicznych; to symbol destrukcyjnej, egoistycznej 'sztuki'. Dla chrześcijan jest on symbolem apokaliptycznej próby, cierpienia i męczeństwa, ale także oczyszczenia i zapowiedzi upadku pogańskiego Rzymu oraz nadejścia nowego porządku."]
     },
     {
-        type: 'closed',
-        question: "W okrąg wpisano trójkąt równoramienny ABC (|AC|=|BC|), w którym kąt między ramionami |∠ACB| = 30°. Ile wynosi miara kąta środkowego opartego na podstawie AB?",
-        answers: [
-            { text: "30°", correct: false },
-            { text: "60°", correct: true },
-            { text: "75°", correct: false },
-            { text: "150°", correct: false }
+        "type": "closed",
+        "question": "W zdaniu: 'Idąc lasem, myślałem o nadchodzących wakacjach', imiesłów 'idąc' wskazuje na czynność, która:",
+        "answers": [
+            { "text": "Zakończyła się przed czynnością 'myślałem'.", "correct": false },
+            { "text": "Odbywała się jednocześnie z czynnością 'myślałem'.", "correct": true },
+            { "text": "Miała się odbyć po czynności 'myślałem'.", "correct": false },
+            { "text": "Była przyczyną czynności 'myślałem'.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Cenę towaru podniesiono o 25%, a następnie obniżono o kwotę równą 1/4 nowej ceny. Końcowa cena towaru wynosi 200 zł. Jaka była cena początkowa?",
-        answer: ["200"]
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego postać Pustelnika w 'Balladynie' jest kluczowa dla zrozumienia moralnego przesłania dramatu, mimo że ginie on stosunkowo wcześnie.",
+        "answer": ["Pustelnik jest kluczowy, ponieważ jest on strażnikiem i głosem moralnego ładu i legitymizmu (prawowitej władzy). To on wyjawia istnienie korony Popielów i demaskuje zło natury ludzkiej. Jego śmierć symbolizuje, że w świecie opanowanym przez zbrodnię, dawny, sprawiedliwy porządek jest bezsilny i musi zostać zniszczony, zanim sprawiedliwość będzie mogła zatriumfować w innej, nadprzyrodzonej formie (piorun)."]
     },
     {
-        type: 'closed',
-        question: "Dwie proste o równaniach y = (m-2)x + 3 oraz y = -3x + 1 są prostopadłe. Wynika stąd, że:",
-        answers: [
-            { text: "m = -1", correct: false },
-            { text: "m = 5", correct: false },
-            { text: "m = 7/3", correct: true },
-            { text: "m = 2", correct: false }
+        "type": "closed",
+        "question": "W której z poniższych par słów zachodzi taka sama relacja znaczeniowa jak w parze 'lekarz – leczyć'?",
+        "answers": [
+            { "text": "nauczyciel – nauczyć się", "correct": false },
+            { "text": "kucharz – gotować", "correct": true },
+            { "text": "uczeń – uczyć", "correct": false },
+            { "text": "kierowca – kierownica", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Sześcian i ostrosłup prawidłowy czworokątny mają identyczne podstawy. Jaki musi być stosunek wysokości ostrosłupa do wysokości (krawędzi) sześcianu, aby objętości obu brył były równe?",
-        answers: [
-            { text: "1:1", correct: false },
-            { text: "2:1", correct: false },
-            { text: "3:1", correct: true },
-            { text: "1:3", correct: false }
+        "type": "open",
+        "question": "Zinterpretuj symbolicznie fakt, że 'Tajemniczy ogród' był zamknięty na klucz przez dziesięć lat. Co symbolizuje ten zamknięty ogród?",
+        "answer": ["Zamknięty ogród symbolizuje ból, traumę i żałobę po stracie, które doprowadziły do emocjonalnego zamknięcia się wuja Mary, Archibalda Cravena. Jest to metafora jego serca – miejsca niegdyś pełnego życia i miłości, które po śmierci żony zostało celowo odizolowane od świata, by nie przypominało o cierpieniu. Otwarcie ogrodu jest równoznaczne z otwarciem się na nowe życie i uzdrowienie emocjonalne."]
+    },
+    {
+        "type": "closed",
+        "question": "Postawa Alka, Rudego i Zośki z 'Kamieni na szaniec' jest najpełniejszą realizacją ideału zawartego w haśle:",
+        "answers": [
+            { "text": "'Bóg, Honor, Ojczyzna'.", "correct": false },
+            { "text": "'Nauka, Praca, Ojczyzna'.", "correct": false },
+            { "text": "'Braterstwo, Służba, Walka'.", "correct": true },
+            { "text": "'Wiara, Nadzieja, Miłość'.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W pudełku jest 6 kul czerwonych i 4 niebieskie. Ania i Bartek losują kolejno po jednej kuli bez zwracania (Ania pierwsza). Jakie jest prawdopodobieństwo, że Bartek wylosuje kulę niebieską? Podaj wynik jako ułamek nieskracalny.",
-        answer: ["2/5"]
+        "type": "open",
+        "question": "Utwórz zdanie, w którym wyraz 'tylko' wystąpi w roli spójnika, a nie partykuły.",
+        "answer": ["Chciałbym pójść do kina, tylko nie mam pieniędzy."]
     },
     {
-        type: 'closed',
-        question: "Liczba (2√5 - √10)² / √2 jest równa:",
-        answers: [
-            { text: "30√2 - 20", correct: false },
-            { text: "15√2 - 20", correct: true },
-            { text: "15 - 10√2", correct: false },
-            { text: "10", correct: false }
+        "type": "closed",
+        "question": "W 'Hobbicie' J.R.R. Tolkiena, kluczową rolę w pokonaniu smoka Smauga odgrywa nie siła, lecz:",
+        "answers": [
+            { "text": "Magia Gandalfa.", "correct": false },
+            { "text": "Odwaga krasnoludów.", "correct": false },
+            { "text": "Spryt Bilba, który odkrył słaby punkt smoka, oraz informacja przekazana przez drozda, co symbolizuje triumf inteligencji i współpracy nad brutalną siłą.", "correct": true },
+            { "text": "Chciwość smoka, która doprowadziła go do zguby.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W trapezie równoramiennym przekątna o długości 10 cm jest prostopadła do ramienia o długości 6 cm. Pole tego trapezu wynosi:",
-        answers: [
-            { text: "30 cm²", correct: false },
-            { text: "36 cm²", correct: false },
-            { text: "48 cm²", correct: true },
-            { text: "60 cm²", correct: false }
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego recytacja 'Reduty Ordona' przez Zygiera w 'Syzyfowych pracach' była aktem większej odwagi niż otwarta bójka z rusyfikatorami.",
+        "answer": ["Był to akt odwagi intelektualnej i duchowej, a nie fizycznej. Zygier ryzykował nie tylko relegowaniem ze szkoły, ale złamaniem całego systemu rusyfikacji od wewnątrz, używając do tego polskiej literatury – najpotężniejszej broni w walce o tożsamość. Był to atak na fundamenty ideologiczne zaborcy, znacznie bardziej dotkliwy niż fizyczna konfrontacja."]
+    },
+    {
+        "type": "closed",
+        "question": "Postacią, która w najpełniejszy sposób uosabia sarmacki ideał szlachcica-żołnierza, jest:",
+        "answers": [
+            { "text": "Sędzia Soplica", "correct": false },
+            { "text": "Rejent Milczek", "correct": false },
+            { "text": "Gerwazy Rębajło", "correct": true },
+            { "text": "Hrabia Horeszko", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Bartek czyta książkę w tempie 15 stron na godzinę. Gdyby czytał o 5 stron na godzinę szybciej, skończyłby książkę 2 godziny wcześniej. Ile stron ma książka?",
-        answer: ["120"]
+        "type": "open",
+        "question": "W zdaniu: 'Chociaż był niski, doskonale grał w koszykówkę' przekształć zdanie podrzędne na równoważne wyrażenie przyimkowe.",
+        "answer": ["Mimo niskiego wzrostu, doskonale grał w koszykówkę."]
     },
     {
-        type: 'closed',
-        question: "Punkty A=(-3, 2) i C=(5, 4) są przeciwległymi wierzchołkami kwadratu ABCD. Pole tego kwadratu jest równe:",
-        answers: [
-            { text: "68", correct: false },
-            { text: "34", correct: true },
-            { text: "16", correct: false },
-            { text: "32", correct: false }
+        "type": "closed",
+        "question": "W 'Dziadach cz. II' duchy przybywają na obrzęd w określonej kolejności – od najlżejszych grzechów do najcięższych. Ta struktura ma na celu:",
+        "answers": [
+            { "text": "Zapewnienie dramaturgii i stopniowe budowanie napięcia.", "correct": false },
+            { "text": "Przedstawienie ludowej gradacji win i kar, tworząc spójny system moralny oparty na zasadzie, że pełne człowieczeństwo wymaga doświadczenia całego spektrum ludzkich emocji i obowiązków.", "correct": true },
+            { "text": "Pokazanie, że Guślarz ma kontrolę nad przywoływanymi duchami.", "correct": false },
+            { "text": "Umożliwienie wszystkim uczestnikom obrzędu złożenia odpowiedniej ofiary.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Wartość wyrażenia log₃(54) - log₃(2) jest równa:",
-        answers: [
-            { text: "log₃(52)", correct: false },
-            { text: "3", correct: true },
-            { text: "4", correct: false },
-            { text: "27", correct: false }
+        "type": "open",
+        "question": "Co łączy śmierć Ordona w 'Reducie Ordona' ze śmiercią Nemeczka w 'Chłopcach z Placu Broni', mimo skrajnie różnych okoliczności?",
+        "answer": ["Łączy je motyw dobrowolnego poświęcenia dla obrony symbolicznej 'ojczyzny' (reduty / Placu Broni). Obie śmierci są aktami najwyższego heroizmu, w których obrona terytorium i honoru staje się ważniejsza niż własne życie. Są to śmierci o charakterze ofiarnym."]
+    },
+    {
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym użyto niepoprawnej formy czasownika.",
+        "answers": [
+            { "text": "Oni rozumieją, na czym polega problem.", "correct": false },
+            { "text": "Wczoraj oglądnąłem bardzo ciekawy film.", "correct": true },
+            { "text": "Muszę wziąć ze sobą parasol.", "correct": false },
+            { "text": "Dzieci lubią bawić się na podwórku.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Średnia arytmetyczna zestawu sześciu liczb: 3, 5, 8, x, 12, 14 jest równa 9. Jaka jest mediana tego zestawu liczb?",
-        answer: ["8.5"]
+        "type": "open",
+        "question": "W 'Panu Tadeuszu' Tadeusz, widząc po raz pierwszy Zosię, porównuje ją do obrazu. Jaka jest funkcja tego porównania i co mówi o samym Tadeuszu?",
+        "answer": ["Porównanie Zosi do obrazu idealizuje ją, czyni z niej istotę niemal nierealną, dzieło sztuki. Funkcją tego zabiegu jest ukazanie romantycznego usposobienia Tadeusza, który postrzega świat i miłość przez pryzmat estetyki i literackich konwencji. Pokazuje jego młodzieńczą wrażliwość i skłonność do idealizacji."]
     },
     {
-        type: 'closed',
-        question: "Przekątna graniastosłupa prawidłowego sześciokątnego (najdłuższa) ma długość 10. Krawędź podstawy ma długość 3. Jaka jest wysokość tego graniastosłupa?",
-        answers: [
-            { text: "√91", correct: false },
-            { text: "√64", correct: false },
-            { text: "8", correct: true },
-            { text: "√109", correct: false }
+        "type": "closed",
+        "question": "Które z poniższych zachowań jest najlepszym przykładem 'syzyfowej pracy' w codziennym życiu szkolnym, opisanym w powieści Żeromskiego?",
+        "answers": [
+            { "text": "Nauka języka rosyjskiego przez polskich uczniów.", "correct": false },
+            { "text": "Wysiłki nauczycieli rusyfikatorów, by wykorzenić polskość z umysłów uczniów, które mimo pozornych sukcesów, ostatecznie kończą się porażką w konfrontacji z polską kulturą.", "correct": true },
+            { "text": "Przygotowania do egzaminów końcowych.", "correct": false },
+            { "text": "Spotkania 'na górce u Gontali' w celu czytania polskiej literatury.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Jeżeli 3/(x-2) = 5/(x+2), to x jest równe:",
-        answers: [
-            { text: "4", correct: false },
-            { text: "1/2", correct: false },
-            { text: "8", correct: true },
-            { text: "-8", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "W romb o kącie ostrym 30° wpisano koło o polu 9π. Oblicz pole tego rombu.",
-        answer: ["72"]
-    },
-    {
-        type: 'closed',
-        question: "Pociąg o długości 200 m, jadący z prędkością 90 km/h, wjeżdża do tunelu o długości 1 km. Ile czasu upłynie od momentu wjechania czoła pociągu do tunelu do momentu wyjechania z niego końca ostatniego wagonu?",
-        answers: [
-            { text: "40 s", correct: false },
-            { text: "44 s", correct: false },
-            { text: "48 s", correct: true },
-            { text: "52 s", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "W systemie dwójkowym liczba 19 to 10011. Jak w systemie dwójkowym zapiszemy liczbę 38?",
-        answer: ["100110"]
+        "type": "open",
+        "question": "Zinterpretuj tytuł fraszki Kochanowskiego 'Na dom w Czarnolesie'. Co jest prawdziwym przedmiotem prośby podmiotu lirycznego do Boga?",
+        "answer": ["Przedmiotem prośby nie są dobra materialne ('pałace marmurowe'), lecz wartości duchowe i moralne: czyste sumienie, zdrowie, ludzka życzliwość i spokojna starość. Dom jest tu symbolem harmonijnego, cnotliwego życia w zgodzie z naturą i Bogiem, opartego na renesansowych ideałach. Prosi o błogosławieństwo dla tego stylu życia."]
     }
-];;
+]
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

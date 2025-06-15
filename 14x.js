@@ -1,205 +1,195 @@
 const questions = [
     {
-        type: 'closed',
-        question: "Suma kwadratów trzech kolejnych liczb naturalnych wynosi 110. Jaka jest środkowa z tych liczb?",
-        answers: [
-            { text: "5", correct: false },
-            { text: "6", correct: true },
-            { text: "7", correct: false },
-            { text: "8", correct: false }
+        "type": "closed",
+        "question": "Jaka jest fundamentalna różnica w postrzeganiu prawa między Rejentem Milczkiem a Sędzią Soplicą?",
+        "answers": [
+            { "text": "Rejent traktuje prawo instrumentalnie, jako narzędzie do realizacji własnych, egoistycznych celów, podczas gdy Sędzia postrzega prawo jako fundament porządku społecznego i tradycji, który należy szanować.", "correct": true },
+            { "text": "Rejent jest notariuszem, a Sędzia sędzią, więc mają różne kompetencje.", "correct": false },
+            { "text": "Rejent doskonale zna prawo, a Sędzia często je łamie.", "correct": false },
+            { "text": "Rejent jest zwolennikiem prawa pisanego, a Sędzia prawa zwyczajowego.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W romb o boku 10 i wysokości 8 wpisano koło. Jakie jest pole tego koła? (Odpowiedź zapisz w formie aπ)",
-        answer: ["16π"]
+        "type": "open",
+        "question": "W 'Małym Księciu' Król twierdzi, że jego władza jest 'rozsądna', ponieważ rozkazuje tylko to, co jest możliwe do wykonania (np. słońcu, by zaszło wieczorem). Co symbolizuje ta postawa?",
+        "answer": ["Symbolizuje ona iluzję władzy i bezsilność człowieka wobec praw natury. Król, nie mogąc realnie wpływać na rzeczywistość, dostosowuje swoje rozkazy do istniejącego stanu rzeczy, by zachować pozory kontroli. To metafora pustej, formalnej władzy, która polega na przypisywaniu sobie zasług za to, co i tak by się wydarzyło."]
     },
     {
-        type: 'closed',
-        question: "Która z poniższych liczb NIE jest kwadratem liczby całkowitej?",
-        answers: [
-            { text: "4¹¹", correct: false },
-            { text: "9²⁵", correct: false },
-            { text: "8⁹", correct: true },
-            { text: "25³⁶", correct: false }
+        "type": "closed",
+        "question": "W którym z poniższych zdań imiesłowowy równoważnik zdania został użyty niepoprawnie?",
+        "answers": [
+            { "text": "Wróciwszy do domu, od razu położył się spać.", "correct": false },
+            { "text": "Czytając książkę, zasnąłem w fotelu.", "correct": false },
+            { "text": "Otworzywszy okno, do pokoju wpadł chłodny wiatr.", "correct": true },
+            { "text": "Słuchając muzyki, odpoczywał po ciężkim dniu.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Trzy identyczne pompy, pracując razem, napełniają basen w 5 godzin. Ile godzin zajęłoby napełnienie tego samego basenu pięciu takim pompom?",
-        answer: ["3"]
-    },
-    {
-        type: 'closed',
-        question: "Kwadratową kartkę papieru złożono na pół, tworząc prostokąt. Obwód tego prostokąta wynosi 18 cm. Jakie było pole kwadratowej kartki przed złożeniem?",
-        answers: [
-            { text: "24 cm²", correct: false },
-            { text: "36 cm²", correct: true },
-            { text: "49 cm²", correct: false },
-            { text: "81 cm²", correct: false }
+        "type": "closed",
+        "question": "Co łączy sposób walki Konrada Wallenroda (bohatera innego utworu Mickiewicza) ze sposobem walki Lisa z opowiadania 'Artysta' Sławomira Mrożka?",
+        "answers": [
+            { "text": "Obaj walczą w obronie słabszych i pokrzywdzonych.", "correct": false },
+            { "text": "Ich metoda walki opiera się na podstępie, sprycie i wykorzystaniu naturalnych predyspozycji (wallenrodyzm / lisia chytrość), a nie na otwartej konfrontacji siłowej.", "correct": true },
+            { "text": "Obaj ponoszą klęskę moralną w wyniku swoich działań.", "correct": false },
+            { "text": "Obaj są motywowani chęcią zdobycia sławy i uznania.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Długości boków trójkąta wyrażają się liczbami całkowitymi. Dwa boki mają długość 8 i 3. Ile wynosi obwód tego trójkąta, jeśli jest on równoramienny?",
-        answers: [
-            { text: "14", correct: false },
-            { text: "19", correct: true },
-            { text: "14 lub 19", correct: false },
-            { text: "Nie można tego ustalić", correct: false }
+        "type": "open",
+        "question": "W 'Panu Tadeuszu' Tadeusz, słysząc rozmowę Telimeny z Hrabią, myśli o samobójstwie. Co ta gwałtowna, romantyczna reakcja mówi o jego charakterze?",
+        "answer": ["Mówi to o jego młodzieńczej niedojrzałości, idealizmie i wrażliwości. Jest on typowym bohaterem romantycznym, który przeżywa miłość w sposób absolutny, a zdradę traktuje jako katastrofę egzystencjalną. Jego reakcja jest porywcza i niewspółmierna do sytuacji, co pokazuje, że kieruje się emocjami, a nie chłodną kalkulacją."]
+    },
+    {
+        "type": "closed",
+        "question": "Główną przyczyną konfliktu między Grekami a Trojanami w mitologii była:",
+        "answers": [
+            { "text": "Walka o kontrolę nad szlakami handlowymi.", "correct": false },
+            { "text": "Porwanie Heleny, żony króla Sparty Menelaosa, przez trojańskiego księcia Parysa, co było obrazą honoru.", "correct": true },
+            { "text": "Spór o terytoria bogate w złoża naturalne.", "correct": false },
+            { "text": "Interwencja bogów, którzy chcieli skłócić ze sobą ludzi.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkącie prostokątnym o przyprostokątnych a i b oraz przeciwprostokątnej c prawdziwa jest zależność log(c+b) + log(c-b) = 2log(a). Jaki jest stosunek c/a?",
-        answer: ["√2"]
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego postać Cześnika Raptusiewicza jest jednocześnie śmieszna i budząca sympatię.",
+        "answer": ["Jest śmieszny z powodu swojej porywczości, prostolinijności i kontrastu między jego groźnymi słowami a często nieporadnymi działaniami. Sympatię budzi jego szczerość (w przeciwieństwie do Rejenta), przywiązanie do tradycyjnych wartości sarmackich (nawet jeśli komicznie je realizuje) i w gruncie rzeczy dobroduszna natura, ukryta pod maską choleryka."]
     },
     {
-        type: 'closed',
-        question: "Cena akcji wzrosła o 60%, a następnie spadła o 50%. W wyniku tych zmian cena akcji:",
-        answers: [
-            { text: "wzrosła o 10%", correct: false },
-            { text: "spadła o 10%", correct: false },
-            { text: "wzrosła o 20%", correct: false },
-            { text: "spadła o 20%", correct: true }
+        "type": "closed",
+        "question": "W 'Kamieniach na szaniec', które z poniższych działań najlepiej ilustruje pojęcie 'małego sabotażu'?",
+        "answers": [
+            { "text": "Wysadzenie mostu kolejowego pod Czarnocinem.", "correct": false },
+            { "text": "Akcja pod Arsenałem w celu odbicia Rudego.", "correct": false },
+            { "text": "Malowanie na murach znaku Polski Walczącej i wybijanie szyb w sklepach niemieckich fotografów.", "correct": true },
+            { "text": "Uczestnictwo w tajnych kompletach i nauka na podziemnym uniwersytecie.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Wartość wyrażenia (√2)¹² * (√8)⁻³ zapisano w postaci potęgi 2ᵏ. Podaj wartość k.",
-        answer: ["1.5"]
+        "type": "open",
+        "question": "Zinterpretuj symbolikę 'brzozowego krzyżyka', który Zosia daje Tadeuszowi na pożegnanie.",
+        "answer": ["Brzozowy krzyżyk symbolizuje czystość, prostotę i głęboką, cichą wiarę. Jest to dar skromny, ale pełen znaczenia – łączy w sobie motyw religijny (krzyż) z elementem polskiej natury (brzoza). Symbolizuje on błogosławieństwo i nadzieję na bezpieczny powrót, a także więź łączącą bohaterów z ojczystą ziemią."]
     },
     {
-        type: 'closed',
-        question: "Wszystkie krawędzie ostrosłupa prawidłowego czworokątnego mają długość 'a'. Pole powierzchni całkowitej tego ostrosłupa wynosi:",
-        answers: [
-            { text: "a²(1 + √3)", correct: true },
-            { text: "2a²", correct: false },
-            { text: "a²√3", correct: false },
-            { text: "5a²", correct: false }
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym orzeczenie jest wyrażone w formie bezosobowej.",
+        "answers": [
+            { "text": "Trzeba wreszcie posprzątać ten pokój.", "correct": true },
+            { "text": "On musi wreszcie posprzątać ten pokój.", "correct": false },
+            { "text": "Wszyscy posprzątali już swoje pokoje.", "correct": false },
+            { "text": "Posprzątaj wreszcie ten pokój!", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Suma dwóch liczb to 20, a suma ich kwadratów jest najmniejsza z możliwych. Podaj te liczby.",
-        answer: ["10 i 10", "10, 10"]
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego postać Klary w 'Zemście' jest niezbędna dla komediowego rozwiązania akcji.",
+        "answer": ["Jest niezbędna, ponieważ jej miłość do Wacława stanowi ukrytą siłę napędową, która ostatecznie tryumfuje nad intrygami opiekunów. Jej zgoda na ślub z Wacławem, zorganizowany przez Cześnika w akcie zemsty, zamienia tę zemstę w farsę i prowadzi do happy endu. Bez jej uczucia, plan Cześnika byłby tylko kolejnym aktem wrogości."]
     },
     {
-        type: 'closed',
-        question: "W trójkącie ABC, którego pole wynosi 48, poprowadzono środkowe AD, BE, CF, które przecięły się w punkcie S. Pole trójkąta ABS jest równe:",
-        answers: [
-            { text: "8", correct: false },
-            { text: "12", correct: false },
-            { text: "16", correct: true },
-            { text: "24", correct: false }
+        "type": "closed",
+        "question": "Które z poniższych zdań zawiera błąd w użyciu formy grzecznościowej?",
+        "answers": [
+            { "text": "Czy mógłby pan podać mi sól?", "correct": false },
+            { "text": "Pani Anno, proszę usiąść.", "correct": false },
+            { "text": "Panie dyrektorze, czy mogę wejść?", "correct": false },
+            { "text": "Proszę pani, co pani sobie życzy?", "correct": true }
         ]
     },
     {
-        type: 'closed',
-        question: "Jaka jest cyfra jedności liczby 2023¹⁰⁰?",
-        answers: [
-            { text: "1", correct: true },
-            { text: "3", correct: false },
-            { text: "7", correct: false },
-            { text: "9", correct: false }
+        "type": "open",
+        "question": "W 'Panu Tadeuszu' Sędzia jest strażnikiem 'grzeczności'. Czym jest ta 'grzeczność' w jego rozumieniu?",
+        "answer": ["'Grzeczność' w rozumieniu Sędziego to nie tylko dobre maniery, ale cały system obyczajowy i moralny, który reguluje życie społeczne. Obejmuje ona szacunek dla starszych, kobiet, gości, a nawet natury. Jest to kodeks, który zapewnia harmonię, porządek i zachowanie narodowej tożsamości. Jest to sztuka życia we wspólnocie."]
+    },
+    {
+        "type": "closed",
+        "question": "W 'Opowieści wigilijnej', Duch Teraźniejszych Świąt pokazuje Scrooge'owi sceny świąteczne u biednych ludzi (górników, latarników). Jaki jest cel tych wizji?",
+        "answers": [
+            { "text": "Pokazanie Scrooge'owi, jak wielu ludzi na świecie potrzebuje jego pomocy finansowej.", "correct": false },
+            { "text": "Uświadomienie mu, że radość, wspólnota i duch świąt istnieją niezależnie od bogactwa i docierają nawet w najdalsze i najbiedniejsze zakątki, co kontrastuje z jego samotnością w luksusie.", "correct": true },
+            { "text": "Wzbudzenie w nim poczucia winy, że nie dzieli się swoim majątkiem.", "correct": false },
+            { "text": "Zasugerowanie, że powinien zainwestować w kopalnie i latarnie morskie.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Ze zbioru {1, 2, ..., 10} losujemy dwie różne liczby. Jakie jest prawdopodobieństwo, że ich iloczyn jest liczbą nieparzystą? (Odpowiedź podaj w postaci ułamka nieskracalnego a/b)",
-        answer: ["2/9"]
+        "type": "open",
+        "question": "Przekształć zdanie w mowie zależnej na mowę niezależną: 'Krzyknął, żebym natychmiast stamtąd wyszedł.'",
+        "answer": ["Krzyknął: 'Natychmiast stąd wyjdź!'."]
     },
     {
-        type: 'closed',
-        question: "Jeśli log₂(x) + log₂(x-2) = 3, to x jest równe:",
-        answers: [
-            { text: "3", correct: false },
-            { text: "-2", correct: false },
-            { text: "4", correct: true },
-            { text: "Nie ma takiego x", correct: false }
+        "type": "closed",
+        "question": "Które z poniższych dzieł najpełniej porusza problematykę winy, pokuty i ostatecznego przebaczenia?",
+        "answers": [
+            { "text": "'Zemsta'", "correct": false },
+            { "text": "'Pan Tadeusz' (wątek Jacka Soplicy)", "correct": true },
+            { "text": "'Artysta'", "correct": false },
+            { "text": "'Chłopcy z Placu Broni'", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W trapezie równoramiennym podstawy mają długość 5 i 11, a pole wynosi 32. Długość ramienia tego trapezu wynosi:",
-        answers: [
-            { text: "4", correct: false },
-            { text: "5", correct: true },
-            { text: "6", correct: false },
-            { text: "√41", correct: false }
+        "type": "open",
+        "question": "W 'Syzyfowych pracach' pojawia się postać 'starej panny' wynajmującej stancję. Jaka jest jej rola w opisie środowiska i życia uczniów?",
+        "answer": ["Jej rola polega na realistycznym przedstawieniu trudnych warunków bytowych, w jakich żyli uczniowie spoza miasta. Jest postacią surową, oszczędną, reprezentującą twardą rzeczywistość materialną, która kontrastuje z duchowymi i intelektualnymi zmaganiami bohaterów. Pokazuje prozę życia stojącą za wielkimi ideami."]
+    },
+    {
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym występuje podmiot domyślny.",
+        "answers": [
+            { "text": "Na ulicy było bardzo głośno.", "correct": false },
+            { "text": "Wczoraj przez cały dzień padał deszcz.", "correct": false },
+            { "text": "Poszliśmy do kina na nowy film.", "correct": true },
+            { "text": "Ktoś zapomniał zamknąć drzwi.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Prostokąt o bokach 12 i 16 ma takie samo pole jak pewien romb. Jedna z przekątnych rombu ma długość 24. Oblicz obwód tego rombu.",
-        answer: ["80"]
+        "type": "open",
+        "question": "Jaka jest symboliczna funkcja morza w noweli 'Latarnik'?",
+        "answer": ["Morze symbolizuje los, nieprzewidywalność i ogrom świata, w którym Skawiński jest zagubiony. Jest to siła potężna i obojętna na ludzkie cierpienie. Jednocześnie, praca na latarni morskiej jest próbą okiełznania tego chaosu i wprowadzenia w niego porządku (światło latarni), co odzwierciedla próbę uporządkowania własnego życia przez bohatera."]
     },
     {
-        type: 'closed',
-        question: "Punkty A=(-1, 2), B=(7, 2), C=(3, 8) są wierzchołkami trójkąta. Jest to trójkąt:",
-        answers: [
-            { text: "ostrokątny", correct: false },
-            { text: "prostokątny", correct: false },
-            { text: "rozwartokątny", correct: false },
-            { text: "równoramienny", correct: true }
+        "type": "closed",
+        "question": "Wskaż, która z postaci literackich w swoim postępowaniu kieruje się dewizą 'cel uświęca środki'.",
+        "answers": [
+            { "text": "Boka z 'Chłopców z Placu Broni'", "correct": false },
+            { "text": "Balladyna z 'Balladyny'", "correct": true },
+            { "text": "Sędzia Soplica z 'Pana Tadeusza'", "correct": false },
+            { "text": "Mały Książę z 'Małego Księcia'", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Jeżeli a⁴ - b⁴ = 7 i a² + b² = 7, to a jest równe:",
-        answers: [
-            { text: "1", correct: false },
-            { text: "√2", correct: false },
-            { text: "2", correct: true },
-            { text: "√3", correct: false }
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego humor w 'Zemście' nazywany jest komizmem charakterów.",
+        "answer": ["Jest nazywany komizmem charakterów, ponieważ główne źródło śmiechu leży w skontrastowaniu i zderzeniu ze sobą skrajnie różnych, przerysowanych osobowości: porywczego choleryka (Cześnik) i flegmatycznego, obłudnego hipokryty (Rejent). Ich wady charakteru, wyolbrzymione do granic absurdu, prowadzą do zabawnych sytuacji i dialogów."]
+    },
+    {
+        "type": "closed",
+        "question": "Co jest wspólnym elementem losu Ikara z mitologii i bohatera ballady 'Świtezianka' (Strzelca)?",
+        "answers": [
+            { "text": "Pragnienie zdobycia bogactwa i władzy.", "correct": false },
+            { "text": "Śmierć w wyniku przekroczenia zakazu / złamania przysięgi, podyktowana pychą lub ciekawością.", "correct": true },
+            { "text": "Bunt przeciwko bogom.", "correct": false },
+            { "text": "Walka w obronie swojej ojczyzny.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Pojemnik jest w 1/4 pełny. Gdy dolejemy 3 litry wody, będzie w 2/5 pełny. Jaka jest pojemność pojemnika w litrach?",
-        answer: ["20"]
+        "type": "open",
+        "question": "Wskaż błąd frazeologiczny w zdaniu: 'Wykonał tę pracę na ostatnią chwilę' i zapisz je poprawnie.",
+        "answer": ["Błąd: pleonazm, pomieszanie zwrotów 'wykonać na ostatnią chwilę' i 'zostawić na ostatnią chwilę'. Poprawnie: 'Wykonał tę pracę w ostatniej chwili' LUB 'Zostawił tę pracę na ostatnią chwilę'."]
     },
     {
-        type: 'closed',
-        question: "W okrąg o promieniu 5 wpisano trójkąt prostokątny. Suma długości przyprostokątnych tego trójkąta wynosi 14. Pole tego trójkąta jest równe:",
-        answers: [
-            { text: "12", correct: false },
-            { text: "24", correct: true },
-            { text: "35", correct: false },
-            { text: "48", correct: false }
+        "type": "closed",
+        "question": "Które z poniższych dzieł w najpełniejszy sposób ukazuje starcie dwóch cywilizacji: pogańskiego, materialistycznego Rzymu i nowego, duchowego świata chrześcijan?",
+        "answers": [
+            { "text": "'Pan Tadeusz'", "correct": false },
+            { "text": "'Quo vadis'", "correct": true },
+            { "text": "'Dziady cz. II'", "correct": false },
+            { "text": "Mity greckie", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W pewnej firmie mężczyźni stanowią 60% załogi. 20% mężczyzn i 30% kobiet ma wykształcenie wyższe. Jaki procent całej załogi ma wykształcenie wyższe?",
-        answers: [
-            { text: "24%", correct: true },
-            { text: "25%", correct: false },
-            { text: "26%", correct: false },
-            { text: "50%", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Rowerzysta przejechał trasę 30 km w pewnym czasie. Gdyby jego średnia prędkość była o 5 km/h większa, przejechałby tę trasę w czasie o 30 minut krótszym. Jaka była jego początkowa prędkość w km/h?",
-        answer: ["15"]
-    },
-    {
-        type: 'closed',
-        question: "Prosta przechodząca przez I i III ćwiartkę układu współrzędnych, nachylona do osi OX pod kątem 45°, to prosta o równaniu:",
-        answers: [
-            { text: "y = x", correct: true },
-            { text: "y = -x", correct: false },
-            { text: "y = x + 1", correct: false },
-            { text: "y = 1", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Sześcian o krawędzi 5 cm jest zbudowany z małych, pomalowanych na biało sześcianików o krawędzi 1 cm. Zewnętrzne ściany dużego sześcianu pomalowano na czerwono. Ile małych sześcianików pozostało w całości białych?",
-        answer: ["27"]
+        "type": "open",
+        "question": "W 'Trenie V' Kochanowski używa zdrobnienia 'gałązka oliwna'. Jaki nastrój i jakie znaczenie buduje ten środek stylistyczny?",
+        "answer": ["Zdrobnienie to buduje nastrój czułości, intymności i podkreśla kruchość oraz delikatność opisywanej istoty (Urszulki). Kontrastuje ono z brutalnością aktu zniszczenia, potęgując poczucie straty i niesprawiedliwości. Sprawia, że tragedia staje się bardziej osobista i wzruszająca."]
     }
-];
+]
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

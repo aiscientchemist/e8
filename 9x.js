@@ -1,206 +1,195 @@
 const questions = [
     {
-        type: 'closed',
-        question: "Różnica kwadratów dwóch kolejnych dodatnich liczb nieparzystych wynosi 72. Ile wynosi suma tych liczb?",
-        answers: [
-            { text: "32", correct: false },
-            { text: "34", correct: false },
-            { text: "36", correct: true },
-            { text: "38", correct: false }
+        "type": "closed",
+        "question": "W 'Panu Tadeuszu' spór o zamek między Soplicami a Horeszkami jest w istocie sporem o:",
+        "answers": [
+            { "text": "Realną wartość materialną i strategiczne znaczenie budowli.", "correct": false },
+            { "text": "Prawa do polowania w okolicznych lasach.", "correct": false },
+            { "text": "Symboliczny kapitał – honor, prestiż i historyczną pamięć, gdzie zamek jest materialnym znakiem dawnej chwały i doznanej krzywdy.", "correct": true },
+            { "text": "Względy Zosi, która jest wychowanką Sopliców, ale spokrewnioną z Horeszkami.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W sześcian wpisano kulę o objętości 36π cm³. Jaka jest długość przekątnej tego sześcianu? (Wynik zapisz w postaci a√b).",
-        answer: ["6√3"]
+        "type": "open",
+        "question": "W 'Małym Księciu' Pyszałek prosi o oklaski. Co symbolizuje jego postawa i potrzeba ciągłego podziwu?",
+        "answer": ["Jego postawa symbolizuje próżność i potrzebę zewnętrznego potwierdzenia własnej wartości. Pokazuje, że jego samoocena jest całkowicie uzależniona od opinii innych. Jest to metafora życia 'na pokaz', w którym człowiek traci kontakt z samym sobą i żyje tylko dla aplauzu, nie potrafiąc nawiązać autentycznej relacji."]
     },
     {
-        type: 'closed',
-        question: "Cenę towaru podniesiono o p%, a następnie nową cenę obniżono o p%. W rezultacie cena końcowa stanowiła 96% ceny początkowej. Ile wynosi p?",
-        answers: [
-            { text: "4", correct: false },
-            { text: "10", correct: false },
-            { text: "20", correct: true },
-            { text: "25", correct: false }
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym partykuła 'nie' została użyta niepoprawnie z rzeczownikiem odczasownikowym.",
+        "answers": [
+            { "text": "Niepalenie w miejscach publicznych jest zabronione.", "correct": false },
+            { "text": "Jego ciągłe nieprzygotowanie do lekcji denerwowało nauczyciela.", "correct": false },
+            { "text": "Nie czytanie lektur skutkuje słabymi ocenami.", "correct": true },
+            { "text": "Nieodrabianie pracy domowej jest poważnym uchybieniem.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Na ile zer kończy się liczba 50! (50 silnia)?",
-        answer: ["12"]
-    },
-    {
-        type: 'closed',
-        question: "Punkty A(-2, 1), B(3, 3) i C(4, 5) to trzy kolejne wierzchołki równoległoboku ABCD. Jakie są współrzędne wierzchołka D?",
-        answers: [
-            { text: "(9, 7)", correct: false },
-            { text: "(-1, 3)", correct: true },
-            { text: "(1, 3)", correct: false },
-            { text: "(-1, -1)", correct: false }
+        "type": "closed",
+        "question": "Co jest fundamentalną różnicą między 'zemstą' Gerwazego a 'zemstą' Cześnika Raptusiewicza?",
+        "answers": [
+            { "text": "Gerwazy pragnie zemsty krwawej, a Cześnik tylko finansowej.", "correct": false },
+            { "text": "Zemsta Gerwazego ma wymiar niemal sakralny, jest misją jego życia poświęconą pamięci rodu. Zemsta Cześnika jest impulsywną, choleryczną reakcją na bieżące urazy i ma charakter bardziej osobistej, sąsiedzkiej kłótni.", "correct": true },
+            { "text": "Gerwazy planuje zemstę latami, a Cześnik działa spontanicznie.", "correct": false },
+            { "text": "Gerwazy odnosi sukces w swojej zemście, a Cześnik ponosi klęskę.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Ślimak wspina się na 20-metrową ścianę. W ciągu dnia pokonuje 5 metrów w górę, a w nocy zsuwa się o 4 metry w dół. Po ilu dniach ślimak dotrze na szczyt ściany?",
-        answers: [
-            { text: "20", correct: false },
-            { text: "19", correct: false },
-            { text: "16", correct: true },
-            { text: "15", correct: false }
+        "type": "open",
+        "question": "Jaka jest funkcja komizmu w satyrze 'Żona modna' Ignacego Krasickiego?",
+        "answer": ["Komizm nie służy tu tylko rozrywce. Jego główną funkcją jest demaskacja i ośmieszenie wady, jaką jest bezmyślne naśladowanie obcych wzorców (sarmacki snobizm). Poprzez wyolbrzymienie i karykaturę zachowań tytułowej bohaterki, autor wywołuje śmiech, który ma prowadzić do krytycznej refleksji nad opisywanym zjawiskiem."]
+    },
+    {
+        "type": "closed",
+        "question": "W 'Hobbicie', mapa i klucz, które Gandalf przekazuje Thorinowi, są nie tylko rekwizytami. Symbolizują one:",
+        "answers": [
+            { "text": "Utracone dziedzictwo i wiedzę, która jest kluczem do jego odzyskania.", "correct": true },
+            { "text": "Bogactwo i władzę, które czekają na krasnoludy.", "correct": false },
+            { "text": "Magiczne przedmioty, które zapewnią im zwycięstwo nad smokiem.", "correct": false },
+            { "text": "Podstęp, który ma zwabić krasnoludy w pułapkę.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Pole prostokąta wynosi 48 cm², a jego obwód 28 cm. Oblicz długość przekątnej tego prostokąta.",
-        answer: ["10"]
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego postawę Alka, Rudego i Zośki z 'Kamieni na szaniec' można określić jako 'heroizm dnia codziennego'.",
+        "answer": ["Można ją tak określić, ponieważ ich bohaterstwo nie ograniczało się do spektakularnych akcji zbrojnych. Przejawiało się ono również w codziennej, systematycznej pracy nad sobą (nauka, samokształcenie), w drobnych aktach sabotażu, w podtrzymywaniu ducha w grupie i w etyce pracy. To dowód, że patriotyzm był dla nich postawą życiową, a nie tylko chwilowym zrywem."]
     },
     {
-        type: 'closed',
-        question: "W torbie jest 10 kul, czerwonych i niebieskich. Prawdopodobieństwo wylosowania kuli czerwonej wynosi 2/5. Do torby dołożono 5 kul niebieskich. Jakie jest teraz prawdopodobieństwo wylosowania kuli niebieskiej?",
-        answers: [
-            { text: "3/5", correct: false },
-            { text: "2/3", correct: false },
-            { text: "11/15", correct: true },
-            { text: "1/2", correct: false }
+        "type": "closed",
+        "question": "Wskaż, która z postaci literackich najpełniej uosabia konflikt między obowiązkiem wobec ojczyzny a prawem do osobistego szczęścia.",
+        "answers": [
+            { "text": "Marcin Borowicz z 'Syzyfowych prac'", "correct": false },
+            { "text": "Jacek Soplica z 'Pana Tadeusza'", "correct": true },
+            { "text": "Ebenezer Scrooge z 'Opowieści wigilijnej'", "correct": false },
+            { "text": "Balladyna z 'Balladyny'", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Wartość wyrażenia (5³ · 25⁻¹ · 125²) / (5⁰ · 5⁻²) zapisano w postaci potęgi 5ᵏ. Podaj wartość k.",
-        answer: ["9"]
+        "type": "open",
+        "question": "W 'Zemście' pojawia się postać mularza (murarza). Jaka jest jego rola w scenie naprawiania muru?",
+        "answer": ["Mularz pełni rolę 'człowieka z ludu', prostego wykonawcy absurdalnych poleceń swoich panów. Jego postawa, pełna rezygnacji i chęci uniknięcia kłopotów ('A niechaj się biją, a bodaj pozabijali'), jest komicznym komentarzem do konfliktu szlachty. Reprezentuje on zdrowy rozsądek i dystans wobec niezrozumiałych dla niego, pańskich fanaberii."]
     },
     {
-        type: 'closed',
-        question: "Dwie cięciwy AB i CD w okręgu przecinają się w punkcie P. Odcinki cięciwy AB mają długość |AP|=3 i |PB|=8. Jeden z odcinków cięciwy CD ma długość |CP|=4. Jaka jest długość całej cięciwy CD?",
-        answers: [
-            { text: "6", correct: false },
-            { text: "10", correct: true },
-            { text: "12", correct: false },
-            { text: "15", correct: false }
+        "type": "closed",
+        "question": "W którym z poniższych zdań imiesłów został użyty w niepoprawnej formie?",
+        "answers": [
+            { "text": "Zobaczywszy dym, natychmiast wezwał straż pożarną.", "correct": false },
+            { "text": "Dziecko, płaczące od godziny, w końcu zasnęło.", "correct": false },
+            { "text": "List, napisany wczoraj, leżał na biurku.", "correct": false },
+            { "text": "Wziąść sprawy w swoje ręce to była dobra decyzja.", "correct": true }
         ]
     },
     {
-        type: 'open',
-        question: "Pompa A napełnia basen w 8 godzin, a pompa B w 12 godzin. Obie pompy pracowały razem przez 2 godziny, po czym pompa A się zepsuła. Ile godzin potrzebuje pompa B, aby samodzielnie dokończyć napełnianie basenu?",
-        answer: ["7"]
+        "type": "open",
+        "question": "Wyjaśnij, na czym polega tragizm postaci Konrada Wallenroda, bohatera innego utworu Mickiewicza, i porównaj go z tragizmem Jacka Soplicy.",
+        "answer": ["Tragizm Konrada Wallenroda polega na konieczności wyboru między honorem rycerskim a obowiązkiem patriotycznym, co zmusza go do walki podstępem i zdrady, niszcząc jego psychikę. Jacek Soplica również przeżywa tragizm (wina i pokuta), ale jego droga prowadzi do odkupienia i moralnego zwycięstwa. Wallenrod ponosi klęskę na obu polach – niszczy zakon, ale i siebie, nie znajdując ukojenia."]
     },
     {
-        type: 'closed',
-        question: "Wartość wyrażenia (√45 + √20) / √5 jest równa:",
-        answers: [
-            { text: "√13", correct: false },
-            { text: "5", correct: true },
-            { text: "√5", correct: false },
-            { text: "25", correct: false }
+        "type": "closed",
+        "question": "Zarówno 'Dziady część II', jak i 'Balladyna' wykorzystują elementy fantastyczne. Kluczowa różnica w ich funkcji polega na tym, że:",
+        "answers": [
+            { "text": "W 'Dziadach' świat fantastyczny (duchy) jest integralną częścią ludowych wierzeń i porządku moralnego; w 'Balladynie' (Goplana) jest on siłą ingerującą w świat ludzi i uruchamiającą tragedię.", "correct": true },
+            { "text": "Duchy w 'Dziadach' są dobre, a Goplana w 'Balladynie' jest zła.", "correct": false },
+            { "text": "Fantastyka w 'Dziadach' służy budowaniu nastroju grozy, a w 'Balladynie' – komizmu.", "correct": false },
+            { "text": "W 'Dziadach' postacie fantastyczne są niewidoczne, a w 'Balladynie' wchodzą w interakcje z bohaterami.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Bok rombu ma długość 15 cm, a jedna z jego przekątnych ma 18 cm. Pole tego rombu jest równe:",
-        answers: [
-            { text: "108 cm²", correct: false },
-            { text: "135 cm²", correct: false },
-            { text: "216 cm²", correct: true },
-            { text: "270 cm²", correct: false }
+        "type": "open",
+        "question": "Zinterpretuj symbolikę ogrodu w 'Panu Tadeuszu', którym opiekuje się Zosia. Czym różni się on od 'Tajemniczego ogrodu'?",
+        "answer": ["Ogród Zosi jest symbolem harmonii, porządku, prostoty i polskości. Jest to przestrzeń swojska, zadbana i użyteczna, odzwierciedlająca cnoty jego opiekunki. 'Tajemniczy ogród', w przeciwieństwie do niego, jest na początku symbolem tajemnicy, dzikości, zaniedbania i traumy, a dopiero praca bohaterów przywraca mu życie i harmonię."]
+    },
+    {
+        "type": "closed",
+        "question": "W 'Opowieści wigilijnej' łańcuchy, które dźwiga duch Marleya, są symbolem:",
+        "answers": [
+            { "text": "Kary za popełnione przestępstwa, za które nie został osądzony za życia.", "correct": false },
+            { "text": "Materialnym odzwierciedleniem jego win – chciwości, obojętności i braku ludzkich uczuć, które sam sobie 'ukuł' za życia.", "correct": true },
+            { "text": "Bogactwa, które zgromadził i którego nie może zabrać ze sobą w zaświaty.", "correct": false },
+            { "text": "Więzów, które łączą go ze światem żywych i nie pozwalają mu odejść.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Pięć lat temu Maria była 3 razy starsza od Jana. Za 5 lat będzie od niego 2 razy starsza. Ile lat ma obecnie Maria?",
-        answer: ["35"]
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego słowa 'pójść' i 'iść' nie są w każdym kontekście synonimami. Podaj przykład zdania, w którym nie można ich użyć zamiennie.",
+        "answer": ["Nie są synonimami, ponieważ 'pójść' jest czasownikiem dokonanym (oznacza jednorazowy zamiar lub początek czynności), a 'iść' jest niedokonany (oznacza czynność trwającą). Przykład: 'Muszę już iść' (poprawne). Nie można powiedzieć: 'Muszę już pójść', bo 'już' wskazuje na trwanie. Można natomiast powiedzieć: 'Postanowiłem pójść do domu'."]
     },
     {
-        type: 'closed',
-        question: "Objętość stożka wynosi 9π. Wysokość stożka jest równa promieniowi jego podstawy. Ile wynosi tworząca tego stożka?",
-        answers: [
-            { text: "3", correct: false },
-            { text: "3√2", correct: true },
-            { text: "3√3", correct: false },
-            { text: "6", correct: false }
+        "type": "closed",
+        "question": "Który z poniższych cytatów z lektur najpełniej wyraża romantyczną ideę wyższości uczucia i intuicji nad rozumem?",
+        "answers": [
+            { "text": "'Miej serce i patrzaj w serce!' ('Romantyczność' A. Mickiewicza)", "correct": true },
+            { "text": "'Jeśli nie chcesz mojej zguby, / Krokodyla daj mi, luby!' ('Zemsta' A. Fredry)", "correct": false },
+            { "text": "'Człowiek - to brzmi dumnie!' (M. Gorki, spoza kanonu)", "correct": false },
+            { "text": "'A niechaj narodowie wżdy postronni znają, / Iż Polacy nie gęsi, iż swój język mają.' (M. Rej)", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Jaka jest najmniejsza dodatnia liczba całkowita, która przy dzieleniu przez 2, 3, 4, 5 i 6 daje zawsze resztę 1?",
-        answers: [
-            { text: "31", correct: false },
-            { text: "41", correct: false },
-            { text: "61", correct: true },
-            { text: "121", correct: false }
+        "type": "open",
+        "question": "W 'Syzyfowych pracach' Bernard Zygier jest postacią niemal symboliczną. Co symbolizuje jego przybycie do klerykowskiego gimnazjum?",
+        "answer": ["Jego przybycie symbolizuje 'powiew wolności' i nadejście świadomego, niezłomnego oporu. Jest on jak 'iskra rzucona na proch' – jego postawa i wiedza o polskiej literaturze budzi uśpioną świadomość narodową w kolegach, zwłaszcza w Borowiczu. Symbolizuje pamięć historyczną i ciągłość walki o polskość."]
+    },
+    {
+        "type": "closed",
+        "question": "Zarówno w 'Reducie Ordona', jak i w micie o Prometeuszu, pojawia się motyw buntu przeciwko potężniejszej sile. Kluczowa różnica polega na tym, że:",
+        "answers": [
+            { "text": "Bunt Ordona jest motywowany patriotyzmem, a bunt Prometeusza miłością do ludzkości.", "correct": true },
+            { "text": "Ordon ponosi klęskę, a Prometeusz odnosi zwycięstwo.", "correct": false },
+            { "text": "Bunt Ordona jest aktem militarnym, a Prometeusza – aktem podstępu.", "correct": false },
+            { "text": "Ordon walczy z ludzkim tyranem, a Prometeusz z bogami.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Mężczyzna o wzroście 2 m rzuca cień o długości 3 m. W tym samym czasie stojące obok drzewo rzuca cień o długości 21 m. Jaka jest wysokość drzewa w metrach?",
-        answer: ["14"]
+        "type": "open",
+        "question": "Wskaż, w jaki sposób tytuł 'Quo vadis' odnosi się do duchowej podróży Marka Winicjusza.",
+        "answer": ["Tytułowe pytanie 'Quo vadis, Domine?' (Dokąd idziesz, Panie?) zadane przez Piotra Apostoła jest pytaniem o kierunek drogi. W wymiarze symbolicznym, odnosi się ono do wewnętrznej podróży Winicjusza, który 'idzie' od pogańskiego Rzymu (świata siły i rozpusty) do chrześcijaństwa (świata miłości i ducha). Jest to pytanie o jego życiową drogę i ostateczny cel."]
     },
     {
-        type: 'closed',
-        question: "Wiadomo, że x + 1/x = 4. Ile wynosi wartość wyrażenia x² + 1/x² ?",
-        answers: [
-            { text: "16", correct: false },
-            { text: "14", correct: true },
-            { text: "12", correct: false },
-            { text: "8", correct: false }
+        "type": "closed",
+        "question": "Wskaż zdanie, w którym orzeczenie imienne zostało użyte niepoprawnie.",
+        "answers": [
+            { "text": "Mój brat został w przyszłości lekarzem.", "correct": true },
+            { "text": "On jest bardzo dobrym uczniem.", "correct": false },
+            { "text": "Po latach pracy stał się ekspertem w swojej dziedzinie.", "correct": false },
+            { "text": "Ta decyzja okazała się słuszna.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Punkty A, B, C, D leżą w tej kolejności na okręgu. Miara łuku AB wynosi 60°, a miara łuku CD wynosi 100°. Jaka jest miara kąta ostrego, pod którym przecinają się cięciwy AC i BD?",
-        answers: [
-            { text: "70°", correct: false },
-            { text: "80°", correct: true },
-            { text: "90°", correct: false },
-            { text: "160°", correct: false }
+        "type": "open",
+        "question": "Zinterpretuj scenę spowiedzi Jacka Soplicy. Dlaczego wyznaje on swoje winy właśnie Gerwazemu, swojemu największemu wrogowi?",
+        "answer": ["Wyznaje winy Gerwazemu, ponieważ jest on strażnikiem pamięci Horeszków i symbolem doznanej przez nich krzywdy. Uzyskanie przebaczenia od największego wroga ma najwyższą wartość moralną. To akt ostatecznej pokory i zadośćuczynienia, który zamyka prywatny konflikt i pozwala Soplicy umrzeć w pokoju, z czystym sumieniem, jako bohater narodowy."]
+    },
+    {
+        "type": "closed",
+        "question": "Która z postaci literackich w najpełniejszy sposób uosabia ideał 'człowieka poczciwego' – szlachcica-ziemianina, żyjącego w zgodzie z naturą i rytmem pór roku?",
+        "answers": [
+            { "text": "Rejent Milczek", "correct": false },
+            { "text": "Sędzia Soplica", "correct": true },
+            { "text": "Cześnik Raptusiewicz", "correct": false },
+            { "text": "Hrabia Horeszko", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Mediana pięciu liczb w zestawie to 10, średnia to 11, a jedyną modą jest 8 (występuje dwukrotnie). Jaka jest największa możliwa liczba w tym zestawie?",
-        answer: ["19"]
+        "type": "open",
+        "question": "W 'Trenie X' Kochanowski pyta: 'Gdzieśkolwiek jest, jeśliś jest'. Co wyraża ta wątpliwość zawarta w słowach 'jeśliś jest'?",
+        "answer": ["Wyraża ona najgłębszy kryzys wiary i światopoglądu poety. Podmiot liryczny, zrozpaczony brakiem odpowiedzi, zaczyna wątpić nie tylko w istnienie konkretnego miejsca pobytu córki (niebo chrześcijańskie, wyspy szczęśliwe), ale w samo istnienie jakiejkolwiek formy życia pośmiertnego. To szczyt jego bólu i zwątpienia."]
     },
     {
-        type: 'closed',
-        question: "W trapez można wpisać okrąg. Długości ramion tego trapezu wynoszą 7 i 9. Ile wynosi obwód tego trapezu?",
-        answers: [
-            { text: "16", correct: false },
-            { text: "24", correct: false },
-            { text: "32", correct: true },
-            { text: "Nie da się tego obliczyć", correct: false }
+        "type": "closed",
+        "question": "Wskaż, które z poniższych zdań jest zdaniem bezpodmiotowym.",
+        "answers": [
+            { "text": "Nagle błysnęło i zagrzmiało.", "correct": true },
+            { "text": "Ktoś głośno rozmawiał na korytarzu.", "correct": false },
+            { "text": "Wszyscy uczniowie wyszli ze szkoły.", "correct": false },
+            { "text": "Oni nie wiedzieli, co robić.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Stosunek obwodów dwóch wielokątów podobnych wynosi 3:5. Suma ich pól jest równa 272 cm². Pole mniejszego wielokąta wynosi:",
-        answers: [
-            { text: "34 cm²", correct: false },
-            { text: "72 cm²", correct: true },
-            { text: "102 cm²", correct: false },
-            { text: "200 cm²", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Oblicz pole trójkąta o wierzchołkach A=(0, 0), B=(6, 0) i C=(2, 4).",
-        answer: ["12"]
-    },
-    {
-        type: 'closed',
-        question: "Samochód jedzie z miasta A do B z prędkością 40 km/h, a wraca tą samą drogą z prędkością 60 km/h. Jaka jest średnia prędkość samochodu na całej trasie?",
-        answers: [
-            { text: "50 km/h", correct: false },
-            { text: "48 km/h", correct: true },
-            { text: "52 km/h", correct: false },
-            { text: "45 km/h", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Jaka jest cyfra jedności sumy 1! + 2! + 3! + ... + 100! ?",
-        answer: ["3"]
+        "type": "open",
+        "question": "Wyjaśnij, dlaczego postać Papkina z 'Zemsty' jest jednocześnie postacią komiczną i tragiczną.",
+        "answer": ["Jest komiczny ze względu na kontrast między jego buńczucznymi opowieściami a rzeczywistym tchórzostwem i biedą. Jego tragizm jest subtelny i polega na samotności, desperackiej potrzebie akceptacji i świadomości bycia pogardzanym. Scena, w której wierzy, że został otruty, ukazuje jego żałosne i godne współczucia położenie."]
     }
-];
-
+]
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");
 const answerButtonsElement = document.getElementById("answer-buttons");

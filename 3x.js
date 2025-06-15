@@ -1,221 +1,196 @@
-const questions = [
-    {
-        type: 'closed',
-        question: "Boki prostokąta różnią się o 5 cm. Jeśli krótszy bok wydłużymy o 2 cm, a dłuższy skrócimy o 2 cm, to pole otrzymanego w ten sposób prostokąta w stosunku do pola pierwotnego prostokąta:",
-        answers: [
-            { text: "wzrośnie o 6 cm²", correct: true },
-            { text: "zmaleje o 6 cm²", correct: false },
-            { text: "nie zmieni się", correct: false },
-            { text: "zmaleje o 4 cm²", correct: false }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "Liczba 2¹⁰ + 2¹¹ + 2¹² jest podzielna przez:",
-        answers: [
-            { text: "3", correct: false },
-            { text: "5", correct: false },
-            { text: "7", correct: true },
-            { text: "11", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Duży sześcian o krawędzi 4 cm zbudowano z małych sześcianów o krawędzi 1 cm. Następnie pomalowano wszystkie ściany dużego sześcianu. Ile małych sześcianów ma pomalowaną dokładnie jedną ścianę?",
-        answer: ["24"]
-    },
-    {
-        type: 'closed',
-        question: "Dwa miasta, A i B, są oddalone o 405 km. Z miasta A wyrusza pociąg w stronę B o 8:00 z prędkością 75 km/h. O 9:00 z miasta B wyrusza pociąg w stronę A z prędkością 90 km/h. O której godzinie pociągi się miną?",
-        answers: [
-            { text: "10:30", correct: false },
-            { text: "11:00", correct: true },
-            { text: "11:15", correct: false },
-            { text: "11:30", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "W 4 kg roztworu soli o stężeniu 10% znajduje się pewna ilość soli. Ile kilogramów wody należy odparować, aby otrzymać roztwór o stężeniu 16%?",
-        answer: ["1.5"]
-    },
-    {
-        type: 'closed',
-        question: "W trójkącie ABC kąt przy wierzchołku C jest prosty. Dwusieczna kąta ostrego A przecina przyprostokątną BC w punkcie D. Jeśli |CD| = 3 cm, a |BD| = 5 cm, to ile wynosi długość przeciwprostokątnej AB?",
-        answers: [
-            { text: "8 cm", correct: false },
-            { text: "10 cm", correct: true },
-            { text: "12 cm", correct: false },
-            { text: "15 cm", correct: false }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "Wszystkie krawędzie ostrosłupa prawidłowego trójkątnego mają jednakową długość równą 6. Ile wynosi wysokość tego ostrosłupa?",
-        answers: [
-            { text: "3√3", correct: false },
-            { text: "2√6", correct: true },
-            { text: "6", correct: false },
-            { text: "3√2", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Podaj najmniejszą liczbę naturalną n, dla której liczba n! (n silnia) jest podzielna przez 1000.",
-        answer: ["15"]
-    },
-    {
-        type: 'closed',
-        question: "Jeśli a² + b² = 52 i ab = 24, to (a - b)² jest równe:",
-        answers: [
-            { text: "100", correct: false },
-            { text: "28", correct: false },
-            { text: "4", correct: true },
-            { text: "0", correct: false }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "Pole rombu wynosi 54 cm², a stosunek długości jego przekątnych to 3:4. Jaki jest obwód tego rombu?",
-        answers: [
-            { text: "30 cm", correct: false },
-            { text: "36 cm", correct: false },
-            { text: "40 cm", correct: false },
-            { text: "60 cm", correct: true }
-        ]
-    },
-    {
-        type: 'open',
-        question: "W pewnej klasie 20% uczniów otrzymało szóstkę, 30% piątkę, 40% czwórkę, a reszta, czyli 2 uczniów, trójkę. Ilu uczniów liczy ta klasa?",
-        answer: ["20"]
-    },
-    {
-        type: 'closed',
-        question: "W trójkącie równoramiennym podstawa ma długość 16, a ramię 17. Promień okręgu wpisanego w ten trójkąt ma długość:",
-        answers: [
-            { text: "8/3", correct: false },
-            { text: "15/4", correct: false },
-            { text: "16/5", correct: false },
-            { text: "8/3", correct: true } // p=1/2(17+17+16)=25, P=1/2*16*h=8*15=120, r=P/p=120/25=24/5. Hmm, błąd w obliczeniach. Ramię 17, połowa podstawy 8 -> wysokość 15. P=1/2*16*15=120. p=(16+17+17)/2=50/2=25. r=P/p = 120/25 = 24/5. OK, zmieniam odp.
-        ]
-    },
-    { // Poprawione zadanie 12
-        type: 'closed',
-        question: "W trójkącie równoramiennym podstawa ma długość 16, a ramię 17. Promień okręgu wpisanego w ten trójkąt ma długość:",
-        answers: [
-            { text: "4", correct: false },
-            { text: "4.5", correct: false },
-            { text: "4.8", correct: true },
-            { text: "5", correct: false }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "Liczba odwrotna do liczby (1 - √2) to:",
-        answers: [
-            { text: "1 + √2", correct: false },
-            { text: "-1 - √2", correct: true },
-            { text: "1 / (1 + √2)", correct: false },
-            { text: "-1 + √2", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Czworokąt ABCD jest wpisany w okrąg. Miary kątów przy wierzchołkach A, B, C wynoszą odpowiednio: |∠A| = 2x, |∠B| = 3x, |∠C| = 4x. Podaj miarę kąta przy wierzchołku D w stopniach.",
-        answer: ["60"]
-    },
-    {
-        type: 'closed',
-        question: "Objętość stożka wynosi 27π cm³. Tworząca stożka jest nachylona do płaszczyzny podstawy pod kątem 45°. Ile wynosi promień podstawy tego stożka?",
-        answers: [
-            { text: "3 cm", correct: false },
-            { text: "3√3 cm", correct: false },
-            { text: "3∛3 cm", correct: true },
-            { text: "9 cm", correct: false }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "Ze zbioru liczb {1, 2, 3, ..., 20} losujemy jedną liczbę. Prawdopodobieństwo wylosowania liczby, która jest podzielna przez 3 lub przez 5, jest równe:",
-        answers: [
-            { text: "1/2", correct: false },
-            { text: "9/20", correct: true },
-            { text: "10/20", correct: false },
-            { text: "11/20", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Przekątne dwóch ścian prostopadłościanu wychodzące z tego samego wierzchołka mają długości 5 i 7. Krawędzie wychodzące z tego wierzchołka mają długości będące liczbami naturalnymi. Oblicz objętość tego prostopadłościanu.",
-        answer: ["84"]
-    },
-    {
-        type: 'closed',
-        question: "Wysokość trójkąta równobocznego jest o 2 mniejsza od długości jego boku. Jaka jest długość boku tego trójkąta?",
-        answers: [
-            { text: "4(2-√3)", correct: false },
-            { text: "2(2+√3)", correct: false },
-            { text: "4(2+√3)", correct: true },
-            { text: "2(√3-1)", correct: false }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "Jeżeli x/y = 3/4, to wartość wyrażenia (x+2y)/(2x-y) jest równa:",
-        answers: [
-            { text: "11/2", correct: true },
-            { text: "5/2", correct: false },
-            { text: "1", correct: false },
-            { text: "3/2", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "W biegu na 1000 m startuje 8 zawodników. Na ile sposobów można obsadzić trzy pierwsze miejsca (złoto, srebro, brąz)?",
-        answer: ["336"]
-    },
-    {
-        type: 'closed',
-        question: "Punkt P = (2√3, a) należy do prostej o równaniu y = -√3 x + 10. Wynika stąd, że:",
-        answers: [
-            { text: "a = 4", correct: true },
-            { text: "a = 16", correct: false },
-            { text: "a = -4", correct: false },
-            { text: "a = 10 - 2√3", correct: false }
-        ]
-    },
-    {
-        type: 'closed',
-        question: "Jeżeli bok kwadratu zwiększymy o 20%, to jego pole zwiększy się o:",
-        answers: [
-            { text: "20%", correct: false },
-            { text: "40%", correct: false },
-            { text: "44%", correct: true },
-            { text: "144%", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Dwie styczne do okręgu o środku S i promieniu 6 przecinają się w punkcie P pod kątem 60°. Jaka jest odległość punktu P od środka okręgu S?",
-        answer: ["12"]
-    },
-    {
-        type: 'closed',
-        question: "Pewien towar po dwukrotnej obniżce ceny za każdym razem o ten sam procent staniał z 250 zł do 160 zł. O ile procent obniżano cenę za każdym razem?",
-        answers: [
-            { text: "o 15%", correct: false },
-            { text: "o 18%", correct: false },
-            { text: "o 20%", correct: true },
-            { text: "o 25%", correct: false }
-        ]
-    },
-    {
-        type: 'open',
-        question: "Suma n początkowych wyrazów pewnego ciągu wyraża się wzorem Sn = n² + 2n. Oblicz czwarty wyraz tego ciągu (a₄).",
-        answer: ["9"]
-    }
-];;
-
+const questions =
+    [
+        {
+            "type": "closed",
+            "question": "W 'Zemście' Podstolina, planując swoje małżeństwa, kieruje się przede wszystkim:",
+            "answers": [
+                { "text": "Głębokim uczuciem i romantycznymi porywami serca.", "correct": false },
+                { "text": "Chłodnym pragmatyzmem i dążeniem do zabezpieczenia swojej pozycji materialnej, traktując małżeństwo jak transakcję.", "correct": true },
+                { "text": "Chęcią pogodzenia zwaśnionych rodów Cześnika i Rejenta.", "correct": false },
+                { "text": "Lękiem przed samotnością na starość.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Jaka jest symboliczna funkcja milczącej, wyidealizowanej miłości Marcina Borowicza do Anny Stogowskiej ('Biruty') w 'Syzyfowych pracach'?",
+            "answer": ["Ta miłość jest dla Borowicza siłą napędową jego wewnętrznej przemiany i dojrzewania narodowego. 'Biruta' staje się dla niego uosobieniem polskości, czystości i ideału, dla którego warto walczyć z rusyfikacją i pracować nad sobą. Jest to motywacja duchowa, a nie tylko romantyczna."]
+        },
+        {
+            "type": "closed",
+            "question": "W którym z poniższych zdań wyraz 'koło' jest inną częścią mowy niż w pozostałych?",
+            "answers": [
+                { "text": "Samochód stracił koło na wyboistej drodze.", "correct": false },
+                { "text": "Dzieci bawiły się wesoło, biegając w koło.", "correct": true },
+                { "text": "Zapasowe koło leżało w bagażniku.", "correct": false },
+                { "text": "Młynarz uruchomił wielkie koło młyńskie.", "correct": false }
+            ]
+        },
+        {
+            "type": "closed",
+            "question": "Postać Guślarza z 'Dziadów cz. II' i postać Aslana z 'Opowieści z Narnii', mimo oczywistych różnic, pełnią w swoich światach analogiczną funkcję. Jest to funkcja:",
+            "answers": [
+                { "text": "Władcy absolutnego, który ustala prawa.", "correct": false },
+                { "text": "Nauczyciela, który przekazuje wiedzę historyczną.", "correct": false },
+                { "text": "Przewodnika i pośrednika między różnymi porządkami rzeczywistości (światem żywych i umarłych / światem ludzi i Narnią).", "correct": true },
+                { "text": "Bohatera, który samotnie walczy ze złem.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Słynny 'koncert Wojskiego' na rogu w 'Panu Tadeuszu' jest nie tylko opisem gry. Zinterpretuj tę scenę jako formę muzycznej narracji.",
+            "answer": ["Koncert Wojskiego jest opowieścią dźwiękową, epopeją polowania zamkniętą w muzyce. Wojski za pomocą dźwięków rogu 'opowiada' całą historię polowania: od pobudki, przez nagonkę, szczekanie psów, aż po odgłosy osaczanego i walczącego zwierzęcia. To przykład mistrzostwa, w którym sztuka (muzyka) naśladuje i przetwarza rzeczywistość (polowanie)."]
+        },
+        {
+            "type": "closed",
+            "question": "Postać Gerwazego z 'Pana Tadeusza' jest moralnie niejednoznaczna, ponieważ:",
+            "answers": [
+                { "text": "Jest wiernym sługą Horeszków, ale jednocześnie spiskuje przeciwko Soplicom.", "correct": false },
+                { "text": "Jego patriotyzm i chęć walki z Moskalami są nierozerwalnie splecione z prywatną, ślepą żądzą zemsty, co sprawia, że jego szlachetne pobudki są skażone prymitywną wendetą.", "correct": true },
+                { "text": "Walczy o wolność Polski, ale posługuje się przestarzałą bronią, czyli Scyzorykiem.", "correct": false },
+                { "text": "Jest szanowany przez szlachtę, ale pogardzany przez Sędziego.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Zinterpretuj symboliczną wymowę spotkania Małego Księcia z Pijakiem. Co reprezentuje błędne koło, w którym tkwi Pijak?",
+            "answer": ["Błędne koło (pije, by zapomnieć o wstydzie, a wstydzi się, że pije) symbolizuje ludzką bezsilność, absurdy, nałogi i sytuacje bez wyjścia, w które ludzie sami się wpędzają. Jest to metafora utraty logiki i sensu, pułapki myślowej, z której nie ma ucieczki bez interwencji z zewnątrz lub fundamentalnej zmiany myślenia."]
+        },
+        {
+            "type": "closed",
+            "question": "W 'Balladynie', kontrast między złotym dzbanem malin a krwawą plamą na czole bohaterki symbolizuje:",
+            "answers": [
+                { "text": "Walkę między bogactwem a biedą.", "correct": false },
+                { "text": "Nierozerwalny związek między pozornym sukcesem (zdobyciem dzbana i męża) a popełnioną zbrodnią, której nie da się ukryć ani zmyć.", "correct": true },
+                { "text": "Przemianę niewinnej dziewczyny w okrutną władczynię.", "correct": false },
+                { "text": "Konflikt między naturą (maliny) a cywilizacją (złoty dzban).", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "W 'Zemście' Rejent Milczek posługuje się językiem pełnym zdrobnień ('mocium panie', 'serdeńko'). Jaka jest funkcja tych zdrobnień w kontekście jego prawdziwego charakteru?",
+            "answer": ["Zdrobnienia te pełnią funkcję maski. Tworzą fałszywy obraz Rejenta jako osoby łagodnej, pokornej i ugodowej. Ten styl mówienia stoi w jaskrawym kontraście do jego prawdziwego charakteru – człowieka chciwego, mściwego i bezwzględnego. Kontrast ten jest źródłem komizmu i demaskuje jego hipokryzję."]
+        },
+        {
+            "type": "closed",
+            "question": "Który z poniższych związków frazeologicznych ma swoje źródło w mitologii greckiej i oznacza nierozwiązywalny, skomplikowany problem?",
+            "answers": [
+                { "text": "Pięta achillesowa", "correct": false },
+                { "text": "Męki Tantala", "correct": false },
+                { "text": "Węzeł gordyjski", "correct": true },
+                { "text": "Stajnia Augiasza", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Wyjaśnij, dlaczego tytuł powieści Sienkiewicza 'Latarnik' jest jednocześnie dosłowny i symboliczny w odniesieniu do życia Skawińskiego PRZED otrzymaniem książek.",
+            "answer": ["Dosłownie, tytuł odnosi się do zawodu bohatera. Symbolicznie, bycie latarnikiem odzwierciedlało jego życie: uporządkowane, monotonne, bezpieczne, ale odizolowane od świata i pozbawione głębszych emocji. Jak latarnia, która rzuca światło na zewnątrz, ale sama jest pusta w środku, tak Skawiński pełnił funkcję, ale jego wewnętrzne życie było uśpione."]
+        },
+        {
+            "type": "closed",
+            "question": "W zdaniu: 'Bohaterowie, chociaż wyczerpani, parli naprzód, aby zdążyć przed zmrokiem', spójnik 'aby' wprowadza zdanie podrzędne:",
+            "answers": [
+                { "text": "okolicznikowe przyczyny", "correct": false },
+                { "text": "okolicznikowe warunku", "correct": false },
+                { "text": "okolicznikowe celu", "correct": true },
+                { "text": "okolicznikowe sposobu", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "W przypowieści o pannach roztropnych i nieroztropnych, oliwa w lampach jest symbolem. Zinterpretuj, co może symbolizować ta oliwa w kontekście życia duchowego człowieka.",
+            "answer": ["Oliwa symbolizuje wewnętrzne przygotowanie, czujność duchową, dobre uczynki, wiarę i mądrość. Nie można jej pożyczyć ani zdobyć w ostatniej chwili. Jest to metafora pracy nad sobą, którą każdy musi wykonać indywidualnie, by być gotowym na ważne, ostateczne wydarzenia ('przyjście pana młodego')."]
+        },
+        {
+            "type": "closed",
+            "question": "Porównując postawę życiową Petroniusza z 'Quo vadis' i Kochanowskiego jako podmiotu lirycznego z fraszki 'O żywocie ludzkim', można dostrzec podobieństwo polegające na:",
+            "answers": [
+                { "text": "Głębokiej wierze w siłę sprawczą bogów/Boga.", "correct": false },
+                { "text": "Dostrzeganiu marności i nietrwałości ludzkich starań oraz przyjmowaniu postawy zdystansowanego obserwatora, który patrzy na świat z ironią lub rezygnacją.", "correct": true },
+                { "text": "Aktywnym dążeniu do zmiany porządku świata.", "correct": false },
+                { "text": "Pochwale prostego życia w zgodzie z naturą.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Utwórz formę liczby mnogiej mianownika od rzeczownika 'ksiądz' i użyj jej w poprawnym gramatycznie zdaniu.",
+            "answer": ["Forma: księża. Zdanie: Na uroczystość przybyli zaproszeni księża."]
+        },
+        {
+            "type": "closed",
+            "question": "Humor w 'Zemście' Aleksandra Fredry opiera się w dużej mierze na komizmie sytuacji. Które z poniższych zdarzeń jest najlepszym przykładem tego rodzaju komizmu?",
+            "answers": [
+                { "text": "Papkin opowiadający o swoich rzekomych bohaterskich czynach.", "correct": false },
+                { "text": "Scena, w której Cześnik, chcąc dokuczyć Rejentowi, zmusza Wacława do ślubu z Klarą, nie wiedząc, że młodzi są w sobie zakochani i realizuje ich najskrytsze marzenia.", "correct": true },
+                { "text": "Rejent powtarzający 'mocium panie'.", "correct": false },
+                { "text": "Dyndalski nieudolnie piszący list w imieniu Klary.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "W 'Śmierci Pułkownika' Adama Mickiewicza, tożsamość zmarłego wodza zostaje ujawniona dopiero na końcu. Jaki cel artystyczny osiąga poeta poprzez ten zabieg?",
+            "answer": ["Celem jest zbudowanie aury tajemnicy i podkreślenie uniwersalnego wymiaru bohaterstwa. Do końca czytelnik myśli, że to umiera wielki wódz-mężczyzna. Ujawnienie, że to Emilia Plater, potęguje wrażenie i pokazuje, że odwaga i miłość do ojczyzny nie mają płci, a kobieta może być bohaterem narodowym na równi z mężczyznami."]
+        },
+        {
+            "type": "closed",
+            "question": "Wypowiedź Dyrektora Cyrku z opowiadania 'Artysta': '– A ryczeć pan potrafi? – pytam, bo wypadnie, że go zaangażuję, a on, zamiast ryczeć, będzie, powiedzmy, piać.' – jest przykładem języka cechującego się:",
+            "answers": [
+                { "text": "Wyszukanym stylem artystycznym.", "correct": false },
+                { "text": "Urzędową precyzją i formalizmem.", "correct": false },
+                { "text": "Potocznym, dosadnym pragmatyzmem, sprowadzającym sztukę do konkretnej, użytecznej umiejętności.", "correct": true },
+                { "text": "Poetycką metaforyką.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "W zdaniu: 'Chłopiec, usiadłszy na pniu, pokazał Mary nasiona', zastąp imiesłów przysłówkowy uprzedni 'usiadłszy' zdaniem podrzędnym, nie zmieniając sensu wypowiedzenia.",
+            "answer": ["Chłopiec, gdy usiadł na pniu, pokazał Mary nasiona."]
+        },
+        {
+            "type": "closed",
+            "question": "Wskaż, w którym szeregu wszystkie trzy postacie łączy motyw zdrady (popełnionej lub doznanej).",
+            "answers": [
+                { "text": "Scrooge, Rejent, Nemeczek", "correct": false },
+                { "text": "Balladyna, Strzelec ze 'Świtezianki', Feri Acz", "correct": true },
+                { "text": "Jacek Soplica, Ordon, Mały Książę", "correct": false },
+                { "text": "Telimena, Gerwazy, Alina", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Wyjaśnij, na czym polega różnica znaczeniowa między czasownikami 'uczyć się' a 'nauczyć się'.",
+            "answer": ["'Uczyć się' to czasownik niedokonany, który oznacza proces, czynność trwającą w czasie, bez gwarancji osiągnięcia celu. 'Nauczyć się' to czasownik dokonany, który oznacza rezultat, skuteczne zakończenie procesu uczenia się, osiągnięcie celu."]
+        },
+        {
+            "type": "closed",
+            "question": "Zarówno 'Mazurek Dąbrowskiego', jak i 'Reduta Ordona' opisują walkę o niepodległość. Kluczowa różnica w nastroju i przesłaniu obu utworów polega na tym, że:",
+            "answers": [
+                { "text": "'Mazurek...' jest pełen optymizmu i wiary w zwycięstwo, a 'Reduta...' przedstawia tragiczną, ale heroiczną klęskę.", "correct": true },
+                { "text": "'Mazurek...' opisuje walkę piechoty, a 'Reduta...' artylerii.", "correct": false },
+                { "text": "'Mazurek...' jest pieśnią, a 'Reduta...' jest poematem.", "correct": false },
+                { "text": "'Mazurek...' powstał we Włoszech, a 'Reduta...' w Polsce.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "W mitologii Ikar ginie z powodu nieposłuszeństwa i pychy. W 'Pamiętniku Zofii Bobrówny' Juliusza Słowackiego, podmiot liryczny radzi dziewczynce, by 'nie deptała maleńkich gwiazd'. Jaki wspólny motyw łączy te dwa utwory?",
+            "answer": ["Wspólnym motywem jest przestroga przed przekraczaniem pewnych granic – Ikar przekracza granicę wyznaczoną przez ojca i naturę, a Zosia jest przestrzegana przed utratą niewinności i deptaniem ideałów. Oba utwory, choć w różny sposób, mówią o konieczności zachowania pokory i szacunku wobec wyższego porządku."]
+        },
+        {
+            "type": "closed",
+            "question": "Które z poniższych zdań jest zdaniem złożonym współrzędnie wynikowym?",
+            "answers": [
+                { "text": "Zaczął padać deszcz i wszyscy schowali się pod dachem.", "correct": false },
+                { "text": "Zaczął padać deszcz, więc wszyscy schowali się pod dachem.", "correct": true },
+                { "text": "Zaczął padać deszcz, ale nikt nie przejął się tym zbytnio.", "correct": false },
+                { "text": "Albo zacznie padać deszcz, albo pójdziemy na spacer.", "correct": false }
+            ]
+        },
+        {
+            "type": "open",
+            "question": "Jaką funkcję w 'Panu Tadeuszu' pełni postać Jankiela i jego koncert na cymbałach?",
+            "answer": ["Jankiel, Żyd-patriota, symbolizuje wielokulturowość i jedność dawnej Rzeczypospolitej. Jego koncert jest muzyczną syntezą najnowszej historii Polski (od Konstytucji 3 Maja do Legionów), budzi uczucia patriotyczne i daje nadzieję na odzyskanie niepodległości. Jest artystą-wieszczem, który jednoczy słuchaczy."]
+        }
+    ]
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");
 const answerButtonsElement = document.getElementById("answer-buttons");
