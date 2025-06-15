@@ -1,205 +1,215 @@
 const questions = [
     {
         "type": "closed",
-        "question": "W 'Zemście' A. Fredry, spór o mur graniczny jest w istocie pretekstem. Co jest prawdziwym, głębszym źródłem konfliktu między Cześnikiem a Rejentem?",
+        "question": "I didn't fix the leak myself; I ______ by a professional plumber.",
         "answers": [
-            { "text": "Walka o wpływy polityczne w regionie.", "correct": false },
-            { "text": "Konflikt dwóch skrajnie różnych temperamentów i urażona duma, które uniemożliwiają jakiekolwiek porozumienie.", "correct": true },
-            { "text": "Zaszłości historyczne i dawny spór o majątek, którego mur jest tylko częścią.", "correct": false },
-            { "text": "Niezgoda na planowany ślub Wacława i Klary.", "correct": false }
+            { "text": "had it repaired", "correct": true },
+            { "text": "had repaired it", "correct": false },
+            { "text": "was repaired it", "correct": false },
+            { "text": "repaired it", "correct": false }
+        ]
+    },
+    {
+        "type": "closed",
+        "question": "Read the text: 'Despite the initial major setback, the team rallied, worked overnight, and managed to deliver the project ahead of schedule.' What does this imply about the team?",
+        "answers": [
+            { "text": "They were lucky to finish on time.", "correct": false },
+            { "text": "They are resilient and work well under pressure.", "correct": true },
+            { "text": "The project was much easier than expected.", "correct": false },
+            { "text": "They had no real difficulties.", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Wyjaśnij, na czym polega tragizm postaci Świtezianki z ballady Adama Mickiewicza. Weź pod uwagę nie tylko los strzelca, ale także jej własną sytuację.",
-        "answer": ["Jej tragizm polega na tym, że jest strażniczką moralnego prawa, które musi egzekwować nawet kosztem własnego szczęścia i miłości. Skazując strzelca, skazuje samą siebie na wieczną samotność. Jest jednocześnie sędzią i ofiarą."]
+        "question": "Rewrite the sentence to add emphasis, starting with 'No sooner...'. Original sentences: 'He arrived home. The phone started ringing immediately.'",
+        "answer": ["No sooner had he arrived home than the phone started ringing."]
     },
     {
         "type": "closed",
-        "question": "Porównując postawę bohaterów 'Kamieni na szaniec' i Marcina Borowicza z 'Syzyfowych prac' w kontekście walki z zaborcą, kluczowa różnica polega na:",
+        "question": "The police have decided to ______ the mysterious disappearance of the painting.",
         "answers": [
-            { "text": "Skuteczności ich działań – bohaterowie 'Kamieni...' odnosili większe sukcesy.", "correct": false },
-            { "text": "W wieku bohaterów – Borowicz był znacznie młodszy od Alka, Rudego i Zośki.", "correct": false },
-            { "text": "Formie walki – 'Kamienie...' opisują walkę zbrojną i dywersję, a 'Syzyfowe prace' – opór intelektualny i kulturowy w warunkach szkolnych.", "correct": true },
-            { "text": "Wsparciu ze strony dorosłych – Borowicz był osamotniony, a harcerze mieli wsparcie w swoich rodzinach.", "correct": false }
+            { "text": "look up to", "correct": false },
+            { "text": "look down on", "correct": false },
+            { "text": "look out for", "correct": false },
+            { "text": "look into", "correct": true }
         ]
     },
     {
         "type": "closed",
-        "question": "W 'Panu Tadeuszu' Adam Mickiewicz idealizuje obraz Soplicowa. Jaki jest główny cel artystyczny tej idealizacji?",
+        "question": "Your friend says, 'I'm sure I can finish this entire book tonight.' How would you express polite doubt?",
         "answers": [
-            { "text": "Stworzenie realistycznego dokumentu życia szlachty na Litwie.", "correct": false },
-            { "text": "Ukazanie wyższości kultury polskiej nad kulturą zaborców.", "correct": false },
-            { "text": "Stworzenie mitycznej 'arkadii', ostoi polskości i porządku moralnego, aby 'pokrzepić serca' emigrantów i przypomnieć o utraconej ojczyźnie.", "correct": true },
-            { "text": "Skrytykowanie zacofania i wad szlachty poprzez ich wyolbrzymienie.", "correct": false }
-        ]
-    },
-    {
-        "type": "open",
-        "question": "W lekturze 'Chłopcy z Placu Broni' Ferenca Molnára, Plac Broni jest dla chłopców czymś więcej niż tylko miejscem zabaw. Zinterpretuj, co symbolizuje dla nich ten kawałek ziemi.",
-        "answer": ["Plac Broni symbolizuje dla nich ojczyznę, państwo w miniaturze. Ma swoje granice, 'rząd' (związek), prawo i 'armię'. Walka o niego to walka o wartości takie jak honor, wierność i poświęcenie, a jego utrata jest dla nich tragedią narodową."]
-    },
-    {
-        "type": "closed",
-        "question": "Gerwazy z 'Pana Tadeusza' i Syzyf z mitologii greckiej to postacie napędzane przez jedną, dominującą siłę. Mimo oczywistych różnic, łączy ich:",
-        "answers": [
-            { "text": "Bunt przeciwko boskim wyrokom.", "correct": false },
-            { "text": "Niezłomny, trwający latami upór w dążeniu do jednego, określonego celu (zemsta / wtoczenie głazu), który definiuje całe ich istnienie.", "correct": true },
-            { "text": "Działanie na rzecz dobra wspólnoty.", "correct": false },
-            { "text": "Poczucie bezsensu i rezygnacja ze swoich działań.", "correct": false }
-        ]
-    },
-    {
-        "type": "closed",
-        "question": "W 'Balladynie' Juliusza Słowackiego natura nie jest tylko tłem wydarzeń, ale aktywnym uczestnikiem dramatu. Jej rola polega przede wszystkim na:",
-        "answers": [
-            { "text": "Tworzeniu nastroju grozy i tajemniczości.", "correct": false },
-            { "text": "Byciu świadkiem zbrodni i strażnikiem moralnego porządku, który ostatecznie wymierza sprawiedliwość (np. piorun).", "correct": true },
-            { "text": "Dostarczaniu bohaterom schronienia i pożywienia.", "correct": false },
-            { "text": "Symbolizowaniu uczuć bohaterów, np. burza jako odzwierciedlenie gniewu Balladyny.", "correct": false }
+            { "text": "That's impossible, don't be silly.", "correct": false },
+            { "text": "Are you sure? That seems a bit ambitious, but good luck!", "correct": true },
+            { "text": "You'll definitely fail.", "correct": false },
+            { "text": "Why would you even try that?", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Wyjaśnij, dlaczego rozmowa z Pilotem była dla Małego Księcia najważniejszym i jedynym udanym spotkaniem z 'dorosłym'. Czym Pilot różnił się od mieszkańców planetoid?",
-        "answer": ["Pilot, w przeciwieństwie do innych dorosłych, nie zatracił w sobie dziecka. Potrafił dostrzec słonia w kapeluszu i zrozumieć rysunek baranka. Miał wyobraźnię i zdolność do nawiązania prawdziwej, opartej na przyjaźni i zrozumieniu relacji, a nie tylko skupiał się na 'poważnych sprawach' jak władza czy cyfry."]
+        "question": "Use the word in brackets to form a word that fits the gap: 'Her ____ (DETERMINE) to become a doctor was truly inspiring.'",
+        "answer": ["determination"]
     },
     {
         "type": "closed",
-        "question": "W zdaniu z tekstu 'Tajemniczy ogród': '...wtedy wiewiórka drapnęła na gałęzie, bażant skrył się w krzakach, a króliki uciekły w podskokach...', użycie czasowników 'drapnęła', 'skrył się', 'uciekły' zamiast np. 'weszła', 'schował się', 'pobiegły' ma na celu:",
+        "question": "The lights are off and the curtains are drawn. They _______ gone on holiday.",
         "answers": [
-            { "text": "Uproszczenie języka, aby był bardziej zrozumiały dla młodych czytelników.", "correct": false },
-            { "text": "Oddanie dynamiki i gwałtowności ruchu, charakterystycznego dla spłoszonych zwierząt.", "correct": true },
-            { "text": "Podkreślenie lenistwa i powolności tych stworzeń.", "correct": false },
-            { "text": "Wprowadzenie elementów języka potocznego do narracji.", "correct": false }
+            { "text": "must have", "correct": true },
+            { "text": "should have", "correct": false },
+            { "text": "can't", "correct": false },
+            { "text": "needn't have", "correct": false }
+        ]
+    },
+    {
+        "type": "closed",
+        "question": "What is the meaning of the idiom 'to keep your cards close to your chest'?",
+        "answers": [
+            { "text": "To be a professional gambler.", "correct": false },
+            { "text": "To not reveal your plans or ideas.", "correct": true },
+            { "text": "To feel cold and wrap your arms around yourself.", "correct": false },
+            { "text": "To be very shy and introverted.", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Zinterpretuj tytuł utworu Sławomira Mrożka 'Artysta'. Kto w tym opowiadaniu jest prawdziwym 'artystą' i dlaczego?",
-        "answer": ["Tytuł jest ironiczny. Prawdziwym artystą nie jest Kogut, który ma tylko ambicje, ale Lis. Lis potrafi doskonale odegrać swoją rolę (łowcy), jest autentyczny w swojej naturze i osiąga swój cel. Jego 'sztuka' jest skuteczna i prawdziwa."]
+        "question": "Rewrite the command using reported speech: The librarian said to the children, 'Do not run in the library.'",
+        "answer": ["The librarian told the children not to run in the library."]
     },
     {
         "type": "closed",
-        "question": "Jaka fundamentalna różnica dzieli świat wartości reprezentowany przez chrześcijan i świat Rzymu pod rządami Nerona w 'Quo vadis' Henryka Sienkiewicza?",
+        "question": "While the scientist was famous for his discoveries, his brother was a(n) _______ criminal.",
         "answers": [
-            { "text": "Chrześcijanie cenili życie w ubóstwie, a Rzymianie bogactwo i luksus.", "correct": false },
-            { "text": "Rzym opierał się na sile fizycznej, władzy i hedonizmie, a świat chrześcijan na sile duchowej, miłości (agape), pokorze i nadziei na życie wieczne.", "correct": true },
-            { "text": "Rzymianie byli politeistami, a chrześcijanie monoteistami.", "correct": false },
-            { "text": "Chrześcijanie byli pacyfistami, a Rzymianie prowadzili liczne wojny.", "correct": false }
+            { "text": "distinguished", "correct": false },
+            { "text": "renowned", "correct": false },
+            { "text": "notorious", "correct": true },
+            { "text": "acclaimed", "correct": false }
         ]
     },
     {
         "type": "closed",
-        "question": "W zdaniu: 'Chłopiec, pomimo że był onieśmielony, zdołał pokazać dziewczynce nasiona.' podrzędne zdanie okolicznikowe przyzwolenia można zastąpić wyrażeniem przyimkowym bez zmiany sensu. Którym?",
+        "question": "______ I richer, I would buy a house by the sea. (This is a more formal way of saying 'If I were...')",
         "answers": [
-            { "text": "Z powodu onieśmielenia...", "correct": false },
-            { "text": "W celu pokazania...", "correct": false },
-            { "text": "Mimo onieśmielenia...", "correct": true },
-            { "text": "Dzięki onieśmieleniu...", "correct": false }
-        ]
-    },
-    {
-        "type": "open",
-        "question": "W 'Trenie VII' Jan Kochanowski zestawia 'lichą odzież' i 'uploteczki' córki z jej 'matką zasłoną'. Co poeta osiąga poprzez to zestawienie prostych, codziennych przedmiotów z pojęciem abstrakcyjnym?",
-        "answer": ["Poeta materializuje swoją rozpacz. Zestawienie konkretnych, namacalnych pamiątek po dziecku (ubranka) z abstrakcyjnym bólem i pustką (zasłona matki) potęguje wrażenie straty. Sprawia, że ból staje się niemal fizycznie odczuwalny i unaocznia ogrom tragedii."]
-    },
-    {
-        "type": "closed",
-        "question": "Wybierz parę bohaterów z różnych lektur, których postawy wobec życia i przeciwności losu są najbardziej do siebie ZBLIŻONE.",
-        "answers": [
-            { "text": "Ebenezer Scrooge (przed przemianą) i Rejent Milczek.", "correct": false },
-            { "text": "Mały Książę i Bilbo Baggins.", "correct": false },
-            { "text": "Zośka ('Kamienie na szaniec') i Ordon ('Reduta Ordona').", "correct": true },
-            { "text": "Balladyna i Telimena.", "correct": false }
+            { "text": "Was", "correct": false },
+            { "text": "If", "correct": false },
+            { "text": "Am", "correct": false },
+            { "text": "Were", "correct": true }
         ]
     },
     {
         "type": "open",
-        "question": "W przypowieści o miłosiernym Samarytaninie, kapłan i lewita mijają rannego. Dlaczego Jezus w swojej opowieści wybrał właśnie przedstawicieli tych grup? Co chciał przez to podkreślić?",
-        "answer": ["Jezus wybrał kapłana i lewitę, czyli osoby duchowne, od których oczekiwano prawości i miłosierdzia. Ich obojętność pokazuje, że formalna przynależność religijna i znajomość prawa nie gwarantują człowieczeństwa. Podkreśla, że prawdziwa wiara objawia się w czynach, a nie w statusie społecznym."]
+        "question": "Rewrite the sentence in the passive voice: 'They should have delivered the package yesterday.'",
+        "answer": ["The package should have been delivered yesterday."]
     },
     {
         "type": "closed",
-        "question": "Analizując język fraszki 'Na lipę' Jana Kochanowskiego, można stwierdzić, że dominującym środkiem stylistycznym, budującym cały obraz poetycki, jest:",
+        "question": "It's a very serious matter and we need to ______ a decision as soon as possible.",
         "answers": [
-            { "text": "Apostrofa do gościa.", "correct": false },
-            { "text": "Porównanie homeryckie.", "correct": false },
-            { "text": "Personifikacja (uosobienie) – lipa przemawia ludzkim głosem, zapraszając do odpoczynku.", "correct": true },
-            { "text": "Hiperbola, wyolbrzymiająca zalety drzewa.", "correct": false }
+            { "text": "do", "correct": false },
+            { "text": "make", "correct": true },
+            { "text": "have", "correct": false },
+            { "text": "get", "correct": false }
+        ]
+    },
+    {
+        "type": "closed",
+        "question": "You are in a meeting and you want to add a point. What is the most professional way to interrupt?",
+        "answers": [
+            { "text": "Wait, I have something to say.", "correct": false },
+            { "text": "Listen to me for a second.", "correct": "false" },
+            { "text": "Could I just jump in here for a moment?", "correct": true },
+            { "text": "Stop talking, it's my turn.", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Przekształć zdanie złożone w wypowiedzenie z imiesłowowym równoważnikiem zdania: 'Gdy Mary zobaczyła Dicka, który grał na fujarce, zatrzymała się w zdumieniu.'",
-        "answer": ["Zobaczywszy Dicka grającego na fujarce, Mary zatrzymała się w zdumieniu."]
+        "question": "Complete the sentence with the correct preposition: 'He is responsible ____ the entire marketing department.'",
+        "answer": ["for"]
     },
     {
         "type": "closed",
-        "question": "Które z podanych zdań najtrafniej oddaje uniwersalne przesłanie 'Opowieści wigilijnej' Karola Dickensa?",
+        "question": "The concert was fantastic. _______, the tickets were incredibly expensive.",
         "answers": [
-            { "text": "Warto jest gromadzić majątek, aby móc dzielić się nim z ubogimi w przyszłości.", "correct": false },
-            { "text": "Każdy człowiek, bez względu na swoje przeszłe błędy, ma szansę na wewnętrzną przemianę i odkupienie, jeśli otworzy serce na innych.", "correct": true },
-            { "text": "Duchy zmarłych mogą ingerować w życie ludzi, aby naprawić dawne krzywdy.", "correct": false },
-            { "text": "Rodzina i tradycja świąt są najważniejszymi wartościami w życiu człowieka.", "correct": false }
+            { "text": "As a result", "correct": false },
+            { "text": "Furthermore", "correct": false },
+            { "text": "On the other hand", "correct": true },
+            { "text": "Thus", "correct": false }
         ]
     },
     {
         "type": "closed",
-        "question": "W którym z poniższych wyrazów przedrostek 'prze-' ma inne znaczenie niż w pozostałych (oznacza zmianę, transformację)?",
+        "question": "I really wish I ______ more attention in class last week; I don't understand anything now.",
         "answers": [
-            { "text": "Przekształcić", "correct": false },
-            { "text": "Przemienić", "correct": false },
-            { "text": "Przeskoczyć", "correct": true },
-            { "text": "Przerobić", "correct": false }
-        ]
-    },
-    {
-        "type": "open",
-        "question": "W 'Hobbicie' J.R.R. Tolkiena, Bilbo Baggins wyrusza w podróż jako stateczny, lubiący wygodę hobbit, a wraca jako zupełnie inna osoba. Wymień jedną cechę, którą nabył w trakcie wyprawy, i podaj sytuację, w której ją ujawnił.",
-        "answer": ["Nabył odwagę i spryt. Ujawnił je na przykład podczas konfrontacji z pająkami w Mrocznej Puszczy, gdzie samotnie walczył, by ocalić krasnoludów, lub podczas gry w zagadki z Gollumem, gdzie wykazał się zimną krwią i inteligencją."]
-    },
-    {
-        "type": "closed",
-        "question": "Wypowiedzenie: 'Ptaki niełatwo zaprzyjaźniają się, a taki rudzik to potrafi wystrychnąć na dudka gorzej niż człowiek' to zdanie:",
-        "answers": [
-            { "text": "Złożone podrzędnie z podrzędnym dopełnieniowym.", "correct": false },
-            { "text": "Złożone współrzędnie łączne.", "correct": false },
-            { "text": "Złożone współrzędnie przeciwstawne.", "correct": true },
-            { "text": "Pojedyncze rozwinięte z wtrąceniem.", "correct": false }
+            { "text": "paid", "correct": false },
+            { "text": "would pay", "correct": false },
+            { "text": "had paid", "correct": true },
+            { "text": "was paying", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Wskaż wspólny motyw łączący mit o Dedalu i Ikarze oraz przypowieść o talentach. Wyjaśnij krótko, na czym polega to podobieństwo.",
-        "answer": ["Wspólnym motywem jest przestroga przed pychą i niewłaściwym wykorzystaniem daru/talentu. Ikar upada, bo w uniesieniu pychą ignoruje rady ojca i przekracza granice. Sługa z przypowieści zostaje ukarany, bo ze strachu nie wykorzystuje danego mu talentu. Oba utwory uczą odpowiedzialności i umiaru."]
+        "question": "Rewrite the sentence using 'If only...'. First sentence: 'It's a pity you didn't see that movie.'",
+        "answer": ["If only you had seen that movie."]
     },
     {
         "type": "closed",
-        "question": "Czym różni się patriotyzm ukazywany w 'Reducie Ordona' od patriotyzmu przedstawionego w 'Mazurku Dąbrowskiego'?",
+        "question": "The company is looking for a ______ solution to its financial problems, not a temporary fix.",
         "answers": [
-            { "text": "'Reduta...' skupia się na heroicznej klęsce i ofierze, a 'Mazurek...' na nadziei, woli walki i wizji odzyskania niepodległości.", "correct": true },
-            { "text": "'Reduta...' opisuje walkę na lądzie, a 'Mazurek...' na morzu.", "correct": false },
-            { "text": "'Reduta...' jest utworem romantycznym, a 'Mazurek...' oświeceniowym.", "correct": false },
-            { "text": "'Reduta...' gloryfikuje dowódcę, a 'Mazurek...' anonimowego żołnierza.", "correct": false }
+            { "text": "momentary", "correct": false },
+            { "text": "viable", "correct": true },
+            { "text": "debatable", "correct": false },
+            { "text": "superficial", "correct": false }
+        ]
+    },
+    {
+        "type": "closed",
+        "question": "We regret ______ you that the performance has been cancelled due to unforeseen circumstances.",
+        "answers": [
+            { "text": "informing", "correct": false },
+            { "text": "to inform", "correct": true },
+            { "text": "to have informed", "correct": false },
+            { "text": "inform", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Wpisz skrót, który poprawnie zastąpi wyrażenie 'między innymi' w formalnym tekście.",
-        "answer": ["m.in."]
+        "question": "Use the word in brackets to form a word that fits the gap: 'The plot of the film was so ____ (PREDICT) that I knew how it would end after 20 minutes.'",
+        "answer": ["predictable"]
     },
     {
         "type": "closed",
-        "question": "Ostatnia scena 'Dziadów części II', w której pojawia się milczące Widmo podążające za Pasterką, ma kluczowe znaczenie dla całego cyklu. Jej funkcja to przede wszystkim:",
+        "question": "There was ______ damage to the building after the storm, but luckily no one was hurt.",
         "answers": [
-            { "text": "Zakończenie obrzędu dziadów i odesłanie wszystkich duchów.", "correct": false },
-            { "text": "Wprowadzenie motywu nieszczęśliwej miłości i zapowiedź problematyki IV części 'Dziadów'.", "correct": true },
-            { "text": "Ukazanie, że nie wszystkie duchy można przywołać za pomocą zaklęć Guślarza.", "correct": false },
-            { "text": "Zasugerowanie, że Pasterka popełniła najcięższy grzech.", "correct": false }
+            { "text": "considerable", "correct": true },
+            { "text": "considered", "correct": false },
+            { "text": "considerate", "correct": false },
+            { "text": "considering", "correct": false }
+        ]
+    },
+    {
+        "type": "closed",
+        "question": "Due to the accident, there was ______ traffic on the road this morning.",
+        "answers": [
+            { "text": "a large number of", "correct": false },
+            { "text": "many", "correct": false },
+            { "text": "a great deal of", "correct": true },
+            { "text": "several", "correct": false }
+        ]
+    },
+    {
+        "type": "open",
+        "question": "Complete the sentence with the correct form of the verb: 'You need to get that strange noise in your car ______ (check) by a mechanic.'",
+        "answer": ["checked"]
+    },
+    {
+        "type": "closed",
+        "question": "This is by ______ the most difficult exercise we've done so far.",
+        "answers": [
+            { "text": "far", "correct": true },
+            { "text": "much", "correct": false },
+            { "text": "long", "correct": false },
+            { "text": "way", "correct": false }
         ]
     }
-]
+];
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

@@ -1,205 +1,215 @@
 const questions = [
     {
-        type: 'closed',
-        question: "Suma dwóch liczb naturalnych wynosi 8, a suma ich odwrotności to 8/15. Ile wynosi iloczyn tych liczb?",
-        answers: [
-            { text: "8", correct: false },
-            { text: "15", correct: true },
-            { text: "16", correct: false },
-            { text: "64", correct: false }
+        "type": "closed",
+        "question": "Not until I read the final chapter ______ understand the author's true message.",
+        "answers": [
+            { "text": "I did", "correct": false },
+            { "text": "did I", "correct": true },
+            { "text": "I have", "correct": false },
+            { "text": "I could", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Jaka jest miara kąta wewnętrznego w ośmiokącie foremnym? Podaj wynik w stopniach.",
-        answer: ["135"]
-    },
-    {
-        type: 'closed',
-        question: "Która z poniższych liczb jest największa?",
-        answers: [
-            { text: "(1/2)⁻²⁰", correct: false },
-            { text: "(1/3)⁻¹⁵", correct: true },
-            { text: "(1/4)⁻¹⁰", correct: false },
-            { text: "Wszystkie są równe", correct: false }
+        "type": "closed",
+        "question": "When asked for her opinion on the controversial plan, she just gave a noncommittal shrug. What can be inferred from her reaction?",
+        "answers": [
+            { "text": "She strongly supports the plan.", "correct": false },
+            { "text": "She is angry about the plan.", "correct": false },
+            { "text": "She is refusing to express a clear opinion or decision.", "correct": true },
+            { "text": "She doesn't understand the question.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Ile jest liczb dwucyfrowych, które przy dzieleniu przez 7 dają resztę 3?",
-        answer: ["13"]
+        "type": "open",
+        "question": "Rewrite the sentence to add emphasis, starting with 'What...'. Original sentence: 'I need a new laptop for my studies.'",
+        "answer": ["What I need for my studies is a new laptop."]
     },
     {
-        type: 'closed',
-        question: "Bryła powstała przez nałożenie półkuli o promieniu 3 cm na walec o tym samym promieniu podstawy i wysokości 5 cm. Jakie jest pole powierzchni całkowitej tej bryły?",
-        answers: [
-            { text: "57π cm²", correct: true },
-            { text: "45π cm²", correct: false },
-            { text: "63π cm²", correct: false },
-            { text: "36π cm²", correct: false }
+        "type": "closed",
+        "question": "I need to ______ my French before I go to Paris next month.",
+        "answers": [
+            { "text": "brush up on", "correct": true },
+            { "text": "come up with", "correct": false },
+            { "text": "do away with", "correct": false },
+            { "text": "get away with", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Liczba √(13 + 4√3) jest równa a + b√c, gdzie a, b, c są liczbami naturalnymi, a c jest liczbą pierwszą. Podaj sumę a+b+c.",
-        answer: ["6"]
-    },
-    {
-        type: 'closed',
-        question: "W kwadrat o boku 4 losowo wybrano punkt. Jakie jest prawdopodobieństwo, że punkt ten leży w odległości nie większej niż 2 od środka kwadratu?",
-        answers: [
-            { text: "π/2", correct: false },
-            { text: "π/4", correct: true },
-            { text: "π/8", correct: false },
-            { text: "1/2", correct: false }
+        "type": "closed",
+        "question": "Your friend confidently states a fact that you know is incorrect. How do you correct them politely?",
+        "answers": [
+            { "text": "You're completely wrong about that.", "correct": false },
+            { "text": "That's not true at all.", "correct": false },
+            { "text": "Are you sure? I thought it was actually...", "correct": true },
+            { "text": "Listen, that's a stupid thing to say.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W trójkącie ABC boki mają długość 8, 10, 12. Trójkąt A'B'C' jest podobny do trójkąta ABC, a jego najdłuższy bok ma długość 30. Ile wynosi obwód trójkąta A'B'C'?",
-        answers: [
-            { text: "60", correct: false },
-            { text: "72", correct: false },
-            { text: "75", correct: true },
-            { text: "90", correct: false }
+        "type": "open",
+        "question": "Use the word in brackets to form a word that fits the gap: 'His ____ (PERCEIVE) of the situation was completely different from mine.'",
+        "answer": ["perception"]
+    },
+    {
+        "type": "closed",
+        "question": "It's almost midnight. It's high time you ______ to bed.",
+        "answers": [
+            { "text": "go", "correct": false },
+            { "text": "should go", "correct": false },
+            { "text": "went", "correct": true },
+            { "text": "are going", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Podaj liczbę dzielników naturalnych liczby 360.",
-        answer: ["24"]
-    },
-    {
-        type: 'closed',
-        question: "W okrąg wpisano trójkąt równoramienny ABC (|AC|=|BC|), w którym kąt między ramionami |∠ACB| = 30°. Ile wynosi miara kąta środkowego opartego na podstawie AB?",
-        answers: [
-            { text: "30°", correct: false },
-            { text: "60°", correct: true },
-            { text: "75°", correct: false },
-            { text: "150°", correct: false }
+        "type": "closed",
+        "question": "What is the meaning of the idiom 'to bite the bullet'?",
+        "answers": [
+            { "text": "To eat something very quickly.", "correct": false },
+            { "text": "To get injured in an accident.", "correct": false },
+            { "text": "To finally make a decision to do something difficult or unpleasant.", "correct": true },
+            { "text": "To stop talking and listen.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Cenę towaru podniesiono o 25%, a następnie obniżono o kwotę równą 1/4 nowej ceny. Końcowa cena towaru wynosi 200 zł. Jaka była cena początkowa?",
-        answer: ["200"]
+        "type": "open",
+        "question": "Rewrite the suggestion using reported speech: She said, 'Let's order a pizza.'",
+        "answer": ["She suggested ordering a pizza.", "She suggested that they should order a pizza."]
     },
     {
-        type: 'closed',
-        question: "Dwie proste o równaniach y = (m-2)x + 3 oraz y = -3x + 1 są prostopadłe. Wynika stąd, że:",
-        answers: [
-            { text: "m = -1", correct: false },
-            { text: "m = 5", correct: false },
-            { text: "m = 7/3", correct: true },
-            { text: "m = 2", correct: false }
+        "type": "closed",
+        "question": "A person should always act according to their moral ______.",
+        "answers": [
+            { "text": "principals", "correct": false },
+            { "text": "principles", "correct": true },
+            { "text": "principal", "correct": false },
+            { "text": "principle", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Sześcian i ostrosłup prawidłowy czworokątny mają identyczne podstawy. Jaki musi być stosunek wysokości ostrosłupa do wysokości (krawędzi) sześcianu, aby objętości obu brył były równe?",
-        answers: [
-            { text: "1:1", correct: false },
-            { text: "2:1", correct: false },
-            { text: "3:1", correct: true },
-            { text: "1:3", correct: false }
+        "type": "closed",
+        "question": "By the time he retires, he ______ for this company for over forty years.",
+        "answers": [
+            { "text": "will be working", "correct": false },
+            { "text": "will work", "correct": false },
+            { "text": "is going to work", "correct": false },
+            { "text": "will have been working", "correct": true }
         ]
     },
     {
-        type: 'open',
-        question: "W pudełku jest 6 kul czerwonych i 4 niebieskie. Ania i Bartek losują kolejno po jednej kuli bez zwracania (Ania pierwsza). Jakie jest prawdopodobieństwo, że Bartek wylosuje kulę niebieską? Podaj wynik jako ułamek nieskracalny.",
-        answer: ["2/5"]
+        "type": "open",
+        "question": "Rewrite the sentence in the passive voice, starting with 'The politician...'. Original sentence: 'Journalists allege that the politician accepted a bribe.'",
+        "answer": ["The politician is alleged to have accepted a bribe."]
     },
     {
-        type: 'closed',
-        question: "Liczba (2√5 - √10)² / √2 jest równa:",
-        answers: [
-            { text: "30√2 - 20", correct: false },
-            { text: "15√2 - 20", correct: true },
-            { text: "15 - 10√2", correct: false },
-            { text: "10", correct: false }
+        "type": "closed",
+        "question": "The ______ majority of people agree that climate change is a serious issue.",
+        "answers": [
+            { "text": "large", "correct": false },
+            { "text": "vast", "correct": true },
+            { "text": "huge number", "correct": false },
+            { "text": "wide", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W trapezie równoramiennym przekątna o długości 10 cm jest prostopadła do ramienia o długości 6 cm. Pole tego trapezu wynosi:",
-        answers: [
-            { text: "30 cm²", correct: false },
-            { text: "36 cm²", correct: false },
-            { text: "48 cm²", correct: true },
-            { text: "60 cm²", correct: false }
+        "type": "closed",
+        "question": "His plan seems good on paper, but I ______ about its chances of success in the real world.",
+        "answers": [
+            { "text": "am very certain", "correct": false },
+            { "text": "have my doubts", "correct": true },
+            { "text": "am sure", "correct": false },
+            { "text": "have no question", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Bartek czyta książkę w tempie 15 stron na godzinę. Gdyby czytał o 5 stron na godzinę szybciej, skończyłby książkę 2 godziny wcześniej. Ile stron ma książka?",
-        answer: ["120"]
+        "type": "open",
+        "question": "Complete the sentence with the correct preposition: 'I am deeply indebted ____ you for all your support.'",
+        "answer": ["to"]
     },
     {
-        type: 'closed',
-        question: "Punkty A=(-3, 2) i C=(5, 4) są przeciwległymi wierzchołkami kwadratu ABCD. Pole tego kwadratu jest równe:",
-        answers: [
-            { text: "68", correct: false },
-            { text: "34", correct: true },
-            { text: "16", correct: false },
-            { text: "32", correct: false }
+        "type": "closed",
+        "question": "He's a brilliant programmer. ________, his communication skills are quite poor.",
+        "answers": [
+            { "text": "Therefore", "correct": false },
+            { "text": "In addition", "correct": false },
+            { "text": "Having said that", "correct": true },
+            { "text": "As a result", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Wartość wyrażenia log₃(54) - log₃(2) jest równa:",
-        answers: [
-            { text: "log₃(52)", correct: false },
-            { text: "3", correct: true },
-            { text: "4", correct: false },
-            { text: "27", correct: false }
+        "type": "closed",
+        "question": "I regret not studying harder for the exam. This means:",
+        "answers": [
+            { "text": "I wish I had studied harder for the exam.", "correct": true },
+            { "text": "I wish I studied harder for the exam.", "correct": false },
+            { "text": "I wish I would study harder for the exam.", "correct": false },
+            { "text": "I wish I could study harder for the exam.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Średnia arytmetyczna zestawu sześciu liczb: 3, 5, 8, x, 12, 14 jest równa 9. Jaka jest mediana tego zestawu liczb?",
-        answer: ["8.5"]
+        "type": "open",
+        "question": "Rewrite the sentence using 'so... as to...'. Original sentence: 'He spoke so quietly that nobody could hear him.'",
+        "answer": ["He spoke so quietly as to be inaudible.", "He spoke so quietly as to not be heard."]
     },
     {
-        type: 'closed',
-        question: "Przekątna graniastosłupa prawidłowego sześciokątnego (najdłuższa) ma długość 10. Krawędź podstawy ma długość 3. Jaka jest wysokość tego graniastosłupa?",
-        answers: [
-            { text: "√91", correct: false },
-            { text: "√64", correct: false },
-            { text: "8", correct: true },
-            { text: "√109", correct: false }
+        "type": "closed",
+        "question": "The instructions for the device were very _______, which led to a lot of confusion.",
+        "answers": [
+            { "text": "apparent", "correct": false },
+            { "text": "ambiguous", "correct": true },
+            { "text": "transparent", "correct": false },
+            { "text": "explicit", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Jeżeli 3/(x-2) = 5/(x+2), to x jest równe:",
-        answers: [
-            { text: "4", correct: false },
-            { text: "1/2", correct: false },
-            { text: "8", correct: true },
-            { text: "-8", correct: false }
+        "type": "closed",
+        "question": "Our plans to go camping ______ because of the terrible weather forecast.",
+        "answers": [
+            { "text": "put off", "correct": false },
+            { "text": "fell through", "correct": true },
+            { "text": "called off", "correct": false },
+            { "text": "broke down", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W romb o kącie ostrym 30° wpisano koło o polu 9π. Oblicz pole tego rombu.",
-        answer: ["72"]
+        "type": "open",
+        "question": "Use the word in brackets to form a word that fits the gap: 'The politician's decision remains highly ____ (CONTROVERSY) to this day.'",
+        "answer": ["controversial"]
     },
     {
-        type: 'closed',
-        question: "Pociąg o długości 200 m, jadący z prędkością 90 km/h, wjeżdża do tunelu o długości 1 km. Ile czasu upłynie od momentu wjechania czoła pociągu do tunelu do momentu wyjechania z niego końca ostatniego wagonu?",
-        answers: [
-            { text: "40 s", correct: false },
-            { text: "44 s", correct: false },
-            { text: "48 s", correct: true },
-            { text: "52 s", correct: false }
+        "type": "closed",
+        "question": "I will lend you my notes ________ you give them back before the test.",
+        "answers": [
+            { "text": "as long", "correct": false },
+            { "text": "in case", "correct": false },
+            { "text": "on condition that", "correct": true },
+            { "text": "unless", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W systemie dwójkowym liczba 19 to 10011. Jak w systemie dwójkowym zapiszemy liczbę 38?",
-        answer: ["100110"]
+        "type": "closed",
+        "question": "Which of these words describes something absolutely necessary and essential?",
+        "answers": [
+            { "text": "convenient", "correct": false },
+            { "text": "indispensable", "correct": true },
+            { "text": "optional", "correct": false },
+            { "text": "adequate", "correct": false }
+        ]
+    },
+    {
+        "type": "open",
+        "question": "Rewrite the sentence using 'get'. Original sentence: 'I need to tell someone to fix my bicycle.'",
+        "answer": ["I need to get my bicycle fixed."]
+    },
+    {
+        "type": "closed",
+        "question": "The school introduced a new timetable ______ students have more flexibility.",
+        "answers": [
+            { "text": "which", "correct": false },
+            { "text": "that", "correct": false },
+            { "text": "whereby", "correct": true },
+            { "text": "whose", "correct": false }
+        ]
     }
-];;
+];
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

@@ -1,205 +1,216 @@
+// --- Definicja pytań (z nowym polem "type") ---
 const questions = [
     {
         "type": "closed",
-        "question": "W przytoczonym fragmencie 'Tajemniczego ogrodu', relacja Dicka ze zwierzętami opiera się przede wszystkim na:",
+        "question": "Read the sentence: 'If I hadn't missed my flight, I would be in Paris right now.' What does this sentence describe?",
         "answers": [
-            { "text": "Wydawaniu im poleceń, które posłusznie wykonują.", "correct": false },
-            { "text": "Sile jego autorytetu jako człowieka dominującego nad naturą.", "correct": false },
-            { "text": "Empatii, cierpliwości i zrozumieniu ich natury, co buduje zaufanie.", "correct": true },
-            { "text": "Użyciu magicznej fujarki, która zmusza je do określonych zachowań.", "correct": false }
+            { "text": "A likely future event.", "correct": false },
+            { "text": "A general truth or habit.", "correct": false },
+            { "text": "A hypothetical past event with a hypothetical present result.", "correct": true },
+            { "text": "A regret about a present situation.", "correct": false }
         ]
     },
     {
         "type": "closed",
-        "question": "Postawa Mary w początkowej fazie rozmowy z Dickiem ('odpowiadała trochę sztywno i czuła się lekko onieśmielona') wynika najprawdopodobniej z:",
+        "question": "A sign in a library says: 'Patrons are kindly requested to refrain from eating.' What is the most accurate meaning of 'refrain from'?",
         "answers": [
-            { "text": "Jej wrodzonej niechęci do mieszkańców wsi.", "correct": false },
-            { "text": "Braku wcześniejszych doświadczeń w swobodnych, partnerskich relacjach z rówieśnikami.", "correct": true },
-            { "text": "Poczucia wyższości społecznej wobec syna służącej.", "correct": false },
-            { "text": "Obawy, że Dick odkryje jej sekret dotyczący ogrodu.", "correct": false }
-        ]
-    },
-    {
-        "type": "open",
-        "question": "W kontekście fragmentu 'Tajemniczego ogrodu', wyjaśnij, co oznacza stwierdzenie Dicka, że rudzik 'potrafi wystrychnąć na dudka gorzej niż człowiek'. Co to mówi o naturze?",
-        "answer": ["Oznacza to, że zdobycie zaufania dzikiego stworzenia jest trudne i wymaga autentyczności, a natura jest szczera i nie da się jej oszukać powierzchownymi gestami.", "Zdobycie zaufania przyrody jest trudniejsze niż oszukanie człowieka; wymaga prawdziwej więzi."]
-    },
-    {
-        "type": "closed",
-        "question": "Główną tezą tekstu Sebastiana Taboła 'Istota czytania' jest stwierdzenie, że:",
-        "answers": [
-            { "text": "Czytanie literatury pięknej jest najważniejszą formą rozwoju intelektualnego.", "correct": false },
-            { "text": "Czytanie to uniwersalny proces interpretacji różnorodnych znaków, nieograniczający się tylko do pisma.", "correct": true },
-            { "text": "Współcześnie ludzie czytają znacznie mniej niż w przeszłości z powodu rozwoju technologii.", "correct": false },
-            { "text": "Każdy człowiek powinien opanować technikę szybkiego czytania, aby sprostać wymaganiom świata.", "correct": false }
+            { "text": "to avoid doing something", "correct": true },
+            { "text": "to do something quietly", "correct": false },
+            { "text": "to ask for permission first", "correct": false },
+            { "text": "to eat only small snacks", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Autor tekstu 'Istota czytania' pisze o 'czytaniu między wierszami'. Podaj własny, oryginalny przykład sytuacji (inny niż rozmowa), w której można zastosować tę umiejętność.",
-        "answer": ["Analizując reklamę, która obiecuje 'niesamowite efekty', ale drobnym drukiem podaje wiele wyłączeń.", "Oglądając przemówienie polityka, który mówi o 'potrzebie reform', ale unika podania konkretów, co sugeruje, że nie ma planu."]
+        "question": "Complete the second sentence so that it has a similar meaning to the first sentence. Use the word 'prevented'. First sentence: 'The heavy snow stopped us from getting to the airport.'",
+        "answer": ["The heavy snow prevented us from getting to the airport."]
     },
     {
         "type": "closed",
-        "question": "Wspólnym mianownikiem losów Jacka Soplicy ('Pan Tadeusz') i Ebenezera Scrooge'a ('Opowieść wigilijna') jest:",
+        "question": "Which sentence correctly uses the structure 'used to'?",
         "answers": [
-            { "text": "Walka o niepodległość ojczyzny.", "correct": false },
-            { "text": "Doświadczenie nieszczęśliwej miłości w młodości.", "correct": false },
-            { "text": "Motyw winy, pokuty i głębokiej wewnętrznej przemiany pod wpływem przełomowych wydarzeń.", "correct": true },
-            { "text": "Dążenie do zdobycia ogromnego majątku za wszelką cenę.", "correct": false }
+            { "text": "I am used to live in a big city, so the noise doesn't bother me.", "correct": false },
+            { "text": "He can't get used to waking up so early for his new job.", "correct": true },
+            { "text": "Did you used to have a dog when you were a child?", "correct": false },
+            { "text": "She used to watching cartoons every Saturday morning.", "correct": false }
         ]
     },
     {
         "type": "closed",
-        "question": "Która z postaci literackich z listy lektur obowiązkowych najpełniej realizuje wzorzec bohatera tragicznego, którego do katastrofy prowadzi jego własna wada charakteru (hamartia)?",
+        "question": "Your friend says, 'I'm not sure my English is good enough for the exchange program.' How can you express reassurance?",
         "answers": [
-            { "text": "Alina z 'Balladyny', ponieważ jest ofiarą zbrodni.", "correct": false },
-            { "text": "Jacek Soplica z 'Pana Tadeusza', ponieważ jego pycha prowadzi do zbrodni.", "correct": false },
-            { "text": "Balladyna z 'Balladyny', ponieważ jej niepohamowana żądza władzy prowadzi ją od jednej zbrodni do kolejnej i ostatecznie do zguby.", "correct": true },
-            { "text": "Marcin Borowicz z 'Syzyfowych prac', ponieważ walczy z rusyfikacją.", "correct": false }
-        ]
-    },
-    {
-        "type": "open",
-        "question": "Wyjaśnij, na czym polega ironia tragiczna w finale 'Zemsty' Aleksandra Fredry. Weź pod uwagę plany bohaterów i ostateczny rezultat ich działań.",
-        "answer": ["Ironia polega na tym, że nienawidzący się Cześnik i Rejent, knując przeciwko sobie, doprowadzają do ślubu swoich dzieci, co ostatecznie godzi zwaśnione rody. Osiągają cel przeciwny do zamierzonego, który okazuje się dla wszystkich szczęśliwym rozwiązaniem."]
-    },
-    {
-        "type": "closed",
-        "question": "Postawa patriotyczna w 'Reducie Ordona' Mickiewicza i 'Kamieniach na szaniec' Kamińskiego, mimo różnic epokowych, opiera się na wspólnym fundamencie, którym jest:",
-        "answers": [
-            { "text": "Przekonanie o konieczności walki dyplomatycznej.", "correct": false },
-            { "text": "Apoteoza poświęcenia jednostki i gotowość oddania życia za ojczyznę jako najwyższy akt heroizmu.", "correct": true },
-            { "text": "Krytyka bezsensownej śmierci i pochwała pracy organicznej.", "correct": false },
-            { "text": "Wiara w nieuchronną pomoc ze strony sojuszników z Zachodu.", "correct": false }
+            { "text": "Your grammar has always been a problem.", "correct": false },
+            { "text": "Don't be so hard on yourself. Your progress has been amazing!", "correct": true },
+            { "text": "Well, maybe you should wait another year.", "correct": false },
+            { "text": "I agree, the other candidates are very strong.", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Interpretując 'Małego Księcia', wyjaśnij, co symbolizują baobaby i dlaczego tak ważne jest, by 'wyrywać je zaraz po odrośnięciu'. Odnieś tę symbolikę do życia człowieka.",
-        "answer": ["Baobaby symbolizują zło, złe myśli, wady, nałogi lub problemy, które na początku są małe i łatwe do usunięcia. Jeśli się je zignoruje, rozrosną się, zdominują całe życie ('planetę') i doprowadzą do katastrofy. To metafora konieczności pracy nad sobą i rozwiązywania problemów, póki są małe."]
+        "question": "Use the word in brackets to form a word that fits the gap: 'Despite his initial ____ (RELUCTANT), he eventually agreed to help.'",
+        "answer": ["reluctance"]
     },
     {
         "type": "closed",
-        "question": "W zdaniu z tekstu 'Istota czytania': 'Inaczej czyta się teksty naukowe, najeżone specjalistycznymi terminami, a inaczej – literaturę piękną', wyraz 'najeżone' pełni funkcję metaforyczną. Co ona komunikuje o języku tekstów naukowych?",
+        "question": "Read the dialogue. A: 'I can't believe I failed the test.' B: '______. You'll do better next time.' What is the most empathetic response for B?",
         "answers": [
-            { "text": "Że jest on nieprzyjemny i kłujący w odbiorze dla laika.", "correct": false },
-            { "text": "Że zawiera bardzo dużą liczbę trudnych, specjalistycznych słów, które tworzą barierę poznawczą.", "correct": true },
-            { "text": "Że jest chaotyczny i nieuporządkowany jak sierść jeża.", "correct": false },
-            { "text": "Że jest przestarzały i archaiczny.", "correct": false }
+            { "text": "I told you so.", "correct": false },
+            { "text": "That's tough luck.", "correct": true },
+            { "text": "You deserved it.", "correct": false },
+            { "text": "Why are you surprised?", "correct": false }
+        ]
+    },
+    {
+        "type": "closed",
+        "question": "Which sentence correctly implies that an action was unnecessary but was done anyway?",
+        "answers": [
+            { "text": "You didn't need to buy any milk, so I'm glad you didn't.", "correct": false },
+            { "text": "You needn't have bought any milk; we already have three cartons.", "correct": true },
+            { "text": "You shouldn't buy milk; it's not good for you.", "correct": false },
+            { "text": "You must not buy any milk; I will do it.", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Wpisz tytuł lektury obowiązkowej, w której motyw 'non omnis moriar' (nie wszystek umrę) Horacego znajduje swoje najpełniejsze odzwierciedlenie w postawie poety-bohatera lirycznego. Uzasadnij krótko swój wybór.",
-        "answer": ["Pieśni Jana Kochanowskiego (np. 'Niezwykłym i nie leda piórem obdarzony...'). Poeta wyraża w nich przekonanie, że jego twórczość zapewni mu nieśmiertelność i sławę po śmierci."]
+        "question": "Complete the sentence with ONE word: 'Hardly had I sat down ______ the phone rang.'",
+        "answer": ["when"]
     },
     {
         "type": "closed",
-        "question": "Który z poniższych cytatów z 'Dziadów cz. II' zawiera uniwersalną prawdę moralną dotyczącą wagi ludzkiego cierpienia i empatii?",
+        "question": "What is the primary purpose of this text? 'Our revolutionary new app tracks your sleep patterns, providing detailed analytics to help you improve your rest and boost your energy levels. Download today for a free 7-day trial!'",
         "answers": [
-            { "text": "'Ciemno wszędzie, głucho wszędzie, / Co to będzie, co to będzie?'", "correct": false },
-            { "text": "'Kto nie dotknął ziemi ni razu, / Ten nigdy nie może być w niebie.'", "correct": false },
-            { "text": "'Bo kto nie był ni razu człowiekiem, / Temu człowiek nic nie pomoże.'", "correct": true },
-            { "text": "'Spieszmy się kochać ludzi, tak szybko odchodzą.'", "correct": false }
+            { "text": "To inform readers about the science of sleep.", "correct": false },
+            { "text": "To warn about the dangers of sleep deprivation.", "correct": false },
+            { "text": "To persuade the reader to try a new product.", "correct": true },
+            { "text": "To review different sleep-tracking applications.", "correct": false }
+        ]
+    },
+    {
+        "type": "closed",
+        "question": "Which word is the 'odd one out' based on its meaning?",
+        "answers": [
+            { "text": "Meticulous", "correct": false },
+            { "text": "Careless", "correct": true },
+            { "text": "Thorough", "correct": false },
+            { "text": "Precise", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Porównaj postać Telimeny z 'Pana Tadeusza' i tytułowej bohaterki satyry 'Żona modna' I. Krasickiego. Wskaż jedną wspólną, charakterystyczną dla obu postaci cechę i zilustruj ją przykładem z utworu.",
-        "answer": ["Wspólną cechą jest fascynacja obcą (francuską) modą i kulturą, połączona z pogardą dla rodzimych obyczajów. Telimena organizuje 'ucztę na modę francuską' i dyskutuje o sztuce, a Żona Modna przemeblowuje dwór męża w stylu francuskim, gardząc staropolskim porządkiem."]
+        "question": "Rewrite the question using reported speech: She asked me, 'Can you help me tomorrow?'",
+        "answer": ["She asked me if I could help her the next day.", "She asked me whether I could help her the next day."]
     },
     {
         "type": "closed",
-        "question": "Recytacja 'Reduty Ordona' przez Bernarda Zygiera na lekcji języka polskiego w 'Syzyfowych pracach' jest momentem przełomowym, ponieważ:",
+        "question": "The government's decision had a profound ______ on the country's economy.",
         "answers": [
-            { "text": "Jest to akt otwartego buntu wobec nauczyciela rusyfikatora, który budzi uśpioną świadomość narodową w Marcinie Borowiczu.", "correct": true },
-            { "text": "Pokazuje doskonałą pamięć Zygiera i jego talent recytatorski.", "correct": false },
-            { "text": "Jest to próba zaimponowania Annie Stogowskiej, 'Birucie'.", "correct": false },
-            { "text": "Prowadzi do natychmiastowego usunięcia Zygiera i Borowicza ze szkoły.", "correct": false }
+            { "text": "affect", "correct": false },
+            { "text": "effect", "correct": true },
+            { "text": "afflict", "correct": false },
+            { "text": "effort", "correct": false }
         ]
     },
     {
         "type": "closed",
-        "question": "W zdaniu: 'Chłopiec, który potrafił naśladować głosy ptaków, zaimponował Mary, chociaż początkowo czuła się przy nim onieśmielona', występuje następująca kolejność zdań składowych:",
+        "question": "Situation: You are in a crowded bus and need to get to the exit. What is the most polite thing to say?",
         "answers": [
-            { "text": "Nadrzędne - podrzędne przydawkowe - nadrzędne - podrzędne okolicznikowe przyzwolenia", "correct": true },
-            { "text": "Nadrzędne - podrzędne podmiotowe - nadrzędne - podrzędne dopełnieniowe", "correct": false },
-            { "text": "Podrzędne orzecznikowe - nadrzędne - podrzędne okolicznikowe celu", "correct": false },
-            { "text": "Dwa zdania nadrzędne połączone spójnikiem 'chociaż'", "correct": false }
-        ]
-    },
-    {
-        "type": "open",
-        "question": "Przekształć zdanie 'Dick schylił się, żeby podnieść narzędzia' na zdanie z imiesłowowym równoważnikiem zdania, zachowując jego sens.",
-        "answer": ["Schyliwszy się, Dick podniósł narzędzia."]
-    },
-    {
-        "type": "closed",
-        "question": "Pojęcie 'syzyfowa praca', użyte w tytule powieści Żeromskiego, odnosi się w najgłębszym sensie do:",
-        "answers": [
-            { "text": "Ciężkiej i bezowocnej pracy Marcina Borowicza nad własnym charakterem.", "correct": false },
-            { "text": "Beznadziejnych wysiłków nauczycieli, by nauczyć polskie dzieci języka rosyjskiego.", "correct": false },
-            { "text": "Dwoistego znaczenia: z jednej strony bezowocnych wysiłków rusyfikatorów, a z drugiej - heroicznej, choć pozornie beznadziejnej walki polskiej młodzieży o zachowanie tożsamości.", "correct": true },
-            { "text": "Trudów związanych z codziennym dojeżdżaniem do szkoły w Klerykowie.", "correct": false }
-        ]
-    },
-    {
-        "type": "closed",
-        "question": "W którym z poniższych związków frazeologicznych słowo 'pięta' ma znaczenie symboliczne, odwołujące się do mitologii?",
-        "answers": [
-            { "text": "Nadeptywać komuś na pięty.", "correct": false },
-            { "text": "Pięta achillesowa.", "correct": true },
-            { "text": "Pójść w piętkę.", "correct": false },
-            { "text": "Pokazać komuś pięty.", "correct": false }
+            { "text": "Move out of the way!", "correct": false },
+            { "text": "Let me pass.", "correct": false },
+            { "text": "Excuse me, could I just get past, please?", "correct": true },
+            { "text": "I'm getting off here!", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "W 'Trenie VIII' Jan Kochanowski pisze: 'Pełno nas, a jakoby nikogo nie było'. Wyjaśnij, na czym polega paradoks wyrażony w tym fragmencie i co on mówi o stanie emocjonalnym podmiotu lirycznego.",
-        "answer": ["Paradoks polega na sprzeczności między fizyczną obecnością wielu osób w domu a odczuciem pustki po stracie jednej, konkretnej osoby (Urszulki). Mówi to o głębokim smutku, żalu i poczuciu osamotnienia ojca, dla którego zmarła córka była centrum życia domowego, a jej brak sprawia, że dom wydaje się pusty."]
+        "question": "Complete the sentence with the correct preposition: 'He prides himself ____ his ability to solve complex puzzles.'",
+        "answer": ["on"]
     },
     {
         "type": "closed",
-        "question": "Analizując 'Latarnika' Sienkiewicza, można dojść do wniosku, że lektura 'Pana Tadeusza' dla Skawińskiego była przede wszystkim:",
+        "question": "Which phrasal verb means 'to reject an offer'?",
         "answers": [
-            { "text": "Intelektualną rozrywką po latach prostej pracy fizycznej.", "correct": false },
-            { "text": "Przypomnieniem o obowiązkach wobec dalekiej ojczyzny.", "correct": false },
-            { "text": "Katalizatorem, który wywołał potężną, stłumioną tęsknotę i przywrócił mu poczucie tożsamości narodowej, niszcząc jego spokój.", "correct": true },
-            { "text": "Powodem do dumy, że polska literatura jest znana na świecie.", "correct": false }
+            { "text": "take up", "correct": false },
+            { "text": "turn down", "correct": true },
+            { "text": "bring up", "correct": false },
+            { "text": "look after", "correct": false }
+        ]
+    },
+    {
+        "type": "closed",
+        "question": "I wish I ______ how to play the guitar. It looks so cool.",
+        "answers": [
+            { "text": "had known", "correct": false },
+            { "text": "would know", "correct": false },
+            { "text": "knew", "correct": true },
+            { "text": "am knowing", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Wskaż błąd składniowy w poniższym zdaniu i zapisz je poprawnie: 'Idąc do szkoły, zaczął padać deszcz.'",
-        "answer": ["Błąd polega na tym, że podmiot logiczny imiesłowu ('idąc') jest inny niż podmiot zdania głównego ('deszcz'). Poprawnie: 'Gdy szedłem/szłam do szkoły, zaczął padać deszcz.'"]
+        "question": "Rewrite the sentence starting with 'This is the scientist...'. Original sentence: 'A famous scientist discovered this element. This is her.'",
+        "answer": ["This is the scientist who discovered this element."]
     },
     {
         "type": "closed",
-        "question": "Konflikt między Cześnikiem a Rejentem w 'Zemście' ma charakter sporu 'o miedzę'. Jakie uniwersalne cechy polskiego charakteru narodowego (lub szerzej: ludzkiej natury) są w tym konflikcie ośmieszone przez Fredrę?",
+        "question": "This cheese is ______ to be the best in the world. Many experts agree.",
         "answers": [
-            { "text": "Gościnność i życzliwość.", "correct": false },
-            { "text": "Odwaga i waleczność na polu bitwy.", "correct": false },
-            { "text": "Porywczość, upór, pieniactwo i przywiązanie do własnej racji za wszelką cenę.", "correct": true },
-            { "text": "Pracowitość i gospodarność.", "correct": false }
+            { "text": "considered", "correct": true },
+            { "text": "regarded", "correct": false },
+            { "text": "thought about", "correct": false },
+            { "text": "believed in", "correct": false }
+        ]
+    },
+    {
+        "type": "closed",
+        "question": "Situation: Your friend has been working on a project for weeks and is feeling discouraged. What can you say to motivate them?",
+        "answers": [
+            { "text": "Maybe you should just give up.", "correct": false },
+            { "text": "It's not as good as you think.", "correct": false },
+            { "text": "Don't lose heart! You've put in so much great work already.", "correct": true },
+            { "text": "It's probably too difficult for you.", "correct": false }
         ]
     },
     {
         "type": "open",
-        "question": "Wyjaśnij, dlaczego narrator w 'Opowieści wigilijnej' nazywa Marleya 'martwym jak ćwiek w drzwiach' ('dead as a doornail'). Jaki cel artystyczny osiąga autor przez to dosadne, nietypowe porównanie na samym początku utworu?",
-        "answer": ["Celem jest hiperboliczne, definitywne i niepozostawiające wątpliwości podkreślenie faktu śmierci Marleya. To uwiarygadnia późniejsze pojawienie się jego ducha jako zjawiska nadprzyrodzonego i wstrząsającego, a nie np. halucynacji Scrooge'a. Buduje to fundament dla świata fantastycznego utworu."]
+        "question": "Use the word in brackets to form a word that fits the gap: 'The evidence presented in court was not ____ (CONVINCE) enough.'",
+        "answer": ["convincing"]
     },
     {
         "type": "closed",
-        "question": "Jeśli założymy, że 'Artysta' Sławomira Mrożka jest parabolą, to postawa Koguta, który za wszelką cenę chce 'być lwem', jest satyrą na:",
+        "question": "The film was a bit predictable; _______, the special effects were breathtaking.",
         "answers": [
-            { "text": "Wysokie ambicje i dążenie do samorozwoju.", "correct": false },
-            { "text": "Przerost ambicji nad możliwościami, udawanie kogoś, kim się nie jest i pogoń za sławą bez pokrycia w talencie.", "correct": true },
-            { "text": "Niesprawiedliwy system oceny artystów przez dyrektorów cyrków.", "correct": false },
-            { "text": "Trudne warunki życia zwierząt w cyrkach.", "correct": false }
+            { "text": "consequently", "correct": false },
+            { "text": "in addition", "correct": false },
+            { "text": "nevertheless", "correct": true },
+            { "text": "furthermore", "correct": false }
+        ]
+    },
+    {
+        "type": "closed",
+        "question": "What is the underlying meaning of the idiom 'to be on the same page'?",
+        "answers": [
+            { "text": "To be reading the same book.", "correct": false },
+            { "text": "To have a shared understanding or agreement.", "correct": true },
+            { "text": "To be of the same age.", "correct": false },
+            { "text": "To be physically close to someone.", "correct": false }
+        ]
+    },
+    {
+        "type": "open",
+        "question": "Complete the sentence with the correct form of the verb: 'My parents had my room ______ (paint) while I was at summer camp.'",
+        "answer": ["painted"]
+    },
+    {
+        "type": "closed",
+        "question": "______ being an excellent student, she is also a talented athlete.",
+        "answers": [
+            { "text": "Despite", "correct": false },
+            { "text": "Although", "correct": false },
+            { "text": "As well as", "correct": false },
+            { "text": "Besides", "correct": true }
         ]
     }
-]
+];
 
 // --- Pobranie elementów z HTML ---
 const questionElement = document.getElementById("question");

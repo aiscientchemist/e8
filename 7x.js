@@ -1,209 +1,205 @@
 const questions = [
     {
-        type: 'closed',
-        question: "Przekątna prostokąta ma długość 13 cm, a jego obwód wynosi 34 cm. Jakie jest pole tego prostokąta?",
-        answers: [
-            { text: "42 cm²", correct: false },
-            { text: "52 cm²", correct: false },
-            { text: "60 cm²", correct: true },
-            { text: "78 cm²", correct: false }
+        "type": "closed",
+        "question": "Should you ______ any difficulties, please refer to the instruction manual.",
+        "answers": [
+            { "text": "encounter", "correct": true },
+            { "text": "be encountering", "correct": false },
+            { "text": "to encounter", "correct": false },
+            { "text": "will encounter", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Pole powierzchni bocznej stożka jest dwa razy większe od pola jego podstawy. Wyznacz miarę kąta (w stopniach), jaki tworzy tworząca stożka z jego wysokością.",
-        answer: ["30"]
-    },
-    {
-        type: 'closed',
-        question: "Jaka jest reszta z dzielenia liczby 2¹⁰⁰ przez 3?",
-        answers: [
-            { text: "0", correct: false },
-            { text: "1", correct: true },
-            { text: "2", correct: false },
-            { text: "Nie można tego określić", correct: false }
+        "type": "closed",
+        "question": "Read the text: 'Before starting his urgent essay, Mark sharpened all his pencils, organized his bookshelf, and made a new music playlist.' What does this behavior strongly suggest?",
+        "answers": [
+            { "text": "He is very organized and efficient.", "correct": false },
+            { "text": "He is procrastinating and avoiding the main task.", "correct": true },
+            { "text": "He is preparing himself mentally for hard work.", "correct": false },
+            { "text": "He doesn't have enough time to write the essay.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Średnia arytmetyczna ocen dziesięciu chłopców w klasie wynosi 3.6, a średnia ocen piętnastu dziewcząt w tej samej klasie wynosi 4.1. Jaka jest średnia ocen całej, 25-osobowej klasy?",
-        answers: [
-            { text: "3.85", correct: false },
-            { text: "3.9", correct: true },
-            { text: "3.95", correct: false },
-            { text: "4.0", correct: false }
+        "type": "open",
+        "question": "Rewrite the sentence to add emphasis, starting with 'It...'. Original sentence: 'His arrogance annoys me most.'",
+        "answer": ["It is his arrogance that annoys me most."]
+    },
+    {
+        "type": "closed",
+        "question": "The new red curtains perfectly ______ the grey tones of the walls.",
+        "answers": [
+            { "text": "compliment", "correct": false },
+            { "text": "complement", "correct": true },
+            { "text": "comply", "correct": false },
+            { "text": "complete", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkącie prostokątnym wysokość opuszczona na przeciwprostokątną ma długość 4, a rzut jednej z przyprostokątnych na przeciwprostokątną ma długość 2. Oblicz długość przeciwprostokątnej.",
-        answer: ["10"]
-    },
-    {
-        type: 'closed',
-        question: "Ile jest liczb trzycyfrowych, w których cyfra setek jest równa sumie cyfry dziesiątek i cyfry jedności?",
-        answers: [
-            { text: "45", correct: false },
-            { text: "50", correct: false },
-            { text: "54", correct: false },
-            { text: "55", correct: true }
+        "type": "closed",
+        "question": "A friend asks for your opinion on their very risky business idea. How do you express concern without being completely negative?",
+        "answers": [
+            { "text": "That will never work.", "correct": false },
+            { "text": "It's an interesting concept, but have you considered the potential financial risks involved?", "correct": true },
+            { "text": "I can't believe you're even thinking about this.", "correct": false },
+            { "text": "You should definitely do it, no matter the cost.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Stożek przecięto płaszczyzną równoległą do podstawy, przechodzącą przez środek jego wysokości. Jaki jest stosunek objętości powstałego mniejszego stożka do objętości całego stożka?",
-        answers: [
-            { text: "1:2", correct: false },
-            { text: "1:4", correct: false },
-            { text: "1:8", correct: true },
-            { text: "1:16", correct: false }
+        "type": "open",
+        "question": "Use the word in brackets to form a word that fits the gap: 'His ____ (RESOLVE) to finish the marathon despite the injury was admirable.'",
+        "answer": ["resolution"]
+    },
+    {
+        "type": "closed",
+        "question": "He's very intelligent but quite lazy. He rarely uses his abilities to their full ______.",
+        "answers": [
+            { "text": "potential", "correct": true },
+            { "text": "possibility", "correct": false },
+            { "text": "capacity", "correct": false },
+            { "text": "eventuality", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Jaka jest najmniejsza dodatnia liczba całkowita, która ma dokładnie 12 dzielników naturalnych?",
-        answer: ["60"]
-    },
-    {
-        type: 'closed',
-        question: "W trójkącie równoramiennym ABC ramię jest o 3 cm dłuższe od podstawy. Obwód trójkąta wynosi 36 cm. Wysokość opuszczona na podstawę ma długość:",
-        answers: [
-            { text: "12 cm", correct: false },
-            { text: "10 cm", correct: false },
-            { text: "9 cm", correct: false },
-            { text: "√119 cm", correct: true }
+        "type": "closed",
+        "question": "What is the meaning of the idiom 'to get cold feet'?",
+        "answers": [
+            { "text": "To feel physically cold.", "correct": false },
+            { "text": "To become nervous or frightened about doing something you had planned to do.", "correct": true },
+            { "text": "To be very brave and fearless.", "correct": false },
+            { "text": "To finally understand a difficult concept.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Prosta przechodząca przez punkty A=(1, 5) i B=(-2, -1) przecina oś OY w punkcie P. Jakie są współrzędne punktu P?",
-        answers: [
-            { text: "(0, 2)", correct: false },
-            { text: "(0, 3)", correct: true },
-            { text: "(0, 4)", correct: false },
-            { text: "(3, 0)", correct: false }
+        "type": "open",
+        "question": "Rewrite the sentence using a past participle clause. Original sentence: 'Because he was motivated by his recent success, he started a new project.'",
+        "answer": ["Motivated by his recent success, he started a new project."]
+    },
+    {
+        "type": "closed",
+        "question": "The company's new logo, _______ a stylized bird, is meant to represent freedom and innovation.",
+        "answers": [
+            { "text": "resembling", "correct": true },
+            { "text": "resembles", "correct": false },
+            { "text": "resembled", "correct": false },
+            { "text": "is resembling", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Cenę produktu obniżono najpierw o 10%, a następnie o 20%. Ostateczna cena to 144 zł. Jaka była cena początkowa tego produktu?",
-        answer: ["200"]
-    },
-    {
-        type: 'closed',
-        question: "Jeżeli a = log₂12 i b = log₂3, to wartość wyrażenia a - b jest równa:",
-        answers: [
-            { text: "log₂9", correct: false },
-            { text: "2", correct: true },
-            { text: "4", correct: false },
-            { text: "log₂4", correct: false }
+        "type": "closed",
+        "question": "There is ______ evidence to support his theory, so it's unlikely to be accepted.",
+        "answers": [
+            { "text": "insufficient", "correct": true },
+            { "text": "ineffective", "correct": false },
+            { "text": "improper", "correct": false },
+            { "text": "inaccurate", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Dwa okręgi o promieniach 3 cm i 9 cm są styczne zewnętrznie. Jaka jest długość wspólnej stycznej do tych okręgów (odcinka łączącego punkty styczności)?",
-        answers: [
-            { text: "12 cm", correct: false },
-            { text: "6√3 cm", correct: true },
-            { text: "9 cm", correct: false },
-            { text: "6√2 cm", correct: false }
+        "type": "open",
+        "question": "Rewrite the sentence in the passive voice: 'They will have built the new bridge by next summer.'",
+        "answer": ["The new bridge will have been built by next summer."]
+    },
+    {
+        "type": "closed",
+        "question": "I don't remember ______ the door, but I must have, because it's locked now.",
+        "answers": [
+            { "text": "to lock", "correct": false },
+            { "text": "locking", "correct": true },
+            { "text": "to have locked", "correct": false },
+            { "text": "to be locking", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Rzucamy trzy razy symetryczną monetą. Jakie jest prawdopodobieństwo, że orzeł wypadnie dokładnie dwa razy? Odpowiedź podaj w postaci ułamka nieskracalnego a/b.",
-        answer: ["3/8"]
-    },
-    {
-        type: 'closed',
-        question: "Liczba a = (√3 - 2)² + 4√3. Wobec tego:",
-        answers: [
-            { text: "a = 7", correct: true },
-            { text: "a = 1", correct: false },
-            { text: "a = 7 + 8√3", correct: false },
-            { text: "a = 1 + 8√3", correct: false }
+        "type": "closed",
+        "question": "His hard work and dedication were ______ in his eventual promotion.",
+        "answers": [
+            { "text": "instrumental", "correct": true },
+            { "text": "industrial", "correct": false },
+            { "text": "internal", "correct": false },
+            { "text": "intentional", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Wszystkie ściany boczne ostrosłupa prawidłowego sześciokątnego są trójkątami równobocznymi. Jaką miarę ma kąt między sąsiednimi krawędziami bocznymi tego ostrosłupa?",
-        answers: [
-            { text: "120°", correct: false },
-            { text: "90°", correct: false },
-            { text: "60°", correct: true },
-            { text: "45°", correct: false }
+        "type": "open",
+        "question": "Complete the sentence with the correct preposition: 'The new regulations are not applicable ____ everyone.'",
+        "answer": ["to"]
+    },
+    {
+        "type": "closed",
+        "question": "The politician's speech was designed to ______ the public's fears about the economy.",
+        "answers": [
+            { "text": "allay", "correct": true },
+            { "text": "ally", "correct": false },
+            { "text": "allow", "correct": false },
+            { "text": "alight", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W pudełku jest 5 kul białych i 3 czarne. Losujemy jedną kulę, odkładamy ją na bok, a następnie losujemy drugą. Jakie jest prawdopodobieństwo, że obie wylosowane kule będą tego samego koloru?",
-        answer: ["13/28"]
-    },
-    {
-        type: 'closed',
-        question: "Punkty A=(-2, 1), B=(4, -1), C=(2, 5) są wierzchołkami trójkąta. Pole tego trójkąta jest równe:",
-        answers: [
-            { text: "12", correct: false },
-            { text: "16", correct: false },
-            { text: "20", correct: true },
-            { text: "24", correct: false }
+        "type": "closed",
+        "question": "Which sentence correctly describes a money-saving action?",
+        "answers": [
+            { "text": "Buying this car was very economic.", "correct": false },
+            { "text": "The government is introducing new economic policies.", "correct": false },
+            { "text": "It's more economical to buy in bulk.", "correct": true },
+            { "text": "The country is in a bad economical state.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Układ równań 2x + y = 4 i 3x - 2y = 13 ma rozwiązanie (x, y). Wartość wyrażenia x - y jest równa:",
-        answers: [
-            { text: "5", correct: true },
-            { text: "1", correct: false },
-            { text: "-1", correct: false },
-            { text: "-5", correct: false }
+        "type": "open",
+        "question": "Use the word in brackets to form a word that fits the gap: 'The team's ____ (CONSISTENT) has been a major problem this season.'",
+        "answer": ["inconsistency"]
+    },
+    {
+        "type": "closed",
+        "question": "On no account ______ you to touch the exhibits in this museum.",
+        "answers": [
+            { "text": "are", "correct": true },
+            { "text": "you are", "correct": false },
+            { "text": "can", "correct": false },
+            { "text": "should", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Ania jest dwa razy starsza od Basi. Trzy lata temu była od niej trzy razy starsza. Ile lat ma obecnie Ania?",
-        answer: ["12"]
-    },
-    {
-        type: 'closed',
-        question: "W trapezie ABCD o podstawach AB i CD, przekątne przecinają się w punkcie S. Pola trójkątów ABS i CDS wynoszą odpowiednio 25 cm² i 9 cm². Pole całego trapezu jest równe:",
-        answers: [
-            { text: "34 cm²", correct: false },
-            { text: "49 cm²", correct: false },
-            { text: "64 cm²", correct: true },
-            { text: "100 cm²", correct: false }
+        "type": "closed",
+        "question": "He was found innocent. ________, his reputation was damaged by the accusation.",
+        "answers": [
+            { "text": "Nevertheless", "correct": true },
+            { "text": "Therefore", "correct": false },
+            { "text": "Moreover", "correct": false },
+            { "text": "Consequently", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Wyrażenie 9ˣ - 4 można zapisać jako:",
-        answers: [
-            { text: "(3ˣ - 2)²", correct: false },
-            { text: "(3ˣ - 2)(3ˣ + 2)", correct: true },
-            { text: "(3ˣ - 4)(3ˣ + 1)", correct: false },
-            { text: "(9ˣ⁻²)(9ˣ⁺²)", correct: false }
+        "type": "open",
+        "question": "Complete the second sentence so it has a similar meaning, using 'whose'. First sentence: 'That's the artist. I bought her painting.'",
+        "answer": ["That's the artist whose painting I bought."]
+    },
+    {
+        "type": "closed",
+        "question": "I'd rather you ______ that topic of conversation. It makes me uncomfortable.",
+        "answers": [
+            { "text": "don't raise", "correct": false },
+            { "text": "won't raise", "correct": false },
+            { "text": "didn't raise", "correct": true },
+            { "text": "hadn't raised", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Obwód rombu wynosi 40, a jedna z jego przekątnych ma długość 12. Oblicz długość drugiej przekątnej.",
-        answer: ["16"]
-    },
-    {
-        type: 'closed',
-        question: "Cenę nart, które kosztowały 1200 zł, podniesiono o 20%, a po sezonie obniżono nową cenę o 30%. Ostateczna cena nart wynosiła:",
-        answers: [
-            { text: "1080 zł", correct: false },
-            { text: "1008 zł", correct: true },
-            { text: "960 zł", correct: false },
-            { text: "1100 zł", correct: false }
+        "type": "closed",
+        "question": "The new rules are intended to prevent such problems from _______ in the future.",
+        "answers": [
+            { "text": "recurring", "correct": true },
+            { "text": "recovering", "correct": false },
+            { "text": "reversing", "correct": false },
+            { "text": "referring", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Suma cyfr liczby dwucyfrowej jest równa 11. Jeśli do tej liczby dodamy 27, to otrzymamy liczbę o przestawionych cyfrach. Jaka to liczba?",
-        answer: ["47"]
-    }
+        "type": "open",
+        "question": "Rewrite the sentence using a causative verb: 'I arranged for a photographer to take my portrait.'",
+        "answer": ["I had my portrait taken.", "I got my portrait taken."]
+    },
+    { "type": "closed", "question": "The company's success is ______ attributed to its innovative marketing strategies.", "answers": [{ "text": "largely", "correct": true }, { "text": "broadly", "correct": false }, { "text": "highly", "correct": false }, { "text": "deeply", "correct": false }] }
 ];
 
 // --- Pobranie elementów z HTML ---

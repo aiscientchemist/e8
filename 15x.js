@@ -1,190 +1,201 @@
 const questions = [
     {
-        type: 'closed',
-        question: "Iloczyn dwóch kolejnych dodatnich liczb nieparzystych wynosi 143. Ile wynosi suma kwadratów tych liczb?",
-        answers: [
-            { text: "290", correct: true },
-            { text: "250", correct: false },
-            { text: "221", correct: false },
-            { text: "194", correct: false }
+        "type": "closed",
+        "question": "On no account ______ this door be left unlocked overnight.",
+        "answers": [
+            { "text": "can", "correct": false },
+            { "text": "must", "correct": false },
+            { "text": "should", "correct": true },
+            { "text": "will", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkącie ABC wysokość CD opuszczona na bok AB dzieli go na odcinki AD=9 i DB=5. Bok BC ma długość 13. Oblicz długość boku AC.",
-        answer: ["15"]
-    },
-    {
-        type: 'closed',
-        question: "Liczba 6³⁰ jest równa:",
-        answers: [
-            { text: "18¹⁰", correct: false },
-            { text: "12¹⁵ * 3¹⁵", correct: false },
-            { text: "2¹⁰ * 3¹⁰", correct: false },
-            { text: "2¹⁵ * 18¹⁵", correct: true }
+        "type": "closed",
+        "question": "Despite the lively debate, he remained ______ throughout, offering only a few terse comments.",
+        "answers": [
+            { "text": "loquacious", "correct": false },
+            { "text": "taciturn", "correct": true },
+            { "text": "convivial", "correct": false },
+            { "text": "verbose", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trapezie równoramiennym przekątna ma długość 17, a wysokość 8. Pole trapezu wynosi 120. Oblicz obwód tego trapezu.",
-        answer: ["50"]
+        "type": "open",
+        "question": "Rewrite the sentence in the passive voice. Original sentence: 'They are going to have to make a difficult decision soon.'",
+        "answer": ["A difficult decision is going to have to be made soon."]
     },
     {
-        type: 'closed',
-        question: "W ostrosłupie prawidłowym trójkątnym krawędź boczna ma długość 8, a krawędź podstawy 12. Ile wynosi sinus kąta nachylenia krawędzi bocznej do płaszczyzny podstawy?",
-        answers: [
-            { text: "1/2", correct: true },
-            { text: "√3/2", correct: false },
-            { text: "√2/2", correct: false },
-            { text: "3/4", correct: false }
+        "type": "closed",
+        "question": "I had prepared a brilliant closing argument, but my colleague spoke before me and made all the same points, completely ______.",
+        "answers": [
+            { "text": "rocking the boat", "correct": false },
+            { "text": "stealing my thunder", "correct": true },
+            { "text": "jumping the gun", "correct": false },
+            { "text": "hitting the nail on the head", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Liczba 'a' stanowi 120% liczby 'b'. Liczba 'c' stanowi 75% liczby 'a'. Jaki jest stosunek liczby 'c' do 'b'?",
-        answers: [
-            { text: "4:5", correct: false },
-            { text: "5:4", correct: false },
-            { text: "9:10", correct: true },
-            { text: "10:9", correct: false }
-        ]
-    },
-
-    {
-        type: 'open',
-        question: "W trójkącie równoramiennym ABC, gdzie |AC|=|BC|, kąt między wysokościami poprowadzonymi z wierzchołków A i B wynosi 80°. Oblicz miarę kąta przy wierzchołku C.",
-        answer: ["80"]
-    },
-    {
-        type: 'closed',
-        question: "Z cyfr 0, 1, 2, 5, 8 tworzymy liczby trzycyfrowe o różnych cyfrach. Ile jest wśród nich liczb podzielnych przez 5?",
-        answers: [
-            { text: "18", correct: true },
-            { text: "21", correct: false },
-            { text: "24", correct: false },
-            { text: "30", correct: false }
+        "type": "closed",
+        "question": "You receive some unconstructive criticism like 'This is just bad.' What is the most professional response?",
+        "answers": [
+            { "text": "Well, you couldn't do any better.", "correct": false },
+            { "text": "Could you be more specific? I'm keen to understand which parts aren't working so I can improve them.", "correct": true },
+            { "text": "That's just your opinion.", "correct": false },
+            { "text": "I give up then.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Pojemnik napełniony w 1/3 waży 8 kg, a napełniony w 2/3 waży 13 kg. Ile waży pusty pojemnik?",
-        answer: ["3"]
+        "type": "open",
+        "question": "Use the word in brackets to form a word that fits the gap: 'After the scandal, his reputation was ____ (REDEEM).'",
+        "answer": ["irredeemable"]
     },
     {
-        type: 'closed',
-        question: "Liczba log₂₅(log₅√5) jest równa:",
-        answers: [
-            { text: "-1/2", correct: false },
-            { text: "-1/4", correct: true },
-            { text: "1/4", correct: false },
-            { text: "1/2", correct: false }
+        "type": "closed",
+        "question": "He loves to ______ his new sports car, and he will often ______ speed limits to show it off.",
+        "answers": [
+            { "text": "flout / flaunt", "correct": false },
+            { "text": "flaunt / flout", "correct": true },
+            { "text": "flaunt / float", "correct": false },
+            { "text": "flout / float", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Dwa okręgi o promieniach 2 i 8 są styczne zewnętrznie. Odległość środka mniejszego okręgu od wspólnej stycznej (nieprzechodzącej przez punkt styczności okręgów) jest równa:",
-        answers: [
-            { text: "2", correct: true },
-            { text: "4", correct: false },
-            { text: "√8", correct: false },
-            { text: "2√2", correct: false }
+        "type": "closed",
+        "question": "It is imperative that every member ______ to the code of conduct.",
+        "answers": [
+            { "text": "adheres", "correct": false },
+            { "text": "adhere", "correct": true },
+            { "text": "is adhering", "correct": false },
+            { "text": "to adhere", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Średnia arytmetyczna pięciu kolejnych liczb parzystych wynosi 22. Jaka jest największa z tych liczb?",
-        answer: ["26"]
+        "type": "open",
+        "question": "Rewrite the sentence in reported speech. Original sentence: 'You should apply for the scholarship,' my teacher advised.",
+        "answer": ["My teacher advised me to apply for the scholarship."]
     },
     {
-        type: 'closed',
-        question: "Wartość wyrażenia (1+√3)³ jest równa:",
-        answers: [
-            { text: "4+4√3", correct: false },
-            { text: "10", correct: false },
-            { text: "10+6√3", correct: true },
-            { text: "28", correct: false }
+        "type": "closed",
+        "question": "His ______ smile let everyone know he was being sarcastic, even though his words were polite.",
+        "answers": [
+            { "text": "sincere", "correct": false },
+            { "text": "sardonic", "correct": true },
+            { "text": "seraphic", "correct": false },
+            { "text": "subtle", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Prosta przechodząca przez punkt P=(4,-3) i prostopadła do prostej 2x-3y+6=0 ma wzór:",
-        answers: [
-            { text: "y = -3/2 x + 3", correct: true },
-            { text: "y = 2/3 x - 17/3", correct: false },
-            { text: "y = -3/2 x - 9", correct: false },
-            { text: "y = 3/2 x - 9", correct: false }
+        "type": "closed",
+        "question": "The government's attempts to solve the crisis have been ______, achieving little to no real effect.",
+        "answers": [
+            { "text": "efficacious", "correct": false },
+            { "text": "ineffectual", "correct": true },
+            { "text": "infectious", "correct": false },
+            { "text": "effective", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Cena akcji spadła o 20%, a następnie o 25%. O ile procent musi wzrosnąć obecna cena, aby wrócić do poziomu początkowego?",
-        answer: ["66.67", "66 i 2/3"]
+        "type": "open",
+        "question": "Rewrite the sentence starting with 'Come what may,...'. Original sentence: 'I will support you, whatever happens.'",
+        "answer": ["Come what may, I will support you."]
     },
     {
-        type: 'closed',
-        question: "Długości boków prostokąta powiększono o 20%. Obwód prostokąta wzrósł o:",
-        answers: [
-            { text: "20%", correct: true },
-            { text: "40%", correct: false },
-            { text: "44%", correct: false },
-            { text: "Zależy od wymiarów prostokąta", correct: false }
+        "type": "closed",
+        "question": "The peace talks reached an ______; neither side was willing to compromise further.",
+        "answers": [
+            { "text": "impact", "correct": false },
+            { "text": "impasse", "correct": true },
+            { "text": "impetus", "correct": false },
+            { "text": "impression", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Na ile sposobów można ustawić w kolejce 3 dziewczynki i 2 chłopców tak, aby osoby tej samej płci nie stały obok siebie?",
-        answers: [
-            { text: "10", correct: false },
-            { text: "12", correct: true },
-            { text: "24", correct: false },
-            { text: "36", correct: false }
+        "type": "closed",
+        "question": "What is the meaning of the idiom 'a Pyrrhic victory'?",
+        "answers": [
+            { "text": "An easy and overwhelming win.", "correct": false },
+            { "text": "A victory that comes at such a great cost that it's barely better than losing.", "correct": true },
+            { "text": "A victory achieved through cheating.", "correct": false },
+            { "text": "A victory that was expected by everyone.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W kwadrat o boku 12 wpisano koło. W to koło wpisano kolejny kwadrat. Oblicz różnicę pól tych dwóch kwadratów.",
-        answer: ["72"]
+        "type": "open",
+        "question": "Complete the sentence with the correct preposition: 'The senator was implicated ____ the corruption scandal.'",
+        "answer": ["in"]
     },
     {
-        type: 'closed',
-        question: "W trójkącie prostokątnym stosunek przyprostokątnych wynosi 1:√3. Jaki jest stosunek promienia okręgu wpisanego do promienia okręgu opisanego na tym trójkącie?",
-        answers: [
-            { text: "1:2", correct: false },
-            { text: "(√3-1):2", correct: true },
-            { text: "1:√3", correct: false },
-            { text: "(√3+1):4", correct: false }
+        "type": "closed",
+        "question": "He agreed to the plan, but his support was ______; he clearly had reservations.",
+        "answers": [
+            { "text": "wholehearted", "correct": false },
+            { "text": "lukewarm", "correct": true },
+            { "text": "ardent", "correct": false },
+            { "text": "fervent", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Reszta z dzielenia liczby 123456789 przez 9 wynosi:",
-        answers: [
-            { text: "0", correct: true },
-            { text: "1", correct: false },
-            { text: "3", correct: false },
-            { text: "6", correct: false }
+        "type": "closed",
+        "question": "The company decided to ______ its planned expansion in light of the economic downturn.",
+        "answers": [
+            { "text": "shelve", "correct": true },
+            { "text": "shelf", "correct": false },
+            { "text": "store", "correct": false },
+            { "text": "stock", "correct": false }
+        ]
+    },
+    { "type": "open", "question": "Use the word in brackets to form a word that fits the gap: 'The system has a few ____ (PERFECT) but it's generally very reliable.'", "answer": ["imperfections"] },
+    {
+        "type": "closed",
+        "question": "His speech was a ______ of clichés and empty promises.",
+        "answers": [
+            { "text": "litany", "correct": true },
+            { "text": "lithograph", "correct": false },
+            { "text": "literal", "correct": false },
+            { "text": "liturgy", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Przekątna graniastosłupa prawidłowego czworokątnego tworzy z jego podstawą kąt 60°. Krawędź podstawy ma długość 4. Oblicz objętość graniastosłupa (wynik podaj w postaci a√b).",
-        answer: ["64√6"]
-    },
-    {
-        type: 'closed',
-        question: "Do windy w 10-piętrowym budynku wsiadły 3 osoby. Na ile sposobów mogą one opuścić windę, jeśli każda z nich wysiada na innym piętrze?",
-        answers: [
-            { text: "1000", correct: false },
-            { text: "720", correct: true },
-            { text: "120", correct: false },
-            { text: "30", correct: false }
+        "type": "closed",
+        "question": "Be it sun or rain, the postman ______ his rounds every day.",
+        "answers": [
+            { "text": "completes", "correct": true },
+            { "text": "complete", "correct": false },
+            { "text": "is completing", "correct": false },
+            { "text": "would complete", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Liczba a to najmniejsza liczba pierwsza większa od 50. Liczba b to największa liczba pierwsza mniejsza od 50. Oblicz a-b.",
-        answer: ["6"]
-    }
+        "type": "open",
+        "question": "Rewrite the sentence in the passive voice. Original sentence: 'I don't like my colleagues making personal calls in the office.'",
+        "answer": ["I don't like personal calls being made in the office."]
+    },
+    {
+        "type": "closed",
+        "question": "The lawyer's ______ argument persuaded the jury of his client's innocence.",
+        "answers": [
+            { "text": "cogent", "correct": true },
+            { "text": "congenital", "correct": false },
+            { "text": "cognitive", "correct": false },
+            { "text": "congruent", "correct": false }
+        ]
+    },
+    {
+        "type": "closed",
+        "question": "The government only ______ to the new environmental laws after immense public pressure.",
+        "answers": [
+            { "text": "pays lip service", "correct": true },
+            { "text": "gives a free hand", "correct": false },
+            { "text": "holds the floor", "correct": false },
+            { "text": "goes the extra mile", "correct": false }
+        ]
+    },
+    {
+        "type": "open",
+        "question": "Rewrite the sentence using the causative 'get'. Original sentence: 'I finally convinced my brother to lend me his car.'",
+        "answer": ["I finally got my brother to lend me his car."]
+    },
+    { "type": "closed", "question": "The old castle stood on a ______ overlooking the entire valley.", "answers": [{ "text": "prominence", "correct": false }, { "text": "promontory", "correct": true }, { "text": "premonition", "correct": false }, { "text": "predecessor", "correct": false }] }
 ];
 
 // --- Pobranie elementów z HTML ---

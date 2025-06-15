@@ -1,214 +1,201 @@
 const questions = [
     {
-        type: 'closed',
-        question: "Suma dwóch liczb naturalnych wynosi 7, a suma ich odwrotności to 7/12. Ile wynosi bezwzględna wartość różnicy tych liczb?",
-        answers: [
-            { text: "1", correct: true },
-            { text: "2", correct: false },
-            { text: "3", correct: false },
-            { text: "5", correct: false }
+        "type": "closed",
+        "question": "In no way ______ the terms of this agreement; they are non-negotiable.",
+        "answers": [
+            { "text": "we can alter", "correct": false },
+            { "text": "can we alter", "correct": true },
+            { "text": "we alter", "correct": false },
+            { "text": "we are able to alter", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Kula i walec mają równe objętości. Promień podstawy walca jest równy promieniowi kuli. Oblicz stosunek wysokości walca do jego promienia (wynik podaj w postaci ułamka a/b).",
-        answer: ["4/3"]
-    },
-    {
-        type: 'closed',
-        question: "Jaka jest reszta z dzielenia sumy 1! + 2! + 3! + ... + 100! przez 12?",
-        answers: [
-            { text: "0", correct: false },
-            { text: "3", correct: false },
-            { text: "7", correct: false },
-            { text: "9", correct: true }
+        "type": "closed",
+        "question": "The constant, nitpicking criticism from the manager began to ______ the team's morale.",
+        "answers": [
+            { "text": "bolster", "correct": false },
+            { "text": "sap", "correct": true },
+            { "text": "augment", "correct": false },
+            { "text": "fortify", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Ania i Basia razem wykonują pracę w 12 dni, Basia i Cecylia w 15 dni, a Ania i Cecylia w 20 dni. W ile dni Ania wykonałaby tę pracę samodzielnie?",
-        answer: ["30"]
+        "type": "open",
+        "question": "Rewrite the sentence in the passive voice. Original sentence: 'They will have completed all the necessary research by the end of the year.'",
+        "answer": ["All the necessary research will have been completed by the end of the year."]
     },
     {
-        type: 'closed',
-        question: "Pole figury opisanej w układzie współrzędnych nierównością |x| + |y| ≤ 4 jest równe:",
-        answers: [
-            { text: "16", correct: false },
-            { text: "24", correct: false },
-            { text: "32", correct: true },
-            { text: "64", correct: false }
+        "type": "closed",
+        "question": "Having to choose between two equally bad options, she felt she was caught ______.",
+        "answers": [
+            { "text": "in the crossfire", "correct": false },
+            { "text": "between a rock and a hard place", "correct": true },
+            { "text": "on the horns of a dilemma", "correct": false },
+            { "text": "out of the frying pan into the fire", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Cenę towaru obniżono o 20%. O ile procent należy podnieść nową cenę, aby wróciła ona do poziomu sprzed obniżki?",
-        answers: [
-            { text: "o 20%", correct: false },
-            { text: "o 25%", correct: true },
-            { text: "o 30%", correct: false },
-            { text: "o 80%", correct: false }
+        "type": "closed",
+        "question": "A manager notices an employee's work is not up to standard. What is the most constructive way to begin the conversation?",
+        "answers": [
+            { "text": "Your work has been terrible lately.", "correct": false },
+            { "text": "I wanted to check in and see how you're getting on with the project, and discuss a few areas we could potentially improve.", "correct": true },
+            { "text": "You need to start working harder.", "correct": false },
+            { "text": "Do this again and you're fired.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkącie ABC o bokach 8, 10, 12, poprowadzono środkową do najdłuższego boku. Oblicz długość tej środkowej.",
-        answer: ["√46"]
+        "type": "open",
+        "question": "Use the word in brackets to form a word that fits the gap: 'The political ____ (STABLE) in the region is a cause for global concern.'",
+        "answer": ["instability"]
     },
     {
-        type: 'closed',
-        question: "Liczba a = log₃2. Wartość wyrażenia log₃18 jest równa:",
-        answers: [
-            { text: "a + 3", correct: false },
-            { text: "3a", correct: false },
-            { text: "a + 2", correct: true },
-            { text: "2a", correct: false }
+        "type": "closed",
+        "question": "The contract stipulates that payment ______ made within 30 days of receipt of the invoice.",
+        "answers": [
+            { "text": "is", "correct": false },
+            { "text": "be", "correct": true },
+            { "text": "would be", "correct": false },
+            { "text": "should to be", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trapezie ABCD (AB || CD) przekątne przecinają się w punkcie S. Pole trójkąta ABS jest 4 razy większe od pola trójkąta CDS. Dłuższa podstawa AB ma długość 12. Oblicz długość krótszej podstawy CD.",
-        answer: ["6"]
-    },
-    {
-        type: 'closed',
-        question: "Liczba całkowitych rozwiązań nierówności (x-3)² ≤ 9 wynosi:",
-        answers: [
-            { text: "3", correct: false },
-            { text: "6", correct: false },
-            { text: "7", correct: true },
-            { text: "nieskończenie wiele", correct: false }
+        "type": "closed",
+        "question": "The benefits of the new policy are ______, but the long-term risks are very real.",
+        "answers": [
+            { "text": "tangible", "correct": false },
+            { "text": "illusory", "correct": true },
+            { "text": "obvious", "correct": false },
+            { "text": "concrete", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Ile jest liczb pięciocyfrowych, w których iloczyn cyfr jest równy 7?",
-        answer: ["5"]
+        "type": "open",
+        "question": "Rewrite the sentence in reported speech. Original sentence: 'Shall I help you with those bags?' he asked.",
+        "answer": ["He offered to help me with those bags."]
     },
     {
-        type: 'closed',
-        question: "Wysokość graniastosłupa prawidłowego sześciokątnego jest 2 razy dłuższa od krawędzi podstawy. Objętość tej bryły wynosi 192√3. Długość krawędzi podstawy wynosi:",
-        answers: [
-            { text: "2", correct: false },
-            { text: "4", correct: true },
-            { text: "6", correct: false },
-            { text: "2√2", correct: false }
+        "type": "closed",
+        "question": "What is the meaning of the idiom 'to rest on one's laurels'?",
+        "answers": [
+            { "text": "To be satisfied with your past successes and to stop striving for more.", "correct": true },
+            { "text": "To take a well-deserved break.", "correct": false },
+            { "text": "To publicly celebrate your achievements.", "correct": false },
+            { "text": "To be very modest about your accomplishments.", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Wybieramy losowo literę ze słowa 'PRAWDOPODOBIEŃSTWO'. Jakie jest prawdopodobieństwo, że wylosowana litera występuje w tym słowie dokładnie dwa razy?",
-        answers: [
-            { text: "4/17", correct: false },
-            { text: "6/17", correct: false },
-            { text: "8/17", correct: true },
-            { text: "10/17", correct: false }
+        "type": "closed",
+        "question": "______ for the dense fog, our flight would not have been delayed.",
+        "answers": [
+            { "text": "If it wasn't", "correct": false },
+            { "text": "Without it being", "correct": false },
+            { "text": "Had it not been", "correct": true },
+            { "text": "If it wouldn't be", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Wartość wyrażenia 2024² - 2023² jest równa:",
-        answer: ["4047"]
+        "type": "open",
+        "question": "Rewrite the sentence in the passive voice. Original sentence: 'He hopes they will select him for the national team.'",
+        "answer": ["He hopes to be selected for the national team."]
     },
     {
-        type: 'closed',
-        question: "W trójkącie ABC kąt przy wierzchołku C ma miarę 120°. Na boku AB leży punkt D taki, że odcinek CD jest dwusieczną kąta ACB. Jeśli |AC|=6 i |BC|=3, to długość odcinka CD wynosi:",
-        answers: [
-            { text: "1.5", correct: false },
-            { text: "2", correct: true },
-            { text: "2.5", correct: false },
-            { text: "3", correct: false }
+        "type": "closed",
+        "question": "His comments only served to ______ an already difficult situation.",
+        "answers": [
+            { "text": "mitigate", "correct": false },
+            { "text": "aggravate", "correct": true },
+            { "text": "alleviate", "correct": false },
+            { "text": "placate", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Jeżeli n jest dodatnią liczbą całkowitą, to liczba n³ - n jest zawsze podzielna przez:",
-        answers: [
-            { text: "4", correct: false },
-            { text: "5", correct: false },
-            { text: "6", correct: true },
-            { text: "7", correct: false }
+        "type": "closed",
+        "question": "Everyone started buying the new smartphone, and soon my friends ______ and bought one too.",
+        "answers": [
+            { "text": "went against the grain", "correct": false },
+            { "text": "jumped on the bandwagon", "correct": true },
+            { "text": "threw in the towel", "correct": false },
+            { "text": "bit the bullet", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W stożek o promieniu podstawy 9 i wysokości 12 wpisano walec w taki sposób, że jedna podstawa walca leży na podstawie stożka. Promień podstawy walca wynosi 3. Jaka jest objętość tego walca?",
-        answer: ["72π"]
+        "type": "open",
+        "question": "Complete the sentence with the correct preposition: 'This device is not compatible ____ older models of the software.'",
+        "answer": ["with"]
     },
     {
-        type: 'closed',
-        question: "Na mapie w skali 1:200 000 las ma kształt prostokąta o wymiarach 2 cm na 5 cm. Jaka jest rzeczywista powierzchnia tego lasu w kilometrach kwadratowych?",
-        answers: [
-            { text: "10 km²", correct: false },
-            { text: "20 km²", correct: false },
-            { text: "40 km²", correct: true },
-            { text: "100 km²", correct: false }
+        "type": "closed",
+        "question": "He was a ______ worker, known for his attention to every tiny detail.",
+        "answers": [
+            { "text": "fastidious", "correct": true },
+            { "text": "facetious", "correct": false },
+            { "text": "fabulous", "correct": false },
+            { "text": "facile", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Liczba (2-√3) / (2+√3) jest równa:",
-        answers: [
-            { text: "1", correct: false },
-            { text: "7 - 4√3", correct: true },
-            { text: "-1", correct: false },
-            { text: "7 + 4√3", correct: false }
+        "type": "closed",
+        "question": "The ______ reason for the new security measures is employee safety; this is our guiding ______.",
+        "answers": [
+            { "text": "principle / principal", "correct": false },
+            { "text": "principal / principle", "correct": true },
+            { "text": "principal / principals", "correct": false },
+            { "text": "principle / principles", "correct": false }
+        ]
+    },
+    { "type": "open", "question": "Use the word in brackets to form a word that fits the gap: 'Don't let a minor setback ____ (COURAGE) you from pursuing your goals.'", "answer": ["discourage"] },
+    {
+        "type": "closed",
+        "question": "The ______ of life in the city is very different from the calm of the countryside.",
+        "answers": [
+            { "text": "pace", "correct": true },
+            { "text": "piece", "correct": false },
+            { "text": "place", "correct": false },
+            { "text": "path", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Odległość punktu A=(5, -1) od prostej o równaniu y = x + 2 wynosi a√2. Podaj wartość a.",
-        answer: ["2"]
-    },
-    {
-        type: 'closed',
-        question: "W trójkąt prostokątny równoramienny o przeciwprostokątnej 8√2 wpisano kwadrat tak, że dwa jego wierzchołki leżą na przeciwprostokątnej. Długość boku tego kwadratu wynosi:",
-        answers: [
-            { text: "8/3", correct: true },
-            { text: "2√2", correct: false },
-            { text: "3", correct: false },
-            { text: "4", correct: false }
+        "type": "closed",
+        "question": "His argument, ______ convincing, was based on flawed data.",
+        "answers": [
+            { "text": "while", "correct": true },
+            { "text": "despite", "correct": false },
+            { "text": "therefore", "correct": false },
+            { "text": "because", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W rosnącym ciągu arytmetycznym składającym się z 10 wyrazów, suma wyrazów o numerach nieparzystych wynosi 35, a suma wyrazów o numerach parzystych wynosi 60. Różnica tego ciągu jest równa:",
-        answers: [
-            { text: "2", correct: false },
-            { text: "3", correct: false },
-            { text: "4", correct: false },
-            { text: "5", correct: true }
+        "type": "open",
+        "question": "Rewrite the sentence in the passive voice. Original sentence: 'People believe him to be one of the greatest artists of our time.'",
+        "answer": ["He is believed to be one of the greatest artists of our time."]
+    },
+    {
+        "type": "closed",
+        "question": "The issue of the new bypass has been a real ______ in the town for years.",
+        "answers": [
+            { "text": "bone of contention", "correct": true },
+            { "text": "pain in the neck", "correct": false },
+            { "text": "shot in the arm", "correct": false },
+            { "text": "blessing in disguise", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Zestaw czterech liczb ma średnią 10 i medianę 10. Suma najmniejszej i największej liczby to 22. Jaka jest największa liczba w tym zestawie?",
-        answer: ["14"]
-    },
-    {
-        type: 'closed',
-        question: "W pewnej grze rzuca się dwiema kostkami. Wygrywa się, gdy iloczyn oczek jest większy od 25. Jakie jest prawdopodobieństwo wygranej?",
-        answers: [
-            { text: "1/12", correct: false },
-            { text: "3/36", correct: false },
-            { text: "1/18", correct: false },
-            { text: "1/12", correct: true } // (5,6),(6,5),(6,6) -> 3/36 = 1/12
-        ]
-    },
-    { // Poprawka zad 24, bo powtórzenie odp.
-        type: 'closed',
-        question: "W pewnej grze rzuca się dwiema kostkami. Wygrywa się, gdy iloczyn oczek jest większy niż 25. Jakie jest prawdopodobieństwo wygranej?",
-        answers: [
-            { text: "1/36", correct: false },
-            { text: "1/18", correct: false },
-            { text: "1/12", correct: true },
-            { text: "1/9", correct: false }
+        "type": "closed",
+        "question": "My colleague has to leave early, so I'm going to ______ for her during the last hour of the meeting.",
+        "answers": [
+            { "text": "stand up", "correct": false },
+            { "text": "stand in", "correct": true },
+            { "text": "stand by", "correct": false },
+            { "text": "stand for", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Ile jest różnych całkowitych wartości 'm', dla których punkt P=(m, 2m-3) leży wewnątrz koła o środku S=(0,0) i promieniu 5?",
-        answer: ["4"]
-    }
+        "type": "open",
+        "question": "Rewrite the sentence using a causative verb in the past. Original sentence: 'A professional photographer took my passport photo yesterday.'",
+        "answer": ["I had my passport photo taken yesterday."]
+    },
+    { "type": "closed", "question": "The Eiffel Tower is the ______ symbol of Paris, recognized all over the world.", "answers": [{ "text": "quintessential", "correct": true }, { "text": "questionable", "correct": false }, { "text": "quivering", "correct": false }, { "text": "quiescent", "correct": false }] }
 ];
 
 // --- Pobranie elementów z HTML ---

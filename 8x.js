@@ -1,213 +1,209 @@
 const questions = [
     {
-        type: 'closed',
-        question: "Iloczyn dwóch kolejnych liczb parzystych dodatnich wynosi 224. Ile wynosi suma tych liczb?",
-        answers: [
-            { text: "26", correct: false },
-            { text: "28", correct: false },
-            { text: "30", correct: true },
-            { text: "32", correct: false }
+        "type": "closed",
+        "question": "So difficult ______ that most students couldn't finish it in time.",
+        "answers": [
+            { "text": "the exam was", "correct": false },
+            { "text": "was the exam", "correct": true },
+            { "text": "it was the exam", "correct": false },
+            { "text": "has the exam been", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Przyprostokątne trójkąta prostokątnego mają długości 7 cm i 24 cm. Oblicz promień okręgu wpisanego w ten trójkąt.",
-        answer: ["3"]
-    },
-    {
-        type: 'closed',
-        question: "Liczba x jest o 25% większa od liczby 160. Liczba y jest o 20% mniejsza od liczby x. W takim razie:",
-        answers: [
-            { text: "y jest o 5% większe od 160", correct: false },
-            { text: "y jest równe 160", correct: true },
-            { text: "y jest mniejsze od 160", correct: false },
-            { text: "y jest o 5% mniejsze od 160", correct: false }
+        "type": "closed",
+        "question": "The detective tried to ______ a confession from the suspect about his ______ activities.",
+        "answers": [
+            { "text": "illicit / elicit", "correct": false },
+            { "text": "elicit / illicit", "correct": true },
+            { "text": "elicit / explicit", "correct": false },
+            { "text": "illicit / implicit", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Z drutu o długości 96 cm zbudowano szkielet sześcianu. Jaka jest objętość tego sześcianu w cm³?",
-        answer: ["512"]
+        "type": "open",
+        "question": "Rewrite the sentence in the passive voice. Original sentence: 'Someone must have left the window open during the storm.'",
+        "answer": ["The window must have been left open during the storm."]
     },
     {
-        type: 'closed',
-        question: "Punkt P' = (-3, -7) jest obrazem punktu P w symetrii względem osi OX. Jakie są współrzędne punktu P?",
-        answers: [
-            { text: "(3, 7)", correct: false },
-            { text: "(3, -7)", correct: false },
-            { text: "(-3, 7)", correct: true },
-            { text: "(-7, -3)", correct: false }
+        "type": "closed",
+        "question": "After losing her job, she felt she was at a ______; she didn't know which career path to choose next.",
+        "answers": [
+            { "text": "dead end", "correct": false },
+            { "text": "crossroads", "correct": true },
+            { "text": "roundabout", "correct": false },
+            { "text": "junction", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Jaka jest ostatnia cyfra liczby 4³³ + 5⁴⁴ + 6⁵⁵?",
-        answers: [
-            { text: "3", correct: false },
-            { text: "5", correct: true },
-            { text: "7", correct: false },
-            { text: "9", correct: false }
+        "type": "closed",
+        "question": "You disagree with your teacher's point in a class discussion. What is the most respectful way to express your view?",
+        "answers": [
+            { "text": "You're wrong about that.", "correct": false },
+            { "text": "I see it differently, actually. I believe that...", "correct": true },
+            { "text": "That's not what the book says.", "correct": false },
+            { "text": "No, that can't be right.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkącie prostokątnym jedna z przyprostokątnych jest 3 razy krótsza od przeciwprostokątnej. Jaki jest sinus najmniejszego kąta w tym trójkącie? Odpowiedź podaj w postaci ułamka a/b.",
-        answer: ["1/3"]
+        "type": "open",
+        "question": "Use the word in brackets to form a word that fits the gap: 'His complete ____ (REGARD) for the rules is what got him into trouble.'",
+        "answer": ["disregard"]
     },
     {
-        type: 'closed',
-        question: "Pole powierzchni całkowitej walca wynosi 150π. Promień podstawy i wysokość walca są równe. Ile wynosi objętość tego walca?",
-        answers: [
-            { text: "125π", correct: true },
-            { text: "150π", correct: false },
-            { text: "250π", correct: false },
-            { text: "75π", correct: false }
+        "type": "closed",
+        "question": "The board recommends that the new policy ______ implemented immediately.",
+        "answers": [
+            { "text": "is", "correct": false },
+            { "text": "to be", "correct": false },
+            { "text": "be", "correct": true },
+            { "text": "being", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Wyrażenie (x - 2y)² - (x - 2y)(x + 2y) po uproszczeniu ma postać ay(by - x). Podaj iloczyn a*b.",
-        answer: ["-8"]
-    },
-    {
-        type: 'closed',
-        question: "Wszystkich liczb czterocyfrowych o różnych cyfrach, utworzonych z cyfr 0, 1, 2, 3 jest:",
-        answers: [
-            { text: "24", correct: false },
-            { text: "18", correct: true },
-            { text: "16", correct: false },
-            { text: "12", correct: false }
+        "type": "closed",
+        "question": "The new AI software is now _______; it can be found on almost every computer and smartphone.",
+        "answers": [
+            { "text": "ubiquitous", "correct": true },
+            { "text": "unique", "correct": false },
+            { "text": "optional", "correct": false },
+            { "text": "obscure", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W szufladzie jest 6 par czarnych i 4 pary brązowych skarpetek (wszystkie luzem). Ile co najmniej skarpetek trzeba wyjąć po ciemku, aby mieć pewność, że wyjęliśmy parę w tym samym kolorze?",
-        answer: ["3"]
+        "type": "open",
+        "question": "Rewrite the sentence using a perfect participle. Original sentence: 'After he had checked the data twice, he submitted the report.'",
+        "answer": ["Having checked the data twice, he submitted the report."]
     },
     {
-        type: 'closed',
-        question: "W trapezie równoramiennym ramię ma długość 10, a wysokość 8. Krótsza podstawa ma długość 6. Pole tego trapezu wynosi:",
-        answers: [
-            { text: "72", correct: false },
-            { text: "84", correct: false },
-            { text: "96", correct: true },
-            { text: "108", correct: false }
+        "type": "closed",
+        "question": "The risks ______ in this venture are too great for us to proceed without caution.",
+        "answers": [
+            { "text": "inherent", "correct": true },
+            { "text": "inherited", "correct": false },
+            { "text": "inserted", "correct": false },
+            { "text": "inhabited", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Liczba a jest o 40% mniejsza od liczby b. O ile procent liczba b jest większa od liczby a?",
-        answers: [
-            { text: "o 40%", correct: false },
-            { text: "o 60%", correct: false },
-            { text: "o 66 i 2/3%", correct: true },
-            { text: "o 140%", correct: false }
+        "type": "closed",
+        "question": "If you are to ______ in this field, you must be prepared to work long hours.",
+        "answers": [
+            { "text": "succeed", "correct": true },
+            { "text": "be succeeding", "correct": false },
+            { "text": "have succeeded", "correct": false },
+            { "text": "will succeed", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W graniastosłupie prawidłowym trójkątnym krawędź podstawy ma długość 6. Przekątna ściany bocznej ma długość 10. Oblicz objętość tego graniastosłupa (wynik zapisz w postaci a√b).",
-        answer: ["72√3"]
+        "type": "open",
+        "question": "Rewrite the sentence starting with 'Rarely...'. Original sentence: 'I have rarely seen such a talented performer.'",
+        "answer": ["Rarely have I seen such a talented performer."]
     },
     {
-        type: 'closed',
-        question: "Suma dwóch liczb jest równa 2√10, a ich iloczyn jest równy 6. Ile wynosi suma kwadratów tych liczb?",
-        answers: [
-            { text: "40", correct: false },
-            { text: "34", correct: false },
-            { text: "28", correct: true },
-            { text: "22", correct: false }
+        "type": "closed",
+        "question": "I would rather you ______ that story to anyone else; it was supposed to be a secret.",
+        "answers": [
+            { "text": "don't tell", "correct": false },
+            { "text": "didn't tell", "correct": false },
+            { "text": "hadn't told", "correct": true },
+            { "text": "wouldn't tell", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W trójkąt równoboczny o boku 6 wpisano okrąg. W ten okrąg wpisano kwadrat. Jaka jest długość boku tego kwadratu?",
-        answers: [
-            { text: "√6", correct: true },
-            { text: "3", correct: false },
-            { text: "√3", correct: false },
-            { text: "2", correct: false }
+        "type": "closed",
+        "question": "What is the meaning of the idiom 'to go against the grain'?",
+        "answers": [
+            { "text": "To do something in the opposite way to what is usual or expected.", "correct": true },
+            { "text": "To work with natural materials like wood.", "correct": false },
+            { "text": "To follow a popular trend.", "correct": false },
+            { "text": "To be very picky about food.", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Zmieszano 3 kg roztworu soli o stężeniu 20% z 5 kg roztworu soli o stężeniu 12%. Jakie jest stężenie procentowe otrzymanej mieszaniny?",
-        answer: ["15"]
+        "type": "open",
+        "question": "Complete the sentence with the correct preposition: 'His skills are not commensurate ____ the salary he is demanding.'",
+        "answer": ["with"]
     },
     {
-        type: 'closed',
-        question: "Długość przekątnej sześcianu wynosi 5√3. Pole powierzchni całkowitej tego sześcianu jest równe:",
-        answers: [
-            { text: "75", correct: false },
-            { text: "125", correct: false },
-            { text: "150", correct: true },
-            { text: "25√3", correct: false }
+        "type": "closed",
+        "question": "It took him a long time to ______ the fact that he had lost.",
+        "answers": [
+            { "text": "come to terms with", "correct": true },
+            { "text": "get round to", "correct": false },
+            { "text": "fall back on", "correct": false },
+            { "text": "do away with", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "Liczba log₅(100) - log₅(4) jest równa:",
-        answers: [
-            { text: "log₅(96)", correct: false },
-            { text: "25", correct: false },
-            { text: "5", correct: false },
-            { text: "2", correct: true }
+        "type": "closed",
+        "question": "The author's latest novel is a ______ departure from her usual style.",
+        "answers": [
+            { "text": "considerable", "correct": false },
+            { "text": "considering", "correct": false },
+            { "text": "considerate", "correct": false },
+            { "text": "marked", "correct": true }
+        ]
+    },
+    { "type": "open", "question": "Use the word in brackets to form a word that fits the gap: 'The mayor's ____ (JUSTIFY) for the new tax was met with public anger.'", "answer": ["justification"] },
+    {
+        "type": "closed",
+        "question": "She spoke quietly for fear of ______ the baby.",
+        "answers": [
+            { "text": "waking", "correct": true },
+            { "text": "to wake", "correct": false },
+            { "text": "not to wake", "correct": false },
+            { "text": "wake", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "W trójkącie ABC, punkty D i E leżą odpowiednio na bokach AC i BC tak, że odcinek DE jest równoległy do boku AB. Wiadomo, że |CD|:|DA| = 2:1 oraz |DE|=8. Oblicz długość boku AB.",
-        answer: ["12"]
-    },
-    {
-        type: 'closed',
-        question: "Liczba a = 1/(√5 - 2). Liczba b = 1/(√5 + 2). Ile wynosi wartość wyrażenia (a+b)²?",
-        answers: [
-            { text: "20", correct: true },
-            { text: "4", correct: false },
-            { text: "1", correct: false },
-            { text: "16", correct: false }
+        "type": "closed",
+        "question": "The witness was unable to provide a ______ description of the suspect.",
+        "answers": [
+            { "text": "definitive", "correct": true },
+            { "text": "defined", "correct": false },
+            { "text": "definite", "correct": false },
+            { "text": "defining", "correct": false }
         ]
     },
     {
-        type: 'closed',
-        question: "W dwunastokącie foremnym miara kąta wewnętrznego jest o x stopni większa od miary kąta wewnętrznego w dziewięciokącie foremnym. Ile wynosi x?",
-        answers: [
-            { text: "5", correct: false },
-            { text: "10", correct: true },
-            { text: "12", correct: false },
-            { text: "15", correct: false }
+        "type": "open",
+        "question": "Rewrite the sentence using the passive. Original sentence: 'We all know that he is a reliable person.'",
+        "answer": ["He is known to be a reliable person."]
+    },
+    {
+        "type": "closed",
+        "question": "A(n) ______ of the new policy is that it may increase unemployment.",
+        "answers": [
+            { "text": "downside", "correct": true },
+            { "text": "outcome", "correct": false },
+            { "text": "outline", "correct": false },
+            { "text": "overview", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Trzej pracownicy wykonują pewną pracę w 4 godziny. W ile godzin wykonałoby tę samą pracę dwóch pracowników, przy założeniu, że każdy pracuje z taką samą wydajnością?",
-        answer: ["6"]
-    },
-    {
-        type: 'closed',
-        question: "Wybieramy losowo jedną liczbę ze zbioru {1, 2, 3, ..., 30}. Prawdopodobieństwo, że wybrana liczba nie jest podzielna ani przez 2, ani przez 3, wynosi:",
-        answers: [
-            { text: "1/2", correct: false },
-            { text: "1/3", correct: false },
-            { text: "10/30", correct: false },
-            { text: "1/3", correct: true } // (1,5,7,11,13,17,19,23,25,29) -> 10/30 = 1/3
-        ]
-    },
-    { // Zmieniam treść zad. 24, bo się powtórzyła odp.
-        type: 'closed',
-        question: "Wybieramy losowo jedną liczbę ze zbioru {1, 2, 3, ..., 30}. Prawdopodobieństwo, że wybrana liczba nie jest podzielna ani przez 2, ani przez 3, wynosi:",
-        answers: [
-            { text: "1/3", correct: true },
-            { text: "8/30", correct: false },
-            { text: "7/30", correct: false },
-            { text: "1/4", correct: false }
+        "type": "closed",
+        "question": "The company decided to ______ its operations to Asia to reduce costs.",
+        "answers": [
+            { "text": "outsource", "correct": true },
+            { "text": "outweigh", "correct": false },
+            { "text": "outsmart", "correct": false },
+            { "text": "outlast", "correct": false }
         ]
     },
     {
-        type: 'open',
-        question: "Pociąg jechał z miasta A do B ze średnią prędkością 80 km/h, a wracał z B do A ze średnią prędkością 120 km/h. Podróż w obie strony zajęła 5 godzin. Jaka jest odległość między miastami A i B?",
-        answer: ["240"]
+        "type": "open",
+        "question": "Rewrite the sentence using a causative verb. Original sentence: 'I need to ask a technician to install the new software.'",
+        "answer": ["I need to have the new software installed.", "I need to get the new software installed."]
+    },
+    {
+        "type": "closed",
+        "question": "He arrived at the station, ______ he discovered the train had just left.",
+        "answers": [
+            { "text": "wherewith", "correct": false },
+            { "text": "whereupon", "correct": true },
+            { "text": "whereby", "correct": false },
+            { "text": "whereas", "correct": false }
+        ]
     }
 ];
 
